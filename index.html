@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="page-wrap">
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <div class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        База блогеров
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        ВП на завтра
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        Мой трекер
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="header__right">
+                            <div class="header__cart-btn">
+                                <button type="button" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                </button>
+                            </div>
+
+                            <div class="header__login-btn">
+                                <button type="button" class="btn btn-primary custom-btn">Войти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+
+    <!--MAIN-->
+    <main class="main">
+        <div class="container-lg">
+            <div class="title">
+                <div class="title__left">
+                    <h1 class="title__txt">
+                        База блогеров <span class="title__grey">39 689</span>
+                    </h1>
+                    <a class="title__link" href="#">
+                        Видео-инструкция
+                    </a>
+                </div>
+            </div>
+
+            <div class="home-top">
+                <div class="site-form home-form page-block">
+                    <form action="#" class="d-flex">
+                        <div class="home-form__left">
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="nickname">Блогер</label>
+                                    <input type="email" class="form-control" id="nickname" placeholder="Введите ник">
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="price-in">Цена от в ₽</label>
+                                    <input type="email" class="form-control" id="price-in" placeholder="от 450">
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="country">Страна аудитории</label>
+                                    <select id="country" class="selectpicker white-select" required
+                                            title="Выберите из списка">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="years">Возраст аудитории</label>
+                                    <select id="years" class="selectpicker white-select" required
+                                            title="Выберите из списка">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="blog-topic">Темы блога</label>
+                                    <select id="blog-topic" class="selectpicker white-select" required
+                                            title="Выберите из списка">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="coverage">Охваты от</label>
+                                    <input type="text" class="form-control" id="coverage" placeholder="от 450">
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="audience-city">Город аудитории</label>
+                                    <select id="audience-city" class="selectpicker white-select" required
+                                            title="Выберите из списка">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="home-form-col gender-form">
+                                <div class="form-group">
+                                    <label>Пол аудитории</label>
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="gender-women"
+                                                   required>
+                                            <label class="custom-control-label" for="gender-women">От 80% женщин</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="gender-men"
+                                                   required>
+                                            <label class="custom-control-label" for="gender-men">От 40% мужчин</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="bloggers-city">Город блогера</label>
+                                    <select id="bloggers-city" class="selectpicker white-select" required
+                                            title="Выберите из списка">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label for="last-update">Последнее обновление</label>
+                                    <select id="last-update" class="selectpicker white-select" required
+                                            title="Выберите из списка">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <label>Юридический статус</label>
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ooo" checked>
+                                            <label class="custom-control-label" for="ooo">ООО</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="self-employed"
+                                                   checked>
+                                            <label class="custom-control-label" for="self-employed">Самозанятые</label>
+                                        </div>
+                                    </div>
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ip" checked>
+                                            <label class="custom-control-label" for="ip">ИП</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="not-specified"
+                                                   checked>
+                                            <label class="custom-control-label" for="not-specified">Статус не
+                                                указан</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-form-col">
+                                <div class="form-group">
+                                    <div class="home-form-col__checkbox-wrap">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="bloggers-reviews">
+                                            <label class="custom-control-label" for="bloggers-reviews">Только блогеры с
+                                                отзывами</label>
+                                        </div>
+                                    </div>
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="collab-brands">
+                                            <label class="custom-control-label" for="collab-brands">
+                                                Сотрудничали с брендами
+                                                <i class="brands-icon">Б</i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ambassadors">
+                                            <label class="custom-control-label" for="ambassadors">
+                                                Могут стать амбассадорами
+                                                <i class="ambas-icon">A</i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-form__right">
+                            <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Найти</button>
+                            <button type="button" class="btn btn-outline-secondary">Сбросить</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="main-quest page-block flex-column align-items-center">
+                    <div class="main-quest__title">
+                        Хотите стать блогером на сайте?
+                    </div>
+                    <div class="main-quest__img">
+                        <img src="images/godfather_image.png" alt="img">
+                    </div>
+                    <div class="main-quest__btn">
+                        <button type="button" class="btn btn-primary custom-btn">Заполните свою карточку</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="page-block content-table mt-4">
+                <div class="content-table__head">
+                    <div class="content-table__head-title">
+                        Показать
+                    </div>
+                    <div class="content-table__head-tabs">
+                        <div class="content-table__head-item">
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn">Охваты сторис</a>
+                        </div>
+                        <div class="content-table__head-item">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты постов</a>
+                        </div>
+                        <div class="content-table__head-item">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты сторис и постов</a>
+                        </div>
+
+                        <div class="content-table__head-item content-table__head-item--right">
+                            <span>Показывать по</span>
+                            <select class="selectpicker white-select" required title="10">
+                                <option>10</option>
+                                <option>30</option>
+                                <option>50</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-main">
+                    <table class="site-table home-table">
+                        <thead>
+                        <tr>
+                            <th>
+                                Блогер
+                            </th>
+                            <th>
+                                Охваты <br> сторис от
+                            </th>
+                            <th>
+                                Цена за <br> сторис от
+                            </th>
+                            <th colspan="4" class="home-table-title">
+                                <div>Статистика аудитории</div>
+                                <div class="d-flex justify-content-between home-table-title-i">
+                                    <div>Страна</div>
+                                    <div>Город</div>
+                                    <div>Возраст</div>
+                                    <div>Пол</div>
+                                </div>
+                            </th>
+                            <th>
+                                Город <br> блогера
+                            </th>
+                            <th>
+                                Юр. <br>
+                                статус
+                            </th>
+                            <th>
+                                Последнее <br> обновление
+                            </th>
+                            <th>
+                                Темы блога
+                            </th>
+                            <th>
+                                Отзывы
+                            </th>
+                            <th>
+                                В корзину
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <a href="#">neotpuskaiteplo</a>
+                                54,9 тыс. <i class="star-icon"></i> реклама
+                            </td>
+                            <td>
+                                800 000
+                            </td>
+                            <td>
+                                150 000 ₽
+                            </td>
+                            <td>
+                                54% Казахстан
+                            </td>
+                            <td>
+                                38%, Санкт-Петербург
+                            </td>
+                            <td>
+                                56%, 18-24 года
+                            </td>
+                            <td>
+                                57%, Женщины
+                            </td>
+                            <td>
+                                Петропавл.-Камчатский
+                            </td>
+                            <td>
+                                Само-занятый
+                            </td>
+                            <td>
+                                18.05.19
+                            </td>
+                            <td>
+                                Бьюти, лайфстайл, жизнь за границей
+                            </td>
+                            <td>
+                                <a href="#">8</a> отзывов 6,4 из 10
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket icon-check-basket--active">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">alexandramitroshina</a>
+                                2 млн, <i class="star-icon"></i> реклама
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                100 200 ₽
+                            </td>
+                            <td>
+                                54%, Россия
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                48%, 21-25 лет
+                            </td>
+                            <td>
+                                61%, Женщины
+                            </td>
+                            <td>
+                                Москва
+                            </td>
+                            <td>
+                                ИП
+                            </td>
+                            <td>
+                                29.09.19
+                            </td>
+                            <td>
+                                Бизнес, феминизм
+                            </td>
+                            <td>
+                                <a href="#">6</a> отзывов 7,3 из 10
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">liz_fit</a>
+                                47 тыс, <i class="star-icon"></i> реклама
+                            </td>
+                            <td>
+                                12 000
+                            </td>
+                            <td>
+                                2 000 ₽
+                            </td>
+                            <td>
+                                56%, Украина
+                            </td>
+                            <td>
+                                31%, Киев
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                Санкт-Петербург
+                            </td>
+                            <td>
+                                Не указано
+                            </td>
+                            <td>
+                                18.05.19
+                            </td>
+                            <td>
+                                Бьюти, лайфстайл, жизнь за границей
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">alsta_01</a>
+                                65 тыс, <i class="star-icon"></i> реклама
+                            </td>
+                            <td>
+                                8 000
+                            </td>
+                            <td>
+                                5 000 ₽
+                            </td>
+                            <td>
+                                39%, Беларусь
+                            </td>
+                            <td>
+                                36%,
+                                Минск
+                            </td>
+                            <td>
+                                46%, 35-41 года
+                            </td>
+                            <td>
+                                21%, Женщины
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                ООО
+                            </td>
+                            <td>
+                                18.05.19
+                            </td>
+                            <td>
+                                Жизнь за границей
+                            </td>
+                            <td>
+                                <a href="#">5</a> отзывов 6,1 из 10
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">kkkkkkkkkkkkkkkkkkkkkkkk</a>
+                                1,3 млн
+                            </td>
+                            <td>
+                                2 120
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                Москва
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                ЗОЖ
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">hanna.rachina</a>
+                                6 500
+                            </td>
+                            <td>
+                                8 000
+                            </td>
+                            <td>
+                                5 000 ₽
+                            </td>
+                            <td>
+                                39%, Беларусь
+                            </td>
+                            <td>
+                                36%,
+                                Минск
+                            </td>
+                            <td>
+                                46%, 35-41 года
+                            </td>
+                            <td>
+                                21%, Женщины
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                ООО
+                            </td>
+                            <td>
+                                18.05.19
+                            </td>
+                            <td>
+                                Жизнь за границей
+                            </td>
+                            <td>
+                                <a href="#">5</a> отзывов 6,1 из 10
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">ofoxro</a>
+                                40,4 тыс.
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                Санкт- Петербург
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                Лайфстайл
+                            </td>
+                            <td>
+                                <a href="#">1</a> отзывов 3 из 10
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">liz_fit</a>
+                                47 тыс, <i class="star-icon"></i> реклама
+                            </td>
+                            <td>
+                                12 000
+                            </td>
+                            <td>
+                                2 000 ₽
+                            </td>
+                            <td>
+                                56%, Украина
+                            </td>
+                            <td>
+                                31%, Киев
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                Санкт-Петербург
+                            </td>
+                            <td>
+                                Не указано
+                            </td>
+                            <td>
+                                18.05.19
+                            </td>
+                            <td>
+                                Бьюти, лайфстайл, жизнь за границей
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="icon-check-basket">
+
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="show-more">
+                        <a href="#" class="show-more__btn">
+                            Показать ещё
+                        </a>
+                    </div>
+
+                    <nav aria-label="...">
+                        <ul class="pagination custom-pagination">
+                            <li class="page-item disabled pagination__prev">
+                                <a class="page-link" href="#" tabindex="-1">Назад</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item ">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">11</a></li>
+                            <li class="page-item pagination__next">
+                                <a class="page-link" href="#">Вперёд</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <!--END MAIN-->
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__link">
+            <a href="#">
+                Написать в техподдержку
+            </a>
+        </div>
+        <div class="footer__link">
+            <a href="#">
+                Пользовательское соглашение
+            </a>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <!--POPUPS-->
+
+    <!--END POPUPS-->
+</div>
+
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/main.js"></script>
+
+<div>
+    <!--<form class="needs-validation" novalidate>-->
+    <!--<div>-->
+    <!--<select class="selectpicker white-select" required title="Choose one of the following...">-->
+
+    <!--<option>Mustard</option>-->
+    <!--<option>Ketchup</option>-->
+    <!--<option>Barbecue</option>-->
+    <!--</select>-->
+    <!--<div class="invalid-feedback">-->
+    <!--Please choose a username.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div>-->
+    <!--<select class="selectpicker" required title="Choose one of the following...">-->
+
+    <!--<option>Mustard</option>-->
+    <!--<option>Ketchup</option>-->
+    <!--<option>Barbecue</option>-->
+
+    <!--</select>-->
+    <!--<div class="invalid-feedback">-->
+    <!--Please choose a username.-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="custom-control custom-checkbox mb-3">-->
+    <!--<input type="checkbox" class="custom-control-input" id="customControlValidation1" required>-->
+    <!--<label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>-->
+    <!--<div class="invalid-feedback">Example invalid feedback text</div>-->
+    <!--</div>-->
+    <!--<button class="btn btn-primary" type="submit">Submit form</button>-->
+    <!--</form>-->
+</div>
+</body>
+</html>
+
