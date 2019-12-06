@@ -59,6 +59,27 @@
     background: url("../images/svg/big-ckeck-g.svg") center center no-repeat;
 }
 
+.stories-icon{
+    display: inline-flex;
+    width: 29px;
+    height: 29px;
+    background: url("../images/svg/stories_icon.svg") center center no-repeat;
+}
+
+.video-icon{
+    display: inline-flex;
+    width: 29px;
+    height: 29px;
+    background: url("../images/svg/video_icon.svg") center center no-repeat;
+}
+
+.photo-icon{
+    display: inline-flex;
+    width: 29px;
+    height: 29px;
+    background: url("../images/svg/photo_icon.svg") center center no-repeat;
+}
+
 *{
     font-family: Rubik-Regular;
 }
@@ -875,6 +896,91 @@ input.form-control{
 }
 
 .info__txt{
+
+}
+
+
+.cart-block__main{
+    padding-top: 30px;
+}
+
+.cart-block__main-title{
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.cart-block__main-title a{
+    margin-left: 20px;
+    color: #3897F0;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cart-block__main-table{
+
+}
+
+.cart-block__main-row{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.cart-block__main-row:first-child{
+    height: 60px;
+}
+
+.cart-block__main-row:nth-last-child(odd){
+    background: #F8F8F8;
+}
+
+.cart-block__main-row:nth-child(n+2){
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.cart-block__main-row:nth-child(n+2) .cart-block__main-col:last-child{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.cart-block__main-col{
+    display: flex;
+    align-items: center;
+}
+
+.cart-block__main-col i{
+    margin-right: 10px;
+}
+
+.cart-block__main-col > span {
+    color: #b8c1c5;
+    font-size: 12px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+
+
+.cart-block__main-col:first-child{
+    width: 100%;
+    max-width: 215px;
+}
+.cart-block__main-col:nth-child(2){
+    width: 100%;
+    max-width: 215px;
+}
+
+.cart-block__main-col:nth-child(3){
+    width: 100%;
+    max-width: 410px;
+}
+
+.cart-block__main-head{
 
 }
 
