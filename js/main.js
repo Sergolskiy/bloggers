@@ -5,7 +5,9 @@ $(document).ready(function () {
 
 
 
-
+    $('.mobile-menu__btn-burger').click(function () {
+        $('.mobile-menu__content').toggleClass('open');
+    });
 
 
 
