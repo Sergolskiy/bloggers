@@ -71,7 +71,6 @@ $(document).ready(function () {
             if (e.target.closest('.wrap-popup') !== undefined && e.target == e.target.closest('.wrap-popup') ) {
                 $(e.target).find('.close-btn').click();
             }
-
         }
 
     });
@@ -83,9 +82,33 @@ $(document).ready(function () {
         $('.login__content-i').eq($(this).index()).addClass('active');
     });
 
+    $('.phone').keyup(function () {
+        if ($(this).val().split('_')[0].length !== 22) {
+            $(this).attr('invalid', true);
+        } else {
+            $(this).attr('invalid', false);
+        }
+    });
+
 
     $('.reg-check').click(function () {
-        if($(this).parents('.reg-tap').find('.phone').val().split('_')[0].length !== 22){
+
+        $(this).parents('.reg-tap').find('button').click();
+        if($('#pass2').val().length > 0 && $('#pass3').val().length > 0){
+            if($('#pass2').val() !== $('#pass3').val()){
+                $('#pass2').attr('invalid', true);
+                $('#pass3').attr('invalid', true);
+                $('.error-form.pass').addClass('active');
+
+                return;
+            } else {
+                $('#pass2').attr('invalid', false);
+                $('#pass3').attr('invalid', false);
+                $('.error-form.pass').removeClass('active');
+            }
+
+            $(this).parents('.reg-tap').removeClass('active');
+            $(this).parents('.reg-tap').next().addClass('active');
 
         }
     });
