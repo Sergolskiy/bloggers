@@ -75,7 +75,7 @@
                     <h1 class="title__txt">
                         База блогеров <span class="title__grey">39 689</span>
                     </h1>
-                    <a class="title__link" href="#">
+                    <a class="title__link instruction" href="javascript:void(0);">
                         Видео-инструкция
                     </a>
                 </div>
@@ -100,7 +100,7 @@
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="country">Страна аудитории</label>
-                                    <select id="country" class="selectpicker white-select" required
+                                    <select id="country" class="selectpicker white-select" multiple required
                                             title="Выберите из списка">
                                         <option>Mustard</option>
                                         <option>Ketchup</option>
@@ -111,7 +111,7 @@
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="years">Возраст аудитории</label>
-                                    <select id="years" class="selectpicker white-select" required
+                                    <select id="years" class="selectpicker white-select" required multiple
                                             title="Выберите из списка">
                                         <option>Mustard</option>
                                         <option>Ketchup</option>
@@ -122,7 +122,7 @@
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="blog-topic">Темы блога</label>
-                                    <select id="blog-topic" class="selectpicker white-select" required
+                                    <select id="blog-topic" class="selectpicker white-select" required multiple
                                             title="Выберите из списка">
                                         <option>Mustard</option>
                                         <option>Ketchup</option>
@@ -139,7 +139,7 @@
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="audience-city">Город аудитории</label>
-                                    <select id="audience-city" class="selectpicker white-select" required
+                                    <select id="audience-city" class="selectpicker white-select" required multiple
                                             title="Выберите из списка">
                                         <option>Mustard</option>
                                         <option>Ketchup</option>
@@ -167,7 +167,7 @@
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="bloggers-city">Город блогера</label>
-                                    <select id="bloggers-city" class="selectpicker white-select" required
+                                    <select id="bloggers-city" class="selectpicker white-select" required multiple
                                             title="Выберите из списка">
                                         <option>Mustard</option>
                                         <option>Ketchup</option>
@@ -732,6 +732,45 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <nav aria-label="...">
+                        <ul class="pagination custom-pagination">
+                            <li class="page-item pagination__prev">
+                                <a class="page-link" href="#" tabindex="-1">Назад</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">11</a></li>
+                            <li class="page-item pagination__next">
+                                <a class="page-link" href="#">Вперёд</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav aria-label="...">
+                        <ul class="pagination custom-pagination">
+                            <li class="page-item  pagination__prev">
+                                <a class="page-link" href="#" tabindex="-1">Назад</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item ">
+                                <a class="page-link" href="#">...</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">11</a></li>
+                            <li class="page-item disabled pagination__next">
+                                <a class="page-link" href="#">Вперёд</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 
@@ -756,49 +795,145 @@
     <!--END FOOTER-->
 
     <!--POPUPS-->
+    <div class="video-popup wrap-popup">
+        <div class="wrap-popup__inner video-popup__inner">
+            <div class="video-popup__top">
+                <div class="video-popup__title">
+                    Видео-инструкция по базе
+                </div>
+                <a href="javascript:void(0)" class="video-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
 
+            <div class="video-popup__body">
+                <iframe src="https://www.youtube.com/embed/etfKPW86IBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="login wrap-popup">
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="login__tabs-wrap">
+
+                <div class="login__tabs">
+                    <a href="javascript:void(0)" class="login__tab active">
+                        Вход
+                    </a>
+                    <a href="javascript:void(0)" class="login__tab">
+                        Регистрация
+                    </a>
+                </div>
+                <div class="login__content">
+                    <div class="login__content-i active">
+                        <div class="form-group">
+                            <label for="num">Введите номер телефона</label>
+                            <input  class="form-control phone" id="num" placeholder="В формате, +7 (999) 999-99-99">
+                        </div>
+                        <div class="form-group">
+                            <div class="pass-label">
+                                <label for="pass">Пароль</label>
+                                <a href="javascript:void(0)">Забыли пароль?</a>
+                            </div>
+                            <input type="password"  class="form-control" id="pass" placeholder="">
+                        </div>
+                        <div class="login__bottom">
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn">Войти</a>
+                        </div>
+                    </div>
+                    <div class="login__content-i">
+                        <div class="reg-tap active">
+                            <div class="form-group">
+                                <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
+                                <input  class="form-control phone" id="num2" placeholder="В формате, +7 (999) 999-99-99">
+                                <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="pass2">Пароль</label>
+                                </div>
+                                <input type="password"  class="form-control" id="pass2" placeholder="">
+                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="pass3">Подтвердите пароль</label>
+                                </div>
+                                <input type="password"  class="form-control" id="pass3" placeholder="">
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="reg" checked="">
+                                <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                            </div>
+                            <div class="error-form">
+                                Заполните поля отмеченные красным
+                            </div>
+                            <div class="error-form pass">
+                                Пароли не совпадают
+                            </div>
+                            <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
     <!--END POPUPS-->
 </div>
 
 
-<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
+<script src="js/inputmask.min.js"></script>
+
 <script src="js/main.js"></script>
 
 <div>
-    <!--<form class="needs-validation" novalidate>-->
-    <!--<div>-->
-    <!--<select class="selectpicker white-select" required title="Choose one of the following...">-->
+    <form class="needs-validation" novalidate>
+    <div>
+    <select class="selectpicker white-select" required title="Choose one of the following...">
 
-    <!--<option>Mustard</option>-->
-    <!--<option>Ketchup</option>-->
-    <!--<option>Barbecue</option>-->
-    <!--</select>-->
-    <!--<div class="invalid-feedback">-->
-    <!--Please choose a username.-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div>-->
-    <!--<select class="selectpicker" required title="Choose one of the following...">-->
+    <option>Mustard</option>
+    <option>Ketchup</option>
+    <option>Barbecue</option>
+    </select>
+    <div class="invalid-feedback">
+    Please choose a username.
+    </div>
+    </div>
+    <div>
+    <select class="selectpicker" required title="Choose one of the following...">
 
-    <!--<option>Mustard</option>-->
-    <!--<option>Ketchup</option>-->
-    <!--<option>Barbecue</option>-->
+    <option>Mustard</option>
+    <option>Ketchup</option>
+    <option>Barbecue</option>
 
-    <!--</select>-->
-    <!--<div class="invalid-feedback">-->
-    <!--Please choose a username.-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--<div class="custom-control custom-checkbox mb-3">-->
-    <!--<input type="checkbox" class="custom-control-input" id="customControlValidation1" required>-->
-    <!--<label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>-->
-    <!--<div class="invalid-feedback">Example invalid feedback text</div>-->
-    <!--</div>-->
-    <!--<button class="btn btn-primary" type="submit">Submit form</button>-->
-    <!--</form>-->
+    </select>
+    <div class="invalid-feedback">
+    Please choose a username.
+    </div>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+    <div class="invalid-feedback">Example invalid feedback text</div>
+    </div>
+        <div class="form-group">
+            <label for="price-in">Цена от в ₽</label>
+            <input type="text" class="form-control" id="-in" placeholder="от 450" required>
+        </div>
+
+    <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
 </div>
 </body>
 </html>
