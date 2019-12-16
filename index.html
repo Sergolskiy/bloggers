@@ -843,35 +843,62 @@
                     </div>
                     <div class="login__content-i">
                         <div class="reg-tap active">
-                            <div class="form-group">
-                                <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
-                                <input  class="form-control phone" id="num2" placeholder="В формате, +7 (999) 999-99-99">
-                                <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
-                            </div>
-                            <div class="form-group">
-                                <div class="pass-label">
-                                    <label for="pass2">Пароль</label>
+                            <form class="needs-validation" novalidate action="javascript:void(0)">
+                                <div class="form-group">
+                                    <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
+                                    <input  class="form-control phone" id="num2" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
+                                    <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
                                 </div>
-                                <input type="password"  class="form-control" id="pass2" placeholder="">
-                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
-                            </div>
-                            <div class="form-group">
-                                <div class="pass-label">
-                                    <label for="pass3">Подтвердите пароль</label>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="pass2">Пароль</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="pass2" minlength="6" required>
+                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
                                 </div>
-                                <input type="password"  class="form-control" id="pass3" placeholder="">
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="reg" checked="">
-                                <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
-                            </div>
-                            <div class="error-form">
-                                Заполните поля отмеченные красным
-                            </div>
-                            <div class="error-form pass">
-                                Пароли не совпадают
-                            </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="pass3">Подтвердите пароль</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="pass3" minlength="6" required>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="reg" checked="" required>
+                                    <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                                </div>
+                                <div class="error-form">
+                                    Заполните поля отмеченные красным
+                                </div>
+                                <div class="error-form pass">
+                                    Пароли не совпадают
+                                </div>
+                                <button class="hide">ok</button>
+                            </form>
+
                             <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
+                            </div>
+                        </div>
+
+                        <div class="reg-tap">
+                            <form action="javascript:void(0)">
+                                <div>
+                                    Код из SMS
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="code" placeholder="Код">
+                                    <div class="code-link">
+                                        Отправить код повторно
+                                    </div>
+                                </div>
+                                <button class="hide">ok</button>
+                            </form>
+
+                            <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Назад</a>
                                 <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
                             </div>
                         </div>
