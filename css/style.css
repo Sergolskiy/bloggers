@@ -73,6 +73,13 @@
     background: url("../images/svg/video_icon.svg") center center no-repeat;
 }
 
+.live-icon{
+    display: inline-flex;
+    width: 29px;
+    height: 29px;
+    background: url("../images/svg/live_icon.svg") center center no-repeat;
+}
+
 .photo-icon{
     display: inline-flex;
     width: 29px;
@@ -145,6 +152,7 @@ a:hover{
 
 body{
     background: #f2f7fa;
+    color: #192229;
 }
 
 @media (min-width: 1500px){
@@ -250,6 +258,27 @@ input.form-control{
     padding: 5px 15px;
 }
 
+.header__cart-btn .has-product{
+    position: relative;
+}
+
+.header__cart-btn .has-product:after{
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    color: white;
+    background: #FF0000;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 12px;
+}
+
 .custom-btn{
     font-size: 14px;
     line-height: 17px;
@@ -260,6 +289,10 @@ input.form-control{
 }
 
 .header__login-btn .custom-btn{
+    margin-left: 14px;
+}
+
+.header__login-btn a{
     margin-left: 14px;
 }
 
@@ -370,6 +403,8 @@ input.form-control{
     margin-top: 5px;
     display: inline-flex;
     color: #6A7B83;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .title__right{
@@ -539,7 +574,19 @@ input.form-control{
     padding:  0 15px;
 }
 
+td.has-label{
+    position: relative;
+}
 
+td.has-label .icon-label{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+td.has-label .icon-label + .icon-label{
+    right: 23px;
+}
 
 
 
@@ -574,6 +621,20 @@ input.form-control{
 .site-table th:last-child,
 .site-table td:last-child{
     border-right: 0;
+}
+
+.site-table td a{
+    display: block;
+    color: #3897F0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.site-table .star-icon{
+    position: relative;
+    top: 1px;
+    margin-left: 3px;
 }
 
 .home-table-title{
@@ -730,6 +791,7 @@ input.form-control{
 
 .cart-block{
     margin-top: 40px;
+    padding-bottom: 30px;
 }
 
 .cart-block__top{
@@ -891,7 +953,7 @@ input.form-control{
 
 .blogger-cart__bottom-i{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .blogger-cart__bottom-i:last-child{
@@ -900,9 +962,12 @@ input.form-control{
     align-items: flex-end;
 }
 
+.blogger-cart__bottom-i .brands-icon,
 .blogger-cart__bottom-i .ambas-icon{
     margin-right: 7px;
     margin-left: 0;
+    position: relative;
+    top: -2px;
 }
 
 .info{
@@ -921,6 +986,7 @@ input.form-control{
 
 .cart-block__main{
     padding-top: 30px;
+    border-bottom: 2px dashed #D5DFE4;
 }
 
 .cart-block__main-title{
@@ -937,6 +1003,14 @@ input.form-control{
     color: #3897F0;
     font-size: 14px;
     line-height: 18px;
+}
+
+.cart-block__main-title a.btn{
+    color: white;
+}
+
+.cart-block__main-title a.btn-outline-secondary{
+    color: #192229;
 }
 
 .cart-block__main-table{
@@ -1003,6 +1077,33 @@ input.form-control{
 
 }
 
+.cart-block__main-info{
+    background: #FFFCE3;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+.cart-block__rev-table{
+
+}
+
+
+.cart-block__rev-table-top{
+    margin-top: 30px;
+}
+
+.cart-block__rev-table-top .cart-block__main-title{
+    align-items: center;
+}
+
+.cart-block__rev-table-more{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -1128,7 +1229,36 @@ input.form-control{
     height: 100%;
 }
 
+.login__top-popup{
+    display: none;
+}
 
+.login__top-popup.active{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -270px;
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 20px;
+    display: flex;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.login__top-popup:before{
+    content: "";
+    display: block;
+    min-width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    background: url("../images/log-top.png") center center no-repeat;
+}
+
+.base-popup .wrap-popup__inner,
 .login .wrap-popup__inner{
     width: 100%;
     max-width: 430px;
@@ -1136,6 +1266,7 @@ input.form-control{
     background: transparent;
 }
 
+.base-popup__content,
 .login__tabs-wrap{
     position: relative;
     border-radius: 10px;
@@ -1239,16 +1370,120 @@ input.form-control{
 }
 
 
-
+.popup-tap,
 .reg-tap{
     display: none;
 }
 
+.popup-tap.active,
 .reg-tap.active{
     display: block;
 }
 
-/*********  END POPUPS  ************/
+
+.login__bottom .btn{
+    min-width: 120px;
+}
+
+.login__bottom{
+    justify-content: space-around;
+}
+
+.sms-top{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+
+.login__content-i .form-group label[for="code"]{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.code-link{
+    font-size: 14px;
+    line-height: 22px;
+    color: #3897F0;
+    margin-top: 10px;
+    display: block;
+}
+
+.code-link-open{
+    color: #B4BDC1;
+}
+
+.code-link__caption{
+    display: none;
+    margin-top: 10px;
+}
+
+.code-link-open + .code-link__caption a{
+    font-size: 12px;
+    line-height: 14px;
+    color: #3897F0;
+}
+
+.code-link-open + .code-link__caption{
+    display: block;
+
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.code-link__caption.open{
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6A7B83;
+}
+
+.login__head{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #192229;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.login__head-capt{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #6A7B83;
+    margin-top: 5px;
+}
+
+
+.base-popup_success-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 30px;
+}
+
+.base-popup_success{
+    font-size: 24px;
+    line-height: 28px;
+    color: #192229;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*********  END POPUPS  ************/
 
 
 
@@ -1336,7 +1571,9 @@ input.form-control{
 }
 
 
-
+.base-popup .btn-outline-secondary{
+    background: white;
+}
 
 
 

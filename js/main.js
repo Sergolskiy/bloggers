@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 
 
-    $(document).click(function (e) {
+    $(document).mousedown(function (e) {
 
         if($(window).width() > 992){
             if (e.target.closest('.wrap-popup') !== undefined && e.target == e.target.closest('.wrap-popup') ) {
@@ -76,6 +76,7 @@ $(document).ready(function () {
     });
 
     $('.login__tab').click(function () {
+        $('.login__top-popup').removeClass('active');
         $('.login__tab').removeClass('active');
         $(this).addClass('active');
         $('.login__content-i').removeClass('active');
@@ -110,6 +111,64 @@ $(document).ready(function () {
             $(this).parents('.reg-tap').removeClass('active');
             $(this).parents('.reg-tap').next().addClass('active');
 
+        }
+    });
+
+    $('.reg-prev').click(function () {
+        $(this).parents('.reg-tap').removeClass('active');
+        $(this).parents('.reg-tap').prev().addClass('active');
+    });
+
+    $('.code-link').click(function () {
+        $(this).addClass('code-link-open');
+    });
+
+    $('.reg-last').click(function () {
+         if($('#code').val() == 1111){
+             $('.login__tab').first().click();
+         }
+    });
+
+    $('.forgot-pass').click(function () {
+        $(this).closest('.base-popup').removeClass('open');
+        $('.recovery-popup').addClass('open');
+    });
+
+    $('.log-in').click(function () {
+        $(this).parents('.login__content-i').find('button').click();
+    });
+
+    $('.to-login').click(function () {
+        $(this).closest('.base-popup').removeClass('open');
+        $('.login').addClass('open');
+    });
+
+    $('.next-tap').click(function () {
+        $(this).parents('.popup-tap').find('button').click();
+
+        if($(this).parents('.popup-tap').find('.phone').attr("invalid") === "false"){
+            $(this).parents('.popup-tap').removeClass('active');
+            $(this).parents('.popup-tap').next().addClass('active');
+        }
+    });
+
+    $('.recover-save').click(function () {
+        $(this).parents('.popup-tap').find('button').click();
+        if($('#pass4').val().length > 0 && $('#pass5').val().length > 0){
+            if($('#pass4').val() !== $('#pass5').val()){
+                $('#pass4').attr('invalid', true);
+                $('#pass5').attr('invalid', true);
+                $('.error-form.pass').addClass('active');
+
+                return;
+            } else {
+                $('#pass4').attr('invalid', false);
+                $('#pass5').attr('invalid', false);
+                $('.error-form.pass').removeClass('active');
+            }
+
+            $(this).closest('.base-popup').removeClass('open');
+            $('.success-popup').addClass('open');
         }
     });
 

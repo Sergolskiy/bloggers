@@ -52,12 +52,13 @@
 
                         <div class="header__right">
                             <div class="header__cart-btn">
-                                <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                <a href="./cart.html" class="btn btn-outline-secondary has-product" data-count="2">
+                                    <i class="cart-icon"></i> Корзина
                                 </a>
                             </div>
 
                             <div class="header__login-btn">
-                                <button type="button" class="btn btn-primary custom-btn">Войти</button>
+                                <a href="#"><img src="images/svg/avatar.svg" alt="img"></a>
                             </div>
                         </div>
 
@@ -316,10 +317,10 @@
                     </div>
                     <div class="content-table__head-tabs">
                         <div class="content-table__head-item">
-                            <a href="javascript:void(0);" class="btn btn-primary custom-btn">Охваты сторис</a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты сторис</a>
                         </div>
                         <div class="content-table__head-item">
-                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты постов</a>
+                            <a href="javascript:void(0);" class="btn  btn-primary custom-btn">Охваты постов</a>
                         </div>
                         <div class="content-table__head-item">
                             <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты сторис и постов</a>
@@ -380,9 +381,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td class="has-label">
-                                <i class="icon-label brands-icon">Б</i>
-                                <i class="icon-label ambas-icon">A</i>
+                            <td>
                                 <a href="#">neotpuskaiteplo</a>
                                 54,9 тыс. <i class="star-icon"></i> реклама
                             </td>
@@ -428,8 +427,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="has-label">
-                                <i class="icon-label brands-icon">Б</i>
+                            <td>
                                 <a href="#">alexandramitroshina</a>
                                 2 млн, <i class="star-icon"></i> реклама
                             </td>
@@ -858,12 +856,7 @@
     </div>
 
 
-    <div class="login base-popup wrap-popup ">
-        <div class="login__top-popup active">
-            <div>
-            Зарегистрируйтесь или войдите <br> в аккаунт, <b>чтобы отправлять <br> запрос(-ы) блогеру(-ам)</b>
-            </div>
-        </div>
+    <div class="login wrap-popup">
         <div class="wrap-popup__inner">
             <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
             <div class="login__tabs-wrap">
@@ -886,7 +879,7 @@
                             <div class="form-group">
                                 <div class="pass-label">
                                     <label for="pass">Пароль</label>
-                                    <a class="forgot-pass" href="javascript:void(0)">Забыли пароль?</a>
+                                    <a href="javascript:void(0)">Забыли пароль?</a>
                                 </div>
                                 <input type="password"  class="form-control" id="pass" placeholder="" minlength="6" required>
                             </div>
@@ -936,7 +929,7 @@
                         </div>
 
                         <div class="reg-tap">
-                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+                            <form action="javascript:void(0)">
                                 <div class="sms-top">
                                     Код из SMS
                                 </div>
@@ -971,124 +964,7 @@
             </div>
         </div>
     </div>
-
-
-
-    <div class="base-popup recovery-popup wrap-popup">
-
-        <div class="wrap-popup__inner">
-            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
-            <div class="login__tabs-wrap">
-
-                <div class="login__head">
-                    Восстановление пароля
-                    <div class="login__head-capt">
-                        Шаг <span class="tap-count">1</span> из 3
-                    </div>
-                </div>
-                <div class="login__content">
-
-                        <div class="popup-tap active">
-                            <form action="javascript:void(0)" class="needs-validation" novalidate>
-                                <div class="sms-top">
-                                    Введите ваш номер телефона. <br> Мы отправим на него код
-                                </div>
-                                <div class="form-group">
-
-                                    <input  class="form-control phone" id="num3" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
-                                    <div class="code-link__caption open">
-                                        <div>Номер телефона не может содержать пробелов и букв</div>
-                                    </div>
-                                </div>
-                                <button class="hide">ok</button>
-                            </form>
-                            <div class="login__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary to-login">Назад</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn next-tap">Далее</a>
-                            </div>
-                        </div>
-
-                        <div class="popup-tap">
-
-                            <form action="javascript:void(0)" class="needs-validation" novalidate>
-                                <div class="sms-top">
-                                    Код из SMS
-                                </div>
-                                <div class="form-group">
-                                    <div class="pass-label">
-                                        <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
-                                    </div>
-                                    <input type="text"  class="form-control" id="code1" placeholder="Код" required>
-                                    <a href="#" class="code-link">
-                                        Отправить код повторно
-                                    </a>
-                                    <div class="code-link__caption">
-                                        <div>Попытка №1 <br> Запросить код повторно можно через 59 секунд</div>
-                                        <a href="#">Не приходит SMS</a>
-                                    </div>
-                                </div>
-                                <button class="hide">ok</button>
-                            </form>
-
-                            <div class="login__bottom register">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary prev-tap">Назад</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn next-tap">Далее</a>
-                            </div>
-                        </div>
-
-                        <div class="popup-tap">
-
-                            <form class="needs-validation" novalidate action="javascript:void(0)">
-                                <div class="form-group">
-                                    <div class="pass-label">
-                                        <label for="pass2">Введите новый пароль</label>
-                                    </div>
-                                    <input type="password"  class="form-control" id="pass4" minlength="6" required>
-                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="pass-label">
-                                        <label for="pass3">Подтвердите пароль</label>
-                                    </div>
-                                    <input type="password"  class="form-control" id="pass5" minlength="6" required>
-                                </div>
-
-                                <div class="error-form">
-                                    Заполните поля отмеченные красным
-                                </div>
-                                <div class="error-form pass">
-                                    Пароли не совпадают
-                                </div>
-                                <button class="hide">ok</button>
-                            </form>
-
-                            <div class="login__bottom register">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary prev-tap">Назад</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn recover-save">Сохранить</a>
-                            </div>
-                        </div>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="base-popup success-popup wrap-popup">
-
-        <div class="wrap-popup__inner">
-            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
-            <div class="base-popup__content">
-                <div class="base-popup_success-wrap">
-                    <img src="images/svg/done_icon.svg" alt="img">
-                    <div class="base-popup_success">Пароль изменен</div>
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary to-login">Войти</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-                        <!--END POPUPS-->
+    <!--END POPUPS-->
 </div>
 
 
