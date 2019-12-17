@@ -623,8 +623,8 @@ td.has-label .icon-label + .icon-label{
     border-right: 0;
 }
 
-.site-table td a{
-    display: block;
+.site-table td a:not(.btn){
+    display: inline-block;
     color: #3897F0;
     white-space: nowrap;
     overflow: hidden;
@@ -1027,7 +1027,7 @@ td.has-label .icon-label + .icon-label{
     height: 60px;
 }
 
-.cart-block__main-row:nth-last-child(odd){
+.cart-block__main-row:nth-last-child(even){
     background: #F8F8F8;
 }
 
@@ -1095,6 +1095,7 @@ td.has-label .icon-label + .icon-label{
     margin-top: 30px;
 }
 
+
 .cart-block__rev-table-top .cart-block__main-title{
     align-items: center;
 }
@@ -1105,10 +1106,105 @@ td.has-label .icon-label + .icon-label{
     justify-content: center;
 }
 
+.cart-separator__count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6A7B83;
+}
 
+.cart-separator{
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+
+.cart-separator__count:after,
+.cart-separator__count:before{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #6A7B83;
+    margin: 0 20px;
+}
+
+.cart-block__rev-table-clear{
+    padding: 0 30px;
+}
+
+.page-block-info{
+    background: #FFFCE3;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.page-block-info a{
+    color: #3897F0;
+}
+
+.cart-block__main-title--other{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+
+.cart-block__main-title-capt{
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+
+
+
+
+.no-register-blogger-table{
+
+}
+
+.no-register-blogger-table td a{
+    margin-right: 5px;
+}
+
+.no-register-blogger-table td:nth-child(3){
+    width: 230px;
+}
+
+.no-register-blogger-table td:nth-child(4) div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0;
+}
+
+.no-register-blogger-table th,
+.no-register-blogger-table td{
+    border: 0;
+}
+
+.no-register-blogger-table th,
+.no-register-blogger-table tr:nth-last-child(even) {
+    background: #F8F8F8;
+}
+
+.no-register-blogger-table th:first-child,
+.no-register-blogger-table td:first-child{
+    padding-left: 30px;
+}
+
+.no-register-blogger-table th:last-child,
+.no-register-blogger-table td:last-child{
+    padding-right: 30px;
+}
+
+.no-register-blogger-table .star-icon{
+    top: -2px;
+}
 
 /*********  END CART  ************/
-
 
 
 
