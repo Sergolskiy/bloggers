@@ -4,10 +4,20 @@ $(document).ready(function () {
 
 
 
-
-    $('.mobile-menu__btn-burger').click(function () {
-        $('.mobile-menu__content').toggleClass('open');
+    $(document).on('click', '.mobile-menu__btn-burger', function () {
+        $('.mobile-menu__inner').addClass('open');
+        $('.mobile-menu__btn-burger').addClass('open');
+        $('body').css('overflow', 'hidden');
     });
+    $(document).on('click', '.mobile-menu__inner', function (e) {
+        if(e.target.classList[0] == 'mobile-menu__inner'){
+            $('.mobile-menu__inner').removeClass('open');
+            $('.mobile-menu__btn-burger').removeClass('open');
+            $('body').css('overflow', 'visible');
+        }
+    });
+
+
 
 
 
