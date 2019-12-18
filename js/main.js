@@ -79,10 +79,12 @@ $(document).ready(function () {
 
     $('.instruction').click(function () {
         $('.video-popup').addClass('open');
+        bodyHidden();
     });
 
     $('.close-btn').click(function () {
         $(this).closest('.wrap-popup').removeClass('open');
+        bodyScroll();
     });
 
 
@@ -199,6 +201,49 @@ $(document).ready(function () {
         }
     });
 
+
+    $('.how-make-order').click(function () {
+        $('.how-make-order-popup').addClass('open');
+        bodyHidden();
+    });
+
+
+    $('.report-btn').click(function () {
+        $('.report-popup').addClass('open');
+        bodyHidden();
+    });
+
+
+    function bodyHidden(){
+        $('body').addClass('hidden');
+    }
+    function bodyScroll(){
+        $('body').removeClass('hidden');
+    }
+
+    var check = false;
+    $('.btn-check').click(function () {
+        check = false;
+         $(this).closest('form').find('button').click();
+        var form = $(this).closest('form')[0]
+        if (form.checkValidity() === false) {
+            $(this).closest('form').find('.err-form').show();
+            check = false;
+        } else {
+            check = true;
+            $(this).closest('form').find('.err-form').hide();
+        }
+    });
+
+    $('.btn-report').click(function () {
+        if(check == true){
+            // send form
+
+            $(this).closest('.wrap-popup').find('.close-btn').click();
+            $('.report-success-popup').addClass('open');
+            bodyHidden();
+        }
+    });
     Inputmask({"mask": "+7 (999) 999 - 99 - 99"}).mask('.phone');
 });
 
