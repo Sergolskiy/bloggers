@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 
 
-    $(document).on('click', '.mobile-menu__btn-burger', function () {
+    $(document).on('click', '.mobile-menu__btn-burger.btn', function () {
         $('.mobile-menu__inner').addClass('open');
         $('.mobile-menu__btn-burger').addClass('open');
         $('body').css('overflow', 'hidden');
@@ -45,6 +45,23 @@ $(document).ready(function () {
     });
 
 
+
+
+    $('.filter-btn').click(function () {
+        $('.home-top').addClass('open');
+    });
+    $('.filter-btn-close').click(function () {
+        $('.home-top').addClass('closing');
+        setTimeout(function () {
+            $('.home-top').removeClass('open').removeClass('closing');
+        }, 300);
+    });
+    $('.filter-close-menu-open').click(function () {
+        $('.filter-btn-close').click();
+        setTimeout(function () {
+            $('.mobile-menu__btn-burger.btn').click();
+        },300);
+    });
     /*********  END MAIN  ************/
 
 
