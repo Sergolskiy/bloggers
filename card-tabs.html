@@ -450,27 +450,125 @@
                                                 Верификация происходит на официальном сайте Инстаграма. <b>Мы НЕ будем знать ваш пароль</b>, Инстаграм сообщает нам только название аккаунта и базовую статистику.
                                             </div>
                                             <button type="button" class="btn btn-primary custom-btn custom-btn-gold">
-                                                Верифицировать аккаунт
+                                                Разрешить доступ
                                             </button>
+                                            <!--<button type="button" class="btn btn-outline-secondary"><i class="green-check-icon"></i>-->
+                                                <!--Аккаунт верифицирован-->
+                                            <!--</button>-->
 
 
                                             <div class="card__verify-left-txt">
-                                                Верификация pr-аккаунта
-                                                <br><br>
-                                                Вы также можете верифицировать свой pr-аккаунт, чтобы заказчики рекламы присылали свои заявки в директ pr-аккаунта.
+                                                <div class="form-group">
+                                                    <label for="verify01">PR-аккаунт <span class="grey-txt">(необязательно)</span></label>
+                                                    <input class="form-control" id="verify01" type="text" placeholder="" required="">
+                                                </div>
+                                                <p>Чтобы заказчики рекламы присылали свои заявки в директ pr-аккаунта</p>
                                             </div>
-                                            <button type="button" class="btn btn-secondary form-statistic-check">Верифицировать  pr-аккаунт</button>
-                                            <p>Сначала верифицируйте основной аккаунт</p>
+
                                         </div>
 
                                         <div class="card__verify-right">
 
+                                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <label for="verify">Ваш e-mail</label>
+                                                    <input  class="form-control" id="verify" type="email" placeholder="" required>
+                                                    <p>После подтверждения на него будут приходить заявки на рекламу.</p>
+                                                </div>
+
+
+
+                                                <div class="card__verify-right-block">
+                                                    <label for="verify2">Укажите 1-3 темы вашего аккаунта</label>
+                                                    <div class="form-group country">
+                                                        <select id="verify2" class="selectpicker white-select" required multiple
+                                                                title="Бизнес, Мотивация, Феминизм">
+                                                            <option>Бизнес</option>
+                                                            <option>Бьюти</option>
+                                                            <option>Дом, интерьер и ремонт</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify3">Город проживания <span class="grey-txt">(необязательно)</span></label>
+                                                        <input  class="form-control" id="verify3" type="text" placeholder="" required>
+                                                    </div>
+                                                    <p>Коммерческие аккаунты почти всегда интересуются городом блогеров</p>
+                                                </div>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify4">Амбассадорство <span class="grey-txt">(необязательно)</span></label>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="verify4" checked="" required>
+                                                            <label class="custom-control-label" for="verify4">Хочу стать амбассадором</label>
+                                                        </div>
+                                                    </div>
+                                                    <p>Вы можете изменить свой ответ позднее</p>
+                                                </div>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify5">Какие темы не рекламируете</label>
+                                                        <textarea class="form-control" id="verify5" placeholder="Например: Cетевой бизнес, астрология, гадания, казино."  required></textarea>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card__verify-right-block">
+                                                    <label>Юридический статус <span class="grey-txt">(необязательно)</span></label>
+                                                    <div class="form-group radio-group custom-radio-2">
+                                                        <div class="custom-control ">
+                                                            <input type="radio" name="verify6"  class="custom-control-input " id="verify6" required="">
+                                                            <label class="custom-control-label" for="verify6">Не указывать</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input " id="verify7" required="">
+                                                            <label class="custom-control-label" for="verify7">Самозанятый</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input " id="verify8" required="">
+                                                            <label class="custom-control-label" for="verify8">ИП</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input " id="verify9" required="">
+                                                            <label class="custom-control-label" for="verify9">ООО</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify10" class="f-14"><span class="grey-txt">ОГРНИП</span></label>
+                                                        <input class="form-control" id="verify10" type="text" placeholder="" required="">
+                                                    </div>
+                                                    <p>
+                                                        ОГРНИП необходим для подтверждения вашего юридического статуса и не будет указан на сайте.
+                                                        В случае незаполнения этого поля, юр. статус не будет указываться в вашей карточке.
+                                                    </p>
+                                                </div>
+
+                                                <button class="hide">ok</button>
+                                            </form>
                                         </div>
+
+
+
+
+
                                     </div>
 
                                     <div class="card__form-advertising-bottom-btn">
                                         <button type="button" class="btn btn-outline-secondary">Назад к блогерам</button>
-                                        <button type="button" class="btn btn-secondary form-statistic-check">Далее</button>
+                                        <button type="button" class="btn btn-secondary form-verify-check">Далее</button>
                                     </div>
                                 </div>
 

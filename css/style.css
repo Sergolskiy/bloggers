@@ -32,6 +32,16 @@
     background: url("../images/svg/cart.svg") center center no-repeat;
 }
 
+.green-check-icon{
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    display: inline-flex;
+    margin-right: 8px;
+    background: url("../images/svg/green-check.svg") center center no-repeat;
+}
+
 .star-icon{
     width: 14px;
     height: 14px;
@@ -105,6 +115,11 @@
     padding: 5px 15px;
 }
 
+.big-btn{
+    min-width: 140px;
+    line-height: 24px !important;
+}
+
 .btn-outline-secondary {
     color: #192229;
     border-color: #D5DFE4;
@@ -176,6 +191,17 @@ a:hover{
     border: 0 !important;
 }
 
+
+.billet-blue{
+    padding: 2px 6px;
+    background: #3897F0;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+    padding: 3px 6px 1px;
+}
+
 body{
     background: #f2f7fa;
     color: #192229;
@@ -231,6 +257,11 @@ input.form-control{
 
 .ambas-icon{
     background: #FEF5D2;
+}
+
+.f-14 {
+    font-size: 14px;
+    line-height: 17px;
 }
 
 
@@ -363,6 +394,11 @@ input.form-control{
     background: #FFFFFF;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
     border-radius: 10px;
+}
+
+.page-block-left{
+    max-width: 825px;
+    margin-top: 20px;
 }
 
 
@@ -1564,19 +1600,19 @@ td.has-label .icon-label + .icon-label{
     padding-left: 0;
 }
 
-.card__form-advertising .custom-control-label::before{
+.custom-radio .custom-control-label::before{
     position: absolute;
     top: 9px;
     left: 10px;
 }
-.card__form-advertising .custom-control-label::after {
+.custom-radio .custom-control-label::after {
     width: 25px;
     top: 5px;
     left: 6px;
     height: 25px;
 }
 
-.card__form-advertising .custom-control-input:checked~.custom-control-label::before {
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #ffffff;
     background-color: #007bff;
@@ -1588,7 +1624,7 @@ td.has-label .icon-label + .icon-label{
 }
 
 
-.card__form-advertising-i .custom-radio .custom-control-label{
+.custom-radio .custom-control-label{
     width: 170px;
     background: white;
     height: 36px;
@@ -1599,11 +1635,54 @@ td.has-label .icon-label + .icon-label{
     padding-left: 34px;
 }
 
-.card__form-advertising-i .custom-control-input:checked~.custom-control-label{
+.custom-radio .custom-control-input:checked~.custom-control-label{
     background: #3897F0;
     color: white;
 }
 
+.custom-radio.custom-radio-big{
+    padding-left: 0;
+}
+
+.custom-radio.custom-radio-big .custom-control-label{
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+}
+
+.custom-radio.custom-radio-big .custom-control-input:checked ~ .custom-control-label{
+    background: #ffffff;
+    color: #192229;
+    border: 1px solid #3897F0;
+}
+
+.custom-radio.custom-radio-big .custom-control-label::before{
+    top: 11px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+}
+.custom-radio.custom-radio-big .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #ffffff;
+    z-index: 1;
+}
+
+.custom-radio-big.custom-radio .custom-control-input:checked~.custom-control-label::after,
+.custom-radio.custom-radio-big .custom-control-label::after {
+    width: 16px;
+    top: 9px;
+    left: 10px;
+    height: 16px;
+    background: white;
+    border: 1px solid #D5DFE4;
+    border-radius: 50%;
+}
 
 .card__form-advertising-block{
     display: flex;
@@ -1808,11 +1887,23 @@ td.has-label .icon-label + .icon-label{
     background: #FFFFFF;
     border: 1px solid #D5DFE4;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.card__verify-right,
 .card__verify-left{
     max-width: 350px;
     width: 100%;
+}
+
+.card__verify-left .btn{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.card__verify-left .custom-btn-gold{
+    padding: 8px 40px;
 }
 
 .card__verify-left-txt{
@@ -1820,10 +1911,21 @@ td.has-label .icon-label + .icon-label{
     margin-bottom: 20px;
 }
 
+.card__verify-left-txt label{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.card__verify-left-txt .form-group{
+    margin-bottom: 0;
+}
+
+
 .card__verify-left-txt ~ .card__verify-left-txt{
     margin-top: 60px;
 }
 
+.card__verify-right p,
 .card__verify-left p{
     font-size: 14px;
     line-height: 17px;
@@ -1831,10 +1933,509 @@ td.has-label .icon-label + .icon-label{
     margin-top: 8px;
 }
 
+.card__verify-right .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 100%;
+    max-width: 100%;
+}
+
+.card__verify-right-block{
+    margin-bottom: 40px;
+}
+
+.card__verify-right-block .form-group{
+    margin-bottom: 0;
+}
+
+.card__verify-right-block textarea{
+    height: 120px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px;
+}
+
+.grey-txt{
+    color: #B4BDC1;
+}
+
+.card__verify-right-block .radio-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__verify-right-block .radio-group .custom-control {
+    width: 50%;
+}
+
+.custom-radio-2 .custom-control-label::after  {
+    position: absolute;
+    top: 12px;
+    left: 3px;
+    border-radius: 50%;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-color: white;
+}
+
+.custom-radio-2 .custom-control-label::before{
+    width: 16px;
+    top: 9px;
+    left: 0px;
+    height: 16px;
+    background: white;
+    border: 1px solid #D5DFE4;
+    border-radius: 50%;
+    background: white;
+}
+
+.custom-radio-2 .custom-control-input:checked~.custom-control-label::before{
+    background-color: #ffffff;
+}
+
+.custom-radio-2 .custom-control-input:checked~.custom-control-label::after {
+    color: #fff;
+    border-color: #ffffff;
+    background-color: #007bff;
+}
+
+.custom-radio-2 .custom-control-label{
+    /*width: 170px;*/
+    background: white;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+
+.custom-radio-2 .custom-control{
+    padding: 0;
+}
 
 
 
-/*********  END CARD  ************/
+
+    /*********  END CARD  ************/
+
+
+
+
+
+/*********  PAYMENTS  ************/
+
+.payments-block {
+    max-width: 445px;
+    margin: auto;
+    padding: 28px 45px;
+}
+
+.payments__title{
+    font-size: 24px;
+    line-height: 135%;
+    margin-bottom: 30px;
+}
+
+.payments__sub-title{
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.payments__item{
+    background: #ebf5fd;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin-top: 15px;
+}
+
+.payments__left{
+    width: 70%;
+    padding-left: 15px;
+}
+
+.payments__time{
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.payments__count{
+    font-size: 24px;
+    line-height: 22px;
+}
+
+.payments__count-small{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6A7B83;
+}
+
+.payments__right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+    margin: -10px 0;
+}
+
+.payments__info{
+    background: #FFFCE3;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6A7B83;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.payments__back .btn{
+    min-width: 140px;
+    line-height: 26px;
+}
+
+
+.payments-success__inner{
+    padding: 40px 30px;
+}
+
+.payments-success__top{
+    display: flex;
+    align-items: center;
+}
+
+.payments-success__left{
+    margin-right: 30px;
+}
+
+.payments-success__right{
+
+}
+
+.payments-success__title{
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.payments-success__title span{
+    font-size: 20px;
+    line-height: 120%;
+    display: block;
+}
+
+.payments-success__subtitle{
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 20px;
+}
+
+.payments-success__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.payments-success__offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #D5DFE4;
+    border-radius: 10px;
+    padding: 30px 35px;
+}
+
+.payments-success__offers-title{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payments-success__offers-price{
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.payments-success__offers-old-price{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #B4BDC1;
+    margin-bottom: 20px;
+}
+
+.payments-block-success-btn .btn{
+
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+
+
+    /*********  PAYMENTS CARD  ************/
+
+
+
+
+/*********  PAID SERVICES  ************/
+
+.paid-service{
+    padding: 30px 20px;
+}
+
+.paid-service__yellow{
+    border-radius: 10px;
+    background: #FADB67 url("../images/yellow-bg.png") top right no-repeat;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+.paid-service__yellow-title{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.paid-service__yellow-sub-t{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.paid-service__yellow-list{
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+.paid-service__yellow-i{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.paid-service__yellow-i:last-child{
+    margin-bottom: 0;
+}
+
+.paid-service__yellow-i:before{
+    content: attr(data-item);
+    background: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 20px;
+}
+
+.paid-service__yellow-i span{
+    font-size: 14px;
+    line-height: 150%;
+    display: block;
+}
+
+
+.paid-service__yellow-of-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.paid-service__yellow-of{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.paid-service__yellow-of-t{
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.paid-service__yellow-of-b{
+
+}
+
+.paid-service__yellow-of-p{
+    font-size: 24px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.paid-service__yellow-of-p span{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #6a7b83;
+}
+
+.paid-service__yellow-of-o{
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #B4BDC1;
+    margin-bottom: 20px;
+}
+
+.paid-service__yellow-of-btn .custom-btn-gold{
+    min-width: 120px;
+    line-height: 20px;
+}
+
+.paid-service__item{
+    padding-top: 40px;
+}
+
+.paid-service__form-wrap {
+    margin-top: 10px;
+}
+
+.paid-service__form-wrap a{
+    min-width: 150px;
+    line-height: 18px;
+    margin-top: 15px;
+}
+
+.paid-service__title{
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.paid-service__subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    color: #6A7B83;
+    margin-bottom: 15px;
+}
+
+
+.paid-service__form{
+    display: flex;
+}
+
+.paid-service__form .custom-radio-big{
+    max-width: 210px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.paid-service__form .custom-radio-big label{
+    padding-right: 10px;
+}
+
+.paid-service__form .custom-radio-big label span{
+    color: #6a7b83;
+    font-size: 14px;
+}
+
+.paid-service__check{
+    width: 16px;
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+}
+
+
+
+
+/*********  END PAID SERVICES  ************/
+
+
+
+
+
+
+/*********  BANNERS  ************/
+
+
+.top-banner{
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+    border-top: 1px solid #D5DFE4;
+}
+
+.top-banner__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.top-banner__left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.top-banner__block{
+
+}
+
+.top-banner__img{
+    width: 36px;
+    margin-right: 10px;
+}
+
+.top-banner__block{
+
+}
+
+.top-banner__title{
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.top-banner__subtitle{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6A7B83;
+
+}
+
+.top-banner__right{
+
+}
+
+.top-banner__right .btn{
+    margin-right: 20px;
+}
+
+.btn-outline-secondary{
+
+}
+
+.top-banner-close{
+
+}
+
+
+
+.banner-pay-success{
+
+}
+
+/*********  BANNERS CARD  ************/
+
+
+
 
 
 
@@ -2288,6 +2889,10 @@ td.has-label .icon-label + .icon-label{
     margin-top: 20px;
 }
 
+.report__block .custom-radio-2{
+    padding-left: 0;
+}
+
 .report__textarea textarea{
     border: 1px solid #D5DFE4;
     box-sizing: border-box;
@@ -2314,7 +2919,7 @@ td.has-label .icon-label + .icon-label{
 
 
 
-    /*********  END POPUPS  ************/
+/*********  END POPUPS  ************/
 
 
 

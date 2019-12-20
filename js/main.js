@@ -297,10 +297,19 @@ $(document).ready(function () {
         $(this).closest('.card__tabs-content-i').find('button.hide').click();
 
         var form = $(this).closest('.card__tabs-content-i').find('form')[0];
-        if (form.checkValidity() === false) {
+        if (form.checkValidity() !== false) {
             $('.card__tabs-i.active').last().next().addClass('active');
             $('.card__tabs-content-i.active').next().addClass('active');
             $('.card__tabs-content-i.active').removeClass('active');
+        }
+    });
+
+    $('.form-verify-check').click(function () {
+        $(this).closest('.card__tabs-content-i').find('button.hide').click();
+
+        var form = $(this).closest('.card__tabs-content-i').find('form')[0];
+        if (form.checkValidity() !== false) {
+            location.href = '/bloggers/payments.html';
         }
     });
 
