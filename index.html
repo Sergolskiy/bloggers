@@ -20,8 +20,12 @@
                 <div class="col-md-12">
                     <div class="header__inner">
                         <div class="header__logo">
-                            <a href="./">
+                            <a class="header__logo-link" href="./">
                                 <img src="images/logo.png" alt="logo">
+                            </a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary header-mobile-btn-close">
+                                <i class="back-arrow"></i>
+                                Назад
                             </a>
                         </div>
 
@@ -297,15 +301,15 @@
                             <button type="button" class="btn btn-outline-secondary">Сбросить</button>
                         </div>
                         <div class="home-form__mobile-head">
-                            <div class="home-form__mobile-head-top">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary filter-btn-close">
-                                    <i class="back-arrow"></i>
-                                    Назад
-                                </a>
-                                <div class="mobile-menu__btn-burger filter-close-menu-open">
-                                    <a href="javascript:void(0);"></a>
-                                </div>
-                            </div>
+                            <!--<div class="home-form__mobile-head-top">-->
+                                <!--<a href="javascript:void(0);" class="btn btn-outline-secondary filter-btn-close">-->
+                                    <!--<i class="back-arrow"></i>-->
+                                    <!--Назад-->
+                                <!--</a>-->
+                                <!--<div class="mobile-menu__btn-burger filter-close-menu-open">-->
+                                    <!--<a href="javascript:void(0);"></a>-->
+                                <!--</div>-->
+                            <!--</div>-->
                             <div class="home-form__mobile-head-center">
                                 <div class="home-form__mobile-head-title">
                                     Фильтры
@@ -366,7 +370,29 @@
                             </select>
                         </div>
                     </div>
+                    <div class="content-table__head-tabs-mobile">
+                        <div class="custom-dropout custom-dropout__more-btn">
+                            <a class="custom-dropout__link" href="javascript:void(0)">
+                                Охваты сторис
+                            </a>
+                            <div class="custom-dropout__txt">
+                                <a href="javascript:void(0)">Охваты сторис</a>
+                                <a href="javascript:void(0)">Охваты постов</a>
+                                <a href="javascript:void(0)">Охваты сторис и постов</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--mobile table-->
+                <div class="main-quest__mobile">
+                    <div class="main-quest__mobile-title">
+                        Хотите стать блогером на сайте?
+                    </div>
+                    <div class="main-quest__mobile-btn">
+                        <a href="javascript:void(0);" class="btn btn-primary custom-btn">Заполните карточку</a>
+                    </div>
+                </div>
+                <!--mobile table end-->
                 <div class="table-main">
                     <table class="site-table home-table">
                         <thead>
@@ -786,6 +812,361 @@
                         </tr>
                         </tbody>
                     </table>
+
+                    <div class="mobile-home-table">
+                        <div class="mobile-home-table__list">
+                            <div class="mobile-home-table__item">
+                                <div class="mobile-home-table__top">
+                                    <div class="mobile-home-table__top-left">
+                                        <div class="mobile-home-table__name">
+                                            alexandramitroshina
+                                        </div>
+                                        <div class="mobile-home-table__name-desc">
+                                            2млн подписчиков,
+                                            <i class="circle-icon"></i> реклама
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__top-right">
+                                        <div class="mobile-home-table__top-date">
+                                            29.11.19
+                                        </div>
+                                        <div class="mobile-home-table__top-status">
+                                            обновлена
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__center">
+                                    <div class="mobile-home-table__value">
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                Охваты ≈
+                                            </div>
+                                            <div class="mobile-home-table__value-row">
+                                                Цена от
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                800 000
+                                                <span>в сторис</span>
+                                            </div>
+                                            <div class="mobile-home-table__value-row">
+                                                150 000 ₽
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__ico-wrap">
+                                            <div class="mobile-home-table__ico ambas-icon">A</div>
+                                            <div class="mobile-home-table__ico brands-icon">Б</div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__statistics">
+                                        <div class="mobile-home-table__statistics-title">
+                                            Статистика аудитории
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Страна
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                54%, Казахстан
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Город
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                38%, Санкт-Петербург
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Возраст
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                56%, 18-24 года
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Пол
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                76%, Женщины
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Темы:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Город блогера:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Санкт-Петербург
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Юр. статус:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Самозанятый
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__bottom">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary">
+                                        108 отзывов, <i class="star-icon"></i> 6,4
+                                    </a>
+                                    <a href="javascript:void(0);" type="button" class="btn btn-primary custom-btn custom-btn-gold">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="mobile-home-table__item">
+                                <div class="mobile-home-table__top">
+                                    <div class="mobile-home-table__top-left">
+                                        <div class="mobile-home-table__name">
+                                            kreida
+                                        </div>
+                                        <div class="mobile-home-table__name-desc">
+                                            763 тыс. подписчиков,
+                                            <i class="circle-icon"></i> реклама
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__top-right">
+                                        <div class="mobile-home-table__top-date">
+                                            29.11.19
+                                        </div>
+                                        <div class="mobile-home-table__top-status">
+                                            обновлена
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__center">
+                                    <div class="mobile-home-table__value">
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                Цена от
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                15 500 ₽ <span>в сторис</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__ico-wrap">
+                                            <div class="mobile-home-table__ico ambas-icon">A</div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__statistics">
+                                        <div class="mobile-home-table__statistics-title">
+                                            Статистика аудитории
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Страна
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                54%, Казахстан
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Возраст
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                56%, 18-24 года
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Темы:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Бьюти
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Юр. статус:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Не указан
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__bottom">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary">
+                                        8 отзывов, <i class="star-icon"></i> 8,1
+                                    </a>
+                                    <a href="javascript:void(0);" type="button" class="btn btn-primary custom-btn custom-btn-gold">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="mobile-home-table__item">
+                                <div class="mobile-home-table__top">
+                                    <div class="mobile-home-table__top-left">
+                                        <div class="mobile-home-table__name">
+                                            liz_fit
+                                        </div>
+                                        <div class="mobile-home-table__name-desc">
+                                            47 тыс. подписчиков,
+                                            <i class="circle-icon"></i> реклама
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__top-right">
+                                        <div class="mobile-home-table__top-date">
+                                            29.11.19
+                                        </div>
+                                        <div class="mobile-home-table__top-status">
+                                            обновлена
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__center">
+                                    <div class="mobile-home-table__value">
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                Охваты ≈
+                                            </div>
+                                            <div class="mobile-home-table__value-row">
+                                                12 560 <span>в сторис</span>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                Цена от
+                                            </div>
+                                            <div class="mobile-home-table__value-row">
+                                                5 000 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__statistics">
+                                        <div class="mobile-home-table__statistics-title">
+                                            Статистика аудитории
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Страна
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                54%, Казахстан
+                                            </div>
+                                        </div>
+                                        <div class="mobile-home-table__statistics-row">
+                                            <div class="mobile-home-table__statistics-name">
+                                                Город
+                                            </div>
+                                            <div class="mobile-home-table__statistics-text">
+                                                38%, Санкт-Петербург
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Темы:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            ЗОЖ, фитнес
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Город блогера:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Москва
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Юр. статус:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            ИП
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__bottom">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary disabled">
+                                        Нет отзывов на сайте
+                                    </a>
+                                    <a href="javascript:void(0);" type="button" class="btn btn-primary custom-btn custom-btn-gold">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="mobile-home-table__item">
+                                <div class="mobile-home-table__top">
+                                    <div class="mobile-home-table__top-left">
+                                        <div class="mobile-home-table__name">
+                                            kkkkkkkkkkkkkkkkkkkkkkk___...
+                                        </div>
+                                        <div class="mobile-home-table__name-desc">
+                                            1,3млн подписчиков
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__top-right">
+                                        <div class="mobile-home-table__top-date">
+                                            29.11.19
+                                        </div>
+                                        <div class="mobile-home-table__top-status">
+                                            обновлена
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__center">
+                                    <div class="mobile-home-table__value">
+                                        <div class="mobile-home-table__value-col">
+                                            <div class="mobile-home-table__value-row">
+                                                Охваты ≈
+                                            </div>
+                                            <div class="mobile-home-table__value-row">
+                                                12 120 <span>в сторис</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Темы:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Бьюти
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Город блогера:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Москва
+                                        </div>
+                                    </div>
+                                    <div class="mobile-home-table__add-info">
+                                        <div class="mobile-home-table__add-info-name">
+                                            Юр. статус:
+                                        </div>
+                                        <div class="mobile-home-table__add-info-txt">
+                                            Не указан
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-home-table__bottom">
+                                    <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary disabled">
+                                        Нет отзывов на сайте
+                                    </a>
+                                    <a href="javascript:void(0);" type="button" class="btn btn-primary custom-btn custom-btn-gold">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="show-more">
                         <a href="#" class="show-more__btn">
                             Показать ещё
