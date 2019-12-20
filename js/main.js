@@ -46,21 +46,40 @@ $(document).ready(function () {
 
 
 
+    function openHeaderCloseBtn () {
+        $('body').css('overflow', 'hidden');
+        $('.header__logo-link').hide();
+        $('.header-mobile-btn-close').addClass('opening');
+        $('.header__cart-btn').hide();
+        setTimeout(function () {
+            $('.header-mobile-btn-close').addClass('open');
+        }, 200);
+    }
+    function closeHeaderCloseBtn () {
+        $('body').css('overflow', 'visible');
+        $('.header-mobile-btn-close').removeClass('open');
+        $('.header__cart-btn').show();
+        setTimeout(function () {
+            $('.header-mobile-btn-close').removeClass('opening')
+            $('.header__logo-link').show();
+        },300);
+    }
 
     $('.filter-btn').click(function () {
         $('.home-top').addClass('open');
+        openHeaderCloseBtn();
     });
-    $('.filter-btn-close').click(function () {
+
+    $('.header-mobile-btn-close').click(function () {
         $('.home-top').addClass('closing');
         setTimeout(function () {
             $('.home-top').removeClass('open').removeClass('closing');
         }, 300);
+        closeHeaderCloseBtn();
     });
-    $('.filter-close-menu-open').click(function () {
-        $('.filter-btn-close').click();
-        setTimeout(function () {
-            $('.mobile-menu__btn-burger.btn').click();
-        },300);
+
+    $('.custom-dropout__more-btn').click(function () {
+      $('.custom-dropout__more-btn').toggleClass('open');
     });
     /*********  END MAIN  ************/
 
