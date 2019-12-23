@@ -3,6 +3,9 @@ $(document).ready(function () {
     /***********   HEADER   *************/
 
 
+    $('.close-banner').click(function () {
+        $(this).closest('.top-banner').slideUp();
+    });
 
     $(document).on('click', '.mobile-menu__btn-burger.btn', function () {
         $('.mobile-menu__inner').addClass('open');

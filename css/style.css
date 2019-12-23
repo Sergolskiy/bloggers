@@ -191,7 +191,7 @@
     padding: 6px !important;
 }
 
-.w-100.bootstrap-select{
+.w-100{
     max-width: 100% !important;
 }
 
@@ -2001,9 +2001,13 @@ td.has-label .icon-label + .icon-label{
     width: 50%;
 }
 
+.card__verify .custom-radio-2:nth-last-child(n+3) .custom-control-label{
+    margin-bottom: 7px;
+}
+
 .custom-radio-2 .custom-control-label::after  {
     position: absolute;
-    top: 12px;
+    top: 7px;
     left: 3px;
     border-radius: 50%;
     z-index: 1;
@@ -2014,7 +2018,7 @@ td.has-label .icon-label + .icon-label{
 
 .custom-radio-2 .custom-control-label::before{
     width: 16px;
-    top: 9px;
+    top: 4px;
     left: 0px;
     height: 16px;
     background: white;
@@ -2036,7 +2040,6 @@ td.has-label .icon-label + .icon-label{
 .custom-radio-2 .custom-control-label{
     /*width: 170px;*/
     background: white;
-    height: 36px;
     display: flex;
     align-items: center;
     border-radius: 5px;
@@ -2398,10 +2401,12 @@ td.has-label .icon-label + .icon-label{
 
 /*********  SETTINGS  ************/
 
+.settings-block.minimize,
 .paid-service.minimize{
     padding-top: 0;
 }
 
+.settings-block__head,
 .paid-service__head{
     display: flex;
     justify-content: space-between;
@@ -2411,11 +2416,13 @@ td.has-label .icon-label + .icon-label{
     padding: 15px 20px 13px;
 }
 
+.settings-block__head-title,
 .paid-service__head-title{
     font-size: 20px;
     line-height: 24px;
 }
 
+.settings-block__head-title span,
 .paid-service__head-title span{
     font-size: 14px;
     line-height: 17px;
@@ -2423,32 +2430,39 @@ td.has-label .icon-label + .icon-label{
     margin-left: 10px;
 }
 
-
+.settings-block__head a,
 .paid-service__head a{
     font-size: 14px;
     line-height: 17px;
     color: #B4BDC1;
 }
 
+.settings-block{
+    padding: 30px 20px;
+}
+
 .settings__row{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #D5DFE4;
+    padding-bottom: 25px;
 }
 
 .settings__row.last{
     border: 0;
+    padding-bottom: 30px;
 }
 
 .settings__col{
     width: 50%;
     padding-top: 25px;
+    max-width: 360px;
 }
 
-.settings__col:last-child{
+.settings__col:nth-child(2){
     width: 50%;
     padding-top: 25px;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
 }
 
 .settings__title{
@@ -2468,6 +2482,7 @@ td.has-label .icon-label + .icon-label{
     font-size: 12px;
     line-height: 14px;
     color: #6A7B83;
+    margin-bottom: 0;
 }
 
 .settings .card__statistic-block{
@@ -2596,6 +2611,19 @@ td.has-label .icon-label + .icon-label{
     margin-left: 10px;
 }
 
+.settings-advertising-active{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #00D463;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.settings-advertising-active.red{
+    background: #FF0000;
+}
+
 .form-advertising__inner .card__form-advertising-block:nth-child(even){
     padding-left: 20px;
     justify-content: space-between;
@@ -2663,7 +2691,267 @@ td.has-label .icon-label + .icon-label{
     font-size: 14px;
 }
 
+.checkbox-wrap{
+    display: flex;
+}
+
+.main-settings .checkbox-wrap .custom-checkbox{
+    min-width: 140px;
+}
+
+.settings__copy-link{
+    display: flex;
+}
+
+.settings__copy-link a{
+    margin-left: 10px;
+}
+
+.main-settings .settings__col{
+    max-width: 360px;
+}
+
+/*.main-settings .custom-radio-2.custom-control{*/
+    /*margin-top: -7px;*/
+/*}*/
+
+.settings.main-settings .card__statistic-block p{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6A7B83;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.settings.main-settings .card__verify-right-block{
+    margin-bottom: 0;
+}
+
+.settings__change-link-wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.settings__change-link{
+    font-size: 14px;
+    line-height: 17px;
+    color: #3897F0;
+}
+
+.settings__change-pass {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+}
+
+
+.settings__change-pass a{
+    color: #3897F0;
+}
+
+.settings__account{
+    color: #3897F0;
+    display: block;
+}
+
+.settings__change-account{
+    margin-top: 10px;
+}
+
+.paid-service .paid-service__head{
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+
+.settings-notification__title{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.settings-notification__subtitle{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.settings-notification__check{
+    margin-top: 15px;
+}
+
+.settings-notification__link{
+    font-size: 16px;
+    line-height: 19px;
+    color: #3897F0;
+    margin-top: 20px;
+}
+
+.settings-notification__link a{
+    color: #3897F0;
+}
+
+
+.page-block-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-block-left-wrap{
+    max-width: 825px;
+    width: 100%;
+}
+
+.page-block-right{
+    max-width: 255px;
+    width: 100%;
+}
+
+.page-nav{
+    background: white;
+    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.page-nav__title{
+    font-size: 18px;
+    line-height: 21px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.page-nav__items{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-nav__item{
+    display: flex;
+    width: 100%;
+    height: 36px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 20px;
+}
+
+.page-nav__item.active{
+    background: #3897F0;
+    color: white;
+}
+
+
+
+
 /*********  END SETTINGS  ************/
+
+
+
+
+
+
+
+
+
+/*********  FRAUD  ************/
+
+.fraud{
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 30px 30px 30px 100px;
+    position: relative;
+}
+
+.fraud:before{
+    content: "";
+    display: block;
+    width: 47px;
+    height: 46px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: url("../images/log-top.png") center center no-repeat;
+}
+
+
+.fraud__title{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.fraud__title a{
+    color: #3897F0;
+}
+
+.fraud__subtitle{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.fraud__txt{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.fraud__txt a{
+    color: #3897F0;
+}
+
+.fraud__txt p{
+    margin-bottom: 8px;
+}
+
+.fraud__options{
+
+}
+
+.fraud .file-invalid{
+    top: 0;
+}
+
+.fraud__options > p{
+    color: #6A7B83;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+}
+
+.fraud.statistic{
+
+}
+
+.report__block.statistic__btn{
+    margin-top: 35px;
+    display: flex;
+}
+
+.statistic__btn-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.statistic__btn .custom-btn-gold{
+    margin-top: 10px;
+}
+
+.statistic__btn .err-form{
+    margin-left: 0;
+}
+
+
+
+
+/*********  END FRAUD  ************/
+
+
+
 
 
 
@@ -2677,6 +2965,9 @@ td.has-label .icon-label + .icon-label{
     background: #FFFFFF;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
     border-top: 1px solid #D5DFE4;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 .top-banner__inner{
@@ -2691,6 +2982,20 @@ td.has-label .icon-label + .icon-label{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.top-banner__left a{
+    font-size: 20px;
+    line-height: 24px;
+    color: #3897F0;
+}
+
+
+.top-banner__left .btn {
+    color: #192229;
+    border-color: #D5DFE4;
+    font-size: 14px;
+    margin-left: 30px;
 }
 
 
@@ -2735,6 +3040,17 @@ td.has-label .icon-label + .icon-label{
 
 }
 
+.banner-info-small,
+.banner-info-small a{
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.banner-info-medium,
+.banner-info-medium a{
+    font-size: 20px;
+    line-height: 24px;
+}
 
 
 .banner-pay-success{
@@ -3223,7 +3539,25 @@ td.has-label .icon-label + .icon-label{
 
 
 
+.medium-popup__inner{
+    display: flex;
+    flex-direction: column;
+    width: 840px;
+    max-width: 420px;
+    min-height: 600px;
+    background: white;
+    padding: 20px 30px 30px 30px;
+}
 
+.medium-popup__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 20px;
+    margin: 0 -30px;
+    border-bottom: 1px solid #D5DFE4;
+    margin-bottom: 20px;
+}
 
 
 
