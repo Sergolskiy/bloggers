@@ -67,110 +67,76 @@
     </header>
     <!--END HEADER-->
 
-    <div class="top-banner banner-pay-success">
-        <div class="top-banner__inner container">
-            <div class="top-banner__left">
-                <div class="top-banner__block">
-                    <img src="images/svg/green-check.svg" class="top-banner__img" alt="img">
-                </div>
-                <div class="top-banner__block">
-                    <div class="top-banner__title">
-                        Оплата принята. Ваша карточка появилась в базе.
-                    </div>
-                    <div class="top-banner__subtitle">
-                        Письмо с результатами модерации скоро придет вам на почту.
-                    </div>
-                </div>
-            </div>
-            <div class="top-banner__right">
-                <a href="#" class="btn btn-outline-secondary">Настройки аккаунта</a>
-                <a href="#" class="btn btn-outline-secondary">Ответы по рекламе</a>
-                <a href="#" class="btn btn-outline-secondary">База блогеров</a>
-                <a href="javascript:void(0)" class="close-banner">
-                    <img src="images/svg/x-btn.svg" alt="img">
-                </a>
-            </div>
-        </div>
-    </div>
     <!--MAIN-->
     <main class="main">
-
-
         <div class="container">
-
-            <div class="page-block payments-success">
-
-                    <div class="payments-success__inner">
-                        <div class="payments-success__top">
-                            <div class="payments-success__left">
-                                <img src="images/payments-success-img.jpg" alt="img">
-                            </div>
-                            <div class="payments-success__right">
-                                <div class="payments-success__title">
-                                    Скидка 50% на спецразмещение закончится через 56:32 <span>Такого предложения больше не будет</span>
-                                </div>
-                                <div class="payments-success__subtitle">
-                                    Пакет спецразмещения поднимает вашу карточку в списке блогеров наверх и позволяет получить больше просмотров карточки.
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="payments-success__bottom">
-                            <div class="payments-success__offers">
-                                <div class="payments-success__offers-title">
-                                    Спецразмещение на 1 день
-                                </div>
-                                <div class="payments-success__offers-price">
-                                    990 ₽
-                                </div>
-                                <div class="payments-success__offers-old-price">
-                                    1 990 ₽
-                                </div>
-                                <div class="payments-block-success-btn">
-                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold big-btn">
-                                        Купить
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="payments-success__offers">
-                                <div class="payments-success__offers-title">
-                                    Спецразмещение на 3 дня
-                                </div>
-                                <div class="payments-success__offers-price">
-                                    1 425 ₽ / 475 ₽ в день
-                                </div>
-                                <div class="payments-success__offers-old-price">
-                                    2 850 ₽ / 950 ₽ в день
-                                </div>
-                                <div class="payments-block-success-btn">
-                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">
-                                        Купить
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="payments-success__offers">
-                                <div class="payments-success__offers-title">
-                                    Спецразмещение на 7 дней
-                                </div>
-                                <div class="payments-success__offers-price">
-                                    3 150 ₽ / 450 ₽ в день
-                                </div>
-                                <div class="payments-success__offers-old-price">
-                                    6 300 ₽ / 900 ₽ в день
-                                </div>
-                                <div class="payments-block-success-btn">
-                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">
-                                        Купить
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-
-
+            <div class="title">
+                <div class="title__left d-flex align-items-center">
+                    <h1 class="title__txt">
+                        База блогеров
+                    </h1>
+                </div>
             </div>
+
+
+            <div class="fraud statistic">
+                <div class="fraud__title">
+                    На вас поступила жалоба о несоответствии статистики по аудитории
+                </div>
+                <div class="fraud__subtitle">
+                    Приложите экранное видео из архива сторис или постов, что вы выкладывали рекламу. Если вы не выкладывали рекламу, то пока вы ее не разместите и не пришлете доказательства сюда, доступ к базе блогеров будет недоступен.
+
+                </div>
+                <div class="fraud__txt">
+                    <p>Если вы не согласны с этим, пришлите экранное видео со статистикой из вашего аккаунта в Инстаграме по полу, возрасту, странам, городам, охватам сторис и постов.
+                        <br>
+                        <a href="#">Пример экранного видео</a>
+                    </p>
+                    <br>
+
+                    <p>У вас осталось 2 из 3-х жизней. Когда останется 0, доступ к сервису для вас будет заблокирован навсегда. Если жалоба не подтвердится, жизнь будет восстановлена.</p>
+                </div>
+                <div class="fraud__options">
+
+
+
+                    <form class="needs-validation" novalidate action="javascript:void(0)">
+
+                        <div class="report__block d-flex ">
+                            <div class="report__block-i">
+                                <div class="custom-file">
+                                    <input type="file" class="form-control custom-file-input" style="display: none" required>
+                                    <label for="report-mail">Загрузите видео не более 100 Мб</label>
+                                    <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить видео</a>
+                                    <p class="file-invalid">
+                                        Видео не загружено
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="report__block statistic__btn">
+                            <div class="statistic__btn-block">
+                                <span class="err-form">Заполните поля отмеченные красным</span>
+                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold btn-check btn-check btn-report">
+                                    Отправить на модерацию
+                                </a>
+                            </div>
+                            <div class="statistic__btn-block">
+                                <button type="button" class="btn btn-outline-secondary ">Больше так не буду, согласен с претензией</button>
+                            </div>
+
+                        </div>
+
+                        <button class="hide">ok</button>
+                    </form>
+
+
+                </div>
+            </div>
+
+
 
 
         </div>
@@ -469,15 +435,15 @@
                 <form class="needs-validation" novalidate action="javascript:void(0)">
                     <div class="report__block">
                         <label>Выберите причину</label>
-                        <div class="custom-control custom-radio mb-1">
+                        <div class="custom-control custom-radio-2 mb-1">
                             <input type="radio" name="report"  class="custom-control-input" id="report1" required="">
                             <label class="custom-control-label" for="report1">Блогер обманул меня со статистикой своего аккаунта, у меня есть доказательства</label>
                         </div>
-                        <div class="custom-control custom-radio mb-1">
+                        <div class="custom-control custom-radio-2 mb-1">
                             <input type="radio" name="report"  class="custom-control-input" id="report2" required="">
                             <label class="custom-control-label" for="report2">Блогер вообще не выложил рекламу на меня</label>
                         </div>
-                        <div class="custom-control custom-radio">
+                        <div class="custom-control custom-radio-2">
                             <input type="radio" name="report" class="custom-control-input" id="report3" required="">
                             <label class="custom-control-label" for="report3">Блогер вообще не выложил рекламу на меня</label>
                         </div>

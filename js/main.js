@@ -2,7 +2,22 @@ $(document).ready(function () {
 
     /***********   HEADER   *************/
 
-    function openMobileMenu() {
+    $('.close-banner').click(function () {
+      $(this).closest('.top-banner').slideUp();
+    });
+
+  function openMobileMenu() {
+    $('.mobile-menu__inner').addClass('open');
+    $('.mobile-menu__btn-burger').addClass('open');
+    $('body').css('overflow', 'hidden');
+  }
+  function closeMobileMenu() {
+    $('.mobile-menu__inner').removeClass('open');
+    $('.mobile-menu__btn-burger').removeClass('open');
+    $('body').css('overflow', 'visible');
+  }
+
+    $(document).on('click', '.mobile-menu__btn-burger.btn', function () {
         $('.mobile-menu__inner').addClass('open');
         $('.mobile-menu__btn-burger').addClass('open');
         $('body').css('overflow', 'hidden');
