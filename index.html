@@ -100,7 +100,7 @@
                                                 Мой трекер
                                             </a>
                                         </div>
-                                        <div class="mobile-menu__content-item mobile-menu__content-item-btn">
+                                        <div class="mobile-menu__content-item mobile-menu__content-item-btn mobile-menu-login">
                                             <button type="button" class="btn btn-outline-secondary">Войти</button>
                                         </div>
                                     </div>
@@ -137,6 +137,16 @@
                 <div class="site-form home-form page-block">
                     <form action="#" class="d-flex">
                         <div class="home-form__left">
+                            <div class="home-form__mobile-head-count">
+                                <div>
+                                    <span>Показывать по</span>
+                                    <select class="selectpicker white-select home-form__mobile-head-count-select" required title="10">
+                                        <option>10</option>
+                                        <option>30</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="nickname">Блогер</label>
@@ -152,11 +162,11 @@
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="country">Страна аудитории</label>
-                                    <select id="country" class="selectpicker white-select" multiple required
+                                    <select id="country" class="selectpicker white-select" data-live-search="true" multiple required
                                             title="Выберите из списка">
-                                        <option>Mustard</option>
-                                        <option>Ketchup</option>
-                                        <option>Barbecue</option>
+                                        <option data-tokens="mustard" >Mustard</option>
+                                        <option data-tokens="ketchup">Ketchup</option>
+                                        <option data-tokens="barbecue">Barbecue</option>
                                     </select>
                                 </div>
                             </div>
@@ -310,25 +320,30 @@
                                     <!--<a href="javascript:void(0);"></a>-->
                                 <!--</div>-->
                             <!--</div>-->
-                            <div class="home-form__mobile-head-center">
-                                <div class="home-form__mobile-head-title">
-                                    Фильтры
-                                </div>
-                                <button type="button" class="btn btn-outline-secondary">Сбросить</button>
-                                <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Найти</button>
+                            <!--<div class="home-form__mobile-head-center ">-->
+                                <!--<div class="home-form__mobile-head-title">-->
+                                    <!--Фильтры-->
+                                <!--</div>-->
+                                <!--<button type="button" class="btn btn-outline-secondary">Сбросить</button>-->
+                                <!--<button type="button" class="btn btn-primary custom-btn custom-btn-gold">Найти</button>-->
+                            <!--</div>-->
+                        </div>
+                        <!--<div class="home-form__mobile-head-center mobile-main-popup-head">-->
+                        <div class="mobile-main-popup-head">
+                            <div class="home-form__mobile-head-title">
+                                Фильтры
                             </div>
-                            <div class="home-form__mobile-head-bottom">
-                                <div>
-                                    <span>Показывать по</span>
-                                    <select class="selectpicker white-select home-form__mobile-head-bottom-select" required title="10">
-                                        <option>10</option>
-                                        <option>30</option>
-                                        <option>50</option>
-                                    </select>
+                            <button type="button" class="btn btn-outline-secondary">Сбросить</button>
+                            <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Найти</button>
+                            <div class="mobile-main-popup__select-head">
+                                <div class="mobile-main-popup__select-title">
+
+                                </div>
+                                <div class="mobile-main-popup__select-btn">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Сохранить</button>
                                 </div>
                             </div>
                         </div>
-
                     </form>
                 </div>
                 <div class="main-quest page-block flex-column align-items-center">
@@ -1036,12 +1051,12 @@
                                                 Охваты ≈
                                             </div>
                                             <div class="mobile-home-table__value-row">
-                                                12 560 <span>в сторис</span>
+                                                Цена от
                                             </div>
                                         </div>
                                         <div class="mobile-home-table__value-col">
                                             <div class="mobile-home-table__value-row">
-                                                Цена от
+                                                12 560 <span>в сторис</span>
                                             </div>
                                             <div class="mobile-home-table__value-row">
                                                 5 000 ₽
@@ -1126,6 +1141,8 @@
                                             <div class="mobile-home-table__value-row">
                                                 Охваты ≈
                                             </div>
+                                        </div>
+                                        <div class="mobile-home-table__value-col">
                                             <div class="mobile-home-table__value-row">
                                                 12 120 <span>в сторис</span>
                                             </div>
