@@ -84,6 +84,17 @@ $(document).ready(function () {
     $('.custom-dropout__more-btn').click(function () {
       $('.custom-dropout__more-btn').toggleClass('open');
     });
+
+    $('.popup-access').click(function () {
+        $('.access-popup').addClass('open');
+        bodyHidden();
+    });
+
+    $('.popup-add-brand').click(function () {
+        $('.add-brand-popup').addClass('open');
+        bodyHidden();
+    });
+
     /*********  END MAIN  ************/
 
 
@@ -332,6 +343,17 @@ $(document).ready(function () {
         var form = $(this).closest('.card__tabs-content-i').find('form')[0];
         if (form.checkValidity() !== false) {
             location.href = '/bloggers/payments.html';
+        }
+    });
+
+    $('.add-brand-btn').click(function () {
+        $(this).closest('form').find('button.hide').click();
+
+        var form = $(this).closest('form')[0];
+        if (form.checkValidity() === false) {
+            $(this).closest('form').find('.error').show();
+        } else {
+            $(this).closest('form').find('.error').hide();
         }
     });
 

@@ -929,7 +929,31 @@
                                         </div>
                                     </div>
 
+                                    <div class="settings__col">
+                                        <div class="settings__title">
+                                            Дать доступ менеджеру к карточке блогера
+                                            <span class="info">
+                                                <a href="javascript:void(0)" class="info-icon"></a>
+                                                <div class="info__txt">
+                                                    Здесь вы можете предоставить доступ менеджеру, чтобы он управлял вашей карточкой.
+                                                    <br>
+                                                    <br>
+                                                    Менеджер должен быть зарегистрирован на сайте.
+                                                </div>
+                                            </span>
+                                        </div>
+                                        <div class="card__statistic-block">
 
+                                            <div class="card__statistic-field">
+                                                <a href="#" class="btn btn-outline-secondary popup-access">Настройка доступов</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="settings__row last">
                                     <div class="settings__col">
                                         <div class="settings__title">
                                             Добавить сотрудничество с брендами в карточку блогера
@@ -937,14 +961,12 @@
                                         <div class="card__statistic-block">
 
                                             <div class="card__statistic-field">
-                                                <a href="#" class="btn btn-outline-secondary">Добавить бренды</a>
+                                                <a href="#" class="btn btn-outline-secondary popup-add-brand">Добавить бренды</a>
                                             </div>
 
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="settings__row last">
                                     <div class="settings__col">
                                         <div class="settings__title">
                                             Ссылка на вашу карточку в базе блогеров
@@ -1745,7 +1767,7 @@
     </div>
 
 
-    <div class="medium-popup access-popup wrap-popup open">
+    <div class="medium-popup access-popup wrap-popup">
         <div class="wrap-popup__inner medium-popup__inner">
             <div class="medium-popup__top">
                 <div class="big-popup__title">
@@ -1754,64 +1776,102 @@
                 <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
             </div>
 
-            <div class="big-popup__body">
-                <div class="big-popup__subtitle">
-                    Приложите скриншоты, доказывающие ваши слова. Если вы не приложите достаточных доказательств, то мы не сможем разрешить вашу ситуацию.
+            <div class="medium-popup__body add-manager-wrap">
+                <div class="medium-popup__info">
+                    1. Менеджер должен быть зарегистрирован  на сайте. Вы должны ввести <b>точный номер телефона</b>, который он <b>вводит при авторизации</b>.
+                    <br><br>
+                    2. Вы можете добавить не более двух менеджеров для своего аккаунта.
                 </div>
-                <form class="needs-validation" novalidate action="javascript:void(0)">
-                    <div class="report__block">
-                        <label>Выберите причину</label>
-                        <div class="custom-control custom-radio-2 mb-1">
-                            <input type="radio" name="report"  class="custom-control-input" id="report1" required="">
-                            <label class="custom-control-label" for="report1">Блогер обманул меня со статистикой своего аккаунта, у меня есть доказательства</label>
+
+                <div class="add-manager">
+                    <div class="add-manager__item">
+                        <label for="man1">Телефон 1-го менеджера</label>
+                        <div class="add-manager__btn d-flex">
+                            <input type="text" class="form-control phone" id="man1" value="+7 (231) 231 - 23 - 12" placeholder="" required="">
+                            <a href="#" class="btn btn-outline-secondary"><i class="green-check-icon"></i>
+                                Дать доступ
+                            </a>
                         </div>
-                        <div class="custom-control custom-radio-2 mb-1">
-                            <input type="radio" name="report"  class="custom-control-input" id="report2" required="">
-                            <label class="custom-control-label" for="report2">Блогер вообще не выложил рекламу на меня</label>
-                        </div>
-                        <div class="custom-control custom-radio-2">
-                            <input type="radio" name="report" class="custom-control-input" id="report3" required="">
-                            <label class="custom-control-label" for="report3">Блогер вообще не выложил рекламу на меня</label>
+                        <a href="#" class="add-manager__clear">Удалить доступ</a>
+                    </div>
+                    <div class="add-manager__item">
+                        <label for="man2">Телефон 2-го менеджера <p>(если хотите добавить второго менеджера)</p></label>
+                        <div class="add-manager__btn d-flex">
+                            <input type="text" class="form-control phone" id="man2" placeholder="" required="">
+                            <a href="#" type="button" class="btn btn-primary custom-btn custom-btn-gold">
+                                Дать доступ
+                            </a>
                         </div>
                     </div>
 
-                    <div class="report__textarea report__block">
-                        <label for="report4">Блогер вообще не выложил рекламу на меня</label>
-                        <textarea  class="form-control" name="report" id="report4" required></textarea>
-                    </div>
-                    <div class="report__block d-flex ">
-                        <div class="report__block-i mr-4">
-                            <label for="report-mail">Ваш e-mail для обратной связи</label>
-                            <input type="text" class="form-control" id="report-mail" placeholder="" required>
+                </div>
 
-                        </div>
-                        <div class="report__block-i">
-                            <div class="custom-file">
-                                <input type="file" class="form-control custom-file-input" style="display: none" required>
-                                <label for="report-mail">Загрузите скриншоты</label>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Скриншот не выбран</a>
-                                <p class="file-invalid">
-                                    Скриншот <br> не загружен
-                                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="medium-popup add-brand-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="big-popup__title">
+                    Добавить бренды в карточку
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body add-brand-wrap">
+                <div class="medium-popup__info">
+                    Напишите название бренда в поле ниже и добавьте скриншоты поста или сторис, где видно, как вы рекламируете этот бренд. А также приложите скриншоты из статистики переходов.
+                    <br><br>
+                    В случае одобрения модератором, вы получите значок, который будет показываться в вашей карточке и указывать количество брендов, без их названия.
+                </div>
+
+                <div class="add-brand">
+                    <form class="needs-validation" novalidate action="javascript:void(0)">
+                        <div class="add-brand__items">
+                            <div class="add-brand__item">
+                                <label for="brand1">Бренд №1</label>
+                                <div class="add-brand__btn d-flex">
+                                    <input type="text" class="form-control phone" id="brand1" placeholder="Название бренда" required="">
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control custom-file-input" style="display: none" required="">
+
+                                        <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="add-manager__clear">Очистить</a>
+                            </div>
+                            <div class="add-brand__item">
+                                <label for="brand2">Бренд №2</label>
+                                <div class="add-brand__answer">
+                                    Бренд «<span class="red">Крошка картошка</span>» не принят по причине: <br> <b>Скриншот был обрезан.</b>
+                                </div>
+                                <div class="add-brand__btn d-flex">
+                                    <input type="text" class="form-control phone" id="brand2" placeholder="Название бренда" required="">
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control custom-file-input" style="display: none" required="">
+
+                                        <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="add-brand__clear">Очистить</a>
                             </div>
                         </div>
 
-                    </div>
-                    <div class="report__block">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="reg2" required>
-                            <label class="custom-control-label" for="reg2">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                        <div class="add-brand__bottom">
+                            <div class="red error" style="display:none;">
+                                Заполните поля и загрузите скриншоты
+                            </div>
+                            <a href="#" class="btn btn-outline-secondary">Добавить новый формат рекламы</a>
+                            <a href="#" type="button" class="btn btn-primary custom-btn custom-btn-gold add-brand-btn">
+                                Отправить на модерацию
+                            </a>
                         </div>
-                    </div>
-                    <div class="report__block">
-                        <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold btn-check btn-check btn-report">
-                            Отправить жалобу
-                        </a>
-                        <span class="err-form">Заполните поля отмеченные красным</span>
-                    </div>
-
-                    <button class="hide">ok</button>
-                </form>
+                        <button class="hide">ok</button>
+                    </form>
+                </div>
 
             </div>
         </div>
