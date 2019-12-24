@@ -6,27 +6,22 @@ $(document).ready(function () {
       $(this).closest('.top-banner').slideUp();
     });
 
-  function openMobileMenu() {
-    $('.mobile-menu__inner').addClass('open');
-    $('.mobile-menu__btn-burger').addClass('open');
-    $('body').css('overflow', 'hidden');
-  }
-  function closeMobileMenu() {
-    $('.mobile-menu__inner').removeClass('open');
-    $('.mobile-menu__btn-burger').removeClass('open');
-    $('body').css('overflow', 'visible');
-  }
+    function openMobileMenu() {
+      $('.mobile-menu__inner').addClass('open');
+      $('.mobile-menu__btn-burger').addClass('open');
+      $('body').css('overflow', 'hidden');
+    }
+    function closeMobileMenu() {
+      $('.mobile-menu__inner').removeClass('open');
+      $('.mobile-menu__btn-burger').removeClass('open');
+      $('body').css('overflow', 'visible');
+    }
 
     $(document).on('click', '.mobile-menu__btn-burger.btn', function () {
         $('.mobile-menu__inner').addClass('open');
         $('.mobile-menu__btn-burger').addClass('open');
         $('body').css('overflow', 'hidden');
-    }
-    function closeMobileMenu() {
-        $('.mobile-menu__inner').removeClass('open');
-        $('.mobile-menu__btn-burger').removeClass('open');
-        $('body').css('overflow', 'visible');
-    }
+    });
 
     $(document).on('click', '.mobile-menu__btn-burger.btn', function () {
         closeHeaderCloseBtn();
@@ -127,21 +122,19 @@ $(document).ready(function () {
         closeMobileMenu();
         openHeaderCloseBtn();
     });
-    // $('.form-group').click(function(e) {
-    //
-    // });
-    var flagSelect = true;
-    $(document).on('touchend', '.bootstrap-select', function (e) {
+
+    $(document).on('touchend', '.mobile-select-popup', function (e) {
         var title = $(this).siblings('label').text();
-        console.log(title);
         $('.mobile-main-popup__select-title').text(title);
         openSelectTitle();
 
         $(document).on('touchend', function (e) {
-            console.log('click');
-            if(e.target.classList[0] == 'bootstrap-select' || $('.mobile-main-popup__select-btn').click()){
-                closeSelectTitle();
-                return;
+            if(e.target.classList[0] === 'dropdown-menu' ||
+               e.target.classList[0] === 'select-btn-save' ||
+               $(e.target).closest('.header').length > 0
+            ){
+               console.log(111);
+               closeSelectTitle();
             }
         });
     });

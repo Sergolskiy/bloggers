@@ -20,8 +20,12 @@
                 <div class="col-md-12">
                     <div class="header__inner">
                         <div class="header__logo">
-                            <a href="./">
+                            <a class="header__logo-link" href="./">
                                 <img src="images/logo.png" alt="logo">
+                            </a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary header-mobile-btn-close">
+                                <i class="back-arrow"></i>
+                                Назад
                             </a>
                         </div>
 
@@ -52,12 +56,55 @@
 
                         <div class="header__right">
                             <div class="header__cart-btn">
-                                <button type="button" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
-                                </button>
+                                <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                </a>
                             </div>
 
                             <div class="header__login-btn">
                                 <button type="button" class="btn btn-primary custom-btn">Войти</button>
+                            </div>
+                        </div>
+
+
+                        <div class="mobile-menu">
+                            <div class="mobile-menu__btn-wrap">
+                                <div class="header__cart-btn">
+                                    <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                    </a>
+                                </div>
+
+                                <div class="mobile-menu__btn-burger btn">
+                                    <a href="javascript:void(0);"></a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__inner">
+                                <div class="mobile-menu__content">
+                                    <div class="mobile-menu__content-list">
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                База блогеров
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Отзывы
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                ВП на завтра
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Мой трекер
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item mobile-menu__content-item-btn mobile-menu-login">
+                                            <button type="button" class="btn btn-outline-secondary">Войти</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +116,7 @@
 
     <!--MAIN-->
     <main class="main">
-        <div class="container">
+        <div class="container cart-page-container">
             <div class="title">
                 <div class="title__left">
                     <h1 class="title__txt">
@@ -92,6 +139,9 @@
                 </div>
                 <div class="title__right">
                     <a href="#" class="btn btn-outline-secondary btn--white">Очистить корзину</a>
+                    <a href="#" class="btn btn-outline-secondary btn--white setting-btn setting-btn-cart">
+                        <span class="active"></span>
+                    </a>
                 </div>
             </div>
 
@@ -241,6 +291,185 @@
                         </div>
                     </div>
 
+                    <div class="cart-block__top-mobile">
+                        <div class="cart-block__top-btn">
+                            <div class="cart-block__more more-btn">
+                                <a class="cart-block__more-btn" href="javascript:void(0)"></a>
+                                <div class="more-btn__txt">
+                                    <a href="#">Поделиться карточкой</a>
+                                    <a href="#" class="report-btn">Пожаловаться</a>
+                                </div>
+                            </div>
+                            <div href="javascript:void(0)" class="cart-block__close">
+                                <a class="cart-block__close-btn" href="javascript:void(0)"></a>
+                            </div>
+                        </div>
+                        <div class="cart-block__blogger blogger-cart">
+                            <div class="blogger-cart__left">
+                                <div class="blogger-cart__bio">
+                                    <div class="blogger-cart-img">
+                                        <img src="images/cart/blogger-1.jpg" alt="img">
+                                    </div>
+                                    <div class="blogger-cart__bio-inner">
+                                        <div class="blogger-cart__name">
+                                            <a href="#">neotpuskaiteplo</a>
+                                        </div>
+                                        <div class="blogger-cart__subscribe">
+                                            54,9 тыс. подписчиков
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="blogger-cart__theme">-->
+                                    <!--Темы: Обработка фото, Изучение языков, Жизнь за границей-->
+                                <!--</div>-->
+                                <div class="blogger-cart__count">
+                                    <div class="blogger-cart__count-left">
+                                        <div class="blogger-cart__count-i">
+                                            <div class="blogger-cart__count-t">
+                                                Охват сторис ≈
+                                            </div>
+                                            <div class="blogger-cart__count-t">
+                                                Охват постов ≈
+                                            </div>
+                                        </div>
+                                        <div class="blogger-cart__count-i">
+                                            <div class="blogger-cart__count-n">
+                                                20 197
+                                            </div>
+                                            <div class="blogger-cart__count-n">
+                                                38 967
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogger-cart__count-right">
+                                        <div class="blogger-cart__reviews">
+                                            <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary">
+                                                47 отзывов, <i class="star-icon"></i> 6,4
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blogger-cart__right">
+                                <!--<div class="blogger-cart__count">-->
+                                    <!--<div class="blogger-cart__count-i">-->
+                                        <!--<div class="blogger-cart__count-n">-->
+                                            <!--20 197-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__count-t">-->
+                                            <!--Охват сторис-->
+                                            <!--<div>в среднем</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="blogger-cart__count-i">-->
+                                        <!--<div class="blogger-cart__count-n">-->
+                                            <!--38 967-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__count-t">-->
+                                            <!--Охват постов-->
+                                            <!--<div>в среднем</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <div class="blogger-cart__about">
+                                    <div class="blogger-cart__screen">
+                                        Преобладающая статистика аудитории
+                                        <!--<div>-->
+                                            <!--<a href="#">Скриншоты</a> статистики из Инстаграма от 18.10.19-->
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="blogger-cart__items">
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Страна
+                                            </div>
+                                            <div class="blogger-cart__title">
+                                                Город
+                                            </div>
+                                            <div class="blogger-cart__title">
+                                                Возраст
+                                            </div>
+                                            <div class="blogger-cart__title">
+                                                Пол
+                                            </div>
+                                        </div>
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__txt">
+                                                Россия — 66%
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Санкт-Петербург — 21%
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                18-24 — 48%
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Женщины — 89%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogger-cart__statistics">
+                                        <div class="blogger-cart__statistics-txt">
+                                            Скриншоты статистики из Инстаграма от 18.10.19
+                                        </div>
+                                        <div class="blogger-cart__statistics-btn">
+                                            <a href="./cart.html" class="btn btn-outline-secondary">
+                                                Скриншоты
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--<div class="blogger-cart__item">-->
+                                        <!--<div class="blogger-cart__title">-->
+                                            <!--Город блогера-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__txt">-->
+                                            <!--Санкт-Петербург-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="blogger-cart__item">-->
+                                        <!--<div class="blogger-cart__title">-->
+                                            <!--Юридический статус-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__txt">-->
+                                            <!--Самозанятый-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="blogger-cart__personal">
+                                    <div class="blogger-cart__theme">
+                                        <span>Темы:</span> Обработка фото, Изучение языков, Жизнь за границей
+                                    </div>
+                                    <div class="blogger-cart__city">
+                                        <span>Город блогера:</span> Санкт-Петербург
+                                    </div>
+                                    <div class="blogger-cart__status">
+                                        <span>Юридический статус:</span> Самозанятый
+                                    </div>
+                                </div>
+                                <div class="blogger-cart__bottom">
+                                    <div class="blogger-cart__bottom-i">
+                                       Может стать амбассадором  <i class="ambas-icon">A</i>
+                                    </div>
+                                    <div class="blogger-cart__bottom-i">
+                                       Было сотрудничество с 5 брендами  <i class="brands-icon">Б</i>
+                                    </div>
+                                    <div class="blogger-cart__bottom-i mobile-info">
+                                        Небольшой процент отказов по рекламе
+                                        <div class="info">
+                                            <a href="javascript:void(0)" class="info-icon"></a>
+                                            <div class="info__txt">
+                                                Показатель того, как часто <br> выбранный блогер отказывает <br> по заявкам рекламодателей.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
                     <div class="cart-block__main">
                         <div class="cart-block__main-title">
                             Выберите формат рекламы
@@ -273,7 +502,7 @@
                                 <div class="cart-block__main-col">
                                     <i class="stories-icon"></i> Сторис 30 сек.
                                 </div>
-                                <div class="cart-block__main-col">
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
                                     10 888 500 ₽ <span class="old-price">10 999 000 ₽</span>
                                 </div>
                                 <div class="cart-block__main-col">
@@ -290,7 +519,7 @@
                                 <div class="cart-block__main-col">
                                     <i class="stories-icon"></i> Сторис 30 сек.
                                 </div>
-                                <div class="cart-block__main-col">
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
                                     445 000 ₽ <span class="old-price">500 000 ₽</span>
                                 </div>
                                 <div class="cart-block__main-col">
@@ -306,7 +535,7 @@
                                 <div class="cart-block__main-col">
                                     <i class="photo-icon"></i> Фото-пост
                                 </div>
-                                <div class="cart-block__main-col">
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
                                     15 000 ₽ <span class="old-price">15 500 ₽</span>
                                 </div>
                                 <div class="cart-block__main-col">
@@ -322,7 +551,7 @@
                                 <div class="cart-block__main-col">
                                     <i class="video-icon"></i> Видео-пост
                                 </div>
-                                <div class="cart-block__main-col">
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
                                     9 500 ₽ <span class="old-price"> 10 000 ₽</span>
                                 </div>
                                 <div class="cart-block__main-col">
