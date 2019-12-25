@@ -149,6 +149,22 @@ $(document).ready(function () {
         bodyHidden();
     });
 
+    $('.expand-btn').click(function (e) {
+      $(this).toggleClass('show');
+      $(this).closest('.cart-block__main-info-mobile').children('.cart-block__main-info-mobile-txt').slideToggle();
+    });
+
+    $('.setting-btn-cart').click(function () {
+      $('.type-blogger-card-popup').addClass('open');
+      openHeaderCloseBtn();
+    });
+
+    $('.cart-block__top-mobile .blogger-cart__statistics-btn a').click(function (e) {
+      e.preventDefault();
+      $('.cart-screenshots-popup').addClass('open');
+      openHeaderCloseBtn();
+    });
+
     /*********  END MAIN  ************/
 
 
