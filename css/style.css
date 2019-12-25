@@ -1459,6 +1459,10 @@ table tbody tr:nth-child(odd){
     background: #F8F8F8;
 }
 
+.no-register-blogger-table tr:nth-last-child(odd) {
+    background: white;
+}
+
 .no-register-blogger-table th:first-child,
 .no-register-blogger-table td:first-child{
     padding-left: 30px;
