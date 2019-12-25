@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -71,200 +70,43 @@
     <!--MAIN-->
     <main class="main">
         <div class="container">
-            <div class="title">
-                <div class="title__left d-flex align-items-center">
-                    <h1 class="title__txt">
-                        Заявки на рекламу
-                    </h1>
-                </div>
-                <div class="title__center">
-                    <div class="title__center-btns">
-                        <a href="#" class="btn btn-primary custom-btn">Свежие</a>
-                        <a href="#" class="btn btn-outline-secondary ">Одобренные <span class="request__top-btn-count">3</span></a>
-                        <a href="#" class="btn btn-outline-secondary">Отказы <span class="request__top-btn-count">3</span></a>
+            <div class="answer page-block">
+                <div class="answer__top">
+                    <div class="answer__title">
+                        Ответы по рекламе
                     </div>
-                    <div class="title__right-btns">
-                        <a href="#" class="btn btn-outline-secondary">Просрочено <span class="request__top-btn-count">3</span></a>
+                    <div class="answer__top-tabs">
+                        <a href="#" class="answer__top-tabs-i">
+                            Одобрено на рекламу
+                        </a>
+                        <a href="#" class="answer__top-tabs-i">
+                            На рассмотрении
+                        </a>
                     </div>
-                </div>
-                <div class="title__right">
-                    <div class="request__top-search">
+                    <div class="answer__top-btn active">
+                        <a href="javascript:void(0);" class="btn btn-outline-secondary">Отказано в рекламе</a>
+                    </div>
+                    <div class="answer__top-search">
                         <input type="text" placeholder="Поиск по блогерам">
                         <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
                     </div>
                 </div>
-            </div>
-            <div class="request">
-                <div class="request__cards row">
-                    <div class="request__card col-md-4">
-                        <div class="request__card-inner">
-                            <div class="request__card-top">
-                                <a href="#" class="request__card-name">
-                                    swittberries
-                                </a>
-                                <div class="request__card-date">
-                                    08.08.19
-                                </div>
-                            </div>
-                            <div class="request__card-title">
-                                Сторис 15 сек. за 14 990 ₽ <br>Личные блоги
-                            </div>
-                            <div class="request__card-content scroll">
-                                Меня зовут Анжелика, я Танцую тверк,2 раза горела в церкви,Мама привела меня на тверк в 18 лет,выслушиваю осуждения,мои посты блокируют,каждый день кидаю себе вызовы в сторис
-                                <br>
-                                Я уехала из дома в 17, я не стесняюсь танцевать тверк,мотивирую быть уверенней, рассказываю о борьбе с негативом и пишу полезные посты
-                            </div>
-                            <div class="request__card-bottom">
-                                <a href="#" class="btn btn-outline-secondary ">Отказать</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
-                                    Взять на рекламу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request__card col-md-4">
-                        <div class="request__card-inner">
-                            <div class="request__card-top">
-                                <a href="#" class="request__card-name">
-                                    alisamakarova
-                                </a>
-                                <div class="request__card-date">
-                                    08.08.19
-                                </div>
-                            </div>
-                            <div class="request__card-title">
-                                Сторис 30-45 сек. за 3 990 ₽ <br> Личные блоги
-                            </div>
-                            <div class="request__card-content scroll">
-                                - Блог о преодолении страхов <br>
-                                - Училка, которая проводит онлайн-квесты на 3000 человек <br>
-                                - Мотивация с юмором
-                            </div>
-                            <div class="request__card-bottom">
-                                <a href="#" class="btn btn-outline-secondary ">Отказать</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
-                                    Взять на рекламу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request__card col-md-4">
-                        <div class="request__card-inner">
-                            <div class="request__card-top">
-                                <a href="#" class="request__card-name">
-                                    sexolog_tiunova
-                                </a>
-                                <div class="request__card-date">
-                                    08.08.19
-                                </div>
-                            </div>
-                            <div class="request__card-title">
-                                Сторис 60 сек. за 5 490 ₽ <br> Личные блоги
-                            </div>
-                            <div class="request__card-content scroll">
-                                Кандидат психологических наук. Сексолог. Секстерапевт <br>
-                                Автор философии «Pure&Naked». Воплощение сексуальности нового формата. <br>
-                                <br>
-                                Профиль о раскрытии своей сексуальности, о сексуальном образовании и сексуальности коммуникации.
-                            </div>
-                            <div class="request__card-bottom">
-                                <a href="#" class="btn btn-outline-secondary ">Отказать</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
-                                    Взять на рекламу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request__card col-md-4">
-                        <div class="request__card-inner">
-                            <div class="request__card-top">
-                                <a href="#" class="request__card-name">
-                                    sexolog_tiunova
-                                </a>
-                                <div class="request__card-date">
-                                    08.08.19
-                                </div>
-                            </div>
-                            <div class="request__card-title">
-                                Сторис 60 сек. за 5 490 ₽ <br> Личные блоги
-                            </div>
-                            <div class="request__card-content scroll">
-                                1)Как правильно собирать луки <br>
-                                Модные тренды <br>
-                                Разбор гардероба <br>
-                                <br>
-                                2)как выглядеть сексуально,но не пошло <br>
-                                Актуальная летняя обувь <br>
-                                Как покупать не все подряд, а только что нужно и подойдёт тебе
-                            </div>
-                            <div class="request__card-bottom">
-                                <a href="#" class="btn btn-outline-secondary ">Отказать</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
-                                    Взять на рекламу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request__card col-md-4">
-                        <div class="request__card-inner">
-                            <div class="request__card-top">
-                                <a href="#" class="request__card-name">
-                                    sexolog_tiunova
-                                </a>
-                                <div class="request__card-date">
-                                    08.08.19
-                                </div>
-                            </div>
-                            <div class="request__card-title">
-                                Сторис 60 сек. за 5 490 ₽ <br> Личные блоги
-                            </div>
-                            <div class="request__card-content scroll">
-                                В блоге Лина рассказывает про стиль простым и доступным языком <br>
-                                ▫️Делится модными лайфхаками, развеивает мифы и в игровой форме #моднаязадачкаотлин <br>
-                                ▫️составляет индивидуальные гардеробы из 8 вещей <br>
-                                ▫️Занимается разбором гардеробов и косметичек, шоппинг сопровождением полностью в ОНЛАЙН формате <br>
-                                ▫️Работает без шаблонов и типирования
-                            </div>
-                            <div class="request__card-bottom">
-                                <a href="#" class="btn btn-outline-secondary ">Отказать</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
-                                    Взять на рекламу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request__card col-md-4">
-                        <div class="request__card-inner">
-                            <div class="request__card-top">
-                                <a href="#" class="request__card-name">
-                                    sexolog_tiunova
-                                </a>
-                                <div class="request__card-date">
-                                    08.08.19
-                                </div>
-                            </div>
-                            <div class="request__card-title">
-                                Сторис 60 сек. за 5 490 ₽ <br> Личные блоги
-                            </div>
-                            <div class="request__card-content scroll">
-                                1)Мой блог о семейном досуге, воспитании и о моём личном опыте. <br>
-                                2)Молодые родители найдут там много новых идей для развлечения с ребёнком (детские центры, площадки, спектакли) и для вечера вдвоём (рестораны, мероприятия в Москве).
-                            </div>
-                            <div class="request__card-bottom">
-                                <a href="#" class="btn btn-outline-secondary ">Отказать</a>
-                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
-                                    Взять на рекламу
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
+                <div class="answer__clear">
+                    <img src="images/svg/check-grey.svg" alt="img">
+                    <div class="answer__center-txt">
+                        Здесь вы сможете посмотреть заявки, которые еще находятся у блогера на рассмотрении.
+                    </div>
+                    <div class="answer__center-btn">
+                        <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">
+                            Найти блогеров для рекламы
+                        </a>
+                    </div>
                 </div>
-                <div class="request__more">
-                    <a href="#" class="btn btn-outline-secondary ">Показать ещё</a>
-                </div>
+
             </div>
         </div>
+
     </main>
     <!--END MAIN-->
 
@@ -643,7 +485,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/inputmask.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script src="js/main.js"></script>
 

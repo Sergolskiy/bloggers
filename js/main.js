@@ -149,6 +149,10 @@ $(document).ready(function () {
         bodyHidden();
     });
 
+    $(window).on("load",function(){
+        $(".scroll").mCustomScrollbar();
+    });
+
     /*********  END MAIN  ************/
 
 
@@ -375,8 +379,8 @@ $(document).ready(function () {
         var form = $(this).closest('.card__tabs-content-i').find('form')[0];
         if (form.checkValidity() !== false) {
             $('.card__tabs-i.active').last().next().addClass('active');
-            $('.card__tabs-content-i.active').next().addClass('active');
             $('.card__tabs-content-i.active').removeClass('active');
+            $('.card__tabs-content-i').eq($('.card__tabs-i.active').last().index()).addClass('active');
         }
     });
 
