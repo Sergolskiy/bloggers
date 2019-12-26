@@ -20,8 +20,12 @@
                 <div class="col-md-12">
                     <div class="header__inner">
                         <div class="header__logo">
-                            <a href="./">
+                            <a class="header__logo-link" href="./">
                                 <img src="images/logo.png" alt="logo">
+                            </a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary header-mobile-btn-close">
+                                <i class="back-arrow"></i>
+                                Назад
                             </a>
                         </div>
 
@@ -52,12 +56,55 @@
 
                         <div class="header__right">
                             <div class="header__cart-btn">
-                                <button type="button" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
-                                </button>
+                                <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                </a>
                             </div>
 
                             <div class="header__login-btn">
                                 <button type="button" class="btn btn-primary custom-btn">Войти</button>
+                            </div>
+                        </div>
+
+
+                        <div class="mobile-menu">
+                            <div class="mobile-menu__btn-wrap">
+                                <div class="header__cart-btn">
+                                    <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                    </a>
+                                </div>
+
+                                <div class="mobile-menu__btn-burger btn">
+                                    <a href="javascript:void(0);"></a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__inner">
+                                <div class="mobile-menu__content">
+                                    <div class="mobile-menu__content-list">
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                База блогеров
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Отзывы
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                ВП на завтра
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Мой трекер
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item mobile-menu__content-item-btn mobile-menu-login">
+                                            <button type="button" class="btn btn-outline-secondary">Войти</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +116,7 @@
 
     <!--MAIN-->
     <main class="main">
-        <div class="container">
+        <div class="container container-full-mobile">
 
 
             <div class="page-block">
@@ -90,10 +137,14 @@
                                 <a href="javascript:void(0)" class="card__tabs-i">
                                     Шаг 4. Оплата доступа
                                 </a>
+
+                                <div class="card__tabs-btn">
+                                    <button type="button" class="btn btn-secondary card-next-step">Далее</button>
+                                </div>
                             </div>
 
                             <div class="card__tabs-content">
-                                <div class="card__tabs-content-i active">
+                                <div class="card__tabs-content-i">
                                     <div class="card__title">
                                         Заполните форматы рекламы
                                     </div>
@@ -353,11 +404,11 @@
 
                                                     <div class="card__statistic-field">
                                                         <div class="form-group country">
-                                                            <select id="statistic8" class="selectpicker white-select" required
+                                                            <select id="statistic8" class="selectpicker white-select mobile-select-popup mobile-select-popup--all" data-live-search="true" required
                                                                     title="Выберите страну">
-                                                                <option>UA</option>
-                                                                <option>RU</option>
-                                                                <option>BL</option>
+                                                                <option data-tokens="ua">UA</option>
+                                                                <option data-tokens="ru">RU</option>
+                                                                <option data-tokens="bl">BL</option>
                                                             </select>
                                                         </div>
                                                         <div class="form-group percent">
@@ -406,6 +457,17 @@
                                                 </div>
 
                                                 <button class="hide">ok</button>
+
+
+                                                    <div class="mobile-main-popup__select-head mobile-select-head-all">
+                                                        <div class="mobile-main-popup__select-title">
+
+                                                        </div>
+                                                        <div class="mobile-main-popup__select-btn">
+                                                            <!--<button type="button" class="select-btn-save btn btn-primary custom-btn custom-btn-gold">Сохранить</button>-->
+                                                        </div>
+                                                    </div>
+
                                             </form>
 
 
@@ -438,7 +500,7 @@
 
                                 </div>
 
-                                <div class="card__tabs-content-i">
+                                <div class="card__tabs-content-i active">
                                     <div class="card__title">
                                         Верифицируйте аккаунт
                                     </div>
@@ -947,8 +1009,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!--END POPUPS-->
 </div>
