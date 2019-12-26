@@ -169,6 +169,26 @@ $(document).ready(function () {
         openHeaderCloseBtn();
     });
 
+    $('.moder-req-next').click(function () {
+        var active = $(this).closest('.moder__inner').find('.moder__content-i.active');
+        if(active.hasClass('next-info')){
+
+            var dataInfo = active.attr('data-info');
+            var info = '.moder__content-info-' + dataInfo;
+            console.log(info);
+            $(info).addClass('active');
+        } else if (active.hasClass('moder__content-info')){
+            var dataInfo2 = active.attr('data-info-c');
+            var info2 = '.moder__content-i[data-info="'+dataInfo2+'"]';
+            $(info2).next().next().addClass('active');
+        } else {
+            active.next('.moder__content-i').addClass('active');
+        }
+
+        active.removeClass('active');
+
+    });
+
     /*********  END MAIN  ************/
 
 

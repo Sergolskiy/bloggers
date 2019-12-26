@@ -71,231 +71,373 @@
     <!--MAIN-->
     <main class="main">
         <div class="container">
-            <div class="title">
-                <div class="title__left d-flex align-items-center">
-                    <h1 class="title__txt">
-                        Заявки на рекламу
-                    </h1>
-                </div>
-                <div class="title__center">
-                    <div class="title__center-btns">
-                        <a href="#" class="btn btn-outline-secondary">Свежие <span class="request__top-btn-count">3</span></a>
-                        <a href="#" class="btn btn-outline-secondary">Одобренные<span class="request__top-btn-count">3</span></a>
-                        <a href="#" class="btn btn-primary custom-btn">Отказы  </a>
+            <div class="title-wrap">
+                <h1 class="title-top">
+                    Модерация заявок
+                </h1>
+                <div class="title">
+                    <div class="title__left d-flex align-items-center">
+                        <div class="title__left-btns merge-btn merge-btn-p">
+                            <a href="#" class="btn btn-outline-secondary">Свежие </a>
+                            <a href="#" class="btn btn-outline-secondary">Одобренные</a>
+                            <a href="#" class="btn btn-outline-secondary">Отклоненные</a>
+                            <a href="#" class="btn btn-outline-secondary">Жалобы</a>
+                        </div>
+
+                        <div class="title__right-btns">
+                            <div class="request__top-search">
+                                <input type="text" placeholder="Поиск (дата или ник)">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+                            </div>
+                        </div>
+                        <div class="title__right-btns title__right-b-ch">
+                            <div class="title__right-checkbox d-flex">
+                                Фильтр:
+                                <div class="home-form-col__checkbox-wrap ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ooo" checked="">
+                                        <label class="custom-control-label" for="ooo">Заявки в базу блогеров</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="self-employed" checked="">
+                                        <label class="custom-control-label" for="self-employed">Заявки на ВП</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="title__right-btns">
-                        <a href="#" class="btn btn-outline-secondary">Просрочено <span class="request__top-btn-count">3</span></a>
-                    </div>
+
                 </div>
-                <div class="title__right">
-                    <div class="request__top-search">
-                        <input type="text" placeholder="Поиск по блогерам">
-                        <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+
+                <h3 class="title-bottom">
+                    Новые заявки в базу блогеров
+                </h3>
+            </div>
+
+            <div class="moder">
+                <div class="row moder__items">
+                    <div class="col-md-6 moder__item">
+                        <div class="moder__inner">
+                            <div class="moder__name">
+                                amerikanovna
+                            </div>
+                            <div class="moder__content">
+
+                                <div class="moder__content-i ">
+                                    <div class="moder__content-tap">
+                                        Шаг 1 из 5. Аккаунт
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-i-txt">
+                                            - Более 30 постов <br>
+                                            - Больше 5 000 подписчиков <br>
+                                            - Это не паблик и не магазин <br>
+                                            - Владельцу аккаунта больше (16+) <br>
+                                            - ER больше 1% <br>
+                                            - Рекомендованные на сайте цены за рекламу от 200 ₽ <br>
+                                            - Контент не нарушает правила Инстаграма и законодательство РФ <br>
+                                            - Последний пост написан не менее 1-го месяца назад
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="moder__content-i next-info " data-info="1">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-1 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-form-title">
+                                            Охваты сторис
+                                        </div>
+                                        <div class="moder__content-form moder__content-form--input">
+                                            <div class="form-group">
+                                                <label for="statistic1" class="small-label">Минимум</label>
+                                                <input type="text" class="form-control" id="statistic1" placeholder="" value="224 636" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="statistic2" class="small-label">Максимум</label>
+                                                <input type="text" class="form-control" id="statistic2" placeholder="" required>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-link">
+                                            <a href="#">Оригиналы скриншотов</a>
+                                        </div>
+
+                                        <div class="moder__content-img">
+                                            <img src="images/moder/94b0831d1c8431ee68fcca85ee839282.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moder__content-i moder__content-info moder__content-info-1 " data-info-c="1">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-2 из 4. Статистика
+                                    </div>
+
+                                    <div class="moder__info">
+                                        <img src="images/svg/clock.svg" alt="img">
+                                        <div>
+                                            Этот шаг отправлен на доработку, проверьте остальные
+                                        </div>
+                                        <p>
+                                            Причина: скриншот обрезан
+                                        </p>
+                                        <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="moder__content-i next-info" data-info="2">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-2 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-form-title">
+                                            Охваты постов
+                                        </div>
+                                        <div class="moder__content-form moder__content-form--input">
+                                            <div class="form-group">
+                                                <label for="statistic4" class="small-label">Минимум</label>
+                                                <input type="text" class="form-control" id="statistic4" placeholder="" value="224 636" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="statistic5" class="small-label">Максимум</label>
+                                                <input type="text" class="form-control" id="statistic5" placeholder="" required>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-link">
+                                            <a href="#">Оригиналы скриншотов</a>
+                                        </div>
+
+                                        <div class="moder__content-img">
+                                            <img src="images/moder/94b0831d1c8431ee68fcca85ee839282.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="moder__content-i moder__content-info moder__content-info-2 " data-info-c="2">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-2 из 5. Статистика
+                                    </div>
+
+                                    <div class="moder__content-form-title">
+                                        Охваты постов
+                                    </div>
+                                    <div class="moder__info ">
+                                        <div class="big-txt">
+                                            Нет скриншотов
+                                        </div>
+                                        <a href="#" class="btn btn-outline-secondary">Попросить прислать скриншоты</a>
+                                    </div>
+                                </div>
+
+                                <div class="moder__content-i ">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-1 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-form-title">
+                                            Процент женщин
+                                        </div>
+                                        <div class="moder__content-form moder__content-form--input">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="statistic6" placeholder="" value="92%" required>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-link">
+                                            <a href="#">Оригиналы скриншотов</a>
+                                        </div>
+
+                                        <div class="moder__content-img">
+                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="moder__content-i ">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-4 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-form-title">
+                                            Преобладающий возраст в процентах
+                                        </div>
+                                        <div class="moder__content-form moder__content-form--sm-select">
+                                            <div class="form-group">
+                                                <select id="advertising9" class="selectpicker white-select"
+                                                        title="18-24">
+                                                    <option selected>18-24</option>
+                                                    <option>18-24</option>
+                                                    <option>18-24</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="statistic7" placeholder="" value="45%">
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-link">
+                                            <a href="#">Оригиналы скриншотов</a>
+                                        </div>
+
+                                        <div class="moder__content-img">
+                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="moder__content-i">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-2 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-form-title">
+                                            Преобладающая страна в процентах
+                                        </div>
+                                        <div class="moder__content-form moder__content-form--select">
+                                            <div class="form-group">
+                                                <select class="selectpicker white-select"
+                                                        title="18-24">
+                                                    <option selected>Россия</option>
+                                                    <option>Россия</option>
+                                                    <option>Россия</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="" value="54%">
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-link">
+                                            <a href="#">Оригиналы скриншотов</a>
+                                        </div>
+
+                                        <div class="moder__content-img">
+                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="moder__content-i ">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-2 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-form-title">
+                                            Преобладающий возраст в процентах
+                                        </div>
+                                        <div class="moder__content-form moder__content-form--select">
+                                            <div class="form-group">
+                                                <select class="selectpicker white-select"
+                                                        title="18-24">
+                                                    <option selected>Москва</option>
+                                                    <option>Москва</option>
+                                                    <option>Москва</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="" value="11%">
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-link">
+                                            <a href="#">Оригиналы скриншотов</a>
+                                        </div>
+
+                                        <div class="moder__content-img">
+                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="moder__content-i active">
+                                    <div class="moder__content-tap">
+                                        Шаг 2-2 из 5. Статистика
+                                    </div>
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-format-i">
+                                            <div class="moder__content-format">
+                                                <div class="moder__content-format-top">
+                                                    <div class="moder__content-format-t">
+                                                        Формат №1
+                                                    </div>
+                                                    <a href="javascript:void(0);" onclick="$(this).hide().next().show().closest('.moder__content-format').find('.moder__content-format-con').hide().next().show()">Удалить формат</a>
+                                                    <a  style="display: none;" href="javascript:void(0);" onclick="$(this).hide().prev().show().closest('.moder__content-format').find('.moder__content-format-con').show().next().hide()">Восстановить формат</a>
+                                                </div>
+                                                <div class="moder__content-format-con">
+                                                    Сторис 45 секунд
+                                                    <div><span class="grey-txt">Кто может заказать:</span> Любой</div>
+
+                                                    <div><span class="grey-txt">Набор рекламы на:</span> июнь</div>
+                                                    <div><span class="grey-txt">Обычная цена:</span> 1 400 ₽</div>
+                                                    <div><span class="grey-txt">Цена со скидкой:</span> 1 120 ₽</div>
+                                                    <span style="display: none;" class="hide-txt">Условия очищены</span>
+
+                                                    <div class="moder__content-format-y">
+                                                        <span class="grey-txt">Условия:</span>
+                                                        Личные блоги. До 4 сторис. В основном, 1-2 видеоподводки, 1-2 макета + скрин интересного поста (на него хорошие переходы).
+                                                    </div>
+                                                    <div>
+                                                        <a href="javascript:void(0);" onclick="$(this).hide().next().show().closest('.moder__content-format').find('.hide-txt').show().next().hide()">Удалить текст условий</a>
+                                                        <a style="display: none;" href="javascript:void(0);" onclick="$(this).hide().prev().show().closest('.moder__content-format').find('.hide-txt').hide().next().show()">Восстановить условия этого формата</a>
+                                                    </div>
+                                                </div>
+                                                <div class="moder__content-format-con-del" style="display: none;">
+                                                    <a href="javascript:void(0);"  class="red">Удален</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="moder__content-format-i">
+                                            <div class="moder__content-format">
+                                                <div class="moder__content-format-top">
+
+                                                </div>
+                                                <div class="moder__content-format-con">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="moder__bottom">
+                                <div class="moder__bottom-left">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="На доработку">
+                                            <option data-tokens="mustard" >Укажите причину</option>
+                                            <option data-tokens="ketchup">Закрыт для проверки</option>
+                                            <option data-tokens="barbecue">Недоступен</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="Отказать">
+                                            <option>Укажите причину</option>
+                                            <option>Статистика не ваша</option>
+                                            <option>Накрутка</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="moder__bottom-right">
+                                    <a href="#" class="btn btn-outline-secondary moder-req-prev"><img src="images/svg/arrow-l.svg" alt="img"></a>
+                                    <a href="javascript:void(0);" type="button" class="btn btn-primary custom-btn moder-req-next">Далее</a>
+                                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">Завершить</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="request">
-                <div class="page-block">
-                    <div class="request__table-wrap">
-                        <div class="request__table-top">
-                            Отказы
-                        </div>
-                        <table class="request__table request__table-refused">
-                            <thead>
-                            <tr>
-                                <th>
-                                    Дата <br>
-                                    отказа
-                                </th>
-                                <th>
-                                    Аккаунт заказчика
-                                </th>
-                                <th>
-                                    Формат, цена и тип рекламы
-                                </th>
-                                <th>
-                                    Тезисы <br>
-                                    заказчика
-                                </th>
-                                <th>
-                                    Причина отказа
-                                </th>
-                                <th>
-                                    Перенести
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">alexandramitroshina</a>
-                                    <span class="dark-grey">Для kreida</span>
-                                </td>
-                                <td>
-                                    Видео-пост, 2 000 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Напишите в следующем месяце
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">kreida</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Не зайдёт
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">liz_fit</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Просто отказ
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">natural_shop</a>
-                                </td>
-                                <td>
-                                    Сторис 90 сек., 2 500 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Неверно указан тип блога
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    07.08.19 <span class="red">вс</span>
-                                </td>
-                                <td>
-                                    <a href="#">kkkkkkkkkkkkkkkkkkkkk</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Просто отказ
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    07.08.19 <span class="red">вс</span>
-                                </td>
-                                <td>
-                                    <a href="#">hanna.rachina</a>
-                                </td>
-                                <td>
-                                    Сторис 60 сек., 3 000 ₽, Коммерция
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Мало подписчиков
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    18.07.19 вт
-                                </td>
-                                <td>
-                                    <a href="#">neotpuskaiteplo</a>
-                                </td>
-                                <td>
-                                    Сторис 15-30 сек., 4 490 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="#">Открыть</a>
-                                </td>
-                                <td>
-                                    Заказчик отказался от рекламы
-                                </td>
-                                <td>
-                                    <a href="#">В одобренные</a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <div class="show-more">
-                            <a href="#" class="show-more__btn">
-                                Показать ещё
-                            </a>
-                        </div>
-                        <nav aria-label="...">
-                            <ul class="pagination custom-pagination">
-                                <li class="page-item disabled pagination__prev">
-                                    <a class="page-link" href="#" tabindex="-1">Назад</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item ">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">11</a></li>
-                                <li class="page-item pagination__next">
-                                    <a class="page-link" href="#">Вперёд</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
     </main>
     <!--END MAIN-->

@@ -609,7 +609,7 @@ input.form-control{
 }
 
 .title__left{
-
+    width: 100%;
 }
 
 .title__txt{
@@ -3438,6 +3438,13 @@ table tbody tr:nth-child(odd){
     margin-left: 50px;
 }
 
+.title__right-b-ch{
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: auto;
+}
+
 .title__right-btns .btn{
     position: relative;
 }
@@ -3446,6 +3453,7 @@ table tbody tr:nth-child(odd){
     margin-left: -30px;
 }
 
+.merge-btn .btn:first-child,
 .title__center-btns .btn:first-child{
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -3453,12 +3461,14 @@ table tbody tr:nth-child(odd){
     border-bottom-left-radius: 5px;
 }
 
+.merge-btn .btn,
 .title__center-btns .btn{
     position: relative;
     margin-left: -5px;
     border-radius: 0;
 }
 
+.merge-btn .btn:last-child,
 .title__center-btns .btn:last-child{
     margin-left: -5px;
     border-top-left-radius: 0;
@@ -3466,6 +3476,40 @@ table tbody tr:nth-child(odd){
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.merge-btn-p .btn{
+    padding: 6px 10px;
+}
+
+.title-top{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.title__right-checkbox{
+    min-height: 36px;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.title__right-checkbox .home-form-col__checkbox-wrap{
+    margin: 0;
+}
+
+.title__right-checkbox .custom-checkbox{
+    margin-left: 15px;
+}
+
+.title-bottom{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
 
 .request__top-btn-count{
     background: #FF0000;
@@ -3500,6 +3544,7 @@ table tbody tr:nth-child(odd){
     padding: 20px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .request__card-top{
@@ -3535,6 +3580,32 @@ table tbody tr:nth-child(odd){
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+}
+
+.request__changed{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.request__changed img{
+    width: 72px;
+    margin-bottom: 15px;
+}
+
+.request__changed div{
+    margin-bottom: 13px;
+}
+
+.request__changed span{
+    display: block;
+    margin-top: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6A7B83;
 }
 
 .request__more{
@@ -3591,6 +3662,11 @@ table tbody tr:nth-child(odd){
 .request__table td:nth-child(2) {
     width: 172px;
     max-width: 172px;
+    line-height: 14px;
+}
+
+.request__table td:nth-child(2) .dark-grey{
+    font-size: 12px;
 }
 
 .request__table td:nth-child(2) a {
@@ -3652,8 +3728,315 @@ table tbody tr:nth-child(odd){
 
 }
 
+.request__table.request__table-refused td:nth-child(5) {
+    width: 260px;
+    max-width: 260px;
+}
+
+.request__table.request__table-refused td:nth-child(6) {
+    width: 127px;
+    max-width: 127px;
+}
+
+.request__table.request__table-overdue td:nth-child(1) {
+    width: 120px;
+    max-width: 120px;
+}
+
+.request__table.request__table-overdue td:nth-child(2) {
+    width: 200px;
+    max-width: 200px;
+}
+
+.request__table.request__table-overdue td:nth-child(3) {
+    width: 488px;
+    max-width: 488px;
+}
+
+.request__table.request__table-overdue td:nth-child(4) {
+    width: 102px;
+    max-width: 102px;
+}
+
+.request__table.request__table-overdue td:nth-child(5) {
+    width: 200px;
+    max-width: 200px;
+}
+
+.request__clear{
+    margin-top: 35px;
+}
+
+.request__clear .answer__center-txt{
+    margin-bottom: 260px;
+}
+
+
 
 /*********  END REQUEST  ************/
+
+
+
+
+
+
+
+
+
+/*********  MODERATION  ************/
+
+.moder{
+    margin-top: 20px;
+}
+
+.moder__items{
+
+}
+
+.moder__item{
+
+}
+
+.moder__inner{
+    background: white;
+    padding: 20px 20px 0;
+    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.moder__name{
+    font-size: 20px;
+    line-height: 24px;
+    color: #3897F0;
+}
+
+.moder__content{
+    margin-bottom: 10px;
+    margin-top: -18px;
+}
+
+.moder__content-inner{
+    min-height: 470px;
+    max-height: 470px;
+}
+
+.moder__content-i{
+    display: none;
+}
+
+.moder__content-i.active{
+    display: block;
+}
+
+.moder__content-tap{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #6A7B83;
+    margin-bottom: 20px;
+}
+
+.moder__content-i-txt{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.moder__bottom{
+    display: flex;
+    justify-content: space-between;
+    background: #F8F8F8;
+    margin: 0 -20px;
+    padding: 15px 20px;
+}
+
+.moder__bottom-left{
+    display: flex;
+}
+
+.moder__bottom-right{
+
+}
+
+
+.custom-small-select .filter-option-inner-inner{
+    font-size: 14px;
+    line-height: 17px;
+    color: #192229;
+}
+
+.custom-small-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: auto;
+}
+
+.custom-small-select .white-select + button{
+    border: 1px solid #D5DFE4;
+}
+
+.custom-small-select .dropdown-item {
+    padding: .25rem 10px;
+}
+
+.custom-small-select .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 5px solid #6A7B83;
+    border-right: 5px solid transparent;
+    border-bottom: 0;
+    border-left: 5px solid transparent;
+}
+
+.custom-small-select .show .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #6A7B83;
+    border-left: 5px solid transparent;
+}
+
+.custom-small-select .dropdown-menu.show {
+    border-radius: 5px;
+}
+
+
+
+.moder__bottom-left .dropdown {
+    margin-right: 15px;
+}
+
+.moder__bottom-right .btn-primary{
+    padding: 6px 19px;
+}
+
+.moder__bottom-right .btn-outline-secondary {
+    color: #192229;
+    border-color: #D5DFE4;
+    font-size: 14px;
+    padding: 4px 11px 5px;
+    background-color: white;
+    margin-right: 12px;
+}
+
+.moder__bottom-right .custom-btn-gold {
+    border: 1px solid #fadb67;
+    display: none;
+}
+
+.moder-req-prev{
+    display: none;
+}
+
+.moder__content-form{
+    display: flex;
+}
+
+.moder__content-form--input input{
+    color: #000000;
+}
+
+.moder__content-form--input .form-group{
+    max-width: 85px;
+}
+
+.moder__content-form .form-group + .form-group{
+    margin-left: 15px;
+}
+
+.moder__content-link {
+    margin-bottom: 20px;
+}
+
+.moder__content-link a{
+    font-size: 14px;
+    line-height: 17px;
+    color: #3897F0;
+}
+
+.moder__content-img{
+    max-width: 250px;
+}
+
+.moder__content-img img{
+    width: 100%;
+}
+
+.moder__info{
+    min-height: 470px;
+    max-height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.moder__info .big-txt{
+    font-size: 36px;
+    line-height: 43px;
+    color: #DFDFDF;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.moder__info div{
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+.moder__info p{font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #6A7B83;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.moder__content-form-title{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.moder__content-form--sm-select .form-group {
+    max-width: 96px;
+}
+
+.moder__content-form--sm-select .form-group input{
+    max-width: 50px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.moder__content-form--sm-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    max-width: 100%;
+}
+
+.moder__content-form--select .form-group input{
+    max-width: 50px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.moder__content-form--select .form-group {
+    max-width: 156px;
+}
+
+.moder__content-form--select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    max-width: 100%;
+}
+
+
+
+/*********  END MODERATION  ************/
 
 
 
