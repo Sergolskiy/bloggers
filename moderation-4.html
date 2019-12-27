@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="page-wrap">
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="./">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+
+                        <div class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        База блогеров
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        ВП на завтра
+                                    </a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">
+                                        Мой трекер
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="header__right">
+                            <div class="header__cart-btn">
+                                <button type="button" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                </button>
+                            </div>
+
+                            <div class="header__login-btn">
+                                <button type="button" class="btn btn-primary custom-btn">Войти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+
+    <!--MAIN-->
+    <main class="main">
+        <div class="container">
+            <div class="title-wrap">
+                <h1 class="title-top">
+                    Модерация заявок
+                </h1>
+                <div class="title">
+                    <div class="title__left d-flex align-items-center">
+                        <div class="title__left-btns merge-btn merge-btn-p">
+                            <a href="#" class="btn btn-primary custom-btn">Свежие <span class="request__top-btn-count">3</span></a>
+                            <a href="#" class="btn btn-outline-secondary">Одобренные</a>
+                            <a href="#" class="btn btn-outline-secondary">Отклоненные</a>
+                            <a href="#" class="btn btn-outline-secondary">Жалобы</a>
+                        </div>
+
+                        <div class="title__right-btns">
+                            <div class="request__top-search">
+                                <input type="text" placeholder="Поиск (дата или ник)">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+                            </div>
+                        </div>
+                        <div class="title__right-btns title__right-b-ch">
+                            <div class="title__right-checkbox d-flex">
+                                Фильтр:
+                                <div class="home-form-col__checkbox-wrap ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="ooo" checked="">
+                                        <label class="custom-control-label" for="ooo">Заявки в базу блогеров</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="self-employed" checked="">
+                                        <label class="custom-control-label" for="self-employed">Заявки на ВП</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="title-bottom">
+                    Новые заявки в базу блогеров
+                </h3>
+            </div>
+
+            <div class="moder">
+                <div class="row moder__items">
+                    <div class="col-md-6 moder__item">
+                        <div class="moder__inner">
+                            <div class="moder__name">
+                                <span class="black">Жалоба на</span> amerikanovna
+                            </div>
+                            <div class="moder__content moder__content-tap--fixed">
+
+                                <div class="moder__content-i active">
+                                    <div class="moder__content-tap">
+                                        Жалоб на блогера за 2 месяца: 10. Осталось жизней: 2
+                                    </div>
+
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-actions">
+                                            <div class="moder__content-actions-l">
+                                                От: <a href="#">alexandramitroshina</a>
+                                                <br>
+                                                <div class="dark-grey">
+                                                    Отправил(-а) жалоб за 2 месяца: 5
+                                                </div>
+                                            </div>
+                                            <div class="moder__content-actions-r">
+                                                <select class="selectpicker white-select mobile-select-popup"
+                                                        title="">
+                                                    <option selected>Действия</option>
+                                                    <option>Заблокировать</option>
+                                                    <option>Не принимать жалобы 1 месяц</option>
+                                                    <option >Больше никогда не принимать жалобы</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-i-txt">
+                                            Причина: Блогер вообще не выложил рекламу на меня
+                                            <br>
+                                            <br>
+                                            E-mail: johndoe@gmail.com <a href="#">Скопировать</a><br>
+
+                                            <br>
+                                            Текст жалобы <br>
+                                            <span class="fs-14">
+                                                Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
+                                            </span>
+                                            <br>
+                                            <br>
+                                            Скриншоты или видео <br>
+                                            <a href="#" class="fs-14 ">Посмотреть оригиналы</a>
+                                            <br>
+                                            <div class="moder__content-i-txt-screen">
+                                                <div class="moder__content-img">
+                                                    <img src="images/moder/94b0831d1c8431ee68fcca85ee839282.png" alt="img" class="mCS_img_loaded">
+                                                </div>
+                                                <a href="#" class="btn btn-outline-secondary">Смотреть видео</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="moder__bottom ">
+                                <div class="moder__bottom-left">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="">
+                                            <option disabled>Укажите причину</option>
+                                            <option selected >Простой отказ</option>
+                                            <option >Причина 2</option>
+                                            <option >Причина 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group m-0 custom-small-select">
+
+                                    </div>
+                                </div>
+                                <div class="moder__bottom-right">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="Заблокировать">
+                                            <option disabled>Укажите причину</option>
+                                            <option >Отнять жизнь за обман с рекламой</option>
+                                            <option>Отнять жизнь за обман со статистикой</option>
+                                            <option>Заблокировать в ВП</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="moder__content-end ">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Заявка одобрена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Одобренные
+                                </span>
+                            </div>
+                            <div class="moder__content-end">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Проверка завершена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                            </div>
+                            <div class="moder__content-end ">
+                                <img src="images/svg/big-x.svg" alt="img">
+                                <div>Заявка отклонена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Отказы
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 moder__item">
+                        <div class="moder__inner">
+                            <div class="moder__name">
+                                <span class="black">Апелляция на жалобу на</span> amerikanovna
+                            </div>
+                            <div class="moder__content moder__content-tap--fixed">
+
+                                <div class="moder__content-i active">
+                                    <div class="moder__content-tap">
+                                        Жалоб на блогера за 2 месяца: 10. Осталось жизней: 2
+                                    </div>
+
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-actions">
+                                            <div class="moder__content-actions-l">
+                                                От: <a href="#">alexandramitroshina</a>
+                                                <br>
+                                                <div class="dark-grey">
+                                                    Отправил(-а) жалоб за 2 месяца: 5
+                                                </div>
+                                            </div>
+                                            <div class="moder__content-actions-r">
+                                                <select class="selectpicker white-select mobile-select-popup"
+                                                        title="">
+                                                    <option selected>Действия</option>
+                                                    <option>Заблокировать</option>
+                                                    <option>Не принимать жалобы 1 месяц</option>
+                                                    <option >Больше никогда не принимать жалобы</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-i-txt">
+                                            Причина: Я выложил рекламу в срок, вот видео, доказывающее это
+                                            <br>
+                                            <a href="#" class="btn btn-outline-secondary ">Смотреть видео</a>
+                                            <br>
+                                            <br>
+                                            E-mail: johndoe@gmail.com <a href="#" class="fs-14">Скопировать</a><br>
+
+                                            <br>
+                                            Почему вы не выложили рекламу в срок <br>
+                                            <span class="fs-14">
+                                                Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
+                                            </span>
+                                            <br>
+                                            <br>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="moder__bottom ">
+                                <div class="moder__bottom-left">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="">
+                                            <option disabled>Укажите причину</option>
+                                            <option selected >Отправить на доработку</option>
+                                            <option >Причина 2</option>
+                                            <option >Причина 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group m-0 custom-small-select">
+
+                                    </div>
+                                </div>
+                                <div class="moder__bottom-right">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary ">Отклонить</a>
+                                        <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary ">Одобрить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="moder__content-end ">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Заявка одобрена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Одобренные
+                                </span>
+                            </div>
+                            <div class="moder__content-end">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Проверка завершена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                            </div>
+                            <div class="moder__content-end ">
+                                <img src="images/svg/big-x.svg" alt="img">
+                                <div>Заявка отклонена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Отказы
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row moder__items">
+                    <div class="col-md-6 moder__item">
+                        <div class="moder__inner">
+                            <div class="moder__name">
+                                <span class="black">Жалоба на</span> amerikanovna
+                            </div>
+                            <div class="moder__content moder__content-tap--fixed">
+
+                                <div class="moder__content-i active">
+                                    <div class="moder__content-tap">
+                                        Жалоб на блогера за 2 месяца: 10. Осталось жизней: 2
+                                    </div>
+
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-actions">
+                                            <div class="moder__content-actions-l">
+                                                От: <a href="#">alexandramitroshina</a>
+                                                <br>
+                                                <div class="dark-grey">
+                                                    Отправил(-а) жалоб за 2 месяца: 5
+                                                </div>
+                                            </div>
+                                            <div class="moder__content-actions-r">
+                                                <select class="selectpicker white-select mobile-select-popup"
+                                                        title="">
+                                                    <option selected>Действия</option>
+                                                    <option>Заблокировать</option>
+                                                    <option>Не принимать жалобы 1 месяц</option>
+                                                    <option >Больше никогда не принимать жалобы</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-i-txt">
+                                            Причина: Блогер вообще не выложил рекламу на меня
+                                            <br>
+                                            <br>
+                                            E-mail: johndoe@gmail.com <a href="#">Скопировать</a><br>
+
+                                            <br>
+                                            Текст жалобы <br>
+                                            <span class="fs-14">
+                                                Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
+                                            </span>
+                                            <br>
+                                            <br>
+                                            Скриншоты или видео <br>
+                                            <a href="#" class="fs-14 ">Посмотреть оригиналы</a>
+                                            <br>
+                                            <div class="moder__content-i-txt-screen">
+                                                <div class="moder__content-img">
+                                                    <img src="images/moder/94b0831d1c8431ee68fcca85ee839282.png" alt="img" class="mCS_img_loaded">
+                                                </div>
+                                                <a href="#" class="btn btn-outline-secondary">Смотреть видео</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="moder__bottom ">
+                                <div class="moder__bottom-left">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="">
+                                            <option disabled>Укажите причину</option>
+                                            <option selected >Простой отказ</option>
+                                            <option >Причина 2</option>
+                                            <option >Причина 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group m-0 custom-small-select">
+
+                                    </div>
+                                </div>
+                                <div class="moder__bottom-right">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="Заблокировать">
+                                            <option disabled>Укажите причину</option>
+                                            <option >Отнять жизнь за обман с рекламой</option>
+                                            <option>Отнять жизнь за обман со статистикой</option>
+                                            <option>Заблокировать в ВП</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="moder__content-end ">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Заявка одобрена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Одобренные
+                                </span>
+                            </div>
+                            <div class="moder__content-end">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Проверка завершена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                            </div>
+                            <div class="moder__content-end ">
+                                <img src="images/svg/big-x.svg" alt="img">
+                                <div>Заявка отклонена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Отказы
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 moder__item">
+                        <div class="moder__inner">
+                            <div class="moder__name">
+                                <span class="black">Апелляция на жалобу на</span> amerikanovna
+                            </div>
+                            <div class="moder__content moder__content-tap--fixed">
+
+                                <div class="moder__content-i active">
+                                    <div class="moder__content-tap">
+                                        Жалоб на блогера за 2 месяца: 10. Осталось жизней: 2
+                                    </div>
+
+                                    <div class="moder__content-inner scroll">
+                                        <div class="moder__content-actions">
+                                            <div class="moder__content-actions-l">
+                                                От: <a href="#">alexandramitroshina</a>
+                                                <br>
+                                                <div class="dark-grey">
+                                                    Отправил(-а) жалоб за 2 месяца: 5
+                                                </div>
+                                            </div>
+                                            <div class="moder__content-actions-r">
+                                                <select class="selectpicker white-select mobile-select-popup"
+                                                        title="">
+                                                    <option selected>Действия</option>
+                                                    <option>Заблокировать</option>
+                                                    <option>Не принимать жалобы 1 месяц</option>
+                                                    <option >Больше никогда не принимать жалобы</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="moder__content-i-txt">
+                                            Причина: Я выложил рекламу в срок, вот видео, доказывающее это
+                                            <br>
+                                            <a href="#" class="btn btn-outline-secondary ">Смотреть видео</a>
+                                            <br>
+                                            <br>
+                                            E-mail: johndoe@gmail.com <a href="#" class="fs-14">Скопировать</a><br>
+
+                                            <br>
+                                            Почему вы не выложили рекламу в срок <br>
+                                            <span class="fs-14">
+                                                Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
+                                            </span>
+                                            <br>
+                                            <br>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                            <div class="moder__bottom ">
+                                <div class="moder__bottom-left">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <select class="selectpicker white-select mobile-select-popup"
+                                                title="">
+                                            <option disabled>Укажите причину</option>
+                                            <option selected >Отправить на доработку</option>
+                                            <option >Причина 2</option>
+                                            <option >Причина 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group m-0 custom-small-select">
+
+                                    </div>
+                                </div>
+                                <div class="moder__bottom-right">
+                                    <div class="form-group m-0 custom-small-select">
+                                        <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary ">Отклонить</a>
+                                        <a href="javascript:void(0);" type="button" class="btn btn-outline-secondary ">Одобрить</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="moder__content-end ">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Заявка одобрена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Одобренные
+                                </span>
+                            </div>
+                            <div class="moder__content-end">
+                                <img src="images/svg/check-grey.svg" alt="img">
+                                <div>Проверка завершена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                            </div>
+                            <div class="moder__content-end ">
+                                <img src="images/svg/big-x.svg" alt="img">
+                                <div>Заявка отклонена</div>
+                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Отказы
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="moder__list">
+                    <div class="moder__list-title">
+                        История
+                    </div>
+                    <div class="moder__list-item">
+                        <div class="moder__list-top">
+                            <div class="moder__list-name">
+                                Заявка в базу блогеров
+                                <a href="#">amerikanovna</a>
+                            </div>
+                            <div class="moder__list-date">
+                                Одобрена 21.05.19
+                            </div>
+                            <div class="moder__list-mail">
+                                Модератор <br>
+                                pajasuwqwet@gmail.com
+                            </div>
+                            <div class="moder__list-btn">
+                                <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
+                                    <span class="hide">Открыть заявку</span>
+                                    <span class="show">Скрыть заявку</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="moder__list-content">
+                            <div class="moder__list-content-inner">
+                                <div class="moder__items">
+                                    <div class="moder__item">
+                                        <div class="moder__inner">
+                                            <div class="moder__name">
+                                                amerikanovna
+                                            </div>
+                                            <div class="moder__content">
+
+                                                <div class="moder__content-i active">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 1 из 5. Аккаунт
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-i-txt">
+                                                            - Более 30 постов <br>
+                                                            - Больше 5 000 подписчиков <br>
+                                                            - Это не паблик и не магазин <br>
+                                                            - Владельцу аккаунта больше (16+) <br>
+                                                            - ER больше 1% <br>
+                                                            - Рекомендованные на сайте цены за рекламу от 200 ₽ <br>
+                                                            - Контент не нарушает правила Инстаграма и законодательство РФ <br>
+                                                            - Последний пост написан не менее 1-го месяца назад
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="moder__content-i next-info " data-info="1">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-1 из 5. Статистика
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form-title">
+                                                            Охваты сторис
+                                                        </div>
+                                                        <div class="moder__content-form moder__content-form--input">
+                                                            <div class="form-group">
+                                                                <label for="statistic1" class="small-label">Минимум</label>
+                                                                <input type="text" class="form-control" id="statistic1" placeholder="" value="224 636" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="statistic2" class="small-label">Максимум</label>
+                                                                <input type="text" class="form-control" id="statistic2" placeholder="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="moder__content-link">
+                                                            <a href="#">Оригиналы скриншотов</a>
+                                                        </div>
+
+                                                        <div class="moder__content-img">
+                                                            <img src="images/moder/94b0831d1c8431ee68fcca85ee839282.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="moder__content-i moder__content-info moder__content-info-1 " data-info-c="1">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-2 из 4. Статистика
+                                                    </div>
+
+                                                    <div class="moder__info">
+                                                        <img src="images/svg/clock.svg" alt="img">
+                                                        <div>
+                                                            Этот шаг отправлен на доработку, проверьте остальные
+                                                        </div>
+                                                        <p>
+                                                            Причина: скриншот обрезан
+                                                        </p>
+                                                        <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="moder__content-i next-info" data-info="2">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-2 из 5. Статистика
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form-title">
+                                                            Охваты постов
+                                                        </div>
+                                                        <div class="moder__content-form moder__content-form--input">
+                                                            <div class="form-group">
+                                                                <label for="statistic4" class="small-label">Минимум</label>
+                                                                <input type="text" class="form-control" id="statistic4" placeholder="" value="224 636" required>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="statistic5" class="small-label">Максимум</label>
+                                                                <input type="text" class="form-control" id="statistic5" placeholder="" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="moder__content-link">
+                                                            <a href="#">Оригиналы скриншотов</a>
+                                                        </div>
+
+                                                        <div class="moder__content-img">
+                                                            <img src="images/moder/94b0831d1c8431ee68fcca85ee839282.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="moder__content-i moder__content-info moder__content-info-2 " data-info-c="2">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-2 из 5. Статистика
+                                                    </div>
+
+                                                    <div class="moder__content-form-title">
+                                                        Охваты постов
+                                                    </div>
+                                                    <div class="moder__info ">
+                                                        <div class="big-txt">
+                                                            Нет скриншотов
+                                                        </div>
+                                                        <a href="#" class="btn btn-outline-secondary">Попросить прислать скриншоты</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="moder__content-i ">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-1 из 5. Статистика
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form-title">
+                                                            Процент женщин
+                                                        </div>
+                                                        <div class="moder__content-form moder__content-form--input">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" id="statistic6" placeholder="" value="92%" required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="moder__content-link">
+                                                            <a href="#">Оригиналы скриншотов</a>
+                                                        </div>
+
+                                                        <div class="moder__content-img">
+                                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+                                                <div class="moder__content-i ">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-4 из 5. Статистика
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form-title">
+                                                            Преобладающий возраст в процентах
+                                                        </div>
+                                                        <div class="moder__content-form moder__content-form--sm-select">
+                                                            <div class="form-group">
+                                                                <select id="advertising9" class="selectpicker white-select"
+                                                                        title="18-24">
+                                                                    <option selected>18-24</option>
+                                                                    <option>18-24</option>
+                                                                    <option>18-24</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" id="statistic7" placeholder="" value="45%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="moder__content-link">
+                                                            <a href="#">Оригиналы скриншотов</a>
+                                                        </div>
+
+                                                        <div class="moder__content-img">
+                                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="moder__content-i">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-2 из 5. Статистика
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form-title">
+                                                            Преобладающая страна в процентах
+                                                        </div>
+                                                        <div class="moder__content-form moder__content-form--select">
+                                                            <div class="form-group">
+                                                                <select class="selectpicker white-select"
+                                                                        title="18-24">
+                                                                    <option selected>Россия</option>
+                                                                    <option>Россия</option>
+                                                                    <option>Россия</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="" value="54%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="moder__content-link">
+                                                            <a href="#">Оригиналы скриншотов</a>
+                                                        </div>
+
+                                                        <div class="moder__content-img">
+                                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="moder__content-i ">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-2 из 5. Статистика
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form-title">
+                                                            Преобладающий возраст в процентах
+                                                        </div>
+                                                        <div class="moder__content-form moder__content-form--select">
+                                                            <div class="form-group">
+                                                                <select class="selectpicker white-select"
+                                                                        title="18-24">
+                                                                    <option selected>Москва</option>
+                                                                    <option>Москва</option>
+                                                                    <option>Москва</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="" value="11%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="moder__content-link">
+                                                            <a href="#">Оригиналы скриншотов</a>
+                                                        </div>
+
+                                                        <div class="moder__content-img">
+                                                            <img src="images/moder/7e6eb30426426e0bc6869b534d413484.png" alt="img">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="moder__content-i ">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 3 из 4. Форматы рекламы
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-format-i">
+                                                            <div class="moder__content-format">
+                                                                <div class="moder__content-format-top">
+                                                                    <div class="moder__content-format-t">
+                                                                        Формат №1
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" onclick="$(this).hide().next().show().closest('.moder__content-format').find('.moder__content-format-con').hide().next().show()">Удалить формат</a>
+                                                                    <a  style="display: none;" href="javascript:void(0);" onclick="$(this).hide().prev().show().closest('.moder__content-format').find('.moder__content-format-con').show().next().hide()">Восстановить формат</a>
+                                                                </div>
+                                                                <div class="moder__content-format-con">
+                                                                    Сторис 45 секунд
+                                                                    <div><span class="grey-txt">Кто может заказать:</span> Любой</div>
+
+                                                                    <div><span class="grey-txt">Набор рекламы на:</span> июнь</div>
+                                                                    <div><span class="grey-txt">Обычная цена:</span> 1 400 ₽</div>
+                                                                    <div><span class="grey-txt">Цена со скидкой:</span> 1 120 ₽</div>
+                                                                    <span style="display: none;" class="hide-txt">Условия очищены</span>
+
+                                                                    <div class="moder__content-format-y">
+                                                                        <span class="grey-txt">Условия:</span>
+                                                                        Личные блоги. До 4 сторис. В основном, 1-2 видеоподводки, 1-2 макета + скрин интересного поста (на него хорошие переходы).
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:void(0);" onclick="$(this).hide().next().show().closest('.moder__content-format').find('.hide-txt').show().next().hide()">Удалить текст условий</a>
+                                                                        <a style="display: none;" href="javascript:void(0);" onclick="$(this).hide().prev().show().closest('.moder__content-format').find('.hide-txt').hide().next().show()">Восстановить условия этого формата</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="moder__content-format-con-del" style="display: none;">
+                                                                    <a href="javascript:void(0);"  class="red">Удален</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="moder__content-format-i">
+                                                            <div class="moder__content-format">
+                                                                <div class="moder__content-format-top">
+                                                                    <div class="moder__content-format-t">
+                                                                        Формат №1
+                                                                    </div>
+                                                                    <a href="javascript:void(0);" onclick="$(this).hide().next().show().closest('.moder__content-format').find('.moder__content-format-con').hide().next().show()">Удалить формат</a>
+                                                                    <a  style="display: none;" href="javascript:void(0);" onclick="$(this).hide().prev().show().closest('.moder__content-format').find('.moder__content-format-con').show().next().hide()">Восстановить формат</a>
+                                                                </div>
+                                                                <div class="moder__content-format-con">
+                                                                    Сторис 45 секунд
+                                                                    <div><span class="grey-txt">Кто может заказать:</span> Любой</div>
+
+                                                                    <div><span class="grey-txt">Набор рекламы на:</span> июнь</div>
+                                                                    <div><span class="grey-txt">Обычная цена:</span> 1 400 ₽</div>
+                                                                    <div><span class="grey-txt">Цена со скидкой:</span> 1 120 ₽</div>
+                                                                    <span style="display: none;" class="hide-txt">Условия очищены</span>
+
+                                                                    <div class="moder__content-format-y">
+                                                                        <span class="grey-txt">Условия:</span>
+                                                                        Личные блоги. До 4 сторис. В основном, 1-2 видеоподводки, 1-2 макета + скрин интересного поста (на него хорошие переходы).
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:void(0);" onclick="$(this).hide().next().show().closest('.moder__content-format').find('.hide-txt').show().next().hide()">Удалить текст условий</a>
+                                                                        <a style="display: none;" href="javascript:void(0);" onclick="$(this).hide().prev().show().closest('.moder__content-format').find('.hide-txt').hide().next().show()">Восстановить условия этого формата</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="moder__content-format-con-del" style="display: none;">
+                                                                    <a href="javascript:void(0);"  class="red">Удален</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="moder__content-i ">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 4 из 5. Город и юр. статус
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form moder__content-form--full">
+                                                            <div class="form-group">
+                                                                <label for="town">Город блогера</label>
+                                                                <input id="town" type="text" class="form-control" placeholder="" value="Москва">
+                                                            </div>
+                                                            <div class="moder__content-form-block">
+                                                                <div class="form-group">
+                                                                    <label for="ogrnip">ОГРНИП</label>
+                                                                    <input id="ogrnip" type="text" class="form-control" placeholder="" value="313132804400022">
+                                                                </div>
+                                                                <a href="#" class="btn btn-outline-secondary">Скопировать</a>
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label for="no-reklam">Блогер не рекламирует</label>
+                                                                <textarea  class="form-control" name="report" id="no-reklam" required>Cетевой бизнес, астрология, гадания, казино и прочую херню, казино, карты таро, гадание, порнографический контент, пирамиды, подделки, некачественные товары, похудение, фитнес и тд.</textarea>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="moder__content-i next-info" data-info="3">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 4 из 5. Город и юр. статус
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__rating">
+                                                            <div class="moder__rating-top">
+                                                                <div class="moder__rating-top-block">
+                                                                    <div class="moder__rating-name">
+                                                                        Оценка
+                                                                    </div>
+                                                                    <div class="moder__rating-info">
+                                                    <span>
+                                                        от 7 <img src="images/star.png" alt="img">
+                                                    </span>
+                                                                        <span>
+                                                        <a href="#">5 из 8</a>
+                                                    </span>
+                                                                    </div>
+                                                                    <div class="moder__rating-line" style="--tooltip-width: 33%">
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="moder__rating-top-block">
+                                                                    <div class="moder__rating-name">
+                                                                        Реклама окупилась
+                                                                    </div>
+                                                                    <div class="moder__rating-info">
+                                                    <span class="dark-grey">
+                                                        Да
+                                                    </span>
+                                                                        <span>
+                                                        <a href="#">7 из 8</a>
+                                                    </span>
+                                                                    </div>
+                                                                    <div class="moder__rating-line" style="--tooltip-width: 66%">
+
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="moder__rating-center">
+                                                                <div class="moder__rating-name">
+                                                                    Цена за подписчика
+                                                                </div>
+                                                                <div class="moder__rating-subscriber">
+                                                                    <div class="moder__rating-subscriber-l">
+                                                                        до 6 ₽
+                                                                    </div>
+                                                                    <div class="moder__rating-subscriber-c">
+                                                                        <div class="moder__rating-line" style="--tooltip-width: 33%">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="moder__rating-subscriber-r">
+                                                                        <a href="#">3 из 8</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="moder__rating-subscriber">
+                                                                    <div class="moder__rating-subscriber-l">
+                                                                        до 10 ₽
+                                                                    </div>
+                                                                    <div class="moder__rating-subscriber-c">
+                                                                        <div class="moder__rating-line" style="--tooltip-width: 60%">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="moder__rating-subscriber-r">
+                                                                        <a href="#">3 из 8</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="moder__rating-subscriber">
+                                                                    <div class="moder__rating-subscriber-l">
+                                                                        до 10 ₽
+                                                                    </div>
+                                                                    <div class="moder__rating-subscriber-c">
+                                                                        <div class="moder__rating-line" style="--tooltip-width: 0%">
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="moder__rating-subscriber-r">
+                                                                        <a href="#">3 из 8</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="moder__rating-bottom">
+                                                                <div class="moder__rating-name">
+                                                                    Тексты отзывов
+                                                                </div>
+                                                                <div class="moder__rating-bottom-txt">
+                                                                    <div class="moder__rating-bottom-top">
+                                                                        7 <img src="images/star.png" alt="img">, 500 подписч., 5,5 ₽ цена подписч., 18.05.19
+                                                                    </div>
+                                                                    <div class="moder__rating-bottom-center">
+                                                                        Я - популярный блог о Канаде, иммиграции и многодетной жизни за бугром 🇨🇦
+                                                                        <br>
+                                                                        <a href="https://www.instagram.com/p/Bx6XclRhwS7/?igshid=1qlysxay4zgca">
+                                                                            https://www.instagram.com/p/Bx6XclRhwS7/?igshid=1qlysxay4zgca
+                                                                        </a>
+                                                                        <br><br>
+                                                                        Рекламировала свой аккаунт в сторис у яркой остроумной Амины - блогер о переезде и жизни в США<br>
+                                                                        <a href="https://instagram.com/amerikanovna?igshid=boex9agik3v4">
+                                                                            https://instagram.com/amerikanovna?igshid=boex9agik3v4
+                                                                        </a><br><br>
+                                                                        Цена была 6500 рублей, на открытый аккаунт пришло 1200 новых подписчиков 🔥🔥🔥<br>
+                                                                        Все было сделано с душой и вовремя, нативная подводка и учла все мои просьбы. Спасибо, очень довольна, приду ещё!
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="moder__content-i moder__content-info moder__content-info-3 " data-info-c="3">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 2-2 из 5. Статистика
+                                                    </div>
+
+                                                    <div class="moder__info ">
+                                                        <div class="big-txt">
+                                                            Нет отзывов
+                                                        </div>
+                                                        <a href="#" class="btn btn-outline-secondary">Попросить написать отзывы</a>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="moder__content-i ">
+                                                    <div class="moder__content-tap">
+                                                        Шаг 4 из 5. Город и юр. статус
+                                                    </div>
+                                                    <div class="moder__content-inner scroll">
+                                                        <div class="moder__content-form moder__content-form--full">
+                                                            <div class="moder__content-i-txt">
+                                                                <div class="moder__content-i-txt-block">
+                                                                    <div class="moder__content-i-txt-t">
+                                                                        Проверка по черным спискам:
+                                                                    </div>
+                                                                    <a href="#">Черный список #1</a> <br>
+                                                                    <a href="#">Черный список #2</a> <br>
+                                                                    <a href="#">Черный список #3</a> <br>
+                                                                </div>
+
+                                                                <div class="moder__content-i-txt-block">
+                                                                    <div class="moder__content-i-txt-t">
+                                                                        Проверка по чатам:
+                                                                    </div>
+                                                                    <a href="#">Чат #1</a> <br>
+                                                                    <a href="#">Чат #2</a> <br>
+                                                                    <a href="#">Чат #3</a> <br>
+                                                                </div>
+                                                                <div class="moder__content-i-txt-block">
+                                                                    <div class="moder__content-i-txt-t">
+                                                                        Проверка по гугл-таблицам:
+                                                                    </div>
+                                                                    <a href="#"> Таблица #1</a> <br>
+                                                                    <a href="#">Таблица #2</a> <br>
+                                                                </div>
+
+                                                                <div class="moder__content-i-txt-block">
+                                                                    <div class="moder__content-i-txt-t">
+                                                                        Проверка по поисковикам:
+                                                                    </div>
+                                                                    <a href="#">Яндекс</a> <br>
+                                                                    <a href="#">Google</a> <br>
+                                                                </div>
+                                                                <a href="#" class="btn btn-outline-secondary">Скопировать ник</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="moder__bottom ">
+                                                <div class="moder__bottom-left">
+                                                    <div class="form-group m-0 custom-small-select">
+                                                        <select class="selectpicker white-select mobile-select-popup"
+                                                                title="На доработку">
+                                                            <option data-tokens="mustard" >Укажите причину</option>
+                                                            <option data-tokens="ketchup">Закрыт для проверки</option>
+                                                            <option data-tokens="barbecue">Недоступен</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group m-0 custom-small-select">
+                                                        <select class="selectpicker white-select mobile-select-popup"
+                                                                title="Отказать">
+                                                            <option>Укажите причину</option>
+                                                            <option>Статистика не ваша</option>
+                                                            <option>Накрутка</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="moder__bottom-right">
+                                                    <a href="#" class="btn btn-outline-secondary moder-req-prev"><img src="images/svg/arrow-l.svg" alt="img"></a>
+                                                    <a href="javascript:void(0);" type="button" class="btn btn-primary custom-btn moder-req-next">Далее</a>
+                                                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">Завершить</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="moder__content-end ">
+                                                <img src="images/svg/check-grey.svg" alt="img">
+                                                <div>Заявка одобрена</div>
+                                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Одобренные
+                                </span>
+                                            </div>
+                                            <div class="moder__content-end">
+                                                <img src="images/svg/check-grey.svg" alt="img">
+                                                <div>Проверка завершена</div>
+                                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                            </div>
+                                            <div class="moder__content-end ">
+                                                <img src="images/svg/big-x.svg" alt="img">
+                                                <div>Заявка отклонена</div>
+                                                <a href="#" class="btn btn-outline-secondary">Отменить</a>
+                                                <span class="dark-grey">
+                                    Заявка перемещена во вкладку Отказы
+                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+    <!--END MAIN-->
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer__link">
+            <a href="#">
+                Написать в техподдержку
+            </a>
+        </div>
+        <div class="footer__link">
+            <a href="#">
+                Пользовательское соглашение
+            </a>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <!--POPUPS-->
+
+    <div class="login base-popup wrap-popup ">
+        <div class="login__top-popup active">
+            <div>
+                Зарегистрируйтесь или войдите <br> в аккаунт, <b>чтобы отправлять <br> запрос(-ы) блогеру(-ам)</b>
+            </div>
+        </div>
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="login__tabs-wrap">
+
+                <div class="login__tabs">
+                    <a href="javascript:void(0)" class="login__tab active">
+                        Вход
+                    </a>
+                    <a href="javascript:void(0)" class="login__tab">
+                        Регистрация
+                    </a>
+                </div>
+                <div class="login__content">
+                    <div class="login__content-i active">
+                        <form action="javascript:void(0)" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="num">Введите номер телефона</label>
+                                <input  class="form-control phone" id="num" placeholder="В формате, +7 (999) 999-99-99" required>
+                            </div>
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="pass">Пароль</label>
+                                    <a class="forgot-pass" href="javascript:void(0)">Забыли пароль?</a>
+                                </div>
+                                <input type="password"  class="form-control" id="pass" placeholder="" minlength="6" required>
+                            </div>
+                            <button class="hide">ok</button>
+                        </form>
+                        <div class="login__bottom">
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn log-in">Войти</a>
+                        </div>
+                    </div>
+                    <div class="login__content-i">
+                        <div class="reg-tap active">
+                            <form class="needs-validation" novalidate action="javascript:void(0)">
+                                <div class="form-group">
+                                    <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
+                                    <input  class="form-control phone" id="num2" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
+                                    <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="pass2">Пароль</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="pass2" minlength="6" required>
+                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="pass3">Подтвердите пароль</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="pass3" minlength="6" required>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="reg" checked="" required>
+                                    <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                                </div>
+                                <div class="error-form">
+                                    Заполните поля отмеченные красным
+                                </div>
+                                <div class="error-form pass">
+                                    Пароли не совпадают
+                                </div>
+                                <button class="hide">ok</button>
+                            </form>
+
+                            <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
+                            </div>
+                        </div>
+
+                        <div class="reg-tap">
+                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+                                <div class="sms-top">
+                                    Код из SMS
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
+                                    </div>
+                                    <input type="text"  class="form-control" id="code" placeholder="Код">
+                                    <a href="#" class="code-link">
+                                        Отправить код повторно
+                                    </a>
+                                    <div class="code-link__caption">
+                                        <div>Попытка №1 <br> Запросить код повторно можно через 59 секунд</div>
+                                        <a href="#">Не приходит SMS</a>
+                                    </div>
+                                </div>
+                                <button class="hide">ok</button>
+                            </form>
+
+                            <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary reg-prev">Назад</a>
+                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-last custom-btn">Далее</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="base-popup recovery-popup wrap-popup">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="login__tabs-wrap">
+
+                <div class="login__head">
+                    Восстановление пароля
+                    <div class="login__head-capt">
+                        Шаг <span class="tap-count">1</span> из 3
+                    </div>
+                </div>
+                <div class="login__content">
+
+                    <div class="popup-tap active">
+                        <form action="javascript:void(0)" class="needs-validation" novalidate>
+                            <div class="sms-top">
+                                Введите ваш номер телефона. <br> Мы отправим на него код
+                            </div>
+                            <div class="form-group">
+
+                                <input  class="form-control phone" id="num3" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
+                                <div class="code-link__caption open">
+                                    <div>Номер телефона не может содержать пробелов и букв</div>
+                                </div>
+                            </div>
+                            <button class="hide">ok</button>
+                        </form>
+                        <div class="login__bottom">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary to-login">Назад</a>
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn next-tap">Далее</a>
+                        </div>
+                    </div>
+
+                    <div class="popup-tap">
+
+                        <form action="javascript:void(0)" class="needs-validation" novalidate>
+                            <div class="sms-top">
+                                Код из SMS
+                            </div>
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
+                                </div>
+                                <input type="text"  class="form-control" id="code1" placeholder="Код" required>
+                                <a href="#" class="code-link">
+                                    Отправить код повторно
+                                </a>
+                                <div class="code-link__caption">
+                                    <div>Попытка №1 <br> Запросить код повторно можно через 59 секунд</div>
+                                    <a href="#">Не приходит SMS</a>
+                                </div>
+                            </div>
+                            <button class="hide">ok</button>
+                        </form>
+
+                        <div class="login__bottom register">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary prev-tap">Назад</a>
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn next-tap">Далее</a>
+                        </div>
+                    </div>
+
+                    <div class="popup-tap">
+
+                        <form class="needs-validation" novalidate action="javascript:void(0)">
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="pass2">Введите новый пароль</label>
+                                </div>
+                                <input type="password"  class="form-control" id="pass4" minlength="6" required>
+                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="pass3">Подтвердите пароль</label>
+                                </div>
+                                <input type="password"  class="form-control" id="pass5" minlength="6" required>
+                            </div>
+
+                            <div class="error-form">
+                                Заполните поля отмеченные красным
+                            </div>
+                            <div class="error-form pass">
+                                Пароли не совпадают
+                            </div>
+                            <button class="hide">ok</button>
+                        </form>
+
+                        <div class="login__bottom register">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary prev-tap">Назад</a>
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn recover-save">Сохранить</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="base-popup success-popup wrap-popup">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="base-popup_success-wrap">
+                    <img src="images/svg/done_icon.svg" alt="img">
+                    <div class="base-popup_success">Пароль изменен</div>
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary to-login">Войти</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="big-popup how-make-order-popup wrap-popup">
+        <div class="wrap-popup__inner big-popup__inner">
+            <div class="big-popup__top">
+                <div class="big-popup__title">
+                    Как сделать заказ
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="big-popup__body">
+                <div class="big-popup__subtitle">
+                    В карточке блогера выбираете подходящий формат и нажимаете на кнопку “Выбрать”.
+                </div>
+                <div class="how-make-order__img">
+                    <img src="images/cart/make-order.png" alt="img">
+                </div>
+                <div class="big-popup__subtitle">
+                    Затем нажимаете на кнопку “Отправить запрос”, и заполняете поля формы. Или  можете выбрать несколько форматов рекламы у блогеров и отправить запрос сразу всем.
+                    <br><br>
+                    Если вы не выполнили вход, то сначала вам потребуется войти или зарегистрироваться на сайте, чтобы заполнить форму и отправить запрос.
+                </div>
+                <div class="how-make-order__img">
+                    <img src="images/cart/make-order-2.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="big-popup report-popup wrap-popup ">
+        <div class="wrap-popup__inner big-popup__inner">
+            <div class="big-popup__top">
+                <div class="big-popup__title">
+                    Пожаловаться
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="big-popup__body">
+                <div class="big-popup__subtitle">
+                    Приложите скриншоты, доказывающие ваши слова. Если вы не приложите достаточных доказательств, то мы не сможем разрешить вашу ситуацию.
+                </div>
+                <form class="needs-validation" novalidate action="javascript:void(0)">
+                    <div class="report__block">
+                        <label>Выберите причину</label>
+                        <div class="custom-control custom-radio mb-1">
+                            <input type="radio" name="report"  class="custom-control-input" id="report1" required="">
+                            <label class="custom-control-label" for="report1">Блогер обманул меня со статистикой своего аккаунта, у меня есть доказательства</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-1">
+                            <input type="radio" name="report"  class="custom-control-input" id="report2" required="">
+                            <label class="custom-control-label" for="report2">Блогер вообще не выложил рекламу на меня</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" name="report" class="custom-control-input" id="report3" required="">
+                            <label class="custom-control-label" for="report3">Блогер вообще не выложил рекламу на меня</label>
+                        </div>
+                    </div>
+
+                    <div class="report__textarea report__block">
+                        <label for="report4">Блогер вообще не выложил рекламу на меня</label>
+                        <textarea  class="form-control" name="report" id="report4" required></textarea>
+                    </div>
+                    <div class="report__block d-flex ">
+                        <div class="report__block-i mr-4">
+                            <label for="report-mail">Ваш e-mail для обратной связи</label>
+                            <input type="text" class="form-control" id="report-mail" placeholder="" required>
+
+                        </div>
+                        <div class="report__block-i">
+                            <div class="custom-file">
+                                <input type="file" class="form-control custom-file-input" style="display: none" required>
+                                <label for="report-mail">Загрузите скриншоты</label>
+                                <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Скриншот не выбран</a>
+                                <p class="file-invalid">
+                                    Скриншот <br> не загружен
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="report__block">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="reg2" required>
+                            <label class="custom-control-label" for="reg2">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                        </div>
+                    </div>
+                    <div class="report__block">
+                        <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold btn-check btn-check btn-report">
+                            Отправить жалобу
+                        </a>
+                        <span class="err-form">Заполните поля отмеченные красным</span>
+                    </div>
+
+                    <button class="hide">ok</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="base-popup success-popup report-success-popup wrap-popup ">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="base-popup_success-wrap">
+                    <img src="images/svg/done_icon.svg" alt="img">
+                    <div class="base-popup_success">Ваша жалоба отправлена на модерацию</div>
+                    <p>Обычно рассмотрение таких обращений занимает до недели</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--END POPUPS-->
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/inputmask.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
+

@@ -212,6 +212,10 @@ $(document).ready(function () {
 
     });
 
+    $('.open-moder').click(function () {
+         $(this).closest('.moder__list-item').find('.moder__list-content').slideToggle();
+    });
+
     /*********  END MAIN  ************/
 
 
