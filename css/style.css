@@ -3810,6 +3810,7 @@ table tbody tr:nth-child(odd){
     padding: 20px 20px 0;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
     border-radius: 10px;
+    height: 100%;
     /*overflow: hidden;*/
 }
 
@@ -4330,11 +4331,24 @@ table tbody tr:nth-child(odd){
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 540px;
     margin: 20px auto 0;
     padding-bottom: 30px;
 }
+
+.moder__list-content-inner .moder__items{
+    display: flex;
+}
+
+.moder__list-content-inner .moder__item{
+    width: 100%;
+    max-width: 540px;
+    margin: 0 10px;
+}
+
+.moder__list-content-inner .moder__item:nth-child(2){
+    margin-left: 0;
+}
+
 
 .moder .nav .pagination__prev,
 .moder .nav .pagination__next{
@@ -4425,6 +4439,25 @@ table tbody tr:nth-child(odd){
     font-size: 20px;
     line-height: 24px;
 }
+
+.moder__list .moder__inner{
+    box-shadow: none;
+    border: 1px solid #D5DFE4;
+}
+
+.complaint .moder__content-end{
+    padding-top: 180px;
+}
+.complaint .moder__content-end p{
+    margin-top: -7px;
+    margin-bottom: 8px;
+}
+
+.complaint .moder__content-end span{
+    margin-bottom: 0;
+}
+
+
 
 
 /*********  END MODERATION  ************/
