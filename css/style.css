@@ -6115,6 +6115,7 @@ table tbody tr:nth-child(odd){
     .show-more__btn {
         height: 45px;
     }
+
 }
 @media (max-width: 1200px) {
     .home-form-col {
@@ -6176,6 +6177,11 @@ table tbody tr:nth-child(odd){
     .card__statistic-right {
         max-width: 320px;
     }
+
+    .card__verify{
+        padding: 30px 30px 40px
+    }
+
 
 }
 
@@ -6856,6 +6862,13 @@ table tbody tr:nth-child(odd){
         padding-bottom: 0;
     }
 
+    .card__verify{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__verify-right, .card__verify-left{
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -7084,6 +7097,27 @@ table tbody tr:nth-child(odd){
     }
     .card__statistic-block .white-select {
         max-width: 140px !important;
+    }
+
+    .card__verify{
+        border: none;
+        padding: 0 15px;
+    }
+    .card__title{
+        padding: 0 15px;
+    }
+    .card__tabs-i.active{
+        padding-left: 30px;
+    }
+    .card__tabs-btn{
+        right: 30px;
+    }
+    .card__tabs-i.active{
+        padding-left: 30px;
+        color: #6A7B83;
+    }
+    .card-next-step{
+        padding: 5px 21px;
     }
 
 }
