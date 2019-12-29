@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,22 +22,60 @@
                 <div class="col-md-12">
                     <div class="header__inner">
                         <div class="header__logo">
-                            <a href="./">
+                            <a class="header__logo-link" href="./index1.html">
                                 <img src="images/logo.png" alt="logo">
+                            </a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary header-mobile-btn-close">
+                                <i class="back-arrow"></i>
+                                Назад
                             </a>
                         </div>
 
                         <div class="header__menu">
                             <ul class="header__menu-list">
-                                <li class="header__menu-item">
-                                    <a href="#" class="header__menu-link">
+                                <li class="header__menu-item has-submenu">
+                                    <a href="./index1.html" class="header__menu-link">
                                         База блогеров
                                     </a>
+                                    <ul class="header__submenu">
+                                        <li class="header__submenu-item ">
+                                            <a href="./index1.html" class="header__submenu-link">
+                                                База блогеров
+                                            </a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="./answer.html" class="header__submenu-link">
+                                                Ответы по рекламе
+                                            </a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="./request.html" class="header__submenu-link">
+                                                Заявки на рекламу
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="header__menu-item">
+                                <li class="header__menu-item has-submenu">
                                     <a href="#" class="header__menu-link">
                                         Отзывы
                                     </a>
+                                    <ul class="header__submenu">
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">
+                                                Все отзывы
+                                            </a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">
+                                                Оставить отзыв
+                                            </a>
+                                        </li>
+                                        <li class="header__submenu-item">
+                                            <a href="#" class="header__submenu-link">
+                                                История отзывов
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="header__menu-item">
                                     <a href="#" class="header__menu-link">
@@ -53,12 +92,120 @@
 
                         <div class="header__right">
                             <div class="header__cart-btn">
-                                <button type="button" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
-                                </button>
+                                <a href="./cart.html" class="btn btn-outline-secondary has-product " data-count="2">
+                                    <i class="cart-icon"></i> Корзина
+                                </a>
                             </div>
 
-                            <div class="header__login-btn">
-                                <button type="button" class="btn btn-primary custom-btn">Войти</button>
+                            <div class="header__login-btn has-submenu">
+                                <a href="#"><img src="images/svg/avatar.svg" alt="img"></a>
+                                <ul class="header__submenu right">
+                                    <li class="header__submenu-item ">
+                                        <a href="./settings.html" class="header__submenu-link">
+                                            Настройки
+                                        </a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a href="./paid-services.html" class="header__submenu-link">
+                                            Платные услуги
+                                        </a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a href="#" class="header__submenu-link">
+                                            Справка
+                                        </a>
+                                    </li>
+                                    <li class="header__submenu-item">
+                                        <a href="./index1.html" class="header__submenu-link">
+                                            Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="mobile-menu">
+                            <div class="mobile-menu__btn-wrap">
+                                <div class="header__cart-btn">
+                                    <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
+                                    </a>
+                                </div>
+
+                                <div class="mobile-menu__btn-burger btn">
+                                    <a href="javascript:void(0);"></a>
+                                </div>
+                            </div>
+                            <div class="mobile-menu__inner">
+                                <div class="mobile-menu__content">
+                                    <div class="mobile-menu__content-list">
+                                        <div class="mobile-menu__content-item">
+                                            <a href="./index1.html" class="mobile-menu__content-link">
+                                                База блогеров
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="./answer.html" class="mobile-menu__content-link red-active">
+                                                Ответы по рекламе
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item bottom-line">
+                                            <a href="./request.html" class="mobile-menu__content-link red-active">
+                                                Заявки на рекламу
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Все отзывы
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Оставить отзыв
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item bottom-line">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                История моих отзывов
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Гивы со скидкой
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Взаимопиар на завтра
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item bottom-line">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Мой трекер
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="./settings.html" class="mobile-menu__content-link red-active">
+                                                Настройки
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="./paid-services.html" class="mobile-menu__content-link">
+                                                Платные услуги
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Справка
+                                            </a>
+                                        </div>
+                                        <div class="mobile-menu__content-item bottom-line">
+                                            <a href="#" class="mobile-menu__content-link">
+                                                Выйти
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2532,6 +2679,21 @@
     <!--END FOOTER-->
 
     <!--POPUPS-->
+    <div class="video-popup wrap-popup">
+        <div class="wrap-popup__inner video-popup__inner">
+            <div class="video-popup__top">
+                <div class="video-popup__title">
+                    Видео-инструкция по базе
+                </div>
+                <a href="javascript:void(0)" class="video-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="video-popup__body">
+                <iframe src="https://www.youtube.com/embed/etfKPW86IBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
 
     <div class="login base-popup wrap-popup ">
         <div class="login__top-popup active">
@@ -2749,7 +2911,7 @@
         </div>
     </div>
 
-    <div class="base-popup success-popup wrap-popup">
+    <div class="base-popup success-popup pass-success-popup wrap-popup">
 
         <div class="wrap-popup__inner">
             <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
@@ -2792,7 +2954,7 @@
         </div>
     </div>
 
-    <div class="big-popup report-popup wrap-popup ">
+    <div class="big-popup report-popup wrap-popup">
         <div class="wrap-popup__inner big-popup__inner">
             <div class="big-popup__top">
                 <div class="big-popup__title">
@@ -2808,23 +2970,25 @@
                 <form class="needs-validation" novalidate action="javascript:void(0)">
                     <div class="report__block">
                         <label>Выберите причину</label>
-                        <div class="custom-control custom-radio mb-1">
+                        <div class="custom-control custom-radio-2 mb-1">
                             <input type="radio" name="report"  class="custom-control-input" id="report1" required="">
                             <label class="custom-control-label" for="report1">Блогер обманул меня со статистикой своего аккаунта, у меня есть доказательства</label>
                         </div>
-                        <div class="custom-control custom-radio mb-1">
+                        <div class="custom-control custom-radio-2 mb-1">
                             <input type="radio" name="report"  class="custom-control-input" id="report2" required="">
                             <label class="custom-control-label" for="report2">Блогер вообще не выложил рекламу на меня</label>
                         </div>
-                        <div class="custom-control custom-radio">
+                        <div class="custom-control custom-radio-2">
                             <input type="radio" name="report" class="custom-control-input" id="report3" required="">
-                            <label class="custom-control-label" for="report3">Блогер вообще не выложил рекламу на меня</label>
+                            <label class="custom-control-label" for="report3">Иная причина</label>
                         </div>
                     </div>
 
                     <div class="report__textarea report__block">
-                        <label for="report4">Блогер вообще не выложил рекламу на меня</label>
-                        <textarea  class="form-control" name="report" id="report4" required></textarea>
+                        <label for="report4">Текст жалобы</label>
+                        <div class="textarea-count" data-count="0">
+                            <textarea  class="form-control " name="report" id="report4" required></textarea>
+                        </div>
                     </div>
                     <div class="report__block d-flex ">
                         <div class="report__block-i mr-4">
@@ -2881,6 +3045,687 @@
     </div>
 
 
+    <div class="big-popup wrap-popup type-blogger-card-popup mobile-popup">
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="type-blogger-card-popup-top">
+                    <div class="type-blogger-card-popup-title">
+                        Ссылка на ваш список блогеров
+                    </div>
+                    <div class="type-blogger-card-popup-copy">
+                        <input type="text" class="form-control" placeholder="" value="easyprbot.com/bb/3p6G72">
+                        <a href="#" class="btn btn-outline-secondary btn--white">Скопировать</a>
+                    </div>
+                </div>
+                <div class="type-blogger-card-popup-bottom">
+                    <div class="type-blogger-card-popup-title">
+                        Вид карточки блогеров
+                    </div>
+                    <div class="type-blogger-card-popup-btn">
+                        <a href="javascript:void(0);" class="btn btn-primary custom-btn">Краткий</a>
+                        <a href="javascript:void(0);" class="btn btn-outline-secondary ">Полный</a>
+                    </div>
+                    <div class="type-blogger-card-popup-txt">
+                        Краткий вид показывает только необходимую статистику.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="big-popup wrap-popup cart-screenshots-popup">
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="cart-screenshots__title">
+                    Скриншоты статистики
+                </div>
+                <div class="cart-screenshots__list">
+                    <div class="cart-screenshots__item">
+                        <div class="cart-screenshots__item-title">
+                            Охваты сторис
+                        </div>
+                        <div class="cart-screenshots__item-img">
+                            <img src="images/screenshots/screenshots1.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="cart-screenshots__item">
+                        <div class="cart-screenshots__item-title">
+                            Охваты постов
+                        </div>
+                        <div class="cart-screenshots__item-img">
+                            <img src="images/screenshots/screenshots2.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="cart-screenshots__item">
+                        <div class="cart-screenshots__item-title">
+                            Страны
+                        </div>
+                        <div class="cart-screenshots__item-img">
+                            <img src="images/screenshots/screenshots3.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="cart-screenshots__item">
+                        <div class="cart-screenshots__item-title">
+                            Города
+                        </div>
+                        <div class="cart-screenshots__item-img">
+                            <img src="images/screenshots/screenshots4.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="cart-screenshots__item">
+                        <div class="cart-screenshots__item-title">
+                            Возраст
+                        </div>
+                        <div class="cart-screenshots__item-img">
+                            <img src="images/screenshots/screenshots5.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="cart-screenshots__item">
+                        <div class="cart-screenshots__item-title">
+                            Пол
+                        </div>
+                        <div class="cart-screenshots__item-img">
+                            <img src="images/screenshots/screenshots6.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="medium-popup access-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="big-popup__title">
+                    Настройка доступов
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body add-manager-wrap">
+                <div class="medium-popup__info">
+                    1. Менеджер должен быть зарегистрирован  на сайте. Вы должны ввести <b>точный номер телефона</b>, который он <b>вводит при авторизации</b>.
+                    <br><br>
+                    2. Вы можете добавить не более двух менеджеров для своего аккаунта.
+                </div>
+
+                <div class="add-manager">
+                    <div class="add-manager__item">
+                        <label for="man1">Телефон 1-го менеджера</label>
+                        <div class="add-manager__btn d-flex">
+                            <input type="text" class="form-control phone" id="man1" value="+7 (231) 231 - 23 - 12" placeholder="" required="">
+                            <a href="#" class="btn btn-outline-secondary"><i class="green-check-icon"></i>
+                                Дать доступ
+                            </a>
+                        </div>
+                        <a href="#" class="add-manager__clear">Удалить доступ</a>
+                    </div>
+                    <div class="add-manager__item">
+                        <label for="man2">Телефон 2-го менеджера <p>(если хотите добавить второго менеджера)</p></label>
+                        <div class="add-manager__btn d-flex">
+                            <input type="text" class="form-control phone" id="man2" placeholder="" required="">
+                            <a href="#" type="button" class="btn btn-primary custom-btn custom-btn-gold">
+                                Дать доступ
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="medium-popup add-brand-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="big-popup__title">
+                    Добавить бренды в карточку
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body add-brand-wrap">
+                <div class="medium-popup__info">
+                    Напишите название бренда в поле ниже и добавьте скриншоты поста или сторис, где видно, как вы рекламируете этот бренд. А также приложите скриншоты из статистики переходов.
+                    <br><br>
+                    В случае одобрения модератором, вы получите значок, который будет показываться в вашей карточке и указывать количество брендов, без их названия.
+                </div>
+
+                <div class="add-brand">
+                    <form class="needs-validation" novalidate action="javascript:void(0)">
+                        <div class="add-brand__items">
+                            <div class="add-brand__item">
+                                <label for="brand1">Бренд №1</label>
+                                <div class="add-brand__btn d-flex">
+                                    <input type="text" class="form-control phone" id="brand1" placeholder="Название бренда" required="">
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control custom-file-input" style="display: none" required="">
+
+                                        <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="add-manager__clear">Очистить</a>
+                            </div>
+                            <div class="add-brand__item">
+                                <label for="brand2">Бренд №2</label>
+                                <div class="add-brand__answer">
+                                    Бренд «<span class="red">Крошка картошка</span>» не принят по причине: <br> <b>Скриншот был обрезан.</b>
+                                </div>
+                                <div class="add-brand__btn d-flex">
+                                    <input type="text" class="form-control phone" id="brand2" placeholder="Название бренда" required="">
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control custom-file-input" style="display: none" required="">
+
+                                        <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="add-brand__clear">Очистить</a>
+                            </div>
+                        </div>
+
+                        <div class="add-brand__bottom">
+                            <div class="red error" style="display:none;">
+                                Заполните поля и загрузите скриншоты
+                            </div>
+                            <a href="#" class="btn btn-outline-secondary">Добавить новый формат рекламы</a>
+                            <a href="#" type="button" class="btn btn-primary custom-btn custom-btn-gold add-brand-btn">
+                                Отправить на модерацию
+                            </a>
+                        </div>
+                        <button class="hide">ok</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="big-popup send-review wrap-popup">
+        <div class="wrap-popup__inner send-review__inner">
+
+
+            <div class="send-review-popup__body">
+                <div class="send-review__title">
+                    Оставить отзыв на блогера
+                    <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+                </div>
+                <div class="send-review__taps">
+                    <div class="send-review__tap-i send-review__tap-first active">
+                        <div class="send-review__tap">
+                            Шаг 1 из 2
+                        </div>
+                        <div class="send-review__subtitle">
+                            Вы блогер или у вас коммерческий аккаунт (например, магазин)?
+                        </div>
+                        <div class="send-review__tabs">
+                            <div class="send-review__tabs-t-wrap">
+                                <a href="javascript:void(0)" class="send-review__tab-t active">
+                                    Блогер
+                                </a>
+                                <a href="javascript:void(0)" class="send-review__tab-t">
+                                    Коммерческий
+                                </a>
+                            </div>
+                            <div class="send-review__content">
+                                <div class="send-review__content-i active">
+                                    <form class="needs-validation" novalidate action="javascript:void(0)">
+                                        <div class="form-group">
+                                            <label for="revlink">Ссылка на мой аккаунт</label>
+                                            <input type="text" id="revlink" class="form-control" value="alexandramitroshina" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="revlink2">Реклама была у блогера</label>
+                                            <input type="text" id="revlink2" class="form-control" value="nastasia_guba" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="revlink3">Дата выхода рекламы</label>
+                                            <input type="text" id="revlink3" class="form-control datepicker"  required>
+                                        </div>
+                                        <div class="form-group-flex form-group">
+                                            <div class="form-group-left">
+                                                <label for="revprice">Цена за рекламу в ₽</label>
+                                                <input type="text" id="revprice" class="form-control"  required>
+                                            </div>
+                                            <div class="form-group-right">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input to-enabled-next" id="revprice2"  >
+                                                    <label class="custom-control-label" for="revprice2">ВП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="revprice3" disabled >
+                                                    <label class="custom-control-label" for="revprice3">С доплатой</label>
+                                                    <span class="info">
+                                                        <a href="javascript:void(0)" class="info-icon"></a>
+                                                        <div class="info__txt">
+                                                            Здесь вы можете предоставить доступ менеджеру, чтобы он управлял вашей карточкой.
+                                                            <br>
+                                                            <br>
+                                                            Менеджер должен быть зарегистрирован на сайте.
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="revlink5">Приход подписчиков</label>
+                                            <input type="text" id="revlink5" class="form-control"  required>
+                                        </div>
+                                        <button class="hide">ok</button>
+                                    </form>
+                                </div>
+
+                                <div class="send-review__content-i">
+                                    <form class="needs-validation" novalidate action="javascript:void(0)">
+                                        <div class="form-group">
+                                            <label for="revlink10">Ссылка на мой аккаунт</label>
+                                            <input type="text" id="revlink10" class="form-control" value="alexandramitroshina" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="revlink12">Реклама была у блогера</label>
+                                            <input type="text" id="revlink12" class="form-control" value="nastasia_guba" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="revlink13">Дата выхода рекламы</label>
+                                            <input type="text" id="revlink13" class="form-control datepicker"  required>
+                                        </div>
+                                        <div class="form-group-flex form-group custom-radio-3">
+                                            <div class="form-group-flex-title">
+                                                Реклама окупилась
+                                            </div>
+                                            <div class="form-group-left-l">
+                                                <input type="radio" name="reclam" id="reclam2">
+                                                <label for="reclam2">Да</label>
+                                            </div>
+                                            <div class="form-group-left-r">
+                                                <input type="radio" name="reclam" id="reclam1">
+                                                <label for="reclam1">Нет</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group-flex form-group">
+                                            <div class="form-group-left">
+                                                <label for="revprice10">Цена за рекламу в ₽</label>
+                                                <input type="text" id="revprice10" class="form-control "  required>
+                                            </div>
+                                            <div class="form-group-right">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input to-enabled-next" id="revprice12"  >
+                                                    <label class="custom-control-label" for="revprice12">ВП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="revprice13" disabled >
+                                                    <label class="custom-control-label" for="revprice13">С доплатой</label>
+                                                    <span class="info">
+                                                        <a href="javascript:void(0)" class="info-icon"></a>
+                                                        <div class="info__txt">
+                                                            Здесь вы можете предоставить доступ менеджеру, чтобы он управлял вашей карточкой.
+                                                            <br>
+                                                            <br>
+                                                            Менеджер должен быть зарегистрирован на сайте.
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="revlink15">Приход подписчиков</label>
+                                            <input type="text" id="revlink15" class="form-control"  required>
+                                        </div>
+                                        <button class="hide">ok</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="send-review__bottom">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Отмена</a>
+                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold check-send-review">
+                                    Далее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="send-review__tap-i send-review__tap-second">
+                        <div class="send-review__tap">
+                            Шаг 1 из 2
+                        </div>
+                        <div class="send-review__tap-second-inner">
+                            <div class="send-review__tap-second-l">
+                                <div class="form-group w-100 d-flex flex-wrap">
+                                    <label class="w-100">Формат рекламы</label>
+                                    <div class="card__form-advertising-i">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="advertising1"  class="custom-control-input" id="set16" required="">
+                                            <label class="custom-control-label" for="set16">Сторис</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__form-advertising-i">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="advertising1"  class="custom-control-input" id="set17" required="">
+                                            <label class="custom-control-label" for="set17">Фото-пост</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__form-advertising-i">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="advertising1"  class="custom-control-input" id="set18" required="">
+                                            <label class="custom-control-label" for="set18">Видео-пост</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__form-advertising-i">
+                                        <div class="custom-radio">
+                                            <input type="radio" name="advertising1"  class="custom-control-input" id="set19" required="">
+                                            <label class="custom-control-label" for="set19">Сторис + пост</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group w-100">
+                                    <label for="theme-pp">Тема аккаунта заказчика</label>
+                                    <select id="theme-pp" class="selectpicker white-select w-100" required multiple
+                                            title="Выберите из списка">
+                                        <option>Бизнес</option>
+                                        <option>Бьюти</option>
+                                        <option>Дом, интерьер и ремонт</option>
+                                        <option>Жизнь заграницей</option>
+                                        <option>ЗОЖ</option>
+                                    </select>
+                                </div>
+                                <div class="report__block-i form-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="form-control custom-file-input" style="display: none" required>
+                                        <label for="report-mail">Скриншоты переходов</label>
+                                        <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить скриншоты</a>
+                                        <p class="file-invalid">
+                                            Скриншот <br> не загружен
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <label for="ohvat">Фактический охват</label>
+                                    </div>
+                                    <label for="ohvat" class="small-label dark-grey">необязательное поле</label>
+                                    <input type="text" class="form-control" id="ohvat" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <label for="perehodu">Число переходов по рекламе</label>
+                                    </div>
+                                    <label for="perehodu" class="small-label dark-grey">необязательное поле</label>
+                                    <input type="text" class="form-control" id="perehodu" placeholder="">
+                                </div>
+                            </div>
+                            <div class="send-review__tap-second-r">
+                                <div class="send-review__slider">
+                                    <p>
+                                        <label for="slider-ui-custom">Оцените рекламу </label>
+                                        <input type="text" id="slider-ui-custom" readonly >
+                                        <img src="images/star.png" alt="img">
+                                    </p>
+                                    <div id="slider-range-max"></div>
+                                    <div class="d-flex justify-content-between">
+                                        <span class="dark-grey">1</span>
+                                        <span class="dark-grey">5</span>
+                                        <span class="dark-grey">10</span>
+                                    </div>
+                                </div>
+                                <a  href="javascript:void(0);" class="open-textarea" >Написать текст отзыва</a>
+                                <div class="toggle-textarea">
+                                    <label for="text-rev" class="small-label dark-grey">необязательное поле</label>
+                                    <div class="textarea-count" data-count="0">
+                                        <textarea  class="form-control " name="report" id="text-rev"></textarea>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="reg" checked="" required="">
+                                    <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Правилами публикации отзывов</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="send-review__bottom">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Назад</a>
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold send-send-review">
+                                Отправить отзыв
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="base-popup send-review-success-popup wrap-popup">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="base-popup_success-wrap">
+                    <img src="images/svg/done_icon.svg" alt="img">
+                    <div class="base-popup_success">Отзыв отправлен на модерацию</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="medium-popup email-send-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="medium-popup__title">
+                    Проверьте себя
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body email-send-wrap">
+                <div class="email-send-txt">
+                    Прежде, чем мы отправим напоминание блогеру <a href="#">svetlana.borisova</a>, убедитесь, что вы:
+                    <br><br>
+                    <p>
+                        1. Отправили этому блогеру в директ сообщение с промокодом?
+                        <br><br>
+                        2. А сообщение отправили с аккаунта gontsovaantonina?
+                        <br><br>
+                        Если вы отправили сообщение с другого аккаунта, то укажите его в поле ниже:
+                    </p>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control"  placeholder="Введите ник">
+                    </div>
+
+                </div>
+
+                <div class="email-send__bottom">
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary medium-popup-no">Нет, не отправлял(-а)</a>
+                    <a href="javascript:void(0);" class="btn btn-primary custom-btn medium-popup-yes">
+                        Да, отправлял(-а)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="medium-popup email-send-popup-direct wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="big-popup__title">
+                    Попросить блогера проверить директ
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body email-send-wrap">
+                <div class="f-14">Скопируйте сообщение ниже, нажмите на кнопку «Написать блогеру» и отправьте в директ аккаунта это сообщение.</div>
+                <div class="medium-popup__info">
+                    Вы можете отправить ваше сообщение блогеру  в директ только с помощью мобильного телефона.
+                </div>
+                <div class="email-send-textarea">
+                    <textarea>Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей.  Мой аккаунт @gontsovaantonina.
+
+Трансформационный коуч
+Антикризисный коуч
+Мотивационный тренер
+
+Равновесие и гармония с самой собой. Трансформационные техники для самостоятельного использования и энергоресурсеость для жизни.</textarea>
+                </div>
+
+                <div class="email-send__bottom justify-content-start">
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Скопировать</a>
+                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold ml-3">
+                        Написать блогеру
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="base-popup email-send-success-popup wrap-popup">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="base-popup_success-wrap">
+                    <img src="images/svg/done_icon.svg" alt="img">
+                    <div class="base-popup_success">Мы отправили сообщение блогеру</div>
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Спасибо</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="medium-popup check-direct-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="medium-popup__title">
+                    Просьба проверить директ
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body check-direct-wrap">
+                <div class="scroll">
+                    <div class="check-direct-block">
+                        <div class="check-direct-date">
+                            08.07.19 в 21:59
+                        </div>
+                        <div class="check-direct-txt">
+                            <a href="#">angelina_better</a> просит проверить директ акаунта <br>
+                            <a href="#">aktasia_</a> и ответить на его запрос.
+                            <br><br>
+                            Ищите сообщение, которое начинается со слова Easyprbot.
+                            <br><br>
+                            Заказчик промокода <a href="#">angelina_better</a>, но может писать и с другого аккаунта.
+                        </div>
+                        <div class="check-direct-btn">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Просьба прислать заново</a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Готово</a>
+                        </div>
+                    </div>
+                    <div class="check-direct-block">
+                        <div class="check-direct-date">
+                            08.07.19 в 21:59
+                        </div>
+                        <div class="check-direct-txt">
+                            <a href="#">angelina_better</a> просит проверить директ акаунта <br>
+                            <a href="#">aktasia_</a> и ответить на его запрос.
+                            <br><br>
+                            Ищите сообщение, которое начинается со слова Easyprbot.
+                            <br><br>
+                            Заказчик промокода <a href="#">angelina_better</a>, но может писать и с другого аккаунта.
+                        </div>
+                        <div class="check-direct-btn">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Просьба прислать заново</a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Готово</a>
+                        </div>
+                    </div>
+                    <div class="check-direct-block">
+                        <div class="check-direct-date">
+                            08.07.19 в 21:59
+                        </div>
+                        <div class="check-direct-txt">
+                            <a href="#">angelina_better</a> просит проверить директ акаунта <br>
+                            <a href="#">aktasia_</a> и ответить на его запрос.
+                            <br><br>
+                            Ищите сообщение, которое начинается со слова Easyprbot.
+                            <br><br>
+                            Заказчик промокода <a href="#">angelina_better</a>, но может писать и с другого аккаунта.
+                        </div>
+                        <div class="check-direct-btn">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Просьба прислать заново</a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Готово</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="medium-popup thesis-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="medium-popup__title">
+                    Тезисы
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body thesis-popup-wrap">
+                <div class="thesis-popup-txt">
+                    Меня зовут Анжелика, я Танцую тверк,2 раза горела в церкви,Мама привела меня на тверк в 18 лет,выслушиваю осуждения,мои посты блокируют,каждый день кидаю себе вызовы в сторис
+                    <br>
+                    Я уехала из дома в 17, я не стесняюсь танцевать тверк,мотивирую быть уверенней, рассказываю о борьбе с негативом и пишу полезные посты
+                </div>
+                <div class="thesis-popup-btn">
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary copy-btn">Скопировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="medium-popup no-recklam wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="medium-popup__title">
+                    Реклама не вышла
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body no-recklam-wrap">
+                <label>Уточните пожалуйста:</label>
+                <div class="form-group radio-group custom-radio-2">
+                    <div class="custom-control custom-radio-2">
+                        <input type="radio" name="verify6"  class="custom-control-input " id="verify6" required="">
+                        <label class="custom-control-label" for="verify6">Реклама еще не вышла</label>
+                    </div>
+                    <div class="custom-control custom-radio-2">
+                        <input type="radio" name="verify6"  class="custom-control-input " id="verify7" required="">
+                        <label class="custom-control-label" for="verify7">Клиент отказался от оплаты</label>
+                    </div>
+                    <div class="custom-control custom-radio-2">
+                        <input type="radio" name="verify6"  class="custom-control-input " id="verify8" required="">
+                        <label class="custom-control-label" for="verify8">Я отказал(-а) клиенту</label>
+                    </div>
+                </div>
+
+                <div class="no-recklam-btn">
+                    <a href="javascript:void(0);" class="btn btn-primary custom-btn">Готово</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!--END POPUPS-->
 </div>
@@ -2891,6 +3736,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
 <script src="js/inputmask.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/datepicker-ru.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script src="js/main.js"></script>
