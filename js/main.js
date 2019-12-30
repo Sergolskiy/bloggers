@@ -210,8 +210,30 @@ $(document).ready(function () {
             active.next('.moder__content-i').addClass('active');
         }
 
+        if(active.index()+1 > 0){
+            $(this).prev().show();
+        }
+
+        if(active.next('.moder__content-i').index() == $('.moder__content-i').last().index()){
+            $(this).hide();
+            $(this).next().show();
+        }
+
         active.removeClass('active');
 
+    });
+
+    $('.moder-req-prev').click(function (e) {
+        e.preventDefault();
+        var active = $(this).closest('.moder__inner').find('.moder__content-i.active');
+        active.prev().addClass('active');
+        active.removeClass('active');
+        $(this).next().next().hide();
+        $(this).next().show();
+
+        if(active.index()-1 == 0){
+            $(this).hide();
+        }
     });
 
     $('.open-moder').click(function () {
@@ -473,6 +495,46 @@ $(document).ready(function () {
 
 
 
+    $('.open-screenshots').click(function () {
+        $('.screenshots-popup').addClass('open');
+        bodyHidden();
+    });
+
+
+    $('.example-evidence-popup-btn').click(function () {
+        $('.example-evidence-popup').addClass('open');
+        bodyHidden();
+    });
+
+
+
+    $('.clear-cart-p-btn').click(function () {
+        $('.if-clear-cart-popup').addClass('open');
+        bodyHidden();
+    });
+
+
+
+    $('.send-request-to-blogger').click(function () {
+        $('.request-to-blogger-popup').addClass('open');
+        bodyHidden();
+    });
+
+
+    $('.check-request-to-blogger').click(function () {
+        $(this).parents('.request-to-blogger__inner').find('button').click();
+
+        var form = $(this).closest('.request-to-blogger__inner').find('form')[0];
+
+        if (form.checkValidity() === false) {
+            $(this).next().show();
+        } else {
+            $(this).next().hide();
+            $(this).closest('.wrap-popup').removeClass('open');
+            $('.request-to-blogger-success-popup').addClass('open');
+        }
+    });
+
 
 
 
@@ -660,6 +722,15 @@ $(document).ready(function () {
         $(this).closest('.request__card-inner').find('.request__card-bottom').show();
         $(this).closest('.request__card-inner').find('.request__card-content').show();
         $(this).closest('.request__card-inner').find('.request__changed').hide();
+    });
+
+
+
+
+    $('.owl-carousel').owlCarousel({
+        margin:15,
+        dots: false,
+        nav: true
     });
 
 });

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -216,7 +217,7 @@
                     </div>
                 </div>
                 <div class="title__right">
-                    <a href="#" class="btn btn-outline-secondary btn--white">Очистить корзину</a>
+                    <a href="#" class="btn btn-outline-secondary btn--white clear-cart-p-btn">Очистить корзину</a>
                 </div>
             </div>
 
@@ -406,7 +407,7 @@
                                     промокод на скидку для моих подписчиков.
                                 </div>
                                 <div class="cart-block__main-col flex-column align-items-start">
-                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold send-request-to-blogger">
                                         Отправить запрос
                                     </button>
                                     <p class="mt-3">
@@ -2288,6 +2289,282 @@
     </div>
 
 
+
+    <div class="big-popup request-to-blogger-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="big-popup__top">
+                <div class="big-popup__title">
+                    Заполните поля заявки, чтобы получить ответ блогера(-ов)
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="big-popup__body request-to-blogger">
+                <div class="request-to-blogger__inner">
+                    <div class="request-to-blogger__left">
+                        <form class="needs-validation" novalidate action="javascript:void(0)">
+                            <div class="request-to-blogger__i">
+                                <label for="requestToBl">Ваш e-mail</label>
+                                <input type="email" class="form-control" id="requestToBl" placeholder="" required="">
+
+                            </div>
+                            <div class="request-to-blogger__i">
+                                <label for="requestToBl2">Ваш аккаунт</label>
+                                <input type="text" class="form-control" id="requestToBl2" placeholder="" required="">
+
+                            </div>
+                            <div class="request-to-blogger__i">
+                                <label for="requestToBl3">
+                                    Тезисы
+                                    <span class="info left">
+                                        <a href="javascript:void(0)" class="info-icon"></a>
+                                        <div class="info__txt">
+                                            Напишите тезисы о своём аккаунте или о том, что хотите прорекламировать.
+                                            <br><br>
+                                            Тезисы удобнее всего сделать по плану: <br>
+                                            1. 3 тезиса про ваш аккаунт. <br>
+                                            2. 3-4 последние темы у вас в аккаунте.
+                                        </div>
+                                    </span>
+                                </label>
+                                <div class="textarea-count" data-count="0">
+                                    <textarea  class="form-control " name="report" id="requestToBl3" required placeholder="Например: Мой блог про:
+Медитации и силу подсознания
+Психологическую сторону успеха и денег
+Обзоры и анти-обзоры на книги
+
+Последние темы про:
+- Медитации для новичков
+- Как медитации влияют на мозг
+- Как подтолкнуть партнера к работе над собой
+- Как заставить кризисы работать на пользу
+- Как развиваться без книг и тренингов"></textarea>
+                                </div>
+                            </div>
+                            <div class="request-to-blogger__i">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="requestToBl5" required="">
+                                    <label class="custom-control-label" for="requestToBl5">Я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>
+                                </div>
+                            </div>
+                            <button class="hide">ok</button>
+                        </form>
+
+                        <div class="request-to-blogger__i">
+                            <a href="#" type="button" class="btn btn-primary custom-btn custom-btn-gold check-request-to-blogger">
+                                Отправить
+                            </a>
+                            <span class="err-form">Заполните поля <br> отмеченные красным</span>
+                        </div>
+
+                    </div>
+                    <div class="request-to-blogger__right">
+                        <div class="request-to-blogger__title">
+                            Инструкция по заказу рекламы
+                        </div>
+                        <div class="request-to-blogger__txt">
+                            <p>
+                                1. Вы отправляете свой аккаунт, тезисы и рекламные макеты по рекламе блогеру.
+                            </p>
+                            <p>
+                                2. Блогер рассматривает вашу заявку и отвечает вам через сайт и электронную почту, сможет ли он взять вас на рекламу или нет.
+                            </p>
+                            <p>
+                                3. Если блогер согласен на рекламу, на сайте и в письме будет указана ссылка для генерации промокода и контакты блогера.
+                            </p>
+                            <p>
+                                4.Сгенерировав промокод, напишите в основной или pr-аккаунт блогера, где вы сможете обсудить основные детали и оплатить рекламу лично блогеру.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="big-popup request-to-blogger-success-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="big-popup__top">
+                <div class="big-popup__title">
+                    Заявка отправлена
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="big-popup__body request-to-blogger-success">
+                <div class="base-popup_success-wrap">
+                    <img src="images/svg/done_icon.svg" alt="img">
+                    <div class="base-popup_success">Ваша заявка отправлена</div>
+                    <div class="request-to-blogger-success-txt">
+                        Ответ придет в <a href="#">Ответы по рекламе</a> и вам на почту. <br><br>
+                        Обычно рассмотрение заявок занимает <br> до 3-х дней.
+                    </div>
+
+                </div>
+
+                <div class="same-bloggers">
+                    <div class="same-bloggers__title">
+                        Возможно, вам будут интересны эти блогеры
+                    </div>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="same-bloggers__item">
+                            <div class="same-bloggers__top">
+                                <div class="same-bloggers__photo">
+                                    <img src="images/cart/blogger-1.jpg" alt="img">
+                                </div>
+                                <div class="same-bloggers__right">
+                                    <div class="same-bloggers__nik">
+                                        neotpuskaiteplo
+                                    </div>
+                                    <div class="same-bloggers__name dark-grey">
+                                        Ксюша
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="same-bloggers__center">
+                                <div class="same-bloggers__story">
+                                    <span class="dark-grey">Охват сторис:</span> 405 124
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
+                                </div>
+                                <div class="same-bloggers__posts">
+                                    <span class="dark-grey">Охват постов:</span> 603 307
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
+                                </div>
+                            </div>
+                            <div class="same-bloggers__bottom">
+                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
+                                    В карточку блогера
+                                </a>
+                            </div>
+                        </div>
+                        <div class="same-bloggers__item">
+                            <div class="same-bloggers__top">
+                                <div class="same-bloggers__photo">
+                                    <img src="images/cart/avatar(1).png" alt="img">
+                                </div>
+                                <div class="same-bloggers__right">
+                                    <div class="same-bloggers__nik">
+                                        neotpuskaiteplo
+                                    </div>
+                                    <div class="same-bloggers__name dark-grey">
+                                        Ксюша
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="same-bloggers__center">
+                                <div class="same-bloggers__story">
+                                    <span class="dark-grey">Охват сторис:</span> 405 124
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
+                                </div>
+                                <div class="same-bloggers__posts">
+                                    <span class="dark-grey">Охват постов:</span> 603 307
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
+                                </div>
+                            </div>
+                            <div class="same-bloggers__bottom">
+                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
+                                    В карточку блогера
+                                </a>
+                            </div>
+                        </div>
+                        <div class="same-bloggers__item">
+                            <div class="same-bloggers__top">
+                                <div class="same-bloggers__photo">
+                                    <img src="images/cart/avatar(1).png" alt="img">
+                                </div>
+                                <div class="same-bloggers__right">
+                                    <div class="same-bloggers__nik">
+                                        neotpuskaiteplo
+                                    </div>
+                                    <div class="same-bloggers__name dark-grey">
+                                        Ксюша
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="same-bloggers__center">
+                                <div class="same-bloggers__story">
+                                    <span class="dark-grey">Охват сторис:</span> 405 124
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
+                                </div>
+                                <div class="same-bloggers__posts">
+                                    <span class="dark-grey">Охват постов:</span> 603 307
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
+                                </div>
+                            </div>
+                            <div class="same-bloggers__bottom">
+                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
+                                    В карточку блогера
+                                </a>
+                            </div>
+                        </div>
+                        <div class="same-bloggers__item">
+                            <div class="same-bloggers__top">
+                                <div class="same-bloggers__photo">
+                                    <img src="images/cart/avatar(1).png" alt="img">
+                                </div>
+                                <div class="same-bloggers__right">
+                                    <div class="same-bloggers__nik">
+                                        neotpuskaiteplo
+                                    </div>
+                                    <div class="same-bloggers__name dark-grey">
+                                        Ксюша
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="same-bloggers__center">
+                                <div class="same-bloggers__story">
+                                    <span class="dark-grey">Охват сторис:</span> 405 124
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
+                                </div>
+                                <div class="same-bloggers__posts">
+                                    <span class="dark-grey">Охват постов:</span> 603 307
+                                    <br>
+                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
+                                </div>
+                            </div>
+                            <div class="same-bloggers__bottom">
+                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
+                                    В карточку блогера
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="big-popup if-clear-cart-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="big-popup__top">
+                <div class="big-popup__title">
+                    Очистить корзину
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="big-popup__body if-clear-cart">
+                Вы точно хотите очистить корзину?
+                <div class="if-clear-cart-btn">
+                    <a href="#" class="btn btn-outline-secondary btn--white">Отмена</a>
+                    <button type="button" class="btn btn-primary custom-btn">Очистить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--END POPUPS-->
 </div>
 
@@ -2300,6 +2577,7 @@
 <script src="js/jquery-ui.js"></script>
 <script src="js/datepicker-ru.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 
 <script src="js/main.js"></script>
 
