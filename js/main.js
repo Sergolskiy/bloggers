@@ -438,6 +438,15 @@ $(document).ready(function () {
     });
 
 
+    $('.no-recklam-btn-p').click(function () {
+        $('.no-recklam').addClass('open');
+        bodyHidden();
+    });
+
+    $('.no-recklam-btn .btn').click(function () {
+        $(this).closest('.wrap-popup').find('.close-btn').click();
+    });
+
     $('.how-make-order').click(function () {
         $('.how-make-order-popup').addClass('open');
         bodyHidden();

@@ -1094,6 +1094,46 @@ table tbody tr:nth-child(odd){
     margin-left: 0;
 }
 
+.home-table th{
+    position: relative;
+    cursor: pointer;
+}
+
+.home-table th:hover:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: 4px;
+    width: 11px;
+    height: 9px;
+    background: url("../images/svg/arrow-l-solid.svg") center center no-repeat;
+    transform: rotate(-90deg);
+    background-size: contain;
+}
+
+.home-table th[colspan="4"]:hover:after{
+    display: none;
+}
+.home-table-title-i div{
+    position: relative;
+    cursor: pointer;
+}
+.home-table .home-table-title-i div:hover:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: 4px;
+    width: 11px;
+    height: 9px;
+    background: url("../images/svg/arrow-l-solid.svg") center center no-repeat;
+    transform: rotate(-90deg);
+    background-size: contain;
+}
+
 
 /*********  END TABLE  ************/
 
