@@ -735,12 +735,14 @@ $(document).ready(function () {
 
 
 
+    if($('.owl-carousel').length > 0){
+        $('.owl-carousel').owlCarousel({
+            margin:15,
+            dots: false,
+            nav: true
+        });
+    }
 
-    $('.owl-carousel').owlCarousel({
-        margin:15,
-        dots: false,
-        nav: true
-    });
 
 });
 
