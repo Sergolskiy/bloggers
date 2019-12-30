@@ -3726,7 +3726,7 @@ table tbody tr:nth-child(odd){
 }
 
 .request__cards{
-    margin: 0;
+    /*margin: 0;*/
     margin-top: 35px;
 }
 
@@ -8039,8 +8039,18 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
 
+    .request__changed {
+        min-height: 270px;
+    }
 
 
+    .hide-992{
+        display: none !important;
+    }
+
+    .title__right-btns {
+        margin-left: 10px;
+    }
 
 }
 
@@ -8612,6 +8622,114 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         cursor: pointer;
     }
 
+    .title__center-btns .btn:nth-child(n){
+        border-radius: 5px;
+        margin: 0 3px;
+    }
+
+    .mobile-title{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mobile-title .title__center {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .mobile-title .title__left{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .mobile-title .title-txt{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .mobile-title .title__center-btns{
+        margin-left: 0;
+        margin-right: 7px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-title .title__right-btns {
+        margin-left: 0;
+    }
+
+    .request__cards {
+        margin-top: 15px;
+    }
+
+    .request__table-top{
+        display: none;
+    }
+
+    .request__table{
+        display: none;
+    }
+
+    .request__top-search{
+        margin: 0 15px;
+        padding: 20px 0;
+    }
+
+    .request__top-search input{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .answer-mobile__date{
+        font-size: 12px;
+        line-height: 15px;
+        color: #6A7B83;
+    }
+
+    .request-mobile__title{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .request-mobile__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .request-mobile__bottom-left,
+    .request-mobile__bottom-right{
+        display: flex;
+        align-items: center;
+    }
+
+    .request-mobile__bottom-right span{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .request-mobile__merge-btn{
+        margin-left: 5px;
+    }
+
+    .request-mobile__merge-btn .btn:first-child{
+        margin-right: -5px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .request-mobile__merge-btn .btn:last-child{
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .request-mobile-table .answer-mobile__txt a{
+        display: block;
+        color: #3897F0;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 5px;
+    }
+
+    .request-mobile-table .btn-bells{
+        padding: 6px 9px;
+    }
 }
 
 @media (max-width: 500px) {
