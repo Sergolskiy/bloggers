@@ -2670,6 +2670,18 @@ table tbody tr:nth-child(odd){
     padding: 30px 20px;
 }
 
+.settings-block.slide-hide{
+    padding-bottom: 0;
+}
+
+.settings-block.slide-hide .settings-block__head{
+    border-bottom: 0;
+}
+
+.slide-hide-mob{
+    margin-bottom: 20px;
+}
+
 .settings__row{
     display: flex;
     justify-content: space-between;
@@ -3676,7 +3688,8 @@ table tbody tr:nth-child(odd){
 }
 
 .merge-btn-p .btn{
-    padding: 6px 10px;
+    padding: 8px 10px;
+    line-height: 17px;
 }
 
 .title-top{
@@ -4483,7 +4496,7 @@ table tbody tr:nth-child(odd){
 
 .moder__list-top{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     font-size: 14px;
     line-height: 17px;
@@ -4515,6 +4528,12 @@ table tbody tr:nth-child(odd){
 
 .moder__list-btn .expand-btn{
     display: block;
+}
+
+.moder__list-btn-wrap{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .moder__list-content{
@@ -4641,6 +4660,10 @@ table tbody tr:nth-child(odd){
     border: 1px solid #D5DFE4;
 }
 
+.moder__list-mail + .moder__list-mail{
+    margin-left: 20px;
+}
+
 .complaint .moder__content-end{
     padding-top: 180px;
 }
@@ -4653,9 +4676,27 @@ table tbody tr:nth-child(odd){
     margin-bottom: 0;
 }
 
+.complaint .moder__list-date{
+    width: 100%;
+    max-width: 250px;
+}
 
 
+.moderation-filter{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
 
+.moderation-page-title .title-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moderation-page-title .title-top .btn{
+    display: none;
+}
 
 /*********  END MODERATION  ************/
 
@@ -6222,11 +6263,13 @@ table tbody tr:nth-child(odd){
 .form-control.is-invalid, .was-validated .form-control:invalid{
     border-color: #FF0000;
     background-image: none !important;
+    padding-right: 0 !important;
 }
 
 .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
     border-color: #FF0000 !important;
     box-shadow: none !important;
+    padding-right: 0 !important;
 }
 
 .form-control.is-valid, .was-validated .form-control:valid{
@@ -7079,6 +7122,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     display: none;
 }
 
+.otkaz-small-popup-mob-top{
+    display: none;
+}
+
 /*********  MEDIA  ************/
 
 
@@ -7280,6 +7327,32 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .answer__top-btn {
         margin-left: 15px;
+    }
+
+    .moderation-page-title .title__right-btns {
+        margin-left: 10px;
+    }
+
+    .moderation-page-title .request__top-search input {
+        max-width: 137px;
+    }
+
+    .moderation-page-title .title__right-checkbox {
+        padding: 5px 6px;
+    }
+
+    .moderation-page-title .title__right-checkbox .custom-checkbox {
+        margin-left: 6px;
+    }
+
+
+    .moder__list-btn-wrap{
+        flex-direction: column;
+    }
+
+    .moder__list-btn-wrap .btn-outline-secondary{
+        margin-left: 0;
+        margin-top: 10px;
     }
 }
 
@@ -8052,6 +8125,24 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-left: 10px;
     }
 
+    .moderation-filter{
+        display: none;
+    }
+
+    .moderation-page-title .title-top .btn{
+        display: block;
+    }
+
+
+    .complaint .moder__content-end span{
+        padding-bottom: 15px;
+    }
+
+    .complaint .moder__item:first-child{
+        margin-bottom: 30px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -8730,6 +8821,250 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .request-mobile-table .btn-bells{
         padding: 6px 9px;
     }
+
+    .request__clear .answer__center-txt {
+        margin-bottom: 90px;
+    }
+
+    .moderation-page-title .merge-btn .btn:nth-child(n) {
+        border-radius: 5px;
+        margin: 0 3px 10px;
+        min-width: 86px;
+    }
+
+    .moderation-page-title .merge-btn-p .btn {
+        padding: 8px 14px;
+    }
+
+    .moder__info div{
+        text-align: center;
+    }
+
+    .moder__list-top{
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .moder__list-name{
+        width: 50%;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .moder__list-name a{
+        order: -1;
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+
+    .moder__list-date{
+        width: 50%;
+        margin: 0;
+        text-align: right;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .moder__list-mail{
+        display: flex;
+        color: black;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .moder__list-mail br{
+        display: none;
+    }
+
+    .moder__list-btn{
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .moder__list-btn .expand-btn{
+        padding-top: 2px;
+    }
+
+    .moder__item{
+        position: relative;
+    }
+
+    .moder__list-top .btn {
+        color: #192229;
+        padding: 4px 15px;
+        margin-left: auto;
+        margin-top: 10px;
+    }
+
+
+    .complaint .moder__content-end {
+        padding-top: 70px;
+        min-height: 345px;
+    }
+
+    .moder__list-content-inner .moder__items{
+        flex-direction: column;
+    }
+
+    .moder__list-content-inner .moder__item{
+        margin: 0;
+    }
+
+    .moder__list-mail + .moder__list-mail {
+        margin-left: 0;
+        margin-top: 3px;
+    }
+
+    .moder__list-btn-wrap {
+        flex-direction: row;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .moder__list-top .moder__list-btn-wrap .btn,
+    .moder__list-top .moder__list-btn-wrap .moder__list-btn {
+        margin-top: 0;
+    }
+
+    .moder__list-top .moder__list-btn-wrap .btn {
+        margin-left: auto;
+    }
+
+    .moder__list-btn-wrap{
+        margin-top: 15px;
+    }
+
+    .moder__list-content-inner{
+        margin: 0;
+        padding: 0;
+    }
+
+    .moder__list-content-inner .moder__inner{
+        border: 0;
+    }
+
+    .moder__list-content-inner .moder__bottom{
+        border-radius: 0;
+    }
+
+    .complaint .moder__list-name,
+    .complaint .moder__list-mail,
+    .complaint .moder__list-date{
+        display: none;
+    }
+
+    .complaint-moder-list-top{
+        width: 100%;
+        color: #192229;
+    }
+
+    .complaint-moder-list-top-line{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .complaint-moder-list-top-left{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .complaint-moder-list-top-right .dark-grey,
+    .complaint-moder-list-top-left .dark-grey{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .wrap-popup{
+        padding-top: 75px;
+    }
+
+    .big-popup__inner, .video-popup__inner{
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .add-brand__bottom{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add-brand__bottom .red.error{
+        order: 2;
+        margin-bottom: -15px;
+        margin-top: 6px;
+    }
+
+    .add-brand__bottom .btn-outline-secondary{
+        order: 1;
+    }
+
+    .add-brand__bottom .custom-btn-gold{
+        order: 3;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .send-review__content .form-group-flex{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group-right{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+
+    .form-group-left{
+        width: 100%;
+    }
+
+    .send-review__content .custom-checkbox label {
+        font-size: 14px;
+        line-height: 27px;
+        margin-left: 10px;
+    }
+
+    .form-group-right .custom-checkbox{
+        margin-right: 20px;
+    }
+
+    .send-review__tap-second-inner{
+        flex-direction: column;
+    }
+
+    .send-review__tap-second-l .form-group:last-child,
+    .send-review__tap-second-l .form-group:nth-last-child(2){
+        display: none;
+    }
+
+
+
+    .send-review__tap-first .send-review__bottom,
+    .send-review__tap-second .send-review__bottom {
+        justify-content: flex-start;
+        background: white;
+        max-width: 310px;
+        justify-content: space-between;
+    }
+
+    .send-review__tap-second .send-review__bottom{
+        max-width: 100%;
+    }
+
+    .custom-checkbox label {
+        font-size: 14px;
+        line-height: 28px;
+        margin-left: 10px;
+        margin-bottom: 3px;
+    }
+
+    #gender-women + label{
+        margin-right: 40px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -8792,9 +9127,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         z-index: 10;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: calc(100vh - 75px);
         justify-content: flex-start;
-        padding-bottom: 150px;
+        padding-bottom: 60px;
     }
     .big-popup, .wrap-popup {
         background: white;
@@ -8811,6 +9146,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .base-popup .wrap-popup__inner, .login .wrap-popup__inner {
         max-width: 100%;
         margin-top: 0;
+    }
+
+    .big-popup__body > *:last-child{
+        padding-bottom: 40px;
     }
 
 
@@ -9002,6 +9341,193 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .report__block-i .custom-btn{
         min-width: 168px;
     }
+
+    .moderation-page-title .title-top {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .moder__content {
+        margin-top: 5px;
+    }
+
+    .moder__content-tap{
+        text-align: left;
+    }
+
+    .moder__inner{
+        padding: 15px 15px 0;
+    }
+
+    .moder__bottom-right{
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+
+    .moder__bottom-right .btn{
+        padding: 8px 19px;
+    }
+
+    .moder__bottom-right .moder-req-prev{
+        padding: 8px 13px;
+    }
+
+    .moder__info,
+    .moder__content-inner {
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+    .moder__bottom-left .dropdown{
+        margin: 0;
+    }
+
+    .moder__bottom-left {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .moder__bottom {
+        margin: 0 -15px;
+    }
+
+    .moder__list .moder__bottom-right{
+        right: 15px;
+    }
+
+    .complaint .appeal .moder__bottom {
+        flex-direction: column;
+    }
+
+    .complaint .appeal .moder__bottom-left {
+        justify-content: center;
+    }
+
+    .complaint .moder__bottom-right {
+        position: static;
+    }
+
+    .complaint .appeal .moder__bottom-right{
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .complaint .appeal .moder__bottom-right .btn {
+        padding: 4px 11px 5px;
+        margin-right: 0;
+        margin: 0 10px;
+    }
+
+    .moder__content-tap--fixed .moder__content-i-txt,
+    .moder__content-i-txt,
+    .complaint .moder__content-actions {
+        font-size: 14px;
+    }
+
+    .complaint .moder__content-actions {
+        flex-direction: column;
+    }
+
+    .complaint .moder__content-actions .btn{
+        margin-top: 5px;
+    }
+
+    .send-review__tabs-t-wrap,
+    .send-review__content-i{
+        max-width: 250px;
+    }
+
+    .send-review .send-review__inner{
+        width: 100%;
+    }
+
+    .send-review-popup__body{
+        box-shadow: none;
+    }
+
+    .email-send__bottom {
+        padding: 0 30px;
+        background: #ffffff;
+    }
+
+    .email-send-txt{
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 25px;
+    }
+
+    .email-send-txt p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .email-send-popup .email-send__bottom .custom-btn {
+        padding: 8px 8px;
+    }
+
+    .email-send-popup .email-send__bottom .btn-outline-secondary {
+        padding: 6px 8px;
+    }
+
+    .medium-popup__info{
+        display: none;
+    }
+
+    .email-send-popup-direct .email-send__bottom{
+        margin-top: 30px;
+    }
+
+    .email-send-popup-direct .email-send-textarea textarea{
+        width: 250px;
+        height: 420px;
+    }
+
+    .medium-popup__inner{
+        width: 100%;
+    }
+
+    .close-btn{
+        opacity: 0;
+    }
+
+    .otkaz-small-popup-items{
+        position: fixed;
+        left: 0;
+        top: 75px;
+        width: 100%;
+        border: 0;
+        height: 100vh;
+    }
+
+    .otkaz-small-popup-i {
+        display: flex;
+        align-items: center;
+        color: #3897F0;
+        font-size: 16px;
+        line-height: 19px;
+        height: 44px;
+        padding-left: 30px;
+    }
+
+    .otkaz-small-popup-mob-top{
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding-left: 30px;
+        font-size: 18px;
+        line-height: 21px;
+        border-bottom: 1px solid #D5DFE4;
+    }
+    .custom-btn {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
 }
 
 @media (max-width: 360px) {
@@ -9144,6 +9670,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .answer-mobile__mail.ml-10 .dark-grey{
         margin-top: 10px;
         display: block;
+    }
+
+    .mobile-home-table__bottom > .btn-outline-secondary {
+        max-width: 150px;
+        width: 100%;
+        margin-right: 0px;
+        padding: 6px 5px;
     }
 
 }

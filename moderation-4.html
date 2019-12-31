@@ -218,36 +218,39 @@
     <!--MAIN-->
     <main class="main">
         <div class="container">
-            <div class="title-wrap">
+            <div class="title-wrap moderation-page-title">
                 <h1 class="title-top">
                     Модерация заявок
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Поиск и фильтр</a>
                 </h1>
                 <div class="title">
                     <div class="title__left d-flex align-items-center">
                         <div class="title__left-btns merge-btn merge-btn-p">
-                            <a href="./moderation.html" class="btn btn-primary custom-btn">Свежие <span class="request__top-btn-count">3</span></a>
+                            <a href="./moderation.html" class="btn btn-outline-secondary">Свежие <span class="request__top-btn-count">3</span></a>
                             <a href="./moderation-2.html" class="btn btn-outline-secondary">Одобренные</a>
                             <a href="./moderation-3.html" class="btn btn-outline-secondary">Отклоненные</a>
-                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Жалобы</a>
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn">Жалобы</a>
                         </div>
 
-                        <div class="title__right-btns">
-                            <div class="request__top-search">
-                                <input type="text" placeholder="Поиск (дата или ник)">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+                        <div class="moderation-filter">
+                            <div class="title__right-btns">
+                                <div class="request__top-search">
+                                    <input type="text" placeholder="Поиск (дата или ник)">
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="title__right-btns title__right-b-ch">
-                            <div class="title__right-checkbox d-flex">
-                                Фильтр:
-                                <div class="home-form-col__checkbox-wrap ">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ooo" checked="">
-                                        <label class="custom-control-label" for="ooo">Заявки в базу блогеров</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="self-employed" checked="">
-                                        <label class="custom-control-label" for="self-employed">Заявки на ВП</label>
+                            <div class="title__right-btns title__right-b-ch">
+                                <div class="title__right-checkbox d-flex">
+                                    Фильтр:
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ooo" checked="">
+                                            <label class="custom-control-label" for="ooo">Жалобы</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="self-employed" checked="">
+                                            <label class="custom-control-label" for="self-employed">Апелляции</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -257,13 +260,13 @@
                 </div>
 
                 <h3 class="title-bottom">
-                    Новые заявки в базу блогеров
+                    Обработка жалоб
                 </h3>
             </div>
 
             <div class="moder complaint">
                 <div class="row moder__items">
-                    <div class="col-md-6 moder__item">
+                    <div class="col-lg-6 moder__item">
                         <div class="moder__inner">
                             <div class="moder__name">
                                 <span class="black">Жалоба на</span> amerikanovna
@@ -378,7 +381,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 moder__item">
+                    <div class="col-lg-6 moder__item appeal">
                         <div class="moder__inner">
                             <div class="moder__name">
                                 <span class="black">Апелляция на жалобу на</span> amerikanovna
@@ -481,7 +484,7 @@
                     </div>
                 </div>
                 <div class="row moder__items">
-                    <div class="col-md-6 moder__item">
+                    <div class="col-lg-6 moder__item">
                         <div class="moder__inner">
                             <div class="moder__name">
                                 <span class="black">Жалоба на</span> amerikanovna
@@ -594,7 +597,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 moder__item">
+                    <div class="col-lg-6 moder__item appeal">
                         <div class="moder__inner">
                             <div class="moder__name">
                                 <span class="black">Апелляция на жалобу на</span> amerikanovna
@@ -709,12 +712,32 @@
                                 Заявка в базу блогеров
                                 <a href="#">amerikanovna</a>
                             </div>
+                            <div class="moder__list-name">
+                                От
+                                <a href="#">alexandramitroshina</a>
+                            </div>
                             <div class="moder__list-date">
-                                Одобрена 21.05.19
+                                <span class="black">Действие</span> <br>
+                                Заблокирован отправитель жалобы <br>
+                                Дата: 29.07.19
                             </div>
                             <div class="moder__list-mail">
                                 Модератор <br>
                                 pajasuwqwet@gmail.com
+                            </div>
+
+                            <div class="complaint-moder-list-top mobile">
+                                <div class="complaint-moder-list-top-line">
+                                    <div class="complaint-moder-list-top-left">
+                                        <span>Аппеляция на: <a href="#">alexandramitroshina</a></span>
+                                        <span class="dark-grey">От: amerikanovna</span>
+                                    </div>
+                                    <div class="complaint-moder-list-top-right">
+                                        <span class="dark-grey">24.11.19</span>
+                                    </div>
+                                </div>
+                                Действие: Заблокирован отправитель жалобы <br>
+                                Модератор: pajasuwqwet@gmail.com
                             </div>
                             <div class="moder__list-btn">
                                 <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
@@ -962,12 +985,33 @@
                                 Заявка в базу блогеров
                                 <a href="#">amerikanovna</a>
                             </div>
+                            <div class="moder__list-name">
+                                От
+                                <a href="#">alexandramitroshina</a>
+                            </div>
                             <div class="moder__list-date">
-                                Одобрена 21.05.19
+                                <span class="black">Действие</span> <br>
+                                Заблокирован <br>
+                                Причина: Обман с рекламой <br>
+                                Дата: 29.07.19
                             </div>
                             <div class="moder__list-mail">
                                 Модератор <br>
                                 pajasuwqwet@gmail.com
+                            </div>
+                            <div class="complaint-moder-list-top mobile">
+                                <div class="complaint-moder-list-top-line">
+                                    <div class="complaint-moder-list-top-left">
+                                        <span>Аппеляция на: <a href="#">alexandramitroshina</a></span>
+                                        <span class="dark-grey">От: amerikanovna</span>
+                                    </div>
+                                    <div class="complaint-moder-list-top-right">
+                                        <span class="dark-grey">29.07.19</span>
+                                    </div>
+                                </div>
+                                Заблокирован <br>
+                                Причина: Обман с рекламой <br>
+                                Модератор: pajasuwqwet@gmail.com
                             </div>
                             <div class="moder__list-btn">
                                 <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
@@ -1189,7 +1233,7 @@
                                         <label for="pass2">Пароль</label>
                                     </div>
                                     <input type="password"  class="form-control" id="pass2" minlength="6" required>
-                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
                                 </div>
                                 <div class="form-group">
                                     <div class="pass-label">
@@ -1324,7 +1368,7 @@
                                     <label for="pass2">Введите новый пароль</label>
                                 </div>
                                 <input type="password"  class="form-control" id="pass4" minlength="6" required>
-                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
                             </div>
                             <div class="form-group">
                                 <div class="pass-label">
@@ -1589,7 +1633,7 @@
 
             <div class="medium-popup__body add-manager-wrap">
                 <div class="medium-popup__info">
-                    1. Менеджер должен быть зарегистрирован  на сайте. Вы должны ввести <b>точный номер телефона</b>, который он <b>вводит при авторизации</b>.
+                    1. Менеджер должен быть зарегистрирован на сайте. Вы должны ввести <b>точный номер телефона</b>, который он <b>вводит при авторизации</b>.
                     <br><br>
                     2. Вы можете добавить не более двух менеджеров для своего аккаунта.
                 </div>
@@ -2006,10 +2050,10 @@
             <div class="medium-popup__body email-send-wrap">
                 <div class="f-14">Скопируйте сообщение ниже, нажмите на кнопку «Написать блогеру» и отправьте в директ аккаунта это сообщение.</div>
                 <div class="medium-popup__info">
-                    Вы можете отправить ваше сообщение блогеру  в директ только с помощью мобильного телефона.
+                    Вы можете отправить ваше сообщение блогеру в директ только с помощью мобильного телефона.
                 </div>
                 <div class="email-send-textarea">
-                    <textarea>Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей.  Мой аккаунт @gontsovaantonina.
+                    <textarea>Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей. Мой аккаунт @gontsovaantonina.
 
 Трансформационный коуч
 Антикризисный коуч

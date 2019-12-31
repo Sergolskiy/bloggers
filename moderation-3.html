@@ -218,9 +218,10 @@
     <!--MAIN-->
     <main class="main">
         <div class="container">
-            <div class="title-wrap">
+            <div class="title-wrap moderation-page-title">
                 <h1 class="title-top">
                     Модерация заявок
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Поиск и фильтр</a>
                 </h1>
                 <div class="title">
                     <div class="title__left d-flex align-items-center">
@@ -231,23 +232,25 @@
                             <a href="./moderation-4.html" class="btn btn-outline-secondary">Жалобы  <span class="request__top-btn-count">3</span></a>
                         </div>
 
-                        <div class="title__right-btns">
-                            <div class="request__top-search">
-                                <input type="text" placeholder="Поиск (дата или ник)">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+                        <div class="moderation-filter">
+                            <div class="title__right-btns">
+                                <div class="request__top-search">
+                                    <input type="text" placeholder="Поиск (дата или ник)">
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="title__right-btns title__right-b-ch">
-                            <div class="title__right-checkbox d-flex">
-                                Фильтр:
-                                <div class="home-form-col__checkbox-wrap ">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="ooo" checked="">
-                                        <label class="custom-control-label" for="ooo">Заявки в базу блогеров</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="self-employed" checked="">
-                                        <label class="custom-control-label" for="self-employed">Заявки на ВП</label>
+                            <div class="title__right-btns title__right-b-ch">
+                                <div class="title__right-checkbox d-flex">
+                                    Фильтр:
+                                    <div class="home-form-col__checkbox-wrap ">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="ooo" checked="">
+                                            <label class="custom-control-label" for="ooo">Заявки в базу блогеров</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="self-employed" checked="">
+                                            <label class="custom-control-label" for="self-employed">Заявки на ВП</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -268,11 +271,15 @@
                                 <a href="#">amerikanovna</a>
                             </div>
                             <div class="moder__list-date">
-                                Одобрена 21.05.19
+                                Отклонена 21.05.19
                             </div>
                             <div class="moder__list-mail">
                                 Модератор <br>
                                 pajasuwqwet@gmail.com
+                            </div>
+                            <div class="moder__list-mail">
+                                Причина <br>
+                                Несоблюдение правил бота
                             </div>
                             <div class="moder__list-btn">
                                 <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
@@ -861,19 +868,26 @@
                                 <a href="#">amerikanovna</a>
                             </div>
                             <div class="moder__list-date">
-                                Одобрена 21.05.19
+                                Отклонена 21.05.19
                             </div>
                             <div class="moder__list-mail">
                                 Модератор <br>
                                 pajasuwqwet@gmail.com
                             </div>
-                            <div class="moder__list-btn">
-                                <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
-                                    <span class="hide">Открыть заявку</span>
-                                    <span class="show">Скрыть заявку</span>
-                                </a>
+                            <div class="moder__list-mail">
+                                Причина <br>
+                                Несоблюдение правил бота
                             </div>
-                            <a href="#" class="btn btn-outline-secondary">Разблокировать</a>
+                            <div class="moder__list-btn-wrap">
+                                <div class="moder__list-btn">
+                                    <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
+                                        <span class="hide">Открыть заявку</span>
+                                        <span class="show">Скрыть заявку</span>
+                                    </a>
+                                </div>
+                                <a href="#" class="btn btn-outline-secondary">Разблокировать</a>
+                            </div>
+
                         </div>
                         <div class="moder__list-content">
                             <div class="moder__list-content-inner">
@@ -1455,11 +1469,16 @@
                                 <a href="#">amerikanovna</a>
                             </div>
                             <div class="moder__list-date">
-                                Одобрена 21.05.19
+                                Отклонена 21.05.19
                             </div>
                             <div class="moder__list-mail">
                                 Модератор <br>
                                 pajasuwqwet@gmail.com
+                            </div>
+
+                            <div class="moder__list-mail">
+                                Причина <br>
+                                Несоблюдение правил бота
                             </div>
                             <div class="moder__list-btn">
                                 <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
@@ -2048,11 +2067,15 @@
                                 <a href="#">amerikanovna</a>
                             </div>
                             <div class="moder__list-date">
-                                Одобрена 21.05.19
+                                Отклонена 21.05.19
                             </div>
                             <div class="moder__list-mail">
                                 Модератор <br>
                                 pajasuwqwet@gmail.com
+                            </div>
+                            <div class="moder__list-mail">
+                                Причина <br>
+                                Несоблюдение правил бота
                             </div>
                             <div class="moder__list-btn">
                                 <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn open-moder">
@@ -2747,7 +2770,7 @@
                                         <label for="pass2">Пароль</label>
                                     </div>
                                     <input type="password"  class="form-control" id="pass2" minlength="6" required>
-                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
                                 </div>
                                 <div class="form-group">
                                     <div class="pass-label">
@@ -2882,7 +2905,7 @@
                                     <label for="pass2">Введите новый пароль</label>
                                 </div>
                                 <input type="password"  class="form-control" id="pass4" minlength="6" required>
-                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего  и нижнего регистра</div>
+                                <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
                             </div>
                             <div class="form-group">
                                 <div class="pass-label">
@@ -3147,7 +3170,7 @@
 
             <div class="medium-popup__body add-manager-wrap">
                 <div class="medium-popup__info">
-                    1. Менеджер должен быть зарегистрирован  на сайте. Вы должны ввести <b>точный номер телефона</b>, который он <b>вводит при авторизации</b>.
+                    1. Менеджер должен быть зарегистрирован на сайте. Вы должны ввести <b>точный номер телефона</b>, который он <b>вводит при авторизации</b>.
                     <br><br>
                     2. Вы можете добавить не более двух менеджеров для своего аккаунта.
                 </div>
@@ -3564,10 +3587,10 @@
             <div class="medium-popup__body email-send-wrap">
                 <div class="f-14">Скопируйте сообщение ниже, нажмите на кнопку «Написать блогеру» и отправьте в директ аккаунта это сообщение.</div>
                 <div class="medium-popup__info">
-                    Вы можете отправить ваше сообщение блогеру  в директ только с помощью мобильного телефона.
+                    Вы можете отправить ваше сообщение блогеру в директ только с помощью мобильного телефона.
                 </div>
                 <div class="email-send-textarea">
-                    <textarea>Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей.  Мой аккаунт @gontsovaantonina.
+                    <textarea>Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей. Мой аккаунт @gontsovaantonina.
 
 Трансформационный коуч
 Антикризисный коуч
