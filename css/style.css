@@ -178,8 +178,14 @@
 
 .btn-outline-secondary:hover {
     color: #192229;
-    background-color: #D5DFE4;
+    /*background-color: #D5DFE4;*/
+    background-color: #efefef;
     border-color: #D5DFE4;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    background-color: #efefef;
+    color: #192229;
 }
 
 .btn-outline-secondary.disabled {
@@ -9528,6 +9534,54 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         line-height: 19px;
     }
 
+    .card__form-advertising-block--month .form-group{
+        width: 100%;
+    }
+
+    .card__form-advertising-block--month .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+        width: 40%;
+    }
+
+
+    .form-advertising-month{
+        display: block;
+        font-size: 14px;
+        line-height: 17px;
+        color: #3897F0;
+        margin-left: 15px;
+    }
+
+    .card .custom-file .file-invalid {
+        color: #dc3545;
+        display: none;
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 0;
+        position: relative;
+        left: 0;
+        top: -3px;
+        margin-left: 0;
+        white-space: nowrap;
+    }
+
+    .card .custom-file .file-invalid br{
+        display: none;
+    }
+
+    .form-group.percent{
+        margin-right: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .form-group.percent + .custom-file{
+        max-width: 113px;
+    }
+
+    .mobile-select-popup > .dropdown-menu.show .dropdown-menu.inner.show a {
+        width: 100% !important;
+    }
+
 }
 
 @media (max-width: 360px) {
@@ -9679,6 +9733,56 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding: 6px 5px;
     }
 
+    .form-advertising-month{
+        margin-left: 8px;
+    }
+
+    .card__form-advertising-block--month .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+        width: 50%;
+    }
+
+    .card .card__statistic-field .custom-file {
+        max-width: 100px;
+        width: 100%;
+        margin-left: -2px;
+        margin-bottom: 8px;
+    }
+
+    .card .custom-file .file-invalid {
+        margin-left: -30px;
+    }
+
+    .form-group.percent{
+        margin-right: 10px;
+    }
+
 }
 
 
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #212529;
+    background-color: white;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #212529;
+    background-color: white;
+}
+
+
+.bootstrap-select.show-tick .dropdown-menu li a,
+.bootstrap-select.show-tick .dropdown-menu li a:hover,
+.bootstrap-select.show-tick .dropdown-menu li a:focus,
+.bootstrap-select.show-tick .dropdown-menu li a:active{
+    outline: none;
+}
+
+.btn-light.focus, .btn-light:focus,
+.btn-light.active, .btn-light:active {
+    background-color: white;
+}
+
+.btn-light:hover {
+    background-color: #efefef;
+}
