@@ -740,6 +740,12 @@ input.form-control{
     margin-bottom: 7px;
 }
 
+.title__txt + .dropdown{
+    width: 170px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+
 .title__grey{
     color: #b8c1c5;
 }
@@ -1322,6 +1328,10 @@ table tbody tr:nth-child(odd){
     color: #192229;
 }
 
+.blogger-cart__count-i + .blogger-cart__count-i{
+    margin-top: 15px;
+}
+
 .blogger-cart__count-n{
     font-size: 30px;
 }
@@ -1408,19 +1418,19 @@ table tbody tr:nth-child(odd){
 }
 
 .info.left .info__txt{
-    transform: translateX(-3%);
+    transform: translateX(-3%) !important;
 }
 
 .info.left .info__txt:before {
-    left: 8px;
+    left: 8px !important;
 }
 
 .info.right .info__txt{
-    transform: translateX(-95%);
+    transform: translateX(-95%) !important;
 }
 
 .info.right .info__txt:before {
-    left: 95%;
+    left: 95% !important;
 }
 
 .info__txt{
@@ -1447,6 +1457,10 @@ table tbody tr:nth-child(odd){
     color: #3897F0;
     font-size: 14px;
     line-height: 18px;
+}
+
+.cart-block__main-title a + a{
+    margin-left: 15px;
 }
 
 .cart-block__main-title a.btn{
@@ -1587,6 +1601,7 @@ table tbody tr:nth-child(odd){
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: -20px;
 }
 .page-block-info a{
     color: #3897F0;
@@ -1613,6 +1628,10 @@ table tbody tr:nth-child(odd){
 
 .no-register-blogger-table td a{
     margin-right: 5px;
+}
+
+.no-register-blogger-table td:last-child img{
+    max-width: 15px;
 }
 
 .no-register-blogger-table td:nth-child(3){
@@ -2106,6 +2125,9 @@ table tbody tr:nth-child(odd){
     color: #192229;
 }
 
+.card .card__statistic-field .file-invalid{
+    display: none !important;
+}
 
 .card__statistic-right{
     width: 100%;
@@ -2451,6 +2473,10 @@ table tbody tr:nth-child(odd){
 
 .paid-service{
     padding: 30px 20px;
+}
+
+.settings-block .paid-service{
+    padding: 30px 0;
 }
 
 .paid-service__yellow{
@@ -3092,6 +3118,12 @@ table tbody tr:nth-child(odd){
 .page-nav__item.active{
     background: #3897F0;
     color: white;
+}
+
+.page-nav__item .circle-icon{
+    background-size: contain;
+    width: 14px;
+    height: 14px;
 }
 
 
@@ -4717,6 +4749,7 @@ table tbody tr:nth-child(odd){
 /*********  BANNERS  ************/
 
 
+
 .top-banner{
     background: #FFFFFF;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
@@ -6133,7 +6166,7 @@ table tbody tr:nth-child(odd){
 }
 
 .show>.btn-light.dropdown-toggle{
-    background-color: transparent;
+    background-color: white;
     color: #192229;
     border-color: #212529;
 }
@@ -6248,6 +6281,13 @@ table tbody tr:nth-child(odd){
 
 #slider-range-max{
     margin-bottom: 10px;
+    width: 97%;
+    margin-left: 2px;
+}
+
+#slider-range-max + div .dark-grey:nth-child(2){
+    position: relative;
+    left: -13px;
 }
 
 .send-review__slider p{
@@ -6280,6 +6320,7 @@ table tbody tr:nth-child(odd){
 
 .form-control.is-valid, .was-validated .form-control:valid{
     background-image: none !important;
+    padding-right: 0 !important;
 }
 
 
@@ -7230,6 +7271,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .blogger-cart__count-i {
         margin-right: 30px;
     }
+    .blogger-cart__count-i + .blogger-cart__count-i {
+        margin-top: 0;
+    }
     .blogger-cart__bottom {
         flex-direction: column;
         margin-top: 20px;
@@ -7363,6 +7407,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 992px) {
+
+    .header + .top-banner{
+        padding-top: 75px;
+    }
+
+
     .header {
         position: fixed;
         z-index: 101;
@@ -7525,6 +7575,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         flex-direction: column;
         padding-bottom: 150px;
         overflow: scroll;
+        overflow-x: hidden;
         height: 100vh;
         display: block;
     }
@@ -8148,7 +8199,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-bottom: 30px;
     }
 
+    .cart-block__top-btn{
+        height: 0;
+    }
 
+    .cart-block .cart-block__more-btn + .more-btn__txt{
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -9071,9 +9128,51 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-right: 40px;
     }
 
+
+    .payments-success__left{
+        display: none;
+    }
+
+    .payments-success__bottom{
+        flex-direction: column;
+    }
+
+    .payments-success__offers{
+        margin-bottom: 20px;
+    }
+
+    .page-block-info {
+        margin-bottom: 0;
+    }
+
+    .mobile-no-bg .settings-block {
+        padding: 0;
+    }
+
+    .settings-block .paid-service {
+        padding: 0;
+    }
+}
+
+@media (min-width: 500px) {
+    .form-advertising-month{
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
+
+
+    .payments-success__title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .payments-success__title span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     .custom-pagination {
         flex-wrap: wrap;
         max-width: 247px;
@@ -9097,10 +9196,14 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .cart-block__main-col:nth-child(2) {
         justify-content: flex-start;
-        padding-top: 30px;
+        padding-top: 35px;
     }
     .cart-block__main-col:nth-child(2):before {
         top: -10px;
+    }
+
+    .cart-block__main-col:nth-child(1){
+        margin-bottom: 0;
     }
 
 
@@ -9756,6 +9859,83 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-right: 10px;
     }
 
+    .mobile-home-table__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .email-send__bottom {
+        align-items: center;
+    }
+
+    .email-send__bottom a{
+        padding: 8px 6px !important;
+    }
+
+    .settings .card__statistic-block .white-select {
+        max-width: 190px !important;
+    }
+
+    .settings .card__statistic-field .form-group:nth-last-child(2){
+        margin-right: 0;
+    }
+    .card__statistic-field {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .settings .card__statistic-field .form-control {
+        max-width: 120px;
+    }
+
+    .settings .settings-advertising__content .form-advertising__inner .card__form-advertising-i {
+        max-width: 100%;
+    }
+
+    .settings .settings-advertising__content .form-advertising__inner .card__form-advertising-i .bootstrap-select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .paid-service__form .custom-radio-big {
+        max-width: 100%;
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 13px;
+    }
+
+    .paid-service__form {
+        flex-direction: column;
+    }
+
+    .mobile-title .title__center-btns {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .title__center-btns .btn:nth-child(n) {
+        border-radius: 5px;
+        margin: 0 0px;
+    }
+
+    .cart-block__top-mobile .blogger-cart__bottom-i.mobile-info {
+        top: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .cart-block__top-mobile .blogger-cart__bottom-i {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    #report-mail {
+        width: 310px;
+        max-width: 100%;
+    }
+
 }
 
 
@@ -9785,4 +9965,15 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 .btn-light:hover {
     background-color: #efefef;
+}
+
+input{
+    box-shadow: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    -webkit-appearance: none;
 }
