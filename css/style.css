@@ -873,7 +873,6 @@ input.form-control{
 .home-form-col__checkbox-wrap {
     display: flex;
     margin-bottom: 3px;
-    margin-left: 5px;
     margin-top: -2px;
 }
 .home-form-col__checkbox-wrap > div{
@@ -976,7 +975,7 @@ table tbody tr:nth-child(odd){
 
 .site-table th,
 .site-table td{
-    padding: 0 15px;
+    padding: 0 14px;
     border: 1px solid #D5DFE4;
 
     font-size: 14px;
@@ -1006,6 +1005,11 @@ table tbody tr:nth-child(odd){
     text-overflow: ellipsis;
 }
 
+.site-table td .home-t-summ{
+    line-height: 20px;
+    margin: 0 -1px;
+}
+
 .site-table .star-icon{
     position: relative;
     top: 1px;
@@ -1027,7 +1031,7 @@ table tbody tr:nth-child(odd){
     align-items: center;
     width: 25%;
     text-align: left;
-    padding: 0 15px;
+    padding: 0 14px;
     border-right: 1px solid #D5DFE4;
 }
 
@@ -1095,6 +1099,7 @@ table tbody tr:nth-child(odd){
 
 .home-table td:nth-child(13){
     max-width: 100px;
+    width: 100px;
 }
 
 .home-table td:nth-child(12) a{
@@ -1109,6 +1114,10 @@ table tbody tr:nth-child(odd){
 .home-table th{
     position: relative;
     cursor: pointer;
+}
+
+.home-table th small{
+    font-size: 11px;
 }
 
 .home-table th:hover:after{
@@ -1217,6 +1226,7 @@ table tbody tr:nth-child(odd){
 .cart-block-remove{
     padding: 8px 20px;
     margin-top: 40px;
+    display: flex;
 
     font-size: 14px;
     line-height: 20px;
@@ -1311,6 +1321,12 @@ table tbody tr:nth-child(odd){
 
 .blogger-cart__reviews a{
     color: #3897F0;
+}
+
+.blogger-cart__reviews .star-icon{
+    position: relative;
+    top: 1px;
+    background-size: cover;
 }
 
 .blogger-cart__right{
@@ -1423,6 +1439,22 @@ table tbody tr:nth-child(odd){
 
 .info.left .info__txt:before {
     left: 8px !important;
+}
+
+
+.code-link__caption .info.left .info__txt{
+    transform: translateX(-20%) !important;
+}
+
+.code-link__caption .info.bottom .info__txt {
+    bottom: 130%;
+    top: auto;
+}
+
+.code-link__caption .info.bottom .info__txt:before {
+    transform: rotate(180deg);
+    bottom: -12px;
+    top: auto;
 }
 
 .info.right .info__txt{
@@ -1643,6 +1675,12 @@ table tbody tr:nth-child(odd){
     justify-content: flex-start;
     align-items: center;
     border: 0;
+}
+
+.no-register-blogger-table td:nth-child(5){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .no-register-blogger-table th,
@@ -4884,6 +4922,8 @@ table tbody tr:nth-child(odd){
 
 .auth__right-block:last-child{
     border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .auth__right-title{
@@ -4906,8 +4946,10 @@ table tbody tr:nth-child(odd){
 .auth__right-i:before{
     content: "";
     display: block;
-    width: 8px;
-    height: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    max-width: 8px;
+    max-height: 8px;
     background: #3897F0;
     position: relative;
     margin-left: -8px;
@@ -4978,7 +5020,7 @@ table tbody tr:nth-child(odd){
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 3%;
     padding-bottom: 3%;
     z-index: -1;
@@ -5066,16 +5108,15 @@ table tbody tr:nth-child(odd){
 
 .login__top-popup.active{
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 30px;
+    transform: translate(-50%, -50%);
+    margin-top: -200px;
     width: 100%;
     max-width: 430px;
     background: white;
     padding: 20px;
     display: flex;
-
     font-size: 18px;
     line-height: 24px;
 }
@@ -7189,6 +7230,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 
 
+@media (min-width: 1500px) {
+    .home-table-title-i div{
+        width: 108px;
+    }
+
+
+}
 @media (max-width: 1500px) {
     .main-quest {
         margin-left: 30px;
@@ -7212,22 +7260,27 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .home-table-title-i > div:nth-child(1) {
         /*width: calc(28% - 1px);*/
-        width: calc(25% - 2px);
+        width: calc(25% - 3px);
     }
     .home-table-title-i > div:nth-child(2) {
-        /*width: calc(28% - 3px);*/
-        width: 28%;
+        width: calc(28% - 1px);
+        /*width: 28%;*/
     }
     .home-table-title-i > div:nth-child(3) {
         /*width: calc(18% - 1px);*/
-        width: 23%;
+        width: calc(23% - -3px);
     }
     .home-table-title-i > div:nth-child(4) {
         /*width: 26%;*/
-        width: calc(25% - 1px);
+        /*width: calc(25% - 1px);*/
+        width: calc(25% - 5px);
     }
     .show-more__btn {
         height: 45px;
+    }
+
+    .home-table td:nth-child(13){
+        width: 70px;
     }
 
 }
@@ -7251,10 +7304,19 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         width: 30%;
     }
     .home-table-title-i > div:nth-child(3) {
-        width: calc(16% + 1px);
+        /*width: calc(16% + 1px);*/
+        width: 55px;
     }
     .home-table-title-i > div:nth-child(4) {
         width: calc(29% - 1px);
+    }
+
+    .home-table td:nth-child(1) {
+        width: 100px;
+    }
+
+    .home-table td:nth-child(6){
+        width: 50px;
     }
 
     .blogger-cart__left {
@@ -9976,4 +10038,33 @@ input[type=email],
 input[type=password],
 textarea {
     -webkit-appearance: none;
+}
+
+
+.custom-control-input:checked~.custom-control-label::before{
+    border-color: #3897F0;
+    background-color: #3897F0;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url('../images/svg/ckeck.svg');
+    }
+
+.custom-control-label::after {
+    position: absolute;
+    top: .2rem;
+    left: -1.5rem;
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #192229;
+    outline: 0;
+    box-shadow: none;
 }
