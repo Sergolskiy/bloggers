@@ -415,10 +415,10 @@ input.form-control{
     display: block;
     position: absolute;
     top: 50%;
-    right: -16px;
-    width: 7px;
-    margin-top: -4px;
-    height: 10px;
+    right: -18px;
+    width: 9px;
+    margin-top: -6px;
+    height: 11px;
     background: url(../images/svg/arrow-l.svg) center center no-repeat;
     background-size: contain;
     transform: rotate(-90deg);
@@ -461,7 +461,7 @@ input.form-control{
     line-height: 17px;
 }
 
-.has-submenu:hover .header__submenu{
+.has-submenu.open .header__submenu{
     visibility: visible;
     z-index: 10;
     top: 35px;
@@ -1016,6 +1016,8 @@ table tbody tr:nth-child(odd){
     margin-left: 3px;
 }
 
+
+
 .home-table-title{
     width: 424px;
     text-align: center;
@@ -1531,6 +1533,7 @@ table tbody tr:nth-child(odd){
     margin-right: 0;
 }
 
+
 .cart-block__main-col{
     display: flex;
     align-items: center;
@@ -1564,6 +1567,18 @@ table tbody tr:nth-child(odd){
     max-width: 410px;
 }
 
+.cart-block__main-col:nth-child(4){
+    margin-left: auto;
+}
+
+.cart-block__main-col img{
+    max-width: 14px;
+}
+
+.cart-btn-close-adv{
+    cursor: pointer;
+}
+
 .cart-block__main-head{
 
 }
@@ -1578,8 +1593,13 @@ table tbody tr:nth-child(odd){
 
 
 
-.cart-block__rev-table{
+.cart-block__rev-table .site-table{
+    display: none;
+}
 
+
+.cart-block__rev-table .site-table.active{
+    display: table;
 }
 
 
@@ -1654,8 +1674,8 @@ table tbody tr:nth-child(odd){
 
 
 
-.no-register-blogger-table{
-
+.cart-block__rev-table .no-register-blogger-table{
+    display: table;
 }
 
 .no-register-blogger-table td a{
@@ -7197,6 +7217,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 .cart-screenshots__item-img img{
     width: 100%;
 }
+
+.car-table-tab.active-tab{
+    background: #3897F0;
+    border-radius: 5px;
+    border-color: #3897F0;
+    color: white !important;
+}
 /*cart popup end*/
 
 
@@ -7232,9 +7259,24 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (min-width: 1500px) {
     .home-table-title-i div{
-        width: 108px;
+        width: 110px;
     }
 
+
+    .auth__right-title{
+        padding-left: 4px;
+    }
+
+    .auth__right-list {
+        list-style: none;
+        padding-left: 32px;
+        margin-bottom: 24px;
+    }
+
+    .auth__right-caption {
+        font-size: 14px;
+        padding-left: 4px;
+    }
 
 }
 @media (max-width: 1500px) {
@@ -7961,6 +8003,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .cart-block__main-row {
         padding: 15px 15px 25px;
         flex-wrap: wrap;
+        position: relative;
     }
     .cart-block__main-col {
         width: 100%;
@@ -8013,8 +8056,50 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-left: 0;
         justify-content: flex-end;
     }
-    .cart-block__rev-table .site-table{
+
+    .cart-block__main-col:nth-child(5){
+        order: 5;
+        margin-top: 20px;
+    }
+    .cart-block__main-col:nth-child(5) img{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        max-width: 34px;
+        padding: 10px;
+        background: #F8F8F8;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+    }
+    .cart-block__main-row-send{
+        position: relative;
+    }
+    .cart-block__main-row-send .cart-block__main-col:nth-child(4) {
+        order: 4;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        justify-content: flex-end;
+        margin-top: 25px;
+    }
+    .cart-block__main-col .mt-3{
         display: none;
+    }
+    .cart-block__main-col .mobile{
+        font-size: 14px;
+        line-height: 17px;
+        color: #6A7B83;
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+
+    .cart-block__main-col .mobile a{
+        color: #3897F0;
+    }
+
+    .cart-block__rev-table .site-table{
+        display: none !important;
     }
     .cart-block__main-info {
         display: none;
@@ -8049,7 +8134,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         display: none;
     }
 
-    .cart-block__rev-table-mobile{
+    .cart-block__rev-table-mobile.active{
         display: block;
     }
 
@@ -8267,6 +8352,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .cart-block .cart-block__more-btn + .more-btn__txt{
         margin-top: 30px;
+    }
+
+    .cart-block__rev-table-top {
+        padding-top: 30px;
+        border-top: 2px dashed #D5DFE4;
+        margin-top: 0;
     }
 }
 
@@ -9214,6 +9305,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .settings-block .paid-service {
         padding: 0;
     }
+
+
 }
 
 @media (min-width: 500px) {
@@ -9258,10 +9351,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .cart-block__main-col:nth-child(2) {
         justify-content: flex-start;
-        padding-top: 35px;
+        padding-top: 18px;
+        display: flex;
     }
     .cart-block__main-col:nth-child(2):before {
         top: -10px;
+        margin-right: auto;
+        position: static;
     }
 
     .cart-block__main-col:nth-child(1){
@@ -9745,6 +9841,14 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .mobile-select-popup > .dropdown-menu.show .dropdown-menu.inner.show a {
         width: 100% !important;
+    }
+
+    .send-request-to-blogger{
+        width: 100%;
+    }
+
+    .cart-block__main-col.flex-column .btn{
+        width: 100%;
     }
 
 }

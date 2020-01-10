@@ -315,6 +315,13 @@ $(document).ready(function () {
         bodyScroll();
     });
 
+    $('.open-login').click(function () {
+        $('.login').addClass('open');
+        if(window.innerWidth < 500){
+            openHeaderCloseBtn ();
+        }
+        bodyHidden();
+    });
 
     $('.header__login-btn button, .login-btn').click(function () {
         $('.login').addClass('open');
@@ -807,6 +814,30 @@ $(document).ready(function () {
         });
     }
 
+    $('.header__menu-item.has-submenu').click(function () {
+        $(this).toggleClass('open');
+    });
+
+    $(document).on('click', function (e) {
+        if(e.target.closest('.has-submenu') == null){
+            $('.header__menu-item.has-submenu.open').removeClass('open');
+        }
+    });
+
+    $('.cart-btn-select-adv').click(function () {
+        $(this).closest('.cart-block__main-col').hide().next().show();
+        $(this).closest('.cart-block__main-row').addClass('align-items-start');
+    });
+
+    $('.cart-btn-close-adv').click(function () {
+        $(this).closest('.cart-block__main-col').hide().prev().show();
+        $(this).closest('.cart-block__main-row').removeClass('align-items-start');
+    });
+
+    $('.cart-block__main-col .mobile a').click(function (e) {
+        e.preventDefault();
+        $(this).parent().slideUp();
+    });
 
     $('.cart-block__close-btn').click(function (e) {
         e.preventDefault();
@@ -818,6 +849,18 @@ $(document).ready(function () {
         e.preventDefault();
          $(this).closest('.cart-block-remove').hide();
          $(this).closest('.cart-block-remove').next().slideDown();
+    });
+
+    $('.car-table-tab').click(function () {
+        $('.car-table-tab').removeClass('active-tab');
+        $(this).addClass('active-tab');
+        if(window.innerWidth < 992){
+            $(this).closest('.cart-block__rev-table').find('.cart-block__rev-table-mobile').removeClass('active');
+            $(this).closest('.cart-block__rev-table').find('.cart-block__rev-table-mobile').eq($(this).index()-1).addClass('active');
+        } else {
+            $(this).closest('.cart-block__rev-table').find('.site-table ').removeClass('active');
+            $(this).closest('.cart-block__rev-table').find('.site-table ').eq($(this).index()-1).addClass('active');
+        }
     });
 
 });
