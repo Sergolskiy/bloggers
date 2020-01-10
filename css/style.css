@@ -341,6 +341,10 @@ input.form-control{
     font-size: 14px;
 }
 
+.dropdown-item {
+    padding: 4px 15px;
+}
+
 .ambas-icon,
 .brands-icon{
     display: flex;
@@ -1927,10 +1931,10 @@ table tbody tr:nth-child(odd){
     left: 10px;
 }
 .custom-radio .custom-control-label::after {
-    width: 25px;
+    width: 24px;
     top: 5px;
     left: 6px;
-    height: 25px;
+    height: 24px;
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
@@ -2939,11 +2943,16 @@ table tbody tr:nth-child(odd){
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 35px;
+    display: none;
 }
 
 .settings-advertising__top a{
     color: #3897F0;
     margin-left: 10px;
+}
+
+.settings-advertising__top.activity {
+    display: block;
 }
 
 .settings-advertising-active{
@@ -3126,6 +3135,7 @@ table tbody tr:nth-child(odd){
 }
 
 
+
 .page-block-wrap{
     display: flex;
     justify-content: space-between;
@@ -3135,6 +3145,8 @@ table tbody tr:nth-child(odd){
     max-width: 825px;
     width: 100%;
 }
+
+
 
 .page-block-right{
     max-width: 255px;
@@ -3183,6 +3195,8 @@ table tbody tr:nth-child(odd){
     width: 14px;
     height: 14px;
 }
+
+
 
 
 
@@ -5823,6 +5837,10 @@ table tbody tr:nth-child(odd){
     padding: 10px;
 }
 
+.email-to-blogger-popup .email-send-textarea textarea{
+    height: 130px;
+}
+
 .toggle-textarea{
     display: none;
 }
@@ -6153,6 +6171,12 @@ table tbody tr:nth-child(odd){
     width: 100%;
 }
 
+.example-stories .screenshots__inner{
+    max-height: 500px;
+
+    font-size: 14px;
+    line-height: 150%;
+}
 
 
 /*********  END POPUPS  ************/
@@ -7278,6 +7302,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding-left: 4px;
     }
 
+    .top-banner + .main .page-block-wrap-settings{
+        margin-top: -20px;
+    }
+
+
 }
 @media (max-width: 1500px) {
     .main-quest {
@@ -8268,6 +8297,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .page-nav{
         overflow-x: scroll;
+    }
+
+    .top-banner + .main .page-nav {
+        margin: -60px -15px 30px;
+    }
+    .top-banner + .main {
+        padding-top: 60px;
     }
 
     .banner-pay-success .top-banner__title{
