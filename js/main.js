@@ -838,6 +838,12 @@ $(document).ready(function () {
         if(e.target.closest('.has-submenu') == null){
             $('.header__menu-item.has-submenu.open').removeClass('open');
         }
+
+        if(e.target.closest('.more-btn') == null){
+            $('.cart-copy').hide();
+            $('.more-btn').removeClass('open');
+        }
+
     });
 
     $('.cart-btn-select-adv').click(function () {
@@ -894,6 +900,19 @@ $(document).ready(function () {
         $(this).closest('.settings-advertising').slideUp();
     });
 
+    $('.copy-url-cart').click(function () {
+        $(this).closest('.cart-block__more').find('.cart-copy').show();
 
+    });
+
+    $('.cart-copy').click(function () {
+        $(this).hide();
+        $('.more-btn').toggleClass('open');
+
+    });
+
+    $('.more-btn').click(function () {
+        $(this).toggleClass('open');
+    })
 });
 

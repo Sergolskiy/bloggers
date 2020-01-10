@@ -21,6 +21,10 @@
 }
 
 
+textarea {
+    resize: none;
+}
+
 
 .cart-icon{
     position: relative;
@@ -368,6 +372,16 @@ input.form-control{
     line-height: 17px;
 }
 
+.cart-copy{
+    position: absolute;
+    right: 45px;
+    top: -3px;
+    color: #fff !important;
+    background-color: #5a6268 !important;
+    border-color: #545b62 !important;
+    display: none;
+}
+
 
 /***********   HEADER   *************/
 
@@ -621,7 +635,7 @@ input.form-control{
     width: 0;
 }
 
-.more-btn:hover .more-btn__txt{
+.more-btn.open .more-btn__txt{
     margin-top: 5px;
     opacity: 1;
     visibility: visible;
@@ -1264,7 +1278,7 @@ table tbody tr:nth-child(odd){
     transition: 0.3s;
 }
 
-.more-btn:hover .cart-block__more-btn{
+.more-btn.open .cart-block__more-btn{
     transform: rotate(90deg);
     background: url("../images/svg/info-hover.svg") center center no-repeat;
 }
