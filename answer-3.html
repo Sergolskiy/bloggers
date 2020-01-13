@@ -290,7 +290,7 @@
                                     Сторис 90 сек., 300 ₽, Блогер нашёл посты или темы в вашем аккаунте, которые противоречает его убеждениям или тому, о чем он пишет в своем блоге.
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                                 </td>
                             </tr>
                             <tr>
@@ -304,7 +304,7 @@
                                     Фото-пост, 1 200 ₽, Блогер отказал вам из-за аккаунта: вы либо указали в заявке вместо своего аккаунта, аккаунт блогера, либо дали ссылку на несуществующий аккаунт.
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                                 </td>
                             </tr>
                             <tr>
@@ -332,7 +332,7 @@
                                     Сторис 75 сек., 5 000 ₽, В вашем блоге небольшое количество подписчиков или постов.
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                                 </td>
                             </tr>
                             <tr>
@@ -346,7 +346,7 @@
                                     Сторис 60 сек., 4 000 ₽, Блогер считает, что данная реклама не найдет отклика у его аудитории.
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                                 </td>
                             </tr>
                             <tr>
@@ -385,7 +385,7 @@
                                 2-3 разговорных сторис о блоге.
                             </div>
                             <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                             </div>
                         </div>
 
@@ -418,7 +418,7 @@
                                 Видеорекомендация + ваши макеты
                             </div>
                             <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                             </div>
                         </div>
 
@@ -435,7 +435,7 @@
                                 Пост без удаления из аккаунта. Цена + товар + промокод на скидку для моих подписчиков.
                             </div>
                             <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                             </div>
                         </div>
 
@@ -467,7 +467,7 @@
                                 2-3 разговорных сторис о блоге.
                             </div>
                             <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Отправить заявку повторно</a>
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
                             </div>
                         </div>
 
@@ -1586,6 +1586,92 @@
             </div>
         </div>
     </div>
+
+    <div class="big-popup send-re-request wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="big-popup__top">
+                <div class="big-popup__title">
+                    Заполните поля заявки, чтобы получить ответ блогера(-ов)
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="big-popup__body request-to-blogger">
+                <div class="request-to-blogger__inner">
+                    <div class="request-to-blogger__left">
+                        <form class="needs-validation" novalidate action="javascript:void(0)">
+                            <p class="dark-grey fs-14">
+                                Последнй раз вы указали эти данные. Если необхлдимо, вы можете их изменить.
+                            </p>
+                            <div class="request-to-blogger__i">
+                                <label for="requestToBl2">Ваш аккаунт</label>
+                                <input type="text" class="form-control" id="requestToBl2" placeholder="" required="">
+
+                            </div>
+                            <div class="request-to-blogger__i">
+                                <label for="requestToBl3">
+                                    Тезисы
+                                    <span class="info left">
+                                        <a href="javascript:void(0)" class="info-icon"></a>
+                                        <div class="info__txt">
+                                            Напишите тезисы о своём аккаунте или о том, что хотите прорекламировать.
+                                            <br><br>
+                                            Тезисы удобнее всего сделать по плану: <br>
+                                            1. 3 тезиса про ваш аккаунт. <br>
+                                            2. 3-4 последние темы у вас в аккаунте.
+                                        </div>
+                                    </span>
+                                </label>
+                                <div class="textarea-count" data-count="0">
+                                    <textarea  class="form-control " name="report" id="requestToBl3" required placeholder="">Мой блог про:
+Медитации и силу подсознания
+Психологическую сторону успеха и денег
+Обзоры и анти-обзоры на книги
+
+Последние темы про:
+- Медитации для новичков
+- Как медитации влияют на мозг
+- Как подтолкнуть партнера к работе над собой
+- Как заставить кризисы работать на пользу
+- Как развиваться без книг и тренингов</textarea>
+                                </div>
+                            </div>
+
+                            <button class="hide">ok</button>
+                        </form>
+
+                        <div class="request-to-blogger__i">
+                            <a href="#"class="btn btn-primary custom-btn custom-btn-gold check-request-to-blogger">
+                                Отправить
+                            </a>
+                            <span class="err-form">Заполните поля <br> отмеченные красным</span>
+                        </div>
+
+                    </div>
+                    <div class="request-to-blogger__right">
+                        <div class="request-to-blogger__title">
+                            Инструкция по заказу рекламы
+                        </div>
+                        <div class="request-to-blogger__txt">
+                            <p>
+                                1. Вы отправляете свой аккаунт, тезисы и рекламные макеты по рекламе блогеру.
+                            </p>
+                            <p>
+                                2. Блогер рассматривает вашу заявку и отвечает вам через сайт и электронную почту, сможет ли он взять вас на рекламу или нет.
+                            </p>
+                            <p>
+                                3. Если блогер согласен на рекламу, на сайте и в письме будет указана ссылка для генерации промокода и контакты блогера.
+                            </p>
+                            <p>
+                                4.Сгенерировав промокод, напишите в основной или pr-аккаунт блогера, где вы сможете обсудить основные детали и оплатить рекламу лично блогеру.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!--END POPUPS-->

@@ -562,7 +562,7 @@
                                     </span>
                                 </i>
                                 <a href="#">neotpuskaiteplo</a>
-                                54,9 тыс. <i class="star-icon"></i> реклама
+                                <span class="fs-13">54,9 тыс. <i class="star-icon"></i> реклама</span>
                             </td>
                             <td>
                                 800 000
@@ -595,7 +595,7 @@
                                 Бьюти, лайфстайл, жизнь за границей
                             </td>
                             <td>
-                                <a href="#">8</a> отзывов 6,4 из 10
+                                <a href="#">8</a> <span class="dark-grey">отзывов</span> 6,4 из 10
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
@@ -616,7 +616,7 @@
                                     </span>
                                 </i>
                                 <a href="#">alexandramitroshina</a>
-                                2 млн, <i class="star-icon"></i> реклама
+                                <span class="fs-13">2 млн, <i class="star-icon"></i> реклама</span>
                             </td>
                             <td>
 
@@ -649,7 +649,7 @@
                                 Бизнес, феминизм
                             </td>
                             <td>
-                                <a href="#">6</a> отзывов 7,3 из 10
+                                <a href="#">6</a> <span class="dark-grey">отзывов</span> 7,3 из 10
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
@@ -662,7 +662,7 @@
                         <tr>
                             <td>
                                 <a href="#">liz_fit</a>
-                                47 тыс, <i class="star-icon"></i> реклама
+                                <span class="fs-13">47 тыс, <i class="star-icon"></i> реклама</span>
                             </td>
                             <td>
                                 12 000
@@ -708,7 +708,7 @@
                         <tr>
                             <td>
                                 <a href="#">alsta_01</a>
-                                65 тыс, <i class="star-icon"></i> реклама
+                                <span class="fs-13">65 тыс, <i class="star-icon"></i> реклама</span>
                             </td>
                             <td>
                                 8 000
@@ -742,7 +742,7 @@
                                 Жизнь за границей
                             </td>
                             <td>
-                                <a href="#">5</a> отзывов 6,1 из 10
+                                <a href="#">5</a> <span class="dark-grey">отзывов</span> 6,1 из 10
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
@@ -755,7 +755,7 @@
                         <tr>
                             <td>
                                 <a href="#">kkkkkkkkkkkkkkkkkkkkkkkk</a>
-                                1,3 млн
+                                <span class="fs-13">1,3 млн</span>
                             </td>
                             <td>
                                 2 120
@@ -801,7 +801,7 @@
                         <tr>
                             <td>
                                 <a href="#">hanna.rachina</a>
-                                6 500
+                                <span class="fs-13">6 500</span>
                             </td>
                             <td>
                                 8 000
@@ -835,7 +835,7 @@
                                 Жизнь за границей
                             </td>
                             <td>
-                                <a href="#">5</a> отзывов 6,1 из 10
+                                <a href="#">5</a> <span class="dark-grey">отзывов</span> 6,1 из 10
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
@@ -848,7 +848,7 @@
                         <tr>
                             <td>
                                 <a href="#">ofoxro</a>
-                                40,4 тыс.
+                                <span class="fs-13">40,4 тыс.</span>
                             </td>
                             <td>
 
@@ -881,7 +881,7 @@
                                 Лайфстайл
                             </td>
                             <td>
-                                <a href="#">1</a> отзывов 3 из 10
+                                <a href="#">1</a> <span class="dark-grey">отзывов</span> 3 из 10
                             </td>
                             <td>
                                 <div class="d-flex justify-content-center">
@@ -894,7 +894,7 @@
                         <tr>
                             <td>
                                 <a href="#">liz_fit</a>
-                                47 тыс, <i class="star-icon"></i> реклама
+                                <span class="fs-13">47 тыс, <i class="star-icon"></i> реклама</span>
                             </td>
                             <td>
                                 12 000
@@ -1424,6 +1424,7 @@
                             <div class="form-group">
                                 <label for="num">Введите номер телефона</label>
                                 <input  class="form-control phone" id="num" placeholder="В формате, +7 (999) 999-99-99" required>
+                                <div class="invalid-feedback">Введите номер телефона </div>
                             </div>
                             <div class="form-group">
                                 <div class="pass-label">
@@ -1431,6 +1432,7 @@
                                     <a class="forgot-pass" href="javascript:void(0)">Забыли пароль?</a>
                                 </div>
                                 <input type="password"  class="form-control" id="pass" placeholder="" minlength="6" required>
+                                <div class="invalid-feedback">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
                             </div>
                             <button class="hide">ok</button>
                         </form>
@@ -1468,6 +1470,9 @@
                                 </div>
                                 <div class="error-form pass">
                                     Пароли не совпадают
+                                </div>
+                                <div class="num-err">
+                                    Этот номер уже используется. Введите другой.
                                 </div>
                                 <button class="hide">ok</button>
                             </form>
@@ -2466,7 +2471,37 @@
 
 <script src="js/main.js"></script>
 
+<form class="needs-validation" novalidate>
+<div>
+<select class="selectpicker white-select" required title="Choose one of the following...">
 
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Barbecue</option>
+</select>
+<div class="invalid-feedback">
+Please choose a username.
+</div>
+</div>
+<div>
+<select class="selectpicker" required title="Choose one of the following...">
+
+<option>Mustard</option>
+<option>Ketchup</option>
+<option>Barbecue</option>
+
+</select>
+<div class="invalid-feedback">
+Please choose a username.
+</div>
+</div>
+<div class="custom-control custom-checkbox mb-3">
+<input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+<label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+<div class="invalid-feedback">Example invalid feedback text</div>
+</div>
+<button class="btn btn-primary" type="submit">Submit form</button>
+</form>
 </body>
 </html>
 

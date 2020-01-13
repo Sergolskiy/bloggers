@@ -350,11 +350,21 @@ $(document).ready(function () {
     });
 
     $('.login__tab').click(function () {
-        $('.login__top-popup').removeClass('active');
-        $('.login__tab').removeClass('active');
-        $(this).addClass('active');
-        $('.login__content-i').removeClass('active');
-        $('.login__content-i').eq($(this).index()).addClass('active');
+        if($(this).closest('.wrap-popup').length > 0){
+            $('.wrap-popup .login__top-popup').removeClass('active');
+            $('.wrap-popup .login__tab').removeClass('active');
+            $(this).addClass('active');
+
+            $('.wrap-popup .login__content-i').removeClass('active');
+            $('.wrap-popup .login__content-i').eq($(this).index()).addClass('active');
+        } else {
+            $('.auth .login__tab').removeClass('active');
+            $(this).addClass('active');
+            $('.auth .login__content-i').removeClass('active');
+            $('.auth .login__content-i').eq($(this).index()).addClass('active');
+        }
+
+
     });
 
 
@@ -370,25 +380,42 @@ $(document).ready(function () {
 
     $('.reg-check').click(function () {
 
+        if($(this).closest('.login__content-i').find('.phone').val() == '+7 (999) 999 - 99 - 99'){
+            $(this).closest('.login__content-i').find('.num-err').show();
+            $(this).closest('.login__content-i').find('.phone').attr('invalid', "true");
+            return;
+        } else {
+            $(this).closest('.login__content-i').find('.num-err').hide();
+            $(this).closest('.login__content-i').find('.phone').attr('invalid', "false");
+        }
+
         $(this).parents('.reg-tap').find('button').click();
+
         if($('#pass2').val().length > 0 && $('#pass3').val().length > 0){
             if($('#pass2').val() !== $('#pass3').val()){
                 $('#pass2').attr('invalid', true);
                 $('#pass3').attr('invalid', true);
                 $('.error-form.pass').addClass('active');
-
-                return;
             } else {
                 $('#pass2').attr('invalid', false);
                 $('#pass3').attr('invalid', false);
                 $('.error-form.pass').removeClass('active');
             }
+        }
+
+        var form = $(this).closest('.login__content-i.active').find('form')[0];
+        if (form.checkValidity() === false) {
+            $(this).closest('.login__content-i.active').find('.error-form').show();
+        } else {
+            $(this).closest('.login__content-i.active').find('.error-form').hide();
 
             $(this).parents('.reg-tap').removeClass('active');
             $(this).parents('.reg-tap').next().addClass('active');
-
         }
     });
+
+
+
 
     $('.reg-prev').click(function () {
         $(this).parents('.reg-tap').removeClass('active');
@@ -416,7 +443,9 @@ $(document).ready(function () {
         var form = $(this).closest('.login__content-i.active').find('form')[0];
 
         if (form.checkValidity() !== false) {
-            location.href = './index-login.html';
+            location.href = './card-tabs.html';
+        } else {
+            $(this).parents('.login__content-i').find('.phone').keyup();
         }
     });
 
@@ -913,6 +942,37 @@ $(document).ready(function () {
 
     $('.more-btn').click(function () {
         $(this).toggleClass('open');
-    })
+    });
+
+    $('.settings-notification__off-btn').click(function () {
+        $(this).closest('.settings-notification__on').hide().next().show();
+    });
+    $('.settings-notification__on-btn').click(function () {
+        $(this).closest('.settings-notification__off').hide().prev().show();
+    });
+
+    $('.send-re-request-btn').click(function () {
+        $('.send-re-request').addClass('open');
+        if(window.innerWidth < 500){
+            openHeaderCloseBtn();
+        }
+        bodyHidden();
+    });
+
+    $('.no-customer-no-speck-btn').click(function () {
+        $('.no-customer-no-speck').addClass('open');
+        if(window.innerWidth < 500){
+            openHeaderCloseBtn();
+        }
+        bodyHidden();
+    });
+
+    $('.send-reminder-btn').click(function () {
+        $('.send-reminder').addClass('open');
+        if(window.innerWidth < 500){
+            openHeaderCloseBtn();
+        }
+        bodyHidden();
+    });
 });
 
