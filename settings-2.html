@@ -218,18 +218,7 @@
     <!--MAIN-->
     <main class="main">
         <div class="container">
-            <div class="title">
-                <div class="title__left d-flex align-items-center">
-                    <h1 class="title__txt">
-                        Настройки для блогера
-                    </h1>
-                    <select id="set0" class="selectpicker white-select mobile-select-popup" required="" tabindex="-98">
-                        <option selected="">neotpuskaiteplo </option>
-                        <option>neotpuskaiteplo1</option>
-                        <option>neotpuskaiteplo2</option>
-                    </select>
-                </div>
-            </div>
+
 
             <div class="page-block-wrap page-block-wrap-settings">
                 <div class="page-block-left-wrap">
@@ -285,7 +274,18 @@
 
                                             <div class="card__verify-right-block">
                                                 <div class="form-group">
-                                                    <label for="email1">Ваш e-mail</label>
+                                                    <label for="email1">
+                                                        Ваш e-mail
+                                                        <span class="info left">
+                                                            <a href="javascript:void(0)" class="info-icon"></a>
+                                                            <div class="info__txt">
+                                                                После подтверждения e-mail, на него будут приходить уведомления о новых заявках, напоминания об оплате и т.п.
+                                                                <br>
+                                                                <br>
+                                                                Никакого спама. Вы сами сможете настроить нужные вам уведомления.
+                                                            </div>
+                                                        </span>
+                                                    </label>
                                                     <input  class="form-control" id="email1" type="email" placeholder=""  required>
                                                 </div>
 
@@ -639,9 +639,9 @@
                                         </a>
                                         <div class="paid-service__subtitle">
                                             Дает следующие преимущества по сравнению с обычными аккаунтами: до 7 премиум аккаунтов в выдаче со скриншотами охватов;
-                                            <br>
+
                                             1 бесплатное обновление партнеров в день;
-                                            <br>
+
                                             премиум анкеты проверяются модераторами; можно загрузить статистику и рекламные тезисы; больше доверия от потенциальных партнеров.
                                         </div>
                                         <div class="paid-service__label">
@@ -754,27 +754,40 @@
                                         <div class="settings-notification__title">
                                             На почту
                                         </div>
-                                        <div class="settings-notification__subtitle">
-                                            Выберите уведомления
+                                        <div class="settings-notification__on">
+                                            <div class="settings-notification__subtitle">
+                                                Выберите уведомления
+                                            </div>
+                                            <div class="settings-notification__check">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notification" checked="">
+                                                    <label class="custom-control-label" for="notification">Заявки на ВП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notification2" checked="">
+                                                    <label class="custom-control-label" for="notification2">Назначенные ВП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notification3" >
+                                                    <label class="custom-control-label" for="notification3">Лучшие блогеры недели</label>
+                                                </div>
+                                            </div>
+                                            <div class="settings-notification__link">
+                                                <a href="javascript:void(0);" class="settings-notification__off-btn">
+                                                    Отключить все уведомления на почту
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="settings-notification__check">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="notification" checked="">
-                                                <label class="custom-control-label" for="notification">Заявки на ВП</label>
+
+                                        <div class="settings-notification__off">
+                                            <div class="settings-notification__subtitle">
+                                                Уведомления в браузере отключены
                                             </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="notification2" checked="">
-                                                <label class="custom-control-label" for="notification2">Назначенные ВП</label>
+                                            <div class="settings-notification__link">
+                                                <a href="javascript:void(0)" class="settings-notification__on-btn">
+                                                    Включить все уведомления в браузере
+                                                </a>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="notification3" >
-                                                <label class="custom-control-label" for="notification3">Лучшие блогеры недели</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings-notification__link">
-                                            <a href="#">
-                                                Отключить все уведомления на почту
-                                            </a>
                                         </div>
                                     </div>
 
@@ -783,27 +796,42 @@
                                         <div class="settings-notification__title">
                                             В браузере
                                         </div>
-                                        <div class="settings-notification__subtitle">
-                                            Выберите уведомления
+                                        <div class="settings-notification__on">
+                                            <div class="settings-notification__subtitle">
+                                                Выберите уведомления
+                                            </div>
+                                            <div class="settings-notification__check">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notification4" checked="">
+                                                    <label class="custom-control-label" for="notification4">Заявки на ВП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notification5" checked="">
+                                                    <label class="custom-control-label" for="notification5">Назначенные ВП</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="notification6">
+                                                    <label class="custom-control-label" for="notification6">Лучшие блогеры недели</label>
+                                                </div>
+                                            </div>
+                                            <div class="settings-notification__link">
+                                                <a href="javascript:void(0)" class="settings-notification__off-btn">
+                                                    Отключить все уведомления в браузере
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div class="settings-notification__check">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="notification4" checked="">
-                                                <label class="custom-control-label" for="notification4">Заявки на ВП</label>
+
+
+
+                                        <div class="settings-notification__off">
+                                            <div class="settings-notification__subtitle">
+                                                Уведомления в браузере отключены
                                             </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="notification5" checked="">
-                                                <label class="custom-control-label" for="notification5">Назначенные ВП</label>
+                                            <div class="settings-notification__link">
+                                                <a href="javascript:void(0)" class="settings-notification__on-btn">
+                                                    Включить все уведомления в браузере
+                                                </a>
                                             </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="notification6">
-                                                <label class="custom-control-label" for="notification6">Лучшие блогеры недели</label>
-                                            </div>
-                                        </div>
-                                        <div class="settings-notification__link">
-                                            <a href="#">
-                                                Отключить все уведомления в браузере
-                                            </a>
                                         </div>
                                     </div>
                                 </div>

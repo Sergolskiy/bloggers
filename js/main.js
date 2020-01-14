@@ -315,12 +315,13 @@ $(document).ready(function () {
         bodyScroll();
     });
 
-    $('.open-login').click(function () {
+    $('.open-login').click(function (e) {
+        e.preventDefault();
         $('.login').addClass('open');
         if(window.innerWidth < 500){
             openHeaderCloseBtn ();
         }
-        bodyHidden();
+        // bodyHidden();
     });
 
     $('.header__login-btn button, .login-btn').click(function () {
@@ -611,6 +612,9 @@ $(document).ready(function () {
 
     $('.send-request-to-blogger').click(function () {
         $('.request-to-blogger-popup').addClass('open');
+        if(window.innerWidth < 500){
+            openHeaderCloseBtn();
+        }
         bodyHidden();
     });
 
@@ -625,7 +629,7 @@ $(document).ready(function () {
         } else {
             $(this).next().hide();
             $(this).closest('.wrap-popup').removeClass('open');
-            $('.request-to-blogger-success-popup').addClass('open');
+            $('.accept-mail-popup').addClass('open');
         }
     });
 
@@ -651,13 +655,20 @@ $(document).ready(function () {
          // $('.card__form-advertising');
     // });
 
+    $('.add-form-advertising').click(function () {
+        $('.card__form-advertising-wrap.hide-adv').first().slideDown().removeClass('hide-adv');
+    });
+
+    $('.clear-adv-format').click(function () {
+        $(this).closest('.card__form-advertising-wrap').addClass('hide-adv').slideUp();
+    });
 
     $('.form-advertising-check').click(function () {
         $(this).closest('.card__tabs-content-i').find('button.hide').click();
 
         var form = $(this).closest('.card__tabs-content-i').find('form')[0];
         if (form.checkValidity() !== false) {
-            $('.card__tabs-i.active').last().next().addClass('active');
+            $('.card__tabs-i.active').last().removeClass('active').next().addClass('active');
             $('.card__tabs-content-i.active').removeClass('active');
             $('.card__tabs-content-i').eq($('.card__tabs-i.active').last().index()).addClass('active');
         }
@@ -877,12 +888,14 @@ $(document).ready(function () {
 
     $('.cart-btn-select-adv').click(function () {
         $(this).closest('.cart-block__main-col').hide().next().show();
-        $(this).closest('.cart-block__main-row').addClass('align-items-start');
+        $(this).closest('.cart-block__main-row').addClass('align-items-start visible-row');
+        $(this).closest('.cart-block__main-table').find('.cart-block__main-row:not(.visible-row)').hide();
     });
 
     $('.cart-btn-close-adv').click(function () {
         $(this).closest('.cart-block__main-col').hide().prev().show();
-        $(this).closest('.cart-block__main-row').removeClass('align-items-start');
+        $(this).closest('.cart-block__main-row').removeClass('align-items-start visible-row');
+        $(this).closest('.cart-block__main-table').find('.cart-block__main-row:not(.visible-row)').show();
     });
 
     $('.cart-block__main-col .mobile a').click(function (e) {
@@ -973,6 +986,33 @@ $(document).ready(function () {
             openHeaderCloseBtn();
         }
         bodyHidden();
+    });
+
+    $('.card__statistic-link').click(function () {
+        $(this).closest('.card__statistic-block').find('.card__statistic-link').toggle(0);
+        $(this).closest('.card__statistic-block').find('.card__statistic-title').toggle(0);
+        $(this).closest('.card__statistic-block').find('.card__statistic-sub-title').toggle(0);
+        $(this).closest('.card__statistic-block').find('.card__statistic-field').toggle(0);
+    });
+
+    $('.accept-mail-next').click(function () {
+
+
+         if($('.accept-mail-wrap .red.hide').length == 0){
+             $(this).closest('.wrap-popup').find('.close-btn').click();
+             $('.request-to-blogger-success-popup').addClass('open');
+         }
+        $('.accept-mail-wrap .red').removeClass('hide');
+    });
+
+    $('.accept-mail-no-mail').click(function () {
+        $(this).closest('.wrap-popup').find('.close-btn').click();
+        $('.accept-mail-popup-2').addClass('open');
+    });
+
+    $('.accept-mail-send').click(function () {
+        $(this).closest('.wrap-popup').find('.close-btn').click();
+        $('.request-to-blogger-success-popup').addClass('open');
     });
 });
 
