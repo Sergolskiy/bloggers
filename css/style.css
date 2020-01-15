@@ -1127,7 +1127,7 @@ table tbody tr:nth-child(odd){
 
 .home-table td:nth-child(12){
     max-width: 108px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 150%;
 }
 
@@ -1138,7 +1138,8 @@ table tbody tr:nth-child(odd){
 
 .home-table td:nth-child(12) a{
     position: relative;
-    top: 6px;
+    top: 5px;
+    font-size: 14px;
 }
 
 .home-table .star-icon{
@@ -1960,7 +1961,7 @@ table tbody tr:nth-child(odd){
 }
 .custom-radio .custom-control-label::after {
     width: 24px;
-    top: 5px;
+    top: 7px;
     left: 6px;
     height: 24px;
 }
@@ -3453,7 +3454,7 @@ table tbody tr:nth-child(odd){
     border-top: 1px solid #D5DFE4;
     border-bottom: 1px solid #D5DFE4;
     margin: 0 7px;
-    padding: 0 10px;
+    padding: 0 9px;
 }
 
 .answer__top-tabs-i:before{
@@ -3577,6 +3578,9 @@ table tbody tr:nth-child(odd){
     margin-left: auto;
 }
 
+
+
+
 .answer__top-search .btn-outline-secondary{
     width: 36px;
     background: url("../images/svg/scale.svg") center center no-repeat;
@@ -3593,8 +3597,26 @@ table tbody tr:nth-child(odd){
     border-bottom-left-radius: 5px;
     padding-left: 10px;
     max-width: 206px;
+    width: 206px;
     font-size: 14px;
     line-height: 17px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.answer__top-search input:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #192229;
+    outline: 0;
+    box-shadow: none;
+}
+
+.answer__top-search input:focus + a{
+    color: #495057;
+    background-color: #fff;
+    border-color: #192229;
+    outline: 0;
+    box-shadow: none;
 }
 
 .answer__info{
@@ -5842,6 +5864,7 @@ table tbody tr:nth-child(odd){
 
 .form-group-left-l label{
     border-radius: 5px 0px 0px 5px;
+    border-right: 0;
 }
 
 .custom-radio-3 input:checked + label{
@@ -6073,6 +6096,10 @@ table tbody tr:nth-child(odd){
 
 .request-to-blogger__i{
     margin-bottom: 25px;
+}
+
+.request-to-blogger__i .textarea-count:after{
+    right: 20px;
 }
 
 .request-to-blogger__i:last-child{
@@ -6327,6 +6354,11 @@ table tbody tr:nth-child(odd){
 
 .accept-mail-wrap .form-group{
     max-width: 310px;
+}
+
+.email-send-success-popup.base-popup .wrap-popup__inner {
+    width: 100%;
+    max-width: 500px;
 }
 
 /*********  END POPUPS  ************/
@@ -10387,4 +10419,12 @@ textarea {
     font-size: 12px;
     line-height: 14px;
     color: #FF0000;
+}
+
+.send-request-to-blogger span:after{
+    content: ")";
+}
+
+.send-request-to-blogger span:before{
+    content: "(";
 }
