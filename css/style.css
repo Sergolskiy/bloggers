@@ -322,7 +322,11 @@ body{
     overflow: hidden;
 }
 
-body.hidden{
+body.padding{
+    padding-right: 17px;
+}
+
+body.padding .header{
     padding-right: 17px;
 }
 
@@ -398,6 +402,11 @@ input.form-control{
 
 
 .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
     background: #FFFFFF;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
     min-height: 75px;
@@ -750,7 +759,7 @@ input.form-control{
 /*********  MAIN  ************/
 
 .main{
-    margin-top: 30px;
+    margin-top: 105px;
     margin-bottom: 80px;
     min-height: calc(100vh - 225px);
 }
@@ -1962,6 +1971,7 @@ table tbody tr:nth-child(odd){
 .custom-radio .custom-control-label::after {
     width: 24px;
     top: 7px;
+    top: 5px;
     left: 6px;
     height: 24px;
 }
@@ -1971,6 +1981,7 @@ table tbody tr:nth-child(odd){
     border-color: #ffffff;
     background-color: #007bff;
     top: 11px;
+    top: 9px;
 }
 
 .card__form-advertising-i .custom-radio{
@@ -2032,6 +2043,7 @@ table tbody tr:nth-child(odd){
 .custom-radio.custom-radio-big .custom-control-label::after {
     width: 16px;
     top: 9px;
+    top: 7px;
     left: 10px;
     height: 16px;
     background: white;
@@ -2387,6 +2399,7 @@ table tbody tr:nth-child(odd){
 .custom-radio-2 .custom-control-label::after  {
     position: absolute;
     top: 7px;
+    top: 6px;
     left: 3px;
     border-radius: 50%;
     z-index: 1;
@@ -2650,6 +2663,10 @@ table tbody tr:nth-child(odd){
 
 .paid-service__yellow-i:last-child{
     margin-bottom: 0;
+}
+
+.paid-service__yellow-i:last-child:before{
+    font-weight: bold;
 }
 
 .paid-service__yellow-i:before{
@@ -3871,8 +3888,26 @@ table tbody tr:nth-child(odd){
     border-bottom-left-radius: 5px;
     padding-left: 10px;
     max-width: 206px;
+    width: 206px;
     font-size: 14px;
     line-height: 17px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.request__top-search input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #192229;
+    outline: 0;
+    box-shadow: none;
+}
+
+.request__top-search input:focus + a {
+    color: #495057;
+    background-color: #fff;
+    border-color: #192229;
+    outline: 0;
+    box-shadow: none;
 }
 
 .title__right-btns{
@@ -4169,6 +4204,12 @@ table tbody tr:nth-child(odd){
 
 .request__table-access{
 
+}
+
+.request__table-access thead th{
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
 }
 
 .request__table.request__table-refused td:nth-child(5) {
@@ -5180,7 +5221,7 @@ table tbody tr:nth-child(odd){
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -5193,6 +5234,9 @@ table tbody tr:nth-child(odd){
     transform: translateY(-10px);
     opacity: 0;
     transition: 0.3s;
+
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .video-popup{
@@ -5205,7 +5249,7 @@ table tbody tr:nth-child(odd){
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
-    overflow: auto;
+    overflow: scroll;
     overflow-x: hidden;
 }
 
@@ -6324,7 +6368,8 @@ table tbody tr:nth-child(odd){
 }
 
 .no-customer-no-speck .no-recklam-wrap {
-    width: 370px;
+    width: 440px;
+    font-size: 18px;
 }
 
 .send-reminder .no-recklam-wrap {
@@ -6361,7 +6406,12 @@ table tbody tr:nth-child(odd){
     max-width: 500px;
 }
 
-/*********  END POPUPS  ************/
+.no-recklam .no-recklam-btn .btn{
+    width: 130px;
+    height: 36px;
+}
+
+  /*********  END POPUPS  ************/
 
 
 
@@ -7741,7 +7791,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         max-width: 992px;
     }
     .main {
-        padding-top: 75px;
+        /*padding-top: 75px;*/
     }
     .header__menu {
         display: none;
@@ -8801,7 +8851,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         max-width: 140px;
     }
 
-    .settings__row .custom-control-label {
+    .settings__row  .custom-control-label {
         font-size: 14px;
         line-height: 25px;
         cursor: pointer;
@@ -8810,13 +8860,18 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-bottom: 5px;
     }
 
+    .settings__row .custom-radio-2 .custom-control-label {
+        padding-top: 0;
+    }
+
     .custom-checkbox .custom-control-label::before,
+    .custom-checkbox .custom-control-label::after,
     .settings__row .custom-control-label::after {
         width: 24px;
         height: 24px;
         top: 0;
         left: -35px;
-
+        top: 4px;
     }
 
     .custom-control-label::after {
@@ -8824,6 +8879,21 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         height: 24px;
         top: 0;
         left: -35px;
+        top: 4px;
+    }
+
+     .custom-control-input:checked~.custom-control-label::before {
+        border-color: #3897F0;
+        background-color: #3897F0;
+        top: 4px !important;
+    }
+
+    .custom-radio-2 .custom-control-input:checked~.custom-control-label::before {
+        top: -2px !important;
+    }
+
+    .custom-radio .custom-control-input:checked~.custom-control-label::before {
+        top: 9px !important;
     }
 
     .custom-checkbox label{
@@ -9531,6 +9601,15 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         display: none;
     }
 
+    .card__verify .custom-radio-2:nth-last-child(n+3) .custom-control-label {
+        margin-bottom: 12px;
+    }
+    .card__verify-right-block .custom-checkbox label {
+        font-size: 14px;
+        line-height: 35px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+    }
 
 }
 
@@ -10081,6 +10160,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         line-height: 12px;
         top: -4px;
         right: -7px;
+    }
+
+    .card__form-advertising-block .info.left .info__txt {
+        transform: translateX(-67%) !important;
     }
 
 }
