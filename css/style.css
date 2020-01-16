@@ -4952,6 +4952,11 @@ table tbody tr:nth-child(odd){
     max-width: 110px;
 }
 
+.moder__content-actions-r .dropdown-menu.show li:hover a{
+    background: #3897F0;
+    color: white;
+}
+
 .moder__content-actions-r .dropdown-menu.show{
     right: 0 !important;
     left: auto !important;

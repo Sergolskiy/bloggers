@@ -208,15 +208,18 @@ $(document).ready(function () {
 
     $('.moder-req-next').click(function () {
         var active = $(this).closest('.moder__inner').find('.moder__content-i.active');
+        var content = $(this).closest('.moder__inner');
         if(active.hasClass('next-info')){
 
             var dataInfo = active.attr('data-info');
             var info = '.moder__content-info-' + dataInfo;
-            $(info).addClass('active');
+
+
+            content.find(info).addClass('active');
         } else if (active.hasClass('moder__content-info')){
             var dataInfo2 = active.attr('data-info-c');
             var info2 = '.moder__content-i[data-info="'+dataInfo2+'"]';
-            $(info2).next().next().addClass('active');
+            content.find(info2).next().next().addClass('active');
         } else {
             active.next('.moder__content-i').addClass('active');
         }
@@ -848,7 +851,7 @@ $(document).ready(function () {
         if(window.innerWidth < 500){
             openHeaderCloseBtn();
         }
-        bodyHidden();
+        checkWidth();
     });
 
     $('.open-textarea').click(function () {
@@ -1095,6 +1098,17 @@ $(document).ready(function () {
     });
     $('.open-rework-textarea').click(function () {
         $(this).closest('.card__form-advertising-textarea').addClass('hide').prev().removeClass('hide');
+    });
+
+    $(document).on('click', '.moder__content-actions-r .dropdown-menu li a', function () {
+        if($(this).find('span').html()== 'Заблокировать'){
+            $('.blocked-popup').addClass('open');
+            if(window.innerWidth < 500){
+                openHeaderCloseBtn();
+            }
+            checkWidth();
+        }
+
     });
 });
 
