@@ -37,6 +37,10 @@ textarea {
     color: #999;
 }
 
+.copy-btn-moderation.copied{
+    background: #6A7B83;
+}
+
 .cart-icon{
     position: relative;
     top: 1px;
@@ -1897,6 +1901,10 @@ table tbody tr:nth-child(odd){
     margin-bottom: 40px;
 }
 
+.rework .card__tabs-top{
+    display: none;
+}
+
 .card__tabs-i{
     display: flex;
     height: 45px;
@@ -1934,6 +1942,29 @@ table tbody tr:nth-child(odd){
 .card__tabs-i.active + .active:after{
     width: 102%;
     margin-left: -2%;
+}
+
+.rework .card__tabs-content{
+    padding-top: 40px;
+}
+
+.rework .card__title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rework .card__title .custom-btn-gold{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.rework .card__form-advertising-bottom-btn .custom-btn-gold{
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .card__tabs-content-i{
@@ -2135,6 +2166,17 @@ table tbody tr:nth-child(odd){
     max-width: 350px;
 }
 
+.card__form-advertising-textarea--change p{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.card__form-advertising-textarea--change a{
+    font-size: 14px;
+    line-height: 150%;
+    color: #3897F0;
+}
+
 .card__price .form-group{
     margin-bottom: 0;
 }
@@ -2243,10 +2285,20 @@ table tbody tr:nth-child(odd){
     margin-bottom: 5px;
 }
 
+.rework .card__statistic-title{
+    font-size: 17px;
+}
+
 .card__statistic-sub-title{
     font-size: 12px;
     line-height: 120%;
     margin-bottom: 9px;
+}
+
+.card__statistic-sub-title--rework{
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 18px;
 }
 
 .card__statistic-field .percent .form-control {
@@ -2311,6 +2363,10 @@ table tbody tr:nth-child(odd){
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+.rework .card__verify{
+    padding: 30px;
 }
 
 .card__verify-right,
@@ -4466,6 +4522,10 @@ table tbody tr:nth-child(odd){
     flex-direction: column;
 }
 
+.moder__content-info-2 .moder__info{
+    min-height: 443px;
+}
+
 .moder__info .big-txt{
     font-size: 36px;
     line-height: 43px;
@@ -4884,6 +4944,7 @@ table tbody tr:nth-child(odd){
     margin-bottom: 25px;
 }
 
+
 .moder__content-actions a{
     color: #3897F0;
 }
@@ -4894,6 +4955,7 @@ table tbody tr:nth-child(odd){
 .moder__content-actions-r .dropdown-menu.show{
     right: 0 !important;
     left: auto !important;
+    border-radius: 5px;
 }
 
 .moder__content-tap--fixed .moder__content-i-txt a:not(.btn){
@@ -9945,6 +10007,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding: 8px 13px;
     }
 
+    .moder__content-info-2 .moder__info{
+        min-height: 273px;
+    }
     .moder__info,
     .moder__content-inner {
         min-height: 300px;
