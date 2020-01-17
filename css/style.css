@@ -762,8 +762,15 @@ input.form-control{
 
 /*********  MAIN  ************/
 
-.main{
+.header + .main{
     margin-top: 105px;
+}
+
+.top-banner + .main{
+    margin-top: 40px;
+}
+
+.main{
     margin-bottom: 80px;
     min-height: calc(100vh - 225px);
 }
@@ -1948,12 +1955,12 @@ table tbody tr:nth-child(odd){
     padding-top: 40px;
 }
 
-.rework .card__title{
+.card__title{
     display: flex;
     justify-content: space-between;
 }
 
-.rework .card__title .custom-btn-gold{
+.card__title .custom-btn-gold{
     width: 140px;
     height: 40px;
     font-size: 16px;
@@ -1981,6 +1988,10 @@ table tbody tr:nth-child(odd){
     font-size: 24px;
     line-height: 135%;
     margin-bottom: 30px;
+}
+
+.card__title .form-advertising-check{
+    display: none;
 }
 
 .card__form-advertising{
@@ -2020,6 +2031,9 @@ table tbody tr:nth-child(odd){
     margin-right: 10px;
 }
 
+.story-time .bootstrap-select{
+    max-width: 170px;
+}
 
 .custom-radio .custom-control-label{
     width: 170px;
@@ -2115,6 +2129,11 @@ table tbody tr:nth-child(odd){
 .card__form-advertising-block--month{
     flex-direction: column;
 }
+
+.card__form-advertising-block--month .bootstrap-select{
+    max-width: 170px;
+}
+
 
 .card__form-advertising-block > label{
     width: 100%;
@@ -2235,6 +2254,7 @@ table tbody tr:nth-child(odd){
     padding: 10px;
 }
 
+
 .card__statistic-field .custom-file{
     max-width: 145px;
     width: 100%;
@@ -2242,6 +2262,7 @@ table tbody tr:nth-child(odd){
     margin-bottom: 8px;
 }
 
+.card .card__statistic-field .btn-outline-secondary,
 .card__statistic-field .custom-btn{
     width: 100%;
 }
@@ -2983,6 +3004,7 @@ table tbody tr:nth-child(odd){
 .settings .card__statistic-block p{
     font-size: 12px;
     line-height: 14px;
+    line-height: 17px;
     color: #6A7B83;
     margin-bottom: 0;
 }
@@ -3666,8 +3688,11 @@ table tbody tr:nth-child(odd){
     position: relative;
     z-index: 2;
     height: 36px;
+
+    border-radius: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+
     padding-left: 10px;
     max-width: 206px;
     width: 206px;
@@ -4054,7 +4079,7 @@ table tbody tr:nth-child(odd){
     line-height: 24px;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
+    top: -13px;
     right: 0px;
     z-index: 1;
     color: white;
@@ -4381,6 +4406,10 @@ table tbody tr:nth-child(odd){
     text-align: right;
     color: #6A7B83;
     margin-bottom: 20px;
+}
+
+.moder__content-tap .moder-req-last{
+    margin-top: -20px;
 }
 
 .moder__content-i-txt{
@@ -4957,6 +4986,10 @@ table tbody tr:nth-child(odd){
     color: white;
 }
 
+.moder__content-actions-r .dropdown-menu.show li a.dropdown-item{
+    padding: 1px 15px;
+}
+
 .moder__content-actions-r .dropdown-menu.show{
     right: 0 !important;
     left: auto !important;
@@ -4965,6 +4998,11 @@ table tbody tr:nth-child(odd){
 
 .moder__content-tap--fixed .moder__content-i-txt a:not(.btn){
     color: #3897F0;
+}
+
+.moder__theme .dropdown {
+    width: 100% !important;
+    max-width: 360px;
 }
 
 
@@ -5060,6 +5098,9 @@ table tbody tr:nth-child(odd){
 /*********  BANNERS  ************/
 
 
+.header + .top-banner{
+    margin-top: 75px;
+}
 
 .top-banner{
     background: #FFFFFF;
@@ -6082,6 +6123,10 @@ table tbody tr:nth-child(odd){
 
 .email-to-blogger-popup .email-send-textarea textarea{
     height: 130px;
+}
+
+.email-to-blogger-popup .email-send__bottom{
+    background: white;
 }
 
 .toggle-textarea{
@@ -7844,7 +7889,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 @media (max-width: 992px) {
 
     .header + .top-banner{
-        padding-top: 75px;
+        margin-top: 75px;
     }
 
 
@@ -8696,6 +8741,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding-top: 30px;
         border-top: 2px dashed #D5DFE4;
         margin-top: 0;
+    }
+
+
+    .card__form-advertising-block--month .info.right .info__txt {
+        transform: translateX(-62%) !important;
     }
 }
 

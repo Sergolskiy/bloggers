@@ -251,11 +251,18 @@ $(document).ready(function () {
     });
 
     $('.moder-req-last').click(function () {
+        if($(this).closest('.moder__content-tap').length > 0){
+            $(this).closest('.moder__content-i').removeClass('active');
+            $(this).closest('.moder__content').find('.moder__content-i').last().addClass('active');
+            $(this).closest('.moder__content').next('.moder__bottom').css({"opacity":"0", "pointer-events":"none"});
+            return;
+        }
         var active = $(this).closest('.moder__inner').find('.moder__content-i.active');
         active.next('.moder__content-i').addClass('active');
         active.removeClass('active');
         $(this).closest('.moder__bottom').css({"opacity":"0", "pointer-events":"none"});
     });
+
 
     $('.moder-req-close').click(function (e) {
         e.preventDefault();
@@ -648,7 +655,8 @@ $(document).ready(function () {
     });
 
 
-    $('.check-request-to-blogger').click(function () {
+    $('.check-request-to-blogger').click(function (e) {
+        e.preventDefault();
         $(this).parents('.request-to-blogger__inner').find('button').click();
 
         var form = $(this).closest('.request-to-blogger__inner').find('form')[0];
@@ -686,10 +694,12 @@ $(document).ready(function () {
 
     $('.add-form-advertising').click(function () {
         $('.card__form-advertising-wrap.hide-adv').first().slideDown().removeClass('hide-adv');
+        $('.card__title').find('.form-advertising-check').show();
     });
 
     $('.clear-adv-format').click(function () {
         $(this).closest('.card__form-advertising-wrap').addClass('hide-adv').slideUp();
+        $('.card__title').find('.form-advertising-check').hide();
     });
 
     $('.form-advertising-check').click(function () {
@@ -700,6 +710,8 @@ $(document).ready(function () {
             $('.card__tabs-i.active').last().removeClass('active').next().addClass('active');
             $('.card__tabs-content-i.active').removeClass('active');
             $('.card__tabs-content-i').eq($('.card__tabs-i.active').last().index()).addClass('active');
+        } else {
+            $(this).prev('.red').show();
         }
     });
 
@@ -1022,6 +1034,10 @@ $(document).ready(function () {
 
     $('.more-btn').click(function () {
         $(this).toggleClass('open');
+    });
+
+    $('.send-remind-btn').click(function () {
+        $('.send-remind-popup').addClass('open');
     });
 
     $('.settings-notification__off-btn').click(function () {

@@ -236,7 +236,7 @@
                 </div>
                 <div class="title__right hide-992">
                     <div class="request__top-search">
-                        <input type="text" placeholder="Поиск по блогерам">
+                        <input type="text" class="form-control" placeholder="Поиск по блогерам">
                         <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
                     </div>
                 </div>
@@ -532,7 +532,7 @@
 
                         <div class="mobile">
                             <div class="request__top-search">
-                                <input type="text" placeholder="Поиск по блогерам">
+                                <input type="text" class="form-control" placeholder="Поиск по блогерам">
                                 <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
                             </div>
                         </div>
@@ -1862,7 +1862,7 @@
                 <label>Пусть заказчик напишет в директ моего:</label>
                 <div class="form-group radio-group custom-radio-2">
                     <div class="custom-control custom-radio-2">
-                        <input type="radio" name="send-reminder-btn7"  class="custom-control-input " id="send-reminder-btn6" required="">
+                        <input type="radio" name="send-reminder-btn7"  class="custom-control-input " id="send-reminder-btn6" checked required="">
                         <label class="custom-control-label" for="send-reminder-btn6">PR-аккаунта</label>
                     </div>
                     <div class="custom-control custom-radio-2">
@@ -1873,7 +1873,7 @@
 
                 <div class="no-recklam-btn d-flex justify-content-between">
                     <a href="javascript:void(0);" class="btn btn-outline-secondary">Отмена</a>
-                    <a href="javascript:void(0);" class="btn btn-primary custom-btn">Отправить напоминание</a>
+                    <a href="javascript:void(0);" class="btn btn-primary custom-btn send-remind-btn">Отправить напоминание</a>
                 </div>
             </div>
         </div>
@@ -1889,6 +1889,21 @@
                     <img src="images/svg/done_icon.svg" alt="img">
                     <div class="base-popup_success">Спасибо за отзыв.
                         К заказчику будут применены штрафные санкции.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="base-popup send-remind-popup wrap-popup">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
+            <div class="base-popup__content">
+                <div class="base-popup_success-wrap">
+                    <img src="images/svg/done_icon.svg" alt="img">
+                    <div class="base-popup_success">Спасибо за отзыв.
+                        Мы отправили заказчику напоминание</div>
                 </div>
 
             </div>
