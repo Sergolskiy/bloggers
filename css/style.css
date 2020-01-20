@@ -768,6 +768,15 @@ input.form-control{
 
 .top-banner + .main{
     margin-top: 40px;
+    margin-top: 180px;
+}
+
+.top-banner.hide-banner{
+    display: none;
+}
+
+.top-banner.hide-banner + .main{
+    margin-top: 110px;
 }
 
 .main{
@@ -970,7 +979,7 @@ input.form-control{
 }
 
 .content-table__head-item--right .white-select{
-    max-width: 60px;
+    max-width: 53px;
 }
 
 .content-table__head-item--right .white-select .btn:hover,
@@ -1821,7 +1830,6 @@ table tbody tr:nth-child(odd){
 }
 
 .auth__left .login__top-popup{
-    display: flex !important;
     position: static;
     transform: translate(0, 0);
     margin-top: 0;
@@ -2159,6 +2167,17 @@ table tbody tr:nth-child(odd){
     margin-right: 15px;
 }
 
+.card .card__price .card__form-advertising-i{
+    max-width: 170px;
+    width: 100%;
+}
+
+.card .card__price .card__form-advertising-i .form-group .bootstrap-select{
+    width: 100%;
+}
+
+
+
 .card__form-advertising-block .textarea-count {
     position: relative;
     width: 100%;
@@ -2187,7 +2206,7 @@ table tbody tr:nth-child(odd){
 
 .card__form-advertising-textarea--change p{
     font-size: 14px;
-    line-height: 150%;
+    line-height: 149%;
 }
 
 .card__form-advertising-textarea--change a{
@@ -5102,6 +5121,8 @@ table tbody tr:nth-child(odd){
     margin-top: 75px;
 }
 
+
+
 .top-banner{
     background: #FFFFFF;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
@@ -5109,6 +5130,24 @@ table tbody tr:nth-child(odd){
     min-height: 70px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 9;
+}
+
+.top-banner:not(.hide-banner) + .top-banner{
+    position: relative;
+    margin-top: 0px;
+}
+
+.top-banner:nth-child(3){
+    margin-top: 147px;
+}
+
+.hide-banner + .top-banner{
+    margin-top: 75px;
 }
 
 .top-banner__inner{
@@ -7317,6 +7356,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
 }
 .mobile-main-popup__select-head.open {
     visibility: visible;
@@ -7650,7 +7690,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .top-banner + .main .page-block-wrap-settings{
-        margin-top: -20px;
+        /*margin-top: -20px;*/
     }
 
 
@@ -8159,6 +8199,20 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         position: fixed;
         top: 75px;
     }
+
+    .main > div:not(.home-page-container) .mobile-select-popup > .dropdown-menu.show{
+        top: 110px!important;
+    }
+
+    .main > div:not(.home-page-container) .mobile-select-popup--all > .dropdown-menu.show{
+        top: 135px!important;
+    }
+
+    .main > div:not(.home-page-container) .mobile-main-popup__select-head.open{
+        z-index: 1000;
+    }
+
+
     /*select dropdown-menu show end*/
     .title__txt {
         margin-bottom: 3px;
@@ -8649,8 +8703,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .top-banner + .main .page-nav {
         margin: -60px -15px 30px;
     }
+
     .top-banner + .main {
         padding-top: 60px;
+    }
+
+    .top-banner.hide-banner + .main {
+        padding-top: 0;
     }
 
     .banner-pay-success .top-banner__title{
@@ -8746,6 +8805,30 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .card__form-advertising-block--month .info.right .info__txt {
         transform: translateX(-62%) !important;
+    }
+
+    .same-bloggers{
+        max-width: 100%;
+        width: auto;
+    }
+
+    .same-bloggers{
+        display: none;
+    }
+
+    .card__title .form-advertising-check{
+        display: none !important;
+    }
+
+    .clear-adv-format{
+        margin-top: 20px;
+    }
+
+    .card__price .card__form-advertising-i:last-child{
+        margin-right: 0;
+    }
+    .card__form-advertising-block .textarea-count {
+        height: 120px;
     }
 }
 
@@ -9728,6 +9811,23 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-bottom: 0px;
     }
 
+    .itog-price{
+        display: none;
+    }
+
+    .card__form-advertising-bottom-btn > div{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .card__form-advertising-bottom-btn > div >span{
+        position: absolute;
+        white-space: nowrap;
+        right: 0;
+        top: -27px;
+        margin-right: 0 !important;
+    }
 }
 
 @media (min-width: 500px) {
@@ -9738,6 +9838,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+
+    .mobile-main-popup__select-title{
+        font-size: 16px;
+        line-height: 19px;
+    }
 
     .payments-success__title {
         font-size: 20px;
@@ -9786,6 +9891,30 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
 
+    .cart-block__clear{
+        text-align: left;
+        padding: 20px 15px;
+        margin-bottom: -35px;
+    }
+
+    .cart-block__clear-title {
+        padding-top: 0;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .cart-block__clear-btn {
+        padding-bottom: 15px;
+    }
+
+    .cart-block__clear-subtitle{
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .cart-block__clear-btn a {
+        padding: 11px 12px;
+    }
 
     /*popup*/
     .base-popup__content, .login__tabs-wrap {
@@ -9930,8 +10059,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .card__title {
+    .card__tabs-content .card__title {
         font-size: 20px;
+        padding: 0;
+        margin-bottom: 15px;
     }
     .card__form-advertising {
         padding-left: 15px;
@@ -9966,6 +10097,19 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card__form-advertising-block:nth-child(5) {
         order: 2;
     }
+    .card__form-advertising-block:nth-child(6) {
+        order: 5;
+    }
+
+    .card__form-advertising-block:nth-last-child(2){
+        margin-bottom: 24px;
+    }
+
+    .clear-adv-format {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .card__statistic-left {
         padding-left: 0;
         padding-right: 0;
@@ -9979,7 +10123,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .card__verify{
         border: none;
-        padding: 0 15px;
+        padding: 0 ;
     }
     .card__title{
         padding: 0 15px;
@@ -10286,6 +10430,44 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         transform: translateX(-67%) !important;
     }
 
+    .card__form-advertising{
+        padding: 20px 15px 25px;
+    }
+
+    .card__form-advertising-wrap + .card__form-advertising-wrap {
+        margin-top: 30px;
+    }
+
+    .card__form-advertising-bottom-btn{
+        align-items: flex-end;
+    }
+
+    .card__form-advertising-bottom-btn > div {
+        max-width: 100px;
+    }
+
+    .card__form-advertising-bottom-btn .btn-secondary {
+        min-width: 100px;
+    }
+
+    .card__form-advertising-new-form-btn{
+        display: none;
+    }
+
+    .card__form-advertising-bottom-btn .btn{
+        padding: 6px 10px;
+        max-width: max-content;
+        margin-right: 10px;
+        height: 36px;
+    }
+
+    .card__form-advertising-new-form-btn + .card__form-advertising-bottom-btn > button{
+        display: none !important;
+    }
+
+    .card__form-advertising-new-form-btn + .card__form-advertising-bottom-btn > .add-form-advertising{
+        display: block !important;
+    }
 }
 
 @media (max-width: 360px) {
@@ -10537,7 +10719,16 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         max-width: 100%;
     }
 
+
 }
+
+@media (max-width: 340px) {
+    .card__form-advertising-bottom-btn .btn {
+        font-size: 13px;
+        padding: 6px 3px;
+    }
+}
+
 
 
 
