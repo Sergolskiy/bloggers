@@ -2207,6 +2207,7 @@ table tbody tr:nth-child(odd){
 .card__form-advertising-textarea--change p{
     font-size: 14px;
     line-height: 149%;
+    margin-bottom: 14px;
 }
 
 .card__form-advertising-textarea--change a{
@@ -5125,7 +5126,7 @@ table tbody tr:nth-child(odd){
 
 .top-banner{
     background: #FFFFFF;
-    box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+    box-shadow: 0px 5px 10px -2px rgba(0, 73, 129, 0.1);
     border-top: 1px solid #D5DFE4;
     min-height: 70px;
     display: flex;
@@ -5134,6 +5135,10 @@ table tbody tr:nth-child(odd){
     top: 0;
     width: 100%;
     left: 0;
+    z-index: 15;
+}
+
+.top-banner.close{
     z-index: 9;
 }
 
@@ -5403,6 +5408,14 @@ table tbody tr:nth-child(odd){
 .wrap-popup__inner{
     display: flex;
     flex-direction: column;
+}
+
+.wrap-popup__inner.no-tabs .login__tabs{
+    display: none;
+}
+
+.wrap-popup__inner.no-tabs .login__tabs-wrap{
+    padding-top: 30px;
 }
 
 .big-popup__inner,
@@ -6505,6 +6518,8 @@ table tbody tr:nth-child(odd){
 
 .screenshots__inner{
     max-width: 400px;
+    max-height: 525px;
+    overflow: hidden;
 }
 
 .screenshots__inner img{

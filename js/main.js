@@ -3,8 +3,10 @@ $(document).ready(function () {
     /***********   HEADER   *************/
 
     $('.close-banner').click(function () {
+      $(this).closest('.top-banner').addClass('close');
       $(this).closest('.top-banner').slideUp(function () {
           $(this).closest('.top-banner').addClass('hide-banner');
+          $(this).closest('.top-banner').removeClass('close');
       });
     });
 
@@ -397,7 +399,7 @@ $(document).ready(function () {
         } else {
             $('.auth .login__tab').removeClass('active');
             $('.login__top-popup').removeClass('active');
-            console.log(234);
+
             $(this).addClass('active');
             $('.auth .login__content-i').removeClass('active');
             $('.auth .login__content-i').eq($(this).index()).addClass('active');
@@ -450,6 +452,10 @@ $(document).ready(function () {
 
             $(this).parents('.reg-tap').removeClass('active');
             $(this).parents('.reg-tap').next().addClass('active');
+
+            if($(this).closest('.wrap-popup').length === 0){
+                $(this).closest('.wrap-popup__inner').addClass('no-tabs');
+            }
         }
     });
 
@@ -459,6 +465,10 @@ $(document).ready(function () {
     $('.reg-prev').click(function () {
         $(this).parents('.reg-tap').removeClass('active');
         $(this).parents('.reg-tap').prev().addClass('active');
+
+        if($(this).closest('.wrap-popup').length === 0 && $(this).closest('.wrap-popup__inner').hasClass('no-tabs')){
+            $(this).closest('.wrap-popup__inner').removeClass('no-tabs');
+        }
     });
 
     $('.code-link').click(function () {
@@ -469,6 +479,10 @@ $(document).ready(function () {
          if($('#code').val() == 1111){
              $('.login__tab').first().click();
          }
+
+        if($(this).closest('.wrap-popup').length === 0 && $(this).closest('.wrap-popup__inner').hasClass('no-tabs')){
+            $(this).closest('.wrap-popup__inner').removeClass('no-tabs');
+        }
     });
 
     $('.forgot-pass').click(function () {
