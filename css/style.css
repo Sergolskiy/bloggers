@@ -429,6 +429,10 @@ input.form-control{
     left: -5px;
 }
 
+.header__logo-link img {
+    width: 137px;
+}
+
 .header__menu{
     display: flex;
     align-items: center;
@@ -579,8 +583,9 @@ input.form-control{
 
 
 .custom-btn-gold {
-    background: #FADB67;;
+    background: #FADB67;
     border: 0;
+    border: 1px solid #FADB67;
     color: black;
 }
 
@@ -7023,6 +7028,8 @@ table tbody tr:nth-child(odd){
 .header-mobile-btn-close.open {
     visibility: visible;
     opacity: 1;
+
+    display: inline-block;
 }
 
 /*custom-dropout*/
@@ -7052,17 +7059,17 @@ table tbody tr:nth-child(odd){
     transition: 0.3s;
 }
 .custom-dropout__more-btn.open .custom-dropout__link:after {
-    transform: rotate(-180deg) translateY(6px);
+    /*transform: rotate(-180deg) translateY(6px);*/
 }
 .custom-dropout__txt{
-    -ms-transform: translateX(-50%);
+    /*-ms-transform: translateX(-50%);*/
     -o-transition: all .2s ease;
-    -webkit-box-shadow: 0 8px 8px 0 rgba(0,0,0,.12);
-    -webkit-transform: translateX(-50%);
+    /*-webkit-box-shadow: 0 8px 8px 0 rgba(0,0,0,.12);*/
+    /*-webkit-transform: translateX(-50%);*/
     -webkit-transition: all .2s ease;
     background: #FFFFFF;
     border-radius: 4px;
-    box-shadow: 0 8px 8px 0 rgba(0,0,0,.12);
+    /*box-shadow: 0 8px 8px 0 rgba(0,0,0,.12);*/
     color: #192229;
     font-size: 14px;
     line-height: 17px;
@@ -7080,6 +7087,10 @@ table tbody tr:nth-child(odd){
     z-index: 101;
     border: 1px solid #3897F0;
     left: 85%;
+    left: 0;
+    transform: translateX(-5%);
+    border: 1px solid #D5DFE4;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
 }
 
 .custom-dropout__txt:before{
@@ -7093,6 +7104,7 @@ table tbody tr:nth-child(odd){
     top: -10px;
     transform: translateX(-50%);
     width: 0;
+    display: none;
 }
 
 .custom-dropout__more-btn.open .custom-dropout__txt{
@@ -7171,6 +7183,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     padding: 0.1em .3em;
 }
 
+.datepicker[readonly] {
+    background: white;
+}
 
 
 
@@ -7298,6 +7313,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     line-height: 16px;
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 .mobile-home-table__statistics {
 
@@ -7367,7 +7383,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     background: white;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
@@ -7667,6 +7683,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     display: none;
 }
 
+
 /*********  MEDIA  ************/
 
 
@@ -7942,6 +7959,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 992px) {
+    .header__logo {
+        left: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
 
     .header + .top-banner{
         margin-top: 75px;
@@ -7972,6 +7995,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .mobile-menu {
         display: flex;
+        /*position: relative;*/
+        /*right: 10px;*/
+    }
+    .header + .main {
+        margin-top: 100px;
     }
     .home-page-container .title__right {
         display: flex;
@@ -8002,7 +8030,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         /*overflow-y: scroll;*/
         /*background: white;*/
         width: 100%;
-        z-index: 101;
+        /*z-index: 101;*/
+        z-index: 90;
     }
     .home-top.open {
         visibility: visible;
@@ -8845,6 +8874,62 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card__form-advertising-block .textarea-count {
         height: 120px;
     }
+
+    .big-popup, .wrap-popup {
+        transition: 0s;
+    }
+
+    .content-table__head-tabs-mobile .info.left .info__txt,
+    .mobile-home-table__ico-wrap .info.left .info__txt {
+        transform: translateX(-94%) !important;
+    }
+    .content-table__head-tabs-mobile .info.left .info__txt:before,
+    .mobile-home-table__ico-wrap .info.left .info__txt:before {
+        display: none;
+    }
+
+    .custom-dropout__more-btn.open .custom-dropout__txt {
+        margin-top: 0;
+    }
+
+    .custom-dropout__txt {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .custom-dropout__txt a {
+        margin-bottom: 20px;
+    }
+    .custom-btn-gold.icon-check-basket {
+        height: auto;
+        width: auto;
+        display: flex;
+    }
+    .custom-btn-gold.icon-check-basket--active {
+        background: white !important;
+        color: #192229;
+        border: 1px solid #D5DFE4;
+    }
+
+    .custom-btn-gold.icon-check-basket {
+        width: 100%;
+        max-width: 108px;
+        text-align: center;
+    }
+    .custom-btn-gold.icon-check-basket > span {
+        width: 100%;
+    }
+
+    .custom-btn-gold.icon-check-basket .mobile-cart-remove {
+        display: none;
+    }
+    .custom-btn-gold.icon-check-basket--active .mobile-cart-remove{
+        display: block;
+    }
+    .custom-btn-gold.icon-check-basket--active .mobile-cart-add{
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -10482,6 +10567,15 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .card__form-advertising-new-form-btn + .card__form-advertising-bottom-btn > .add-form-advertising{
         display: block !important;
+    }
+
+    .medium-popup .textarea.form-control {
+        margin-bottom: 16px;
+    }
+
+    .request-to-blogger-popup .big-popup__title {
+        font-size: 18px;
+        line-height: 21px;
     }
 }
 
