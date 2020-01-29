@@ -1991,6 +1991,12 @@ table tbody tr:nth-child(odd){
     line-height: 25px;
 }
 
+.rework .card__tabs-content-i:last-child .card__form-advertising-bottom-btn .custom-btn-gold{
+    width: 229px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .card__tabs-content-i{
     display: none;
 }
