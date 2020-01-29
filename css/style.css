@@ -41,6 +41,10 @@ textarea {
     background: #6A7B83;
 }
 
+.copy-btn{
+    min-width: 125px;
+}
+
 .cart-icon{
     position: relative;
     top: 1px;
@@ -2109,6 +2113,31 @@ table tbody tr:nth-child(odd){
     border-radius: 50%;
 }
 
+.card__form-advertising-wrap--cleared .custom-control-label::before{
+    background-color: #f8f8f8;
+}
+.card__form-advertising-wrap--cleared .white-select + button,
+.card__form-advertising-wrap--cleared .form-control,
+.card__form-advertising-wrap--cleared .custom-radio .custom-control-label{
+    background: #f8f8f8;
+}
+
+.card__form-advertising-wrap--cleared .card__form-advertising{
+    border: 1px solid #FF0000;
+}
+
+
+.cleaerd-txt{
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.cleaerd-txt a{
+    color: #3897F0;
+}
+
 .card__form-advertising-wrap + .card__form-advertising-wrap{
     margin-top: 40px;
 }
@@ -2200,6 +2229,10 @@ table tbody tr:nth-child(odd){
     margin-bottom: 32px;
     position: relative;
     margin-top: -18px;
+}
+
+.itog-price-price{
+    font-weight: bold;
 }
 
 .card__form-advertising-textarea{
@@ -7669,6 +7702,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 /*cart popup end*/
 
 
+.cart-head-btn{
+    margin-right: 25px;
+}
+
+
 /*********  cart page end  ************/
 
 .card__tabs-btn {
@@ -8746,6 +8784,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .top-banner + .main .page-nav {
         margin: -60px -15px 30px;
+        margin: -76px -15px 30px;
+        margin: -34px -15px 10px;
+        /*position: relative;*/
+        /*z-index: 200;*/
     }
 
     .top-banner + .main {
@@ -9930,6 +9972,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 }
 
+@media (max-width: 580px) {
+    .cart-head-btn{
+        display: none;
+    }
+}
+
 @media (min-width: 500px) {
     .form-advertising-month{
         display: none;
@@ -10912,6 +10960,11 @@ textarea {
     border-color: #192229;
     outline: 0;
     box-shadow: none;
+}
+
+.form-control[readonly]:focus{
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
 }
 
 .settings-notification__off{
