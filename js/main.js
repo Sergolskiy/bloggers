@@ -101,10 +101,11 @@ $(document).ready(function () {
     }
 
     function closeHomeFilter () {
-        $('.home-top').addClass('closing');
-        setTimeout(function () {
-            $('.home-top').removeClass('open').removeClass('closing');
-        }, 300);
+        // $('.home-top').addClass('closing');
+        // setTimeout(function () {
+        //     $('.home-top').removeClass('open').removeClass('closing');
+        // }, 300);
+        $('.home-top').removeClass('open')
     }
     function openSelectTitle () {
         $('.mobile-main-popup__select-head').addClass('open');
@@ -116,6 +117,8 @@ $(document).ready(function () {
     $('.filter-btn').click(function () {
         $('.home-top').addClass('open');
         openHeaderCloseBtn();
+        var el = $('.home-form form .home-form__left');
+        addFooterPopup(el);
     });
 
     $('.header-mobile-btn-close').click(function () {
@@ -421,7 +424,7 @@ $(document).ready(function () {
             $('.wrap-popup .login__content-i').eq($(this).index()).addClass('active');
         } else {
             $('.auth .login__tab').removeClass('active');
-            // $('.login__top-popup').removeClass('active');
+            $('.login__top-popup').removeClass('active');
 
             $(this).addClass('active');
             $('.auth .login__content-i').removeClass('active');
@@ -494,8 +497,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.code-link').click(function (e) {
-        e.preventDefault();
+    $('.code-link').click(function () {
         $(this).addClass('code-link-open');
     });
 
@@ -551,12 +553,8 @@ $(document).ready(function () {
                 $(this).parents('.popup-tap').removeClass('active');
                 $(this).parents('.popup-tap').next().addClass('active');
 
-                $(form).find('.error-form').removeClass('active');
-
                 var tap = $(this).closest('.login__tabs-wrap').find('.tap-count');
                 tap.html(parseInt(tap.html())+1);
-            } else {
-                $(form).find('.error-form').addClass('active');
             }
 
         }
@@ -600,7 +598,7 @@ $(document).ready(function () {
         checkWidth();
     });
 
-    $('.no-recklam-btn .btn, .exit-popup').click(function () {
+    $('.no-recklam-btn .btn').click(function () {
         $(this).closest('.wrap-popup').find('.close-btn').click();
     });
 
@@ -723,14 +721,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.accept-mail-settings-link').click(function (e) {
-        e.preventDefault();
-        $('.accept-mail-popup').addClass('open');
-        if(window.innerWidth < 500){
-            openHeaderCloseBtn();
-        }
-        bodyHidden();
-    });
+
 
 
     // $('.add-form-advertising').click(function () {
@@ -1150,34 +1141,8 @@ $(document).ready(function () {
        checkWidth();
     });
 
-    $('.settings__change-link').click(function () {
-        $('.change-phone-popup').addClass('open');
-        if(window.innerWidth < 500){
-            openHeaderCloseBtn();
-        }
-       checkWidth();
-    });
-
-    $('.settings__change-pass-link').click(function (e) {
-        e.preventDefault();
-        $('.change-pass-popup').addClass('open');
-        if(window.innerWidth < 500){
-            openHeaderCloseBtn();
-        }
-       checkWidth();
-    });
-
     $('.send-reminder-btn').click(function () {
         $('.send-reminder').addClass('open');
-        if(window.innerWidth < 500){
-            openHeaderCloseBtn();
-        }
-        checkWidth();
-    });
-
-    $('.settings__change-account a').click(function (e) {
-        e.preventDefault();
-        $('.change-pr-acc-popup').addClass('open');
         if(window.innerWidth < 500){
             openHeaderCloseBtn();
         }
@@ -1255,5 +1220,13 @@ $(document).ready(function () {
     });
 
 
+    // footer in popup
+    function addFooterPopup(el) {
+        var footer = $('.footer').clone();
+        if(!(el.find('.footer').length > 0)){
+            el.append(footer);
+            el.find('.footer').addClass('active-popup');
+        }
+    }
 });
 
