@@ -7316,7 +7316,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     cursor: pointer;
 }
 .mobile-home-table__statistics {
-
+    margin-bottom: 12px;
 }
 .mobile-home-table__statistics-title {
     font-size: 14px;
@@ -8021,9 +8021,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .home-top {
         position: fixed;
-        top: 76px;
+        top: 75px;
         left: 0;
-        height: 100%;
+        height: calc(100% - 75px);
         margin-top: 0;
         visibility: hidden;
         opacity: 0;
@@ -8040,7 +8040,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .home-form {
         padding: 0;
         transform: translateX(-100%);
-        transition: 0.3s;
+        /*transition: 0.3s;*/
         box-shadow: none;
         border-radius: inherit;
     }
@@ -8085,6 +8085,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .mobile-main-popup-head > .custom-btn{
         margin-left: 15px;
+        max-width: 95px;
+        width: 100%;
     }
     /*.home-form__mobile-head-center {*/
         /*display: flex;*/
@@ -8135,13 +8137,22 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-left: 0;
     }
     .home-form__left {
-        padding: 0 30px;
+        /*padding: 0 30px;*/
         flex-direction: column;
-        padding-bottom: 150px;
+        /*padding-bottom: 150px;*/
         overflow: scroll;
         overflow-x: hidden;
-        height: 100vh;
+        height: calc(100vh - 75px);
         display: block;
+    }
+    .home-form__left > .home-form-col {
+        padding: 0 30px;
+    }
+    .home-form-col {
+        max-width: 320px;
+    }
+    .home-form__mobile-head-count {
+        padding: 0 30px;
     }
     .home-table {
         display: none;
@@ -8928,6 +8939,17 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .custom-btn-gold.icon-check-basket--active .mobile-cart-add{
         display: none;
+    }
+
+    .footer.active-popup {
+
+    }
+
+    .home-form form .footer.active-popup {
+        order: 0;
+    }
+    .home-form form > div {
+        order: 1;
     }
 
 }
@@ -10591,6 +10613,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         width: 95px;
     }
     .home-form__left {
+        /*padding: 0 15px;*/
+    }
+    .home-form__mobile-head-count {
+        padding: 0 15px;
+    }
+    .home-form__left > .home-form-col {
         padding: 0 15px;
     }
     .mobile-main-popup-head {
@@ -10930,4 +10958,21 @@ textarea {
 
 .send-request-to-blogger span:before{
     content: "(";
+}
+
+
+.request__top-search input::placeholder {
+    color: #B4BDC1;
+}
+
+.moder__content-form--full textarea {
+    max-width: 100%;
+}
+
+.moder__content-form .small-label {
+    color: #6A7B83;
+}
+.moder__inner .dark-grey {
+    font-size: 14px;
+    line-height: 17px;
 }

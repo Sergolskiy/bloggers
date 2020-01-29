@@ -101,10 +101,11 @@ $(document).ready(function () {
     }
 
     function closeHomeFilter () {
-        $('.home-top').addClass('closing');
-        setTimeout(function () {
-            $('.home-top').removeClass('open').removeClass('closing');
-        }, 300);
+        // $('.home-top').addClass('closing');
+        // setTimeout(function () {
+        //     $('.home-top').removeClass('open').removeClass('closing');
+        // }, 300);
+        $('.home-top').removeClass('open')
     }
     function openSelectTitle () {
         $('.mobile-main-popup__select-head').addClass('open');
@@ -116,6 +117,8 @@ $(document).ready(function () {
     $('.filter-btn').click(function () {
         $('.home-top').addClass('open');
         openHeaderCloseBtn();
+        var el = $('.home-form form .home-form__left');
+        addFooterPopup(el);
     });
 
     $('.header-mobile-btn-close').click(function () {
@@ -1215,5 +1218,15 @@ $(document).ready(function () {
     $('.access-btn').click(function () {
         $(this).hide().next().show();
     });
+
+
+    // footer in popup
+    function addFooterPopup(el) {
+        var footer = $('.footer').clone();
+        if(!(el.find('.footer').length > 0)){
+            el.append(footer);
+            el.find('.footer').addClass('active-popup');
+        }
+    }
 });
 
