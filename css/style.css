@@ -3186,6 +3186,41 @@ table tbody tr:nth-child(odd){
     box-sizing: border-box;
     border-radius: 10px;
     padding: 30px 20px;
+    position: relative;
+}
+
+.settings-advertising-clear-popup{
+    display: none;
+}
+
+.settings-advertising--clear .settings-advertising-clear-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background: white;
+}
+
+.settings-advertising-clear-txt{
+    margin: 15px 0 20px;
+    text-align: center;
+}
+
+.settings-advertising-clear-btn{
+    display: flex;
+}
+
+.settings-advertising-clear-btn .btn{
+    min-width: 147px;
+}
+
+.settings-advertising-clear-btn .btn:first-child{
+    margin-right: 15px;
 }
 
 .settings-advertising__top{
@@ -6386,6 +6421,10 @@ table tbody tr:nth-child(odd){
     padding-top: 20px;
     margin-right: -30px;
     padding-right: 30px;
+}
+
+.request-to-blogger__toggle{
+    display: none;
 }
 
 .request-to-blogger__title{
@@ -9967,7 +10006,47 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding: 0;
     }
 
+    .request-to-blogger__txt{
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: 0.5s;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .request-to-blogger__txt.open{
+        max-height: 1000px;
+    }
+
     .request-to-blogger__right{
+        background: #ffffff;
+        padding-left: 0;
+        position: relative;
+    }
+
+    .request-to-blogger__right:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100vw;
+        height: 1px;
+        display: flex;
+        background: #D5DFE4;
+        margin: 0 0 0 -30px;
+    }
+
+    .request-to-blogger__inner{
+        flex-direction: column-reverse;
+    }
+
+    .request-to-blogger__toggle{
+        display: block;
+        font-size: 14px;
+    }
+
+    .request-to-blogger__title-desktop{
         display: none;
     }
 
