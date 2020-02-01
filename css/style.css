@@ -549,6 +549,9 @@ input.form-control{
     line-height: 12px;
 }
 
+.custom-btn:hover,
+.custom-btn:focus,
+.custom-btn:active,
 .custom-btn{
     font-size: 14px;
     line-height: 17px;
@@ -6986,6 +6989,7 @@ table tbody tr:nth-child(odd){
 .mobile-menu__btn-wrap {
     display: flex;
 }
+
 .mobile-menu__btn-burger {
     display: flex;
     width: 36px;
@@ -7074,6 +7078,12 @@ table tbody tr:nth-child(odd){
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+.mobile-menu__content-link.login-btn{
+    margin-left: 15px;
+    width: 72px;
+    height: 36px;
 }
 
 .mobile-menu__content-item-btn {
@@ -8950,13 +8960,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .same-bloggers{
-        max-width: 100%;
+        max-width: inherit;
         width: auto;
     }
 
-    .same-bloggers{
-        display: none;
-    }
+    /*.same-bloggers{*/
+    /*    !*display: none;*!*/
+    /*}*/
 
     .card__title .form-advertising-check{
         display: none !important;
@@ -9039,9 +9049,100 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         order: 1;
     }
 
+    .home-form-col input, .home-form-col select{
+        max-width: 250px;
+    }
+
+    .home-form-col .white-select{
+        max-width: 250px;
+        width: 100% !important;
+    }
+
+    .home-form-col .custom-checkbox label {
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .bootstrap-select>select{
+        display: none !important;
+    }
+
+    .accept-mail-wrap .accept-mail-link {
+        margin-left: 0;
+    }
+
+    .accept-mail-popup .accept-mail-btn .accept-mail-next{
+        padding: 6px 5px;
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    .if-clear-cart-btn .close-btn{
+        opacity: 1;
+    }
+
+    .report__block-last{
+        display: flex;
+    }
+
+    .report__block-last .err-form{
+        margin-left: 0;
+        margin-top: -15px;
+        margin-bottom: 10px;
+    }
+
+    .report__block .custom-checkbox label {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .report__block-last .btn-report{
+        width: 160px;
+    }
+
+    .same-bloggers{
+        width: 100vw;
+    }
+
+    .same-bloggers__item{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .same-bloggers__carousel{
+        display: block;
+    }
+
+    .same-bloggers__top{
+        width: 100%;
+    }
+
+    .same-bloggers__center,
+    .same-bloggers__bottom{
+        width: 50%;
+    }
+
+    .same-bloggers__item{
+        max-width: 100%;
+    }
+
+    .same-bloggers__photo,
+    .same-bloggers__photo img{
+        width: 46px;
+        height: 46px;
+    }
+
+    .same-bloggers__item{
+        margin-bottom: 20px;
+    }
+
+    .same-bloggers__item:last-child{
+        margin-bottom: 0;
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
