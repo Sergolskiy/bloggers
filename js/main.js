@@ -1342,5 +1342,10 @@ $(document).ready(function () {
             $('.type-blogger-card-popup-txt:not(.full)').show();
         }
     });
+
+
+    $(document).on('click', '.settings-advertising-add-mobile', function(e){
+        $(this).next('.page-block').find('.settings-advertising-add').click();
+    });
 });
 
