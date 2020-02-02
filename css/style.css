@@ -592,7 +592,7 @@ input.form-control{
 .custom-btn-gold {
     background: #FADB67;
     border: 0;
-    border: 1px solid #FADB67;
+    /*border: 1px solid #FADB67;*/
     color: black;
 }
 
@@ -9039,7 +9039,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .footer.active-popup {
-
+        /*margin-top: 30px;*/
     }
 
     .home-form form .footer.active-popup {
@@ -10302,7 +10302,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         flex-direction: column;
         height: calc(100vh - 75px);
         justify-content: flex-start;
-        padding-bottom: 60px;
+        /*padding-bottom: 60px;*/
     }
     .big-popup, .wrap-popup {
         background: white;
@@ -11215,3 +11215,36 @@ textarea {
     font-size: 14px;
     line-height: 17px;
 }
+
+/*fix popups footer*/
+@media (max-width: 992px) {
+    body.padding .header{
+        padding-right: 0;
+    }
+    .page-block-wrap-settings .page-nav__item {
+        height: 31px;
+    }
+    .page-block-wrap-settings .page-nav {
+        margin-bottom: 28px;
+    }
+}
+@media (max-width: 500px) {
+    .mobile-popup .base-popup__content {
+        height: calc(100vh - 75px);
+    }
+    .wrap-popup__inner {
+        /*height: calc(100vh);*/
+        position: relative;
+        padding-bottom: 75px;
+    }
+    .wrap-popup .footer.active-popup {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .wrap-popup .login__top-popup.active + .wrap-popup__inner {
+        height: calc(100vh - 75px);
+    }
+}
+
+
