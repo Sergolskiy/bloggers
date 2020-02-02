@@ -8861,7 +8861,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .page-nav__items {
         flex-direction: row;
-        min-width: 830px;
+        /*min-width: 830px;*/
+        min-width: 1020px;
     }
 
     .page-nav{
@@ -11394,6 +11395,9 @@ textarea {
 .show-768 {
     display: none;
 }
+.card__form-advertising-bottom-btn-mobile {
+    display: none;
+}
 /*fix popups footer*/
 @media (max-width: 992px) {
     body.padding .header{
@@ -11490,6 +11494,12 @@ textarea {
     .show-768 {
         display: block;
     }
+    .card__form-advertising-bottom-btn-mobile{
+        display: block;
+    }
+    .back-to-bloggers {
+        display: none;
+    }
 }
 @media (max-width: 500px) {
     .mobile-popup .base-popup__content {
@@ -11531,7 +11541,13 @@ textarea {
     .settings__title-info-mobile {
         flex-direction: row !important;
     }
-
+    .card__tabs-content-i--step-3 .form-group input[type="text"],
+    .card__tabs-content-i--step-3 .form-group input[type="email"],
+    .card__tabs-content-i--step-3 .card__verify-right-block input[type="email"],
+    .card__tabs-content-i--step-3 .form-group textarea,
+    .card__tabs-content-i--step-3 .form-group .white-select {
+        max-width: 250px!important;
+    }
 }
 
 
