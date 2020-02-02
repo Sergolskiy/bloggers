@@ -11388,7 +11388,12 @@ textarea {
     font-size: 14px;
     line-height: 17px;
 }
-
+.settings-advertising-add-mobile {
+    display: none;
+}
+.show-768 {
+    display: none;
+}
 /*fix popups footer*/
 @media (max-width: 992px) {
     body.padding .header{
@@ -11399,6 +11404,91 @@ textarea {
     }
     .page-block-wrap-settings .page-nav {
         margin-bottom: 28px;
+    }
+    .page-block-wrap-settings .mobile {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .page-block-wrap-settings .settings__title {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .page-block-wrap-settings .settings__title > span{
+        display: inline-flex;
+    }
+    .page-block-wrap-settings .settings__title .settings__title-capt-mobile {
+        display: flex;
+        margin-left: 10px;
+        font-size: 17px;
+        line-height: 20px;
+        color: #6A7B83;
+    }
+    .page-block-wrap-settings .settings__title .example-stories-btn{
+        margin-left: 0;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .page-block-wrap-settings .settings__title .example-stories-btn > span{
+        display: none;
+    }
+    .page-block-wrap-settings .settings__title .example-stories-btn > span.example-stories-btn--mobile{
+        display: block;
+    }
+    .page-block-wrap-settings .settings .custom-file .btn {
+        max-width: 110px;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .form-group {
+        max-width: 85px;
+        width: 100%;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .form-group.country {
+        max-width: 150px;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .form-group.age{
+        max-width: 96px;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .form-group.country + .form-group,
+    .page-block-wrap-settings .settings .card__statistic-field .form-group.age + .form-group {
+        max-width: 50px;
+    }
+    /*.page-block-wrap-settings .settings .card__statistic-field .form-group.country .white-select,*/
+    .page-block-wrap-settings .settings .card__statistic-field .form-group.age .white-select {
+        width: 100%;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .custom-file .btn{
+        padding: 8px 3px;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .custom-file .btn .green-check-icon{
+        top: -2px;
+        margin-right: 2px;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .custom-file {
+        max-width: 144px;
+    }
+    .page-block-wrap-settings .settings .card__statistic-field .custom-file .btn {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .page-block-wrap-settings .info__txt:before {
+        display: none;
+    }
+    .settings-advertising-add-mobile {
+        display: block;
+    }
+
+    .card__form-advertising-block .form-group > .white-select{
+        max-width: 144px !important;
+    }
+    .settings .settings-advertising__content .form-advertising__inner .card__form-advertising-block:nth-last-child(2) {
+        margin-top: 10px;
+    }
+    .show-768 {
+        display: block;
     }
 }
 @media (max-width: 500px) {
@@ -11424,6 +11514,26 @@ textarea {
     .login__tabs-wrap{
         min-height: 75vh;
     }
+    .email-to-blogger-popup .email-send-wrap {
+        margin-bottom: 15px;
+    }
+    .card__verify-right-block .form-group input[type="text"],
+    .card__verify-right-block .form-group input[type="email"]{
+        max-width: 255px;
+    }
+    .card__verify-right-block label[for="phone1"] {
+        max-width: 255px;
+    }
+
+    .page-block-wrap-settings .settings__row .custom-control-label {
+        padding-top: 0;
+    }
+    .settings__title-info-mobile {
+        flex-direction: row !important;
+    }
+
 }
+
+
 
 
