@@ -734,7 +734,7 @@ $(document).ready(function () {
         if(window.innerWidth < 500){
             openHeaderCloseBtn();
         }
-        bodyHidden();
+        checkWidth();
     });
 
     $('.check-request-to-blogger').click(function (e) {
@@ -1194,6 +1194,9 @@ $(document).ready(function () {
         if($('body').height() > $(window).height()){
             bodyHidden();
         }
+        setTimeout(function () {
+            checkFooterPopupClick();
+        }, 10);
     }
 
     $('.no-customer-no-speck-btn').click(function () {
@@ -1342,5 +1345,46 @@ $(document).ready(function () {
             $('.type-blogger-card-popup-txt:not(.full)').show();
         }
     });
+
+
+    $('.moder-complaint-reject').click(function () {
+         $(this).closest('.moder__inner').find('.moder__content-end.reject').addClass('open');
+         $(this).closest('.moder__inner').find('.moder__content').addClass('hide');
+         $(this).closest('.moder__inner').find('.moder__bottom').addClass('hide');
+    });
+
+
+    $('.moder__content-end.reject').click(function (e) {
+        e.preventDefault();
+         $(this).closest('.moder__inner').find('.moder__content-end.reject').removeClass('open');
+         $(this).closest('.moder__inner').find('.moder__content').removeClass('hide');
+         $(this).closest('.moder__inner').find('.moder__bottom').removeClass('hide');
+    });
+
+
+    $('.moder-complaint-approve').click(function () {
+         $(this).closest('.moder__inner').find('.moder__content-end.approve').addClass('open');
+         $(this).closest('.moder__inner').find('.moder__content').addClass('hide');
+         $(this).closest('.moder__inner').find('.moder__bottom').addClass('hide');
+    });
+
+
+    $('.moder__content-end.approve').click(function (e) {
+        e.preventDefault();
+         $(this).closest('.moder__inner').find('.moder__content-end.approve').removeClass('open');
+         $(this).closest('.moder__inner').find('.moder__content').removeClass('hide');
+         $(this).closest('.moder__inner').find('.moder__bottom').removeClass('hide');
+    });
+
+    $('.moder-filter').click(function () {
+         $('.moderation-filter').addClass('open');
+    });
+
+    $(document).on('click', '.moderation-filter.open', function (e) {
+        if(e.target.classList[0] == 'moderation-filter'){
+            $('.moderation-filter').removeClass('open');
+        }
+    });
+
 });
 

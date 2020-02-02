@@ -221,7 +221,7 @@
             <div class="title-wrap moderation-page-title">
                 <h1 class="title-top">
                     Модерация заявок
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Поиск и фильтр</a>
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary moder-filter">Поиск и фильтр</a>
                 </h1>
                 <div class="title">
                     <div class="title__left d-flex align-items-center">
@@ -253,6 +253,11 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="moderation-filter-btn">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Сбросить</a>
+                                <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold">Найти</a>
                             </div>
                         </div>
                     </div>
@@ -304,7 +309,7 @@
                                             E-mail: johndoe@gmail.com <a href="# copy-btn">Скопировать</a><br>
 
                                             <br>
-                                            Текст жалобы <br>
+                                            <span class="dark-grey fs-14">Текст жалобы</span> <br>
                                             <span class="fs-14">
                                                 Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
                                             </span>
@@ -330,7 +335,7 @@
                             <div class="moder__bottom hide">
                                 <div class="moder__bottom-left">
                                     <div class="form-group m-0 custom-small-select">
-                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                        <select class="selectpicker white-select  "
                                                 title="">
                                             <option disabled>Укажите причину</option>
                                             <option selected >Простой отказ</option>
@@ -344,7 +349,7 @@
                                 </div>
                                 <div class="moder__bottom-right">
                                     <div class="form-group m-0 custom-small-select">
-                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                        <select class="selectpicker white-select  "
                                                 title="Заблокировать">
                                             <option disabled>Укажите причину</option>
                                             <option >Отнять жизнь за обман с рекламой</option>
@@ -453,13 +458,16 @@
                                 </div>
                                 <div class="moder__bottom-right">
                                     <div class="form-group m-0 custom-small-select">
-                                        <a href="javascript:void(0)" class="btn btn-outline-secondary ">Отклонить</a>
-                                        <a href="javascript:void(0)" class="btn btn-outline-secondary ">Одобрить</a>
+                                        <a href="javascript:void(0)" class="btn btn-outline-secondary moder-complaint-reject">Отклонить</a>
+                                        <a href="javascript:void(0)" class="btn btn-outline-secondary moder-complaint-approve">Одобрить</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="moder__content-end ">
+                            <div class="moder__content-end approve">
+                                <div class="moder__content-end-name">
+                                    От: <a href="#">amerikanovna</a>
+                                </div>
                                 <img src="images/svg/check-grey.svg" alt="img">
                                 <div>Заявка одобрена</div>
                                 <a href="#" class="btn btn-outline-secondary">Отменить</a>
@@ -472,7 +480,10 @@
                                 <div>Проверка завершена</div>
                                 <a href="#" class="btn btn-outline-secondary">Отменить</a>
                             </div>
-                            <div class="moder__content-end ">
+                            <div class="moder__content-end reject">
+                                <div class="moder__content-end-name">
+                                    От: <a href="#">amerikanovna</a>
+                                </div>
                                 <img src="images/svg/big-x.svg" alt="img">
                                 <div>Заявка отклонена</div>
                                 <a href="#" class="btn btn-outline-secondary">Отменить</a>
@@ -522,7 +533,7 @@
                                             E-mail: johndoe@gmail.com <a href="# copy-btn">Скопировать</a><br>
 
                                             <br>
-                                            Текст жалобы <br>
+                                            <span class="dark-grey fs-14">Текст жалобы</span> <br>
                                             <span class="fs-14">
                                                 Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
                                             </span>
@@ -548,7 +559,7 @@
                             <div class="moder__bottom ">
                                 <div class="moder__bottom-left">
                                     <div class="form-group m-0 custom-small-select">
-                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                        <select class="selectpicker white-select  "
                                                 title="">
                                             <option disabled>Укажите причину</option>
                                             <option selected >Простой отказ</option>
@@ -562,7 +573,7 @@
                                 </div>
                                 <div class="moder__bottom-right">
                                     <div class="form-group m-0 custom-small-select">
-                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                        <select class="selectpicker white-select  "
                                                 title="Заблокировать">
                                             <option disabled>Укажите причину</option>
                                             <option >Отнять жизнь за обман с рекламой</option>
@@ -655,7 +666,7 @@
                             <div class="moder__bottom ">
                                 <div class="moder__bottom-left">
                                     <div class="form-group m-0 custom-small-select">
-                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                        <select class="selectpicker white-select  "
                                                 title="">
                                             <option disabled>Укажите причину</option>
                                             <option selected >Отправить на доработку</option>
@@ -669,13 +680,16 @@
                                 </div>
                                 <div class="moder__bottom-right">
                                     <div class="form-group m-0 custom-small-select">
-                                        <a href="javascript:void(0)" class="btn btn-outline-secondary ">Отклонить</a>
-                                        <a href="javascript:void(0)" class="btn btn-outline-secondary ">Одобрить</a>
+                                        <a href="javascript:void(0)" class="btn btn-outline-secondary moder-complaint-reject">Отклонить</a>
+                                        <a href="javascript:void(0)" class="btn btn-outline-secondary moder-complaint-approve">Одобрить</a>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="moder__content-end ">
+                            <div class="moder__content-end approve">
+                                <div class="moder__content-end-name">
+                                    От: <a href="#">amerikanovna</a>
+                                </div>
                                 <img src="images/svg/check-grey.svg" alt="img">
                                 <div>Заявка одобрена</div>
                                 <a href="#" class="btn btn-outline-secondary">Отменить</a>
@@ -688,7 +702,10 @@
                                 <div>Проверка завершена</div>
                                 <a href="#" class="btn btn-outline-secondary">Отменить</a>
                             </div>
-                            <div class="moder__content-end ">
+                            <div class="moder__content-end reject">
+                                <div class="moder__content-end-name">
+                                    От: <a href="#">amerikanovna</a>
+                                </div>
                                 <img src="images/svg/big-x.svg" alt="img">
                                 <div>Заявка отклонена</div>
                                 <a href="#" class="btn btn-outline-secondary">Отменить</a>
@@ -787,7 +804,7 @@
                                                             E-mail: johndoe@gmail.com <a href="# copy-btn">Скопировать</a><br>
 
                                                             <br>
-                                                            Текст жалобы <br>
+                                                            <span class="dark-grey fs-14">Текст жалобы</span> <br>
                                                             <span class="fs-14">
                                                 Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
                                             </span>
@@ -813,7 +830,7 @@
                                             <div class="moder__bottom ">
                                                 <div class="moder__bottom-left">
                                                     <div class="form-group m-0 custom-small-select">
-                                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                                        <select class="selectpicker white-select  "
                                                                 title="">
                                                             <option disabled>Укажите причину</option>
                                                             <option selected >Простой отказ</option>
@@ -827,7 +844,7 @@
                                                 </div>
                                                 <div class="moder__bottom-right">
                                                     <div class="form-group m-0 custom-small-select">
-                                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                                        <select class="selectpicker white-select  "
                                                                 title="Заблокировать">
                                                             <option disabled>Укажите причину</option>
                                                             <option >Отнять жизнь за обман с рекламой</option>
@@ -950,7 +967,7 @@
                                                             E-mail: johndoe@gmail.com <a href="# copy-btn">Скопировать</a><br>
 
                                                             <br>
-                                                            Текст жалобы <br>
+                                                            <span class="dark-grey fs-14">Текст жалобы</span> <br>
                                                             <span class="fs-14">
                                                 Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
                                             </span>
@@ -976,7 +993,7 @@
                                             <div class="moder__bottom ">
                                                 <div class="moder__bottom-left">
                                                     <div class="form-group m-0 custom-small-select">
-                                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                                        <select class="selectpicker white-select  "
                                                                 title="">
                                                             <option disabled>Укажите причину</option>
                                                             <option selected >Простой отказ</option>
@@ -990,7 +1007,7 @@
                                                 </div>
                                                 <div class="moder__bottom-right">
                                                     <div class="form-group m-0 custom-small-select">
-                                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                                        <select class="selectpicker white-select  "
                                                                 title="Заблокировать">
                                                             <option disabled>Укажите причину</option>
                                                             <option >Отнять жизнь за обман с рекламой</option>
@@ -1062,7 +1079,7 @@
                                                             E-mail: johndoe@gmail.com <a href="# copy-btn">Скопировать</a><br>
 
                                                             <br>
-                                                            Текст жалобы <br>
+                                                            <span class="dark-grey fs-14">Текст жалобы</span> <br>
                                                             <span class="fs-14">
                                                 Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа дальнейших направлений развития.
                                             </span>
@@ -1088,7 +1105,7 @@
                                             <div class="moder__bottom ">
                                                 <div class="moder__bottom-left">
                                                     <div class="form-group m-0 custom-small-select">
-                                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                                        <select class="selectpicker white-select  "
                                                                 title="">
                                                             <option disabled>Укажите причину</option>
                                                             <option selected >Простой отказ</option>
@@ -1102,7 +1119,7 @@
                                                 </div>
                                                 <div class="moder__bottom-right">
                                                     <div class="form-group m-0 custom-small-select">
-                                                        <select class="selectpicker white-select mobile-select-popup mobile-select-popup"
+                                                        <select class="selectpicker white-select "
                                                                 title="Заблокировать">
                                                             <option disabled>Укажите причину</option>
                                                             <option >Отнять жизнь за обман с рекламой</option>
