@@ -3622,7 +3622,7 @@ table tbody tr:nth-child(odd){
 /*********  ANSWER  ************/
 
 .answer{
-    padding: 15px 20px;
+    padding: 15px 20px 40px;
 }
 
 .answer__top{
@@ -4590,6 +4590,7 @@ table tbody tr:nth-child(odd){
 
 .moder__bottom-right .btn-primary{
     padding: 6px 19px;
+    display: inline;
 }
 
 .moder__bottom-right .btn-outline-secondary {
@@ -5485,7 +5486,7 @@ table tbody tr:nth-child(odd){
     transform: translateY(-10px);
     opacity: 0;
     transition: 0.3s;
-
+    -webkit-overflow-scrolling: touch;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -5500,6 +5501,7 @@ table tbody tr:nth-child(odd){
     visibility: visible;
     transform: translateY(0);
     opacity: 1;
+    -webkit-overflow-scrolling: touch;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -7033,6 +7035,7 @@ table tbody tr:nth-child(odd){
     visibility: hidden;
     opacity: 0;
     background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 .mobile-menu__inner:after {
     content: '';
@@ -7057,6 +7060,7 @@ table tbody tr:nth-child(odd){
     transition-delay: 0.2s;
     max-height: 100vh;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .mobile-menu__inner.open .mobile-menu__content {
     transform: translateX(0);
@@ -8257,6 +8261,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         overflow-x: hidden;
         height: calc(100vh - 75px);
         display: block;
+        -webkit-overflow-scrolling: touch;
     }
     .home-form__left > .home-form-col {
         padding: 0 30px;
@@ -8865,20 +8870,30 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         min-width: 1020px;
     }
 
+    .page-nav__items-vp{
+        min-width: 600;
+    }
+
     .page-nav{
         overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .top-banner + .main .page-nav {
         margin: -60px -15px 30px;
         margin: -76px -15px 30px;
         margin: -34px -15px 10px;
+        margin: 26px -15px 10px;
         /*position: relative;*/
         /*z-index: 200;*/
     }
 
     .top-banner + .main {
         padding-top: 60px;
+    }
+
+    .top-banner + .main .page-block-wrap-settings{
+        margin-top: -60px;
     }
 
     .top-banner.hide-banner + .main {
@@ -9114,6 +9129,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         align-items: flex-start;
         transform: translateX(-110%);
         transition: 0.5s;
+        cursor: pointer;
     }
 
     .moderation-filter.open{
@@ -9476,10 +9492,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .settings__row  .custom-control-label {
         font-size: 14px;
         line-height: 25px;
+        line-height: 35px;
         cursor: pointer;
         text-indent: 10px;
         padding-top: 5px;
         margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     .settings__row .custom-radio-2 .custom-control-label {
@@ -9563,7 +9581,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .page-nav{
-        margin: -30px -15px 30px;
+        margin: -25px -15px 30px;
     }
 
     .settings-block {
@@ -9624,11 +9642,16 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         float: left;
         margin-left: 0;
         margin-right: 15px;
+        margin-top: 6px;
         height: 75px;
         position: static;
         top: 30px;
         left: 30px;
         background: url(../images/log-top.png) top center no-repeat;
+    }
+
+    .statistic .fraud__txt{
+        font-size: 14px;
     }
 
     .custom-radio-2 .custom-control-label::before {
@@ -10133,7 +10156,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-top: 30px;
     }
 
-    .send-review__content .form-group-flex{
+    .send-review__content .form-group-flex:not(.custom-radio-3){
         flex-direction: column;
         align-items: flex-start;
     }
@@ -10290,6 +10313,22 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         top: -27px;
         margin-right: 0 !important;
     }
+
+    .settings__title a{
+        display: none;
+    }
+
+    .ios .wrap-popup .footer.active-popup{
+        bottom: 0px;
+    }
+
+    .ios .wrap-popup__inner {
+        padding-bottom: 110px;
+    }
+
+    .ios .footer.active-popup {
+        margin-bottom: 110px;
+    }
 }
 
 @media (max-width: 580px) {
@@ -10305,6 +10344,72 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 500px) {
+
+    .moder.brands .moder__content-i > .moder__content-tap{
+        display: none;
+    }
+
+    .moder.brands .moder__inner .dark-grey{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .send-review__content .info-icon{
+        width: 24px;
+        height: 24px;
+        background: url(../images/svg/icon-quest-grey.svg) center center no-repeat;
+        background-size: contain;
+    }
+
+    .card__statistic-field .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+        width: 100%;
+    }
+
+    .send-review__content .custom-checkbox label{
+        line-height: 35px;
+    }
+
+    .send-review__tabs .form-group-right .custom-checkbox:last-child{
+        margin-right: 0;
+    }
+
+    .fraud__txt{
+        line-height: 24px;
+    }
+
+    .report__block-btn{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6px;
+    }
+
+    .report__block-btn .btn{
+        max-width: 205px;
+    }
+
+    .report__block-btn .err-form{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .report__block.statistic__btn{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .statistic .fraud__title {
+        padding-top: 0;
+    }
+
+    .statistic__btn-block.agree .btn-outline-secondary{
+        font-size: 14px;
+        border: 0;
+        padding: 0;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #3897F0;
+    }
 
     .request__top-btn-count{
         width: 6px;
@@ -10525,6 +10630,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .auth__right {
         background: #FFFFFF;
         padding: 30px;
+        border-top: 1px solid #D5DFE4;
+        margin-top: 15px;
     }
 
     .card__form-advertising-textarea {
@@ -10681,6 +10788,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .moder__bottom-right .btn{
         padding: 8px 19px;
+        height: 36px;
     }
 
     .moder:not(.complaint) .moder__bottom-left .custom-small-select + .custom-small-select .btn,
@@ -11500,8 +11608,116 @@ textarea {
     .back-to-bloggers {
         display: none;
     }
+
+    .answer-mobile-table-i{
+        position: relative;
+    }
+
+    .answer-mobile__otkaz{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: white;
+    }
+
+    .answer-mobile__otkaz .request__changed{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: center;
+        min-height: auto;
+    }
+
+    .answer-mobile__otkaz .request__changed div{
+        min-width: 139px;
+        margin-left: 10px;
+        margin-right: 22px;
+        margin-bottom: 0;
+    }
+
+    .answer-mobile__otkaz .request__changed img {
+        width: 48px;
+        margin-bottom: 0;
+    }
+
+    .answer-mobile__otkaz .request__changed span{
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+    }
 }
 @media (max-width: 500px) {
+
+
+    .no-customer-no-speck .no-recklam-wrap {
+        width: 100%;
+        height: auto;
+    }
+
+    .no-customer-no-speck .no-recklam-btn {
+        margin-top: 15px;
+    }
+
+
+    .no-recklam .no-recklam-wrap .custom-control {
+        margin-bottom: 13px;
+    }
+
+    .otkaz-small-popup-items .footer{
+        position: absolute;
+        width: 100%;
+        bottom: 75px;
+    }
+
+    .send-re-request .big-popup__title{
+        line-height: 21px;
+    }
+
+    .answer-mobile__promo .dark-grey{
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .answer .info-icon{
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+    }
+
+    .send-review__bottom{
+        margin: 0 0px -20px;
+        padding: 20px 0px;
+    }
+
+    .email-send__bottom.second,
+    .email-send__bottom.third,
+    .email-send-txt.third,
+    .email-send-txt.second{
+        display: none;
+        padding-bottom: 5px;
+    }
+
+    .email-send__bottom.third{
+        justify-content: flex-end;
+    }
+
+    .email-send__bottom.second p,
+    .email-send__bottom.third p,
+    .email-send-txt.third p,
+    .email-send-txt.second p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .email-send__bottom.second .btn,
+    .email-send__bottom.third .btn,
+    .email-send-txt.third .btn,
+    .email-send-txt.second .btn{
+        width: 150px;
+    }
+
     .mobile-popup .base-popup__content {
         height: calc(100vh - 75px);
     }
@@ -11524,6 +11740,15 @@ textarea {
     .login__tabs-wrap{
         min-height: 75vh;
     }
+
+    .page-block .login__tabs-wrap{
+        min-height: auto;
+    }
+
+    .page-block .wrap-popup__inner{
+        padding-bottom: 0;
+    }
+
     .email-to-blogger-popup .email-send-wrap {
         margin-bottom: 15px;
     }
