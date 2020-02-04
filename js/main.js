@@ -280,11 +280,27 @@ $(document).ready(function () {
             $(this).prev().show();
         }
 
-        console.log(active.next('.moder__content-i').index())
-        console.log(active.next('.moder__content-i').index())
+        if ($(this).parent().hasClass('moder__bottom-mobile-right')) {
+            if(active.next().hasClass('moder__content-info')){
+                active.next().removeClass('active');
+                $(this).parent().find('span').html(active.index()+1);
+            } else {
+                active.removeClass('active');
+                $(this).parent().find('span').html(active.next().index()+1);
+            }
+
+            return;
+        }
+
         if(active.next('.moder__content-i').index() == content.find('.moder__content-i').last().index()-1){
-            $(this).hide();
-            $(this).next().show();
+
+            if($(this).parent().hasClass('back-show')){
+                $(this).addClass('disabled');
+            } else {
+                $(this).hide();
+                $(this).next().show();
+            }
+
         }
 
         active.removeClass('active');
@@ -294,10 +310,26 @@ $(document).ready(function () {
     $('.moder-req-prev').click(function (e) {
         e.preventDefault();
         var active = $(this).closest('.moder__inner').find('.moder__content-i.active');
-        active.prev().addClass('active');
-        active.removeClass('active');
-        $(this).next().next().hide();
-        $(this).next().show();
+        if( active.prev().length > 0){
+            active.prev().addClass('active');
+            active.removeClass('active');
+            
+            if ($(this).parent().hasClass('moder__bottom-mobile-right')) {
+                $(this).parent().find('span').html(active.index());
+                return;
+            }
+
+            if($(this).hasClass('show')){
+                $(this).next().next().next().hide();
+                $(this).next().next().show();
+                $(this).next().next().removeClass('disabled');
+            } else {
+                $(this).next().next().hide();
+                $(this).next().show();
+            }
+        }
+
+
 
         if(active.index()-1 == 0){
             $(this).hide();
@@ -312,7 +344,7 @@ $(document).ready(function () {
             return;
         }
         var active = $(this).closest('.moder__inner').find('.moder__content-i.active');
-        active.next('.moder__content-i').addClass('active');
+        $(this).closest('.moder__inner').find('.moder__content-i').last().addClass('active');
         active.removeClass('active');
         $(this).closest('.moder__bottom').css({"opacity":"0", "pointer-events":"none"});
     });

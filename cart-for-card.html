@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -93,35 +92,12 @@
 
                         <div class="header__right">
                             <div class="header__cart-btn">
-                                <a href="./cart.html" class="btn btn-outline-secondary has-product " data-count="2">
-                                    <i class="cart-icon"></i> Корзина
+                                <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
                                 </a>
                             </div>
 
-                            <div class="header__login-btn has-submenu">
-                                <a href="#"><img src="images/svg/avatar.svg" alt="img"></a>
-                                <ul class="header__submenu right">
-                                    <li class="header__submenu-item ">
-                                        <a href="./settings.html" class="header__submenu-link">
-                                            Настройки
-                                        </a>
-                                    </li>
-                                    <li class="header__submenu-item">
-                                        <a href="./paid-services.html" class="header__submenu-link">
-                                            Платные услуги
-                                        </a>
-                                    </li>
-                                    <li class="header__submenu-item">
-                                        <a href="#" class="header__submenu-link">
-                                            Справка
-                                        </a>
-                                    </li>
-                                    <li class="header__submenu-item">
-                                        <a href="./index1.html" class="header__submenu-link">
-                                            Выйти
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="header__login-btn">
+                                <button type="button" class="btn btn-primary custom-btn">Войти</button>
                             </div>
                         </div>
 
@@ -202,7 +178,7 @@
                                         </div>
                                         <div class="mobile-menu__content-item bottom-line">
                                             <a href="#" class="mobile-menu__content-link">
-                                                Выйти
+                                                Войти
                                             </a>
                                         </div>
                                     </div>
@@ -218,290 +194,1220 @@
 
     <!--MAIN-->
     <main class="main">
-        <div class="container">
-
-            <div class="mobile">
-                <div class="mobile-answer-title">
-                    Ответы по рекламе
-                </div>
-                <div class="mobile-answer-btn">
-                    <a href="./answer.html" class=" btn btn-outline-secondary red-active">Одобрено на рекламу </a>
-                    <a href="./answer-2.html" class="btn btn-outline-secondary red-active">
-                        На рассмотрении
+        <div class="container cart-page-container">
+            <div class="title">
+                <div class="title__left">
+                    <h1 class="title__txt">
+                        Корзина <span class="title__grey">6</span>
+                    </h1>
+                    <a class="title__link how-make-order" href="#">
+                        Как сделать заказ?
                     </a>
-                    <a href="javascript:void(0);" class="btn btn-primary custom-btn">
-                        Отказано в рекламе
+                </div>
+                <div class="title__center">
+                    <div class="link-blog">
+                        <div class="link-blog__left">
+                            <input type="text" class="form-control" placeholder="" value="easyprbot.com/bb/3p6G72">
+                            <a class="title__link" href="#">
+                                Ссылка на ваш список блогеров
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-outline-secondary btn--white copy-btn">Скопировать</a>
+                    </div>
+                </div>
+                <div class="title__right">
+                    <a href="#" class="btn btn-outline-secondary btn--white clear-cart-p-btn">Очистить корзину</a>
+                    <a href="#" class="btn btn-outline-secondary btn--white setting-btn setting-btn-cart">
+                        <span class="active"></span>
                     </a>
                 </div>
             </div>
 
-            <div class="answer page-block">
-                <div class="answer__top">
-                    <div class="answer__title">
-                        Ответы по рекламе
+            <div class="page-block">
+                <div class="cart-block-remove justify-content-between" style="display:none;">
+                    <div>Блогер neotpuskaiteplo удален из вашей корзины</div>
+                    <a href="./cart.html">Отменить</a>
+                </div>
+                <div class="cart-block">
+                    <div class="cart-block__top">
+                        <div class="cart-block__top-btn">
+                            <div class="cart-block__more more-btn">
+                                <button class="btn btn-secondary cart-copy">Скопировано</button>
+                                <a class="cart-block__more-btn" href="javascript:void(0)"></a>
+                                <div class="more-btn__txt">
+                                    <a href="javascript:void(0);" class="copy-url-cart">Поделиться карточкой</a>
+                                    <a href="#" class="open-login">Пожаловаться</a>
+                                </div>
+                            </div>
+                            <div href="javascript:void(0)" class="cart-block__close">
+                                <a class="cart-block__close-btn" href="./cart-remove.html"></a>
+                            </div>
+                        </div>
+
+                        <div class="cart-block__blogger blogger-cart">
+                            <div class="blogger-cart__left">
+                                <div class="blogger-cart-img">
+                                    <img src="images/cart/blogger-1.jpg" alt="img">
+                                </div>
+                                <div class="blogger-cart__name">
+                                    <a href="#">neotpuskaiteplo</a>
+                                </div>
+                                <div class="blogger-cart__subscribe">
+                                    54,9 тыс. подписчиков
+                                </div>
+                                <div class="blogger-cart__theme">
+                                    Темы: Обработка фото, Изучение языков, Жизнь за границей
+                                </div>
+                                <div class="blogger-cart__reviews">
+                                    <a href="#">47 отзывов</a>
+                                    <span><i class="star-icon"></i> 6,4</span>
+                                </div>
+                            </div>
+                            <div class="blogger-cart__right">
+                                <div class="blogger-cart__count">
+                                    <div class="blogger-cart__count-i">
+                                        <div class="blogger-cart__count-n">
+                                            20 197
+                                        </div>
+                                        <div class="blogger-cart__count-t">
+                                            Охват сторис
+                                            <div>в среднем</div>
+                                        </div>
+                                    </div>
+                                    <div class="blogger-cart__count-i">
+                                        <div class="blogger-cart__count-n">
+                                            38 967
+                                        </div>
+                                        <div class="blogger-cart__count-t">
+                                            Охват постов
+                                            <div>в среднем</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blogger-cart__about">
+                                    <div class="blogger-cart__screen">
+                                        Преобладающая статистика аудитории
+                                        <div>
+                                            <a href="#">Скриншоты</a> статистики из Инстаграма от 18.10.19
+                                        </div>
+                                    </div>
+                                    <div class="blogger-cart__col">
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Пол
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Женщины — 89%
+                                            </div>
+                                        </div>
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Возраст
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                18-24 — 48%
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blogger-cart__col">
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Страна
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Россия — 66%
+                                            </div>
+                                            <div class="blogger-cart__item">
+                                                <div class="blogger-cart__title">
+                                                    Город
+                                                </div>
+                                                <div class="blogger-cart__txt">
+                                                    Санкт-Петербург — 21%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="blogger-cart__col">
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Город блогера
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Санкт-Петербург
+                                            </div>
+                                        </div>
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Юридический статус
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Самозанятый
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blogger-cart__bottom">
+                                    <div class="blogger-cart__bottom-i">
+                                        <i class="ambas-icon">
+                                                    <span class="info left">
+                                                        A
+                                                        <div class="info__txt">
+                                                            Хочет стать амбассадором
+                                                        </div>
+                                                    </span>
+                                        </i> Может стать амбассадором
+                                    </div>
+
+                                    <div class="blogger-cart__bottom-i">
+                                        <i class="brands-icon">
+                                                    <span class="info left">
+                                                        Б
+                                                        <div class="info__txt">
+                                                            Сотрудничал(-а) с 5 брендами
+                                                        </div>
+                                                    </span>
+                                        </i> Было сотрудничество с 5 брендами
+                                    </div>
+
+                                    <div class="blogger-cart__bottom-i">
+                                        Небольшой процент <br> отказов по рекламе
+                                        <div class="info">
+                                            <a href="javascript:void(0)" class="info-icon"></a>
+                                            <div class="info__txt">
+                                                Показатель того, как часто <br> выбранный блогер отказывает <br> по заявкам рекламодателей.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="answer__top-tabs">
-                        <a href="./answer.html" class="answer__top-tabs-i">
-                            Одобрено на рекламу
-                        </a>
-                        <a href="./answer-2.html" class="answer__top-tabs-i">
-                            На рассмотрении
-                        </a>
+
+                    <div class="cart-block__top-mobile">
+
+                        <div class="cart-block__top-btn">
+                            <div class="cart-block__more more-btn">
+                                <button class="btn btn-secondary cart-copy">Скопировано</button>
+                                <a class="cart-block__more-btn" href="javascript:void(0)"></a>
+                                <div class="more-btn__txt">
+                                    <a href="javascript:void(0);" class="copy-url-cart">Поделиться карточкой</a>
+                                    <a href="#" class="open-login">Пожаловаться</a>
+                                </div>
+                            </div>
+                            <div href="javascript:void(0)" class="cart-block__close">
+                                <a class="cart-block__close-btn" href="./cart-remove.html"></a>
+                            </div>
+                        </div>
+                        <div class="cart-block__blogger blogger-cart">
+                            <div class="blogger-cart__left">
+                                <div class="blogger-cart__bio">
+                                    <div class="blogger-cart-img">
+                                        <img src="images/cart/blogger-1.jpg" alt="img">
+                                    </div>
+                                    <div class="blogger-cart__bio-inner">
+                                        <div class="blogger-cart__name">
+                                            <a href="#">neotpuskaiteplo</a>
+                                        </div>
+                                        <div class="blogger-cart__subscribe">
+                                            54,9 тыс. подписчиков
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--<div class="blogger-cart__theme">-->
+                                    <!--Темы: Обработка фото, Изучение языков, Жизнь за границей-->
+                                <!--</div>-->
+                                <div class="blogger-cart__count">
+                                    <div class="blogger-cart__count-left">
+                                        <div class="blogger-cart__count-i">
+                                            <div class="blogger-cart__count-t">
+                                                Охват сторис ≈
+                                            </div>
+                                            <div class="blogger-cart__count-t">
+                                                Охват постов ≈
+                                            </div>
+                                        </div>
+                                        <div class="blogger-cart__count-i">
+                                            <div class="blogger-cart__count-n">
+                                                20 197
+                                            </div>
+                                            <div class="blogger-cart__count-n">
+                                                38 967
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogger-cart__count-right">
+                                        <div class="blogger-cart__reviews">
+                                            <a href="javascript:void(0)" class="btn btn-outline-secondary">
+                                                47 отзывов, <i class="star-icon"></i> 6,4
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blogger-cart__right">
+                                <!--<div class="blogger-cart__count">-->
+                                    <!--<div class="blogger-cart__count-i">-->
+                                        <!--<div class="blogger-cart__count-n">-->
+                                            <!--20 197-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__count-t">-->
+                                            <!--Охват сторис-->
+                                            <!--<div>в среднем</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="blogger-cart__count-i">-->
+                                        <!--<div class="blogger-cart__count-n">-->
+                                            <!--38 967-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__count-t">-->
+                                            <!--Охват постов-->
+                                            <!--<div>в среднем</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <div class="blogger-cart__about">
+                                    <div class="blogger-cart__screen">
+                                        Преобладающая статистика аудитории
+                                        <!--<div>-->
+                                            <!--<a href="#">Скриншоты</a> статистики из Инстаграма от 18.10.19-->
+                                        <!--</div>-->
+                                    </div>
+                                    <div class="blogger-cart__items">
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__title">
+                                                Страна
+                                            </div>
+                                            <div class="blogger-cart__title">
+                                                Город
+                                            </div>
+                                            <div class="blogger-cart__title">
+                                                Возраст
+                                            </div>
+                                            <div class="blogger-cart__title">
+                                                Пол
+                                            </div>
+                                        </div>
+                                        <div class="blogger-cart__item">
+                                            <div class="blogger-cart__txt">
+                                                Россия — 66%
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Санкт-Петербург — 21%
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                18-24 — 48%
+                                            </div>
+                                            <div class="blogger-cart__txt">
+                                                Женщины — 89%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blogger-cart__statistics">
+                                        <div class="blogger-cart__statistics-txt">
+                                            Скриншоты статистики из Инстаграма от 18.10.19
+                                        </div>
+                                        <div class="blogger-cart__statistics-btn">
+                                            <a href="./cart.html" class="btn btn-outline-secondary">
+                                                Скриншоты
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--<div class="blogger-cart__item">-->
+                                        <!--<div class="blogger-cart__title">-->
+                                            <!--Город блогера-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__txt">-->
+                                            <!--Санкт-Петербург-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="blogger-cart__item">-->
+                                        <!--<div class="blogger-cart__title">-->
+                                            <!--Юридический статус-->
+                                        <!--</div>-->
+                                        <!--<div class="blogger-cart__txt">-->
+                                            <!--Самозанятый-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="blogger-cart__personal">
+                                    <div class="blogger-cart__theme">
+                                        <span>Темы:</span> Обработка фото, Изучение языков, Жизнь за границей
+                                    </div>
+                                    <div class="blogger-cart__city">
+                                        <span>Город блогера:</span> Санкт-Петербург
+                                    </div>
+                                    <div class="blogger-cart__status">
+                                        <span>Юридический статус:</span> Самозанятый
+                                    </div>
+                                </div>
+                                <div class="blogger-cart__bottom">
+                                    <div class="blogger-cart__bottom-i">
+                                       Может стать амбассадором  <i class="ambas-icon">A</i>
+                                    </div>
+                                    <div class="blogger-cart__bottom-i">
+                                       Было сотрудничество с 5 брендами  <i class="brands-icon">Б</i>
+                                    </div>
+                                    <div class="blogger-cart__bottom-i mobile-info">
+                                        Небольшой процент отказов по рекламе
+                                        <div class="info">
+                                            <a href="javascript:void(0)" class="info-icon"></a>
+                                            <div class="info__txt">
+                                                Показатель того, как часто <br> выбранный блогер отказывает <br> по заявкам рекламодателей.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="answer__top-btn">
-                        <a href="javascript:void(0);" class="btn btn-primary custom-btn">Отказано в рекламе </a>
+
+                    <div class="cart-block__main">
+                        <div class="cart-block__main-title">
+                            Выберите формат рекламы
+                            <a href="#">
+                                Как сделать заказ?
+                            </a>
+                        </div>
+
+                        <div class="cart-block__main-table">
+                            <div class="cart-block__main-row visible-row">
+                                <div class="cart-block__main-col">
+                                    <div class="cart-block__main-head">
+                                        Формат рекламы
+                                    </div>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <div class="cart-block__main-head">
+                                        Цена по промокоду
+                                    </div>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <div class="cart-block__main-head">
+                                        Условия
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="cart-block__main-row">
+                                <div class="cart-block__main-col">
+                                    <i class="stories-icon"></i> Сторис 30 сек.
+                                </div>
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
+                                    10 888 500 ₽ <span class="old-price">10 999 000 ₽</span>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    Набор на ноябрь. Личные блоги. Пост без удаления из аккаунта. Цена + товар +
+                                    промокод на скидку для моих подписчиков.
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold cart-btn-select-adv">Выбрать
+                                    </button>
+                                </div>
+                                <div class="cart-block__main-col flex-column align-items-start " style="display:none;">
+                                    <div class="d-flex justify-content-between w-100">
+                                        <button type="button" class="btn btn-primary custom-btn custom-btn-gold open-login">
+                                            Отправить запрос
+                                        </button>
+                                        <img src="images/svg/x-btn.svg" alt="img" class="cart-btn-close-adv">
+                                    </div>
+
+                                    <p class="mt-3">
+                                        Отправьте запрос сейчас
+                                        <br><br>
+                                        или выберите несколько блогеров и отправьте заявку сразу всем.
+                                    </p>
+
+                                    <p class="mobile">
+                                        Отправьте запрос сейчас или выберите несколько блогеров и отправьте заявку сразу всем.
+                                        <a href="javascript:void(0);">Скрыть справку</a>
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="cart-block__main-row">
+                                <div class="cart-block__main-col">
+                                    <i class="stories-icon"></i> Сторис 30 сек.
+                                </div>
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
+                                    445 000 ₽ <span class="old-price">500 000 ₽</span>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    Набор на ноябрь. Личные блоги. 2-3 разговорных сторис о блоге.
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Выбрать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="cart-block__main-row">
+                                <div class="cart-block__main-col">
+                                    <i class="photo-icon"></i> Фото-пост
+                                </div>
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
+                                    15 000 ₽ <span class="old-price">15 500 ₽</span>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    Набор на декабрь. Коммерция. Пост без удаления из аккаунта.
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Выбрать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="cart-block__main-row">
+                                <div class="cart-block__main-col">
+                                    <i class="video-icon"></i> Видео-пост
+                                </div>
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
+                                    9 500 ₽ <span class="old-price"> 10 000 ₽</span>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    Набор на январь. Личные блоги. До 4 сторис. В основном, 1-2 видеоподводки, 1-2
+                                    макета + скрин интересного поста (на него хорошие переходы).
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Выбрать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="cart-block__main-row">
+                                <div class="cart-block__main-col">
+                                    <i class="live-icon"></i> Сторис+пост
+                                </div>
+                                <div class="cart-block__main-col" data-title="Цена по промокоду">
+                                    13 300 ₽ <span class="old-price">13 600 ₽</span>
+                                </div>
+                                <div class="cart-block__main-col">
+                                    Набор на ноябрь. Личные блоги. 2-3 разговорных сторис о блоге.
+                                </div>
+                                <div class="cart-block__main-col">
+                                    <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Выбрать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-block__main-info">
+                            Блогер не рекламирует: сетевой бизнес, астрология, гадания, казино и прочую херню, казино,
+                            карты таро, гадание, порнографический контент, пирамиды, подделки, некачественные товары,
+                            похудение, фитнес и тд, питание, пп, ип, рпп и тд , мамские блоги, смм, обработка,
+                            путешествия, сетевики.
+                        </div>
+                        <div class="cart-block__main-info-mobile">
+                            <div class="cart-block__main-info-mobile-top">
+                                <div class="cart-block__main-info-mobile-title">Блогер не рекламирует</div>
+                                <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn">
+                                    <span class="hide">Развернуть</span>
+                                    <span class="show">Свернуть</span>
+                                </a>
+                            </div>
+                            <div class="cart-block__main-info-mobile-txt">
+                                Сетевой бизнес, астрология, гадания, казино и прочую херню, казино,
+                                карты таро, гадание, порнографический контент, пирамиды, подделки, некачественные товары,
+                                похудение, фитнес и тд, питание, пп, ип, рпп и тд , мамские блоги, смм, обработка,
+                                путешествия, сетевики.
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="answer__top-search">
-                        <input type="text" class="form-control" placeholder="Поиск по блогерам">
-                        <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
+
+
+                    <div class="cart-block__rev-table">
+
+                        <div class="cart-block__rev-table-top">
+                            <div class="cart-block__main-title">
+                                <span>Сводная таблица отзывов</span>
+
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary car-table-tab active-tab">Блогеры</a>
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary car-table-tab">Коммерция</a>
+                            </div>
+                        </div>
+
+
+                        <div class="site-table-wrap">
+                            <table class="site-table active">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        Дата рекламы
+                                    </th>
+                                    <th>
+                                        Рекламодатель
+                                    </th>
+                                    <th>
+                                        Цена за <br> подписчика
+                                    </th>
+                                    <th>
+                                        Приход
+                                    </th>
+                                    <th>
+                                        Цена за рекламу
+                                    </th>
+                                    <th>
+                                        Оценка
+                                    </th>
+                                    <th>
+                                        Тема аккаунта
+                                    </th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+
+                                    <td>
+                                        28.03.19
+                                    </td>
+                                    <td>
+                                        <a href="#">natural_shop_qwerty123</a>
+                                    </td>
+                                    <td>
+                                        1,5 ₽
+                                    </td>
+                                    <td>
+                                        1 059
+                                    </td>
+                                    <td>
+                                        445 000 ₽
+                                    </td>
+                                    <td>
+                                        8,1<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Бьюти, лайфстайл, жизнь за границей
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        09.03.19
+                                    </td>
+                                    <td>
+                                        <a href="#">ofoxro</a>
+                                    </td>
+                                    <td>
+                                        108,8 ₽
+                                    </td>
+                                    <td>
+                                        452
+                                    </td>
+                                    <td>
+                                        10 888 500 ₽
+                                    </td>
+                                    <td>
+                                        7,2<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Обработка фото
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        30.12.18
+                                    </td>
+                                    <td>
+                                        <a href="#">alexiskiss_elena</a>
+                                    </td>
+                                    <td>
+                                        25,9 ₽
+                                    </td>
+                                    <td>
+                                        1 200
+                                    </td>
+                                    <td>
+                                        55 000 ₽
+                                    </td>
+                                    <td>
+                                        3<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Социальные темы
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        07.10.18
+                                    </td>
+                                    <td>
+                                        <a href="#">nastasia_guba</a>
+                                    </td>
+                                    <td>
+                                        2,5 ₽
+                                    </td>
+                                    <td>
+                                        13 580
+                                    </td>
+                                    <td>
+                                        1 600 ₽
+                                    </td>
+                                    <td>
+                                        4,8<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Ремонт и интерьер
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                            <table class="site-table commercial">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        Дата рекламы
+                                    </th>
+                                    <th>
+                                        Рекламодатель
+                                    </th>
+                                    <th>
+                                        Реклама <br> окупилась
+                                    </th>
+                                    <th>
+                                        Цена за <br> подписчика
+                                    </th>
+                                    <th>
+                                        Приход
+                                    </th>
+                                    <th>
+                                        Цена за рекламу
+                                    </th>
+                                    <th>
+                                        Оценка
+                                    </th>
+                                    <th>
+                                        Тема аккаунта
+                                    </th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+
+                                    <td>
+                                        28.03.19
+                                    </td>
+                                    <td>
+                                        <a href="#">natural_shop_qwerty123</a>
+                                    </td>
+                                    <td>
+                                        Да
+                                    </td>
+                                    <td>
+                                        1,5 ₽
+                                    </td>
+                                    <td>
+                                        1 059
+                                    </td>
+                                    <td>
+                                        445 000 ₽
+                                    </td>
+                                    <td>
+                                        8,1<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Бьюти, лайфстайл, жизнь за границей
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        09.03.19
+                                    </td>
+                                    <td>
+                                        <a href="#">ofoxro</a>
+                                    </td>
+                                    <td>
+                                        Нет
+                                    </td>
+                                    <td>
+                                        108,8 ₽
+                                    </td>
+                                    <td>
+                                        452
+                                    </td>
+                                    <td>
+                                        10 888 500 ₽
+                                    </td>
+                                    <td>
+                                        7,2<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Обработка фото
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        30.12.18
+                                    </td>
+                                    <td>
+                                        <a href="#">alexiskiss_elena</a>
+                                    </td>
+                                    <td>
+                                        Да
+                                    </td>
+                                    <td>
+                                        25,9 ₽
+                                    </td>
+                                    <td>
+                                        1 200
+                                    </td>
+                                    <td>
+                                        55 000 ₽
+                                    </td>
+                                    <td>
+                                        3<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Социальные темы
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        07.10.18
+                                    </td>
+                                    <td>
+                                        <a href="#">nastasia_guba</a>
+                                    </td>
+                                    <td>
+                                        Да
+                                    </td>
+                                    <td>
+                                        2,5 ₽
+                                    </td>
+                                    <td>
+                                        13 580
+                                    </td>
+                                    <td>
+                                        1 600 ₽
+                                    </td>
+                                    <td>
+                                        4,8<i class="star-icon"></i>
+                                    </td>
+                                    <td>
+                                        Ремонт и интерьер
+                                    </td>
+
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-block__rev-table-mobile-wrap ">
+                            <div class="cart-block__rev-table-mobile active">
+                                <div class="cart-block__rev-table-mobile-item">
+                                    <div class="cart-block__rev-table-mobile-date">
+                                        08.07.19, №19416
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Рекламодатель
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            <a href="#" class="cart-block__rev-table-mobile-name">
+                                                neotpuskaiteplo
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за подписчика
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            3,5 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Приход подписчиков
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за рекламу
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Оценка
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            7,9 <i class="star-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Темы аккаунта
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-block__rev-table-mobile-item">
+                                    <div class="cart-block__rev-table-mobile-date">
+                                        08.07.19, №19416
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Рекламодатель
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            <a href="#" class="cart-block__rev-table-mobile-name">
+                                                ofoxro
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за подписчика
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            3,5 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Приход подписчиков
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за рекламу
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Оценка
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            7,9 <i class="star-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Темы аккаунта
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-block__rev-table-mobile-item">
+                                    <div class="cart-block__rev-table-mobile-date">
+                                        08.07.19, №19416
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Рекламодатель
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            <a href="#" class="cart-block__rev-table-mobile-name">
+                                                kkkkkkkkkkkkkkkkkkkkkkk___kkkk
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за подписчика
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            3,5 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Приход подписчиков
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за рекламу
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Оценка
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            7,9 <i class="star-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Темы аккаунта
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="cart-block__rev-table-mobile  commercial">
+                                <div class="cart-block__rev-table-mobile-item">
+                                    <div class="cart-block__rev-table-mobile-date">
+                                        08.07.19, №19416
+                                    </div>
+
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Рекламодатель
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            <a href="#" class="cart-block__rev-table-mobile-name">
+                                                neotpuskaiteplo
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Реклама окупилась
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Да
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за подписчика
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            3,5 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Приход подписчиков
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за рекламу
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Оценка
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            7,9 <i class="star-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Темы аккаунта
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-block__rev-table-mobile-item">
+                                    <div class="cart-block__rev-table-mobile-date">
+                                        08.07.19, №19416
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Рекламодатель
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            <a href="#" class="cart-block__rev-table-mobile-name">
+                                                ofoxro
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Реклама окупилась
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Нет
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за подписчика
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            3,5 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Приход подписчиков
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за рекламу
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Оценка
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            7,9 <i class="star-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Темы аккаунта
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-block__rev-table-mobile-item">
+                                    <div class="cart-block__rev-table-mobile-date">
+                                        08.07.19, №19416
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Рекламодатель
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            <a href="#" class="cart-block__rev-table-mobile-name">
+                                                kkkkkkkkkkkkkkkkkkkkkkk___kkkk
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Реклама окупилась
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Нет
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за подписчика
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            3,5 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Приход подписчиков
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Цена за рекламу
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            999 999 ₽
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Оценка
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            7,9 <i class="star-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-block__rev-table-mobile-row">
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Темы аккаунта
+                                        </div>
+                                        <div class="cart-block__rev-table-mobile-col">
+                                            Бьюти, лайфстайл, жизнь за границей
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cart-block__rev-table-more">
+                            <a href="#" class="btn btn-outline-secondary btn--white">Все отзывы на этого блогера</a>
+                        </div>
+
                     </div>
+
                 </div>
 
+            </div>
 
-
-                <div class="answer__table-wrap">
-                    <table class="answer__table answer__table-denied">
-                        <thead>
-                            <tr>
-                                <th class="with-info">
-                                    Дата отказа
-                                </th>
-                                <th>
-                                    Блогер
-                                </th>
-                                <th>
-                                    Формат, цена и условия рекламы
-                                </th>
-                                <th>
-
-                                </th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    08.07.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">alexandramitroshina</a>
-                                    <span class="dark-grey">Для kreida</span>
-                                </td>
-                                <td>
-                                    Сторис 90 сек., 300 ₽, Блогер нашёл посты или темы в вашем аккаунте, которые противоречает его убеждениям или тому, о чем он пишет в своем блоге.
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.07.19 вт
-                                </td>
-                                <td>
-                                    <a href="#">kreida</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Блогер отказал вам из-за аккаунта: вы либо указали в заявке вместо своего аккаунта, аккаунт блогера, либо дали ссылку на несуществующий аккаунт.
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.07.19 ср
-                                </td>
-                                <td>
-                                    <a href="#">liz_fit</a>
-                                </td>
-                                <td>
-                                    Видео-пост, 2 000 ₽, Концепция вашего блога не подходит под требования блогера.
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.07.19 <span class="red">сб</span>
-                                </td>
-                                <td>
-                                    <a href="#">natural_shop</a>
-                                </td>
-                                <td>
-                                    Сторис 75 сек., 5 000 ₽, В вашем блоге небольшое количество подписчиков или постов.
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    28.07.19 <span class="red">вс</span>
-                                </td>
-                                <td>
-                                    <a href="#">kkkkkkkkkkffkkkkklkkk</a>
-                                </td>
-                                <td>
-                                    Сторис 60 сек., 4 000 ₽, Блогер считает, что данная реклама не найдет отклика у его аудитории.
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    29.07.19 чт
-                                </td>
-                                <td>
-                                    <a href="#">hanna.rachina</a>
-                                </td>
-                                <td>
-                                    Сторис 45 сек., 2 000 ₽, Блогер не смог оценить ваш аккаунт, откройте его и отправьте заявку заново.
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                    <div class="answer-mobile-table answer__mobile-table-denied">
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                alexandramitroshina
-                            </div>
-                            <div class="answer-mobile__subtitle">
-                                <span class="dark-grey">Для kreida</span>
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис 90 сек.<br>
-                                    300 ₽<br>
-                                    Личные блоги
-                                </p>
-                                2-3 разговорных сторис о блоге.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                kreida
-
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Фото-пост <br>
-                                    1 200 ₽ <br>
-                                    Коммерция
-                                </p>
-                                Пост без удаления из аккаунта. Цена + товар + промокод на скидку для моих подписчиков.
-                            </div>
-
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                liz_fit
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Видео-пост <br>
-                                    2 000 ₽ <br>
-                                    Личные блоги
-                                </p>
-                                Видеорекомендация + ваши макеты
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                kkkkkkkkkkkkkkkkkkkkkkk___kkkk
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис, 45-60 сек. <br>
-                                    4 000 ₽ <br>
-                                    Коммерция
-                                </p>
-                                Пост без удаления из аккаунта. Цена + товар + промокод на скидку для моих подписчиков.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                hanna.rachina
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис 60 сек. <br>
-                                    2 000 ₽ <br>
-                                    Личные блоги
-                                </p>
-                                2-3 разговорных сторис о блоге.
-                            </div>
-
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                hanna.rachina
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис 60 сек. <br>
-                                    2 000 ₽ <br>
-                                    Личные блоги
-                                </p>
-                                2-3 разговорных сторис о блоге.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-re-request-btn">Отправить заявку повторно</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="show-more">
-                        <a href="#" class="show-more__btn">
-                            Показать ещё
-                        </a>
-                    </div>
-                    <nav aria-label="...">
-                        <ul class="pagination custom-pagination">
-                            <li class="page-item disabled pagination__prev">
-                                <a class="page-link" href="#" tabindex="-1">Назад</a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item ">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">11</a></li>
-                            <li class="page-item pagination__next">
-                                <a class="page-link" href="#">Вперёд</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="bottom-cart-block mt-5">
+                <div class="cart-block__clear-subtitle">
+                    Хотите найти больше блогеров для рекламы? <br> Переходите в нашу базу по кнопке ниже!
                 </div>
 
-
+                <div class="cart-block__clear-btn">
+                    <a href="javascript:void(0)" class="btn btn-primary custom-btn custom-btn-gold">
+                        Найти блогеров для рекламы
+                    </a>
+                </div>
             </div>
         </div>
     </main>
@@ -1428,7 +2334,7 @@
                     Вы можете отправить ваше сообщение блогеру в директ только с помощью мобильного телефона.
                 </div>
                 <div class="email-send-textarea">
-                    <textarea>Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей. Мой аккаунт @gontsovaantonina.
+                    <textarea class="form-control">Здравствуйте. Хочу заказать Сторис 60 секунд Видеорекомендация + ваши макеты в аккаунте @svetlana.borisova по промокоду от Easyprbot pZtc33qiTwFpL (действителен до 27.06.2019 включительно) по цене 1350 рублей. Мой аккаунт @gontsovaantonina.
 
 Трансформационный коуч
 Антикризисный коуч
@@ -1588,94 +2494,21 @@
         </div>
     </div>
 
-    <div class="big-popup send-re-request wrap-popup">
+
+    <div class="big-popup if-clear-cart-popup wrap-popup">
         <div class="wrap-popup__inner medium-popup__inner">
             <div class="big-popup__top">
                 <div class="big-popup__title">
-                    Заполните поля заявки, чтобы получить ответ блогера(-ов)
+                    Очистить корзину
                 </div>
                 <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
             </div>
 
-            <div class="big-popup__body request-to-blogger">
-
-                <div class="request-to-blogger__inner">
-                    <div class="request-to-blogger__left">
-                        <form class="needs-validation" novalidate action="javascript:void(0)">
-                            <p class="dark-grey fs-14">
-                                Последнй раз вы указали эти данные. Если необхлдимо, вы можете их изменить.
-                            </p>
-
-                            <div class="request-to-blogger__i">
-                                <label for="requestToBl2">Ваш аккаунт</label>
-                                <input type="text" class="form-control" id="requestToBl2" placeholder="" required="">
-
-                            </div>
-                            <div class="request-to-blogger__i">
-                                <label for="requestToBl3">
-                                    Тезисы
-                                    <span class="info left">
-                                        <a href="javascript:void(0)" class="info-icon"></a>
-                                        <div class="info__txt">
-                                            Напишите тезисы о своём аккаунте или о том, что хотите прорекламировать.
-                                            <br><br>
-                                            Тезисы удобнее всего сделать по плану: <br>
-                                            1. 3 тезиса про ваш аккаунт. <br>
-                                            2. 3-4 последние темы у вас в аккаунте.
-                                        </div>
-                                    </span>
-                                </label>
-                                <div class="textarea-count" data-count="0">
-                                    <textarea  class="form-control " name="report" id="requestToBl3" required placeholder="Например: Мой блог про:
-Медитации и силу подсознания
-Психологическую сторону успеха и денег
-Обзоры и анти-обзоры на книги
-
-Последние темы про:
-- Медитации для новичков
-- Как медитации влияют на мозг
-- Как подтолкнуть партнера к работе над собой
-- Как заставить кризисы работать на пользу
-- Как развиваться без книг и тренингов"></textarea>
-                                </div>
-                            </div>
-
-                            <button class="hide">ok</button>
-                        </form>
-
-                        <div class="request-to-blogger__i">
-                            <a href="#"class="btn btn-primary custom-btn custom-btn-gold check-request-to-blogger">
-                                Отправить
-                            </a>
-                            <span class="err-form">Заполните поля <br> отмеченные красным</span>
-                        </div>
-
-                    </div>
-                    <div class="request-to-blogger__right">
-                        <div class="request-to-blogger__title">
-                            <div class="request-to-blogger__title-desktop">
-                                Инструкция по заказу рекламы
-                            </div>
-                            <a href="javascript:void(0);" class="cart-block__main-info-mobile-btn expand-btn request-to-blogger__toggle">
-                                <span class="hide">Инструкция по заказу рекламы</span>
-                                <span class="show">Инструкция по заказу рекламы</span>
-                            </a>
-                        </div>
-                        <div class="request-to-blogger__txt">
-                            <p>
-                                1. Вы отправляете свой аккаунт, тезисы и рекламные макеты по рекламе блогеру.
-                            </p>
-                            <p>
-                                2. Блогер рассматривает вашу заявку и отвечает вам через сайт и электронную почту, сможет ли он взять вас на рекламу или нет.
-                            </p>
-                            <p>
-                                3. Если блогер согласен на рекламу, на сайте и в письме будет указана ссылка для генерации промокода и контакты блогера.
-                            </p>
-                            <p>
-                                4.Сгенерировав промокод, напишите в основной или pr-аккаунт блогера, где вы сможете обсудить основные детали и оплатить рекламу лично блогеру.
-                            </p>
-                        </div>
-                    </div>
+            <div class="big-popup__body if-clear-cart">
+                Вы точно хотите очистить корзину?
+                <div class="if-clear-cart-btn">
+                    <a href="#" class="btn btn-outline-secondary btn--white close-btn">Отмена</a>
+                    <a href="./clear-cart.html" class="btn btn-primary custom-btn">Очистить</a>
                 </div>
             </div>
         </div>
@@ -1695,10 +2528,11 @@
                 <div class="request-to-blogger__inner">
                     <div class="request-to-blogger__left">
                         <form class="needs-validation" novalidate action="javascript:void(0)">
-                            <p class="dark-grey fs-14">
-                                Последнй раз вы указали эти данные. Если необхлдимо, вы можете их изменить.
-                            </p>
+                            <div class="request-to-blogger__i">
+                                <label for="requestToBl">Ваш e-mail</label>
+                                <input type="email" class="form-control" id="requestToBl" placeholder="" required="">
 
+                            </div>
                             <div class="request-to-blogger__i">
                                 <label for="requestToBl2">Ваш аккаунт</label>
                                 <input type="text" class="form-control" id="requestToBl2" placeholder="" required="">
@@ -1732,7 +2566,12 @@
 - Как развиваться без книг и тренингов"></textarea>
                                 </div>
                             </div>
-
+                            <div class="request-to-blogger__i">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="requestToBl5" required="">
+                                    <label class="custom-control-label" for="requestToBl5">Я соглашаюсь с <a href="#">Политикой конфиденциальности</a></label>
+                                </div>
+                            </div>
                             <button class="hide">ok</button>
                         </form>
 
@@ -1774,164 +2613,31 @@
         </div>
     </div>
 
-    <div class="big-popup accept-mail-popup wrap-popup">
+
+    <div class="medium-popup email-to-blogger-popup wrap-popup ">
         <div class="wrap-popup__inner medium-popup__inner">
-            <div class="big-popup__top">
+            <div class="medium-popup__top">
                 <div class="big-popup__title">
-                    Заявка отправлена
+                    Написать блогеру
                 </div>
                 <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
             </div>
 
-            <div class="big-popup__body request-to-blogger-success">
-                <div class="base-popup_success-wrap">
-                    <img src="images/svg/done_icon.svg" alt="img">
-                    <div class="base-popup_success">Ваша заявка отправлена</div>
-                    <div class="request-to-blogger-success-txt">
-                        Ответ придет в <a href="#">Ответы по рекламе</a> и вам на почту. <br><br>
-                        Обычно рассмотрение заявок занимает <br> до 3-х дней.
-                    </div>
-
+            <div class="medium-popup__body email-send-wrap">
+                <div class="f-14">Скопируйте сообщение ниже, нажмите на кнопку «Написать блогеру» и отправьте в директ аккаунта это сообщение.</div>
+                <div class="medium-popup__info">
+                    Вы можете отправить ваше сообщение блогеру в директ только с помощью мобильного телефона.
+                </div>
+                <div class="email-send-textarea">
+                    <textarea class="form-control"></textarea>
                 </div>
 
-                <div class="same-bloggers">
-                    <div class="same-bloggers__title">
-                        Возможно, вам будут интересны эти блогеры
-                    </div>
-
-                    <div class="same-bloggers__carousel owl-carousel owl-theme">
-                        <div class="same-bloggers__item">
-                            <div class="same-bloggers__top">
-                                <div class="same-bloggers__photo">
-                                    <img src="images/cart/blogger-1.jpg" alt="img">
-                                </div>
-                                <div class="same-bloggers__right">
-                                    <div class="same-bloggers__nik">
-                                        neotpuskaiteplo
-                                    </div>
-                                    <div class="same-bloggers__name dark-grey">
-                                        Ксюша
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="same-bloggers__center">
-                                <div class="same-bloggers__story">
-                                    <span class="dark-grey">Охват сторис:</span> 405 124
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
-                                </div>
-                                <div class="same-bloggers__posts">
-                                    <span class="dark-grey">Охват постов:</span> 603 307
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
-                                </div>
-                            </div>
-                            <div class="same-bloggers__bottom">
-                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
-                                    В карточку блогера
-                                </a>
-                            </div>
-                        </div>
-                        <div class="same-bloggers__item">
-                            <div class="same-bloggers__top">
-                                <div class="same-bloggers__photo">
-                                    <img src="images/cart/avatar(1).png" alt="img">
-                                </div>
-                                <div class="same-bloggers__right">
-                                    <div class="same-bloggers__nik">
-                                        neotpuskaiteplo
-                                    </div>
-                                    <div class="same-bloggers__name dark-grey">
-                                        Ксюша
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="same-bloggers__center">
-                                <div class="same-bloggers__story">
-                                    <span class="dark-grey">Охват сторис:</span> 405 124
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
-                                </div>
-                                <div class="same-bloggers__posts">
-                                    <span class="dark-grey">Охват постов:</span> 603 307
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
-                                </div>
-                            </div>
-                            <div class="same-bloggers__bottom">
-                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
-                                    В карточку блогера
-                                </a>
-                            </div>
-                        </div>
-                        <div class="same-bloggers__item">
-                            <div class="same-bloggers__top">
-                                <div class="same-bloggers__photo">
-                                    <img src="images/cart/avatar(1).png" alt="img">
-                                </div>
-                                <div class="same-bloggers__right">
-                                    <div class="same-bloggers__nik">
-                                        neotpuskaiteplo
-                                    </div>
-                                    <div class="same-bloggers__name dark-grey">
-                                        Ксюша
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="same-bloggers__center">
-                                <div class="same-bloggers__story">
-                                    <span class="dark-grey">Охват сторис:</span> 405 124
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
-                                </div>
-                                <div class="same-bloggers__posts">
-                                    <span class="dark-grey">Охват постов:</span> 603 307
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
-                                </div>
-                            </div>
-                            <div class="same-bloggers__bottom">
-                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
-                                    В карточку блогера
-                                </a>
-                            </div>
-                        </div>
-                        <div class="same-bloggers__item">
-                            <div class="same-bloggers__top">
-                                <div class="same-bloggers__photo">
-                                    <img src="images/cart/avatar(1).png" alt="img">
-                                </div>
-                                <div class="same-bloggers__right">
-                                    <div class="same-bloggers__nik">
-                                        neotpuskaiteplo
-                                    </div>
-                                    <div class="same-bloggers__name dark-grey">
-                                        Ксюша
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="same-bloggers__center">
-                                <div class="same-bloggers__story">
-                                    <span class="dark-grey">Охват сторис:</span> 405 124
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 10 500 ₽
-                                </div>
-                                <div class="same-bloggers__posts">
-                                    <span class="dark-grey">Охват постов:</span> 603 307
-                                    <br>
-                                    <span class="dark-grey">Цена от:</span> 24 500 ₽
-                                </div>
-                            </div>
-                            <div class="same-bloggers__bottom">
-                                <a href="#" class="btn btn-primary custom-btn custom-btn-gold">
-                                    В карточку блогера
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="email-send__bottom justify-content-start">
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary copy-btn">Скопировать</a>
+                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold ml-3">
+                        Написать блогеру
+                    </a>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -1948,10 +2654,8 @@
 <script src="js/jquery-ui.js"></script>
 <script src="js/datepicker-ru.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 
 <script src="js/main.js"></script>
-
 
 </body>
 </html>

@@ -2275,10 +2275,12 @@ table tbody tr:nth-child(odd){
 
 .card__form-advertising-bottom-btn .btn{
     height: 40px;
+    line-height: 26px;
 }
 
 .card__form-advertising-bottom-btn .btn-secondary{
     min-width: 140px;
+    line-height: 27px;
 }
 
 .card__form-advertising-new-form-btn{
@@ -3202,11 +3204,12 @@ table tbody tr:nth-child(odd){
     align-items: center;
     flex-direction: column;
     position: absolute;
-    top: -1px;
-    left: -1px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
+    top: 0px;
+    left: 0px;
+    width: calc(100% + 0px);
+    height: calc(100% + 0px);
     background: white;
+    border-radius: 10px;
 }
 
 .settings-advertising-clear-txt{
@@ -4534,9 +4537,20 @@ table tbody tr:nth-child(odd){
 }
 
 .moder__bottom-right{
-
+    display: flex;
 }
 
+.back-show .moder-req-prev{
+    display: none !important;
+}
+
+.back-show .btn-outline-secondary{
+    padding: 5px 11px 4px;
+}
+
+.back-show .show{
+    display: block !important;
+}
 
 .custom-small-select .filter-option-inner-inner{
     font-size: 14px;
@@ -4605,6 +4619,14 @@ table tbody tr:nth-child(odd){
 .moder__bottom-right .custom-btn-gold {
     border: 1px solid #fadb67;
     display: none;
+}
+
+.moder__bottom-mobile-right{
+    display: none;
+}
+
+.moder__bottom--bottom-right .moder__bottom-left .custom-small-select {
+    margin-bottom: 0;
 }
 
 .moder-req-prev{
@@ -10345,6 +10367,55 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+    /*.brands .moder__content-form-title{*/
+        /*margin-top: 15px;*/
+    /*}*/
+
+    .moder__content-inner{
+        margin-top: 20px;
+    }
+
+    .moder__bottom--bottom-right .moder__bottom-left{
+        width: 50%;
+        flex-direction: column;
+    }
+    .moder__bottom--bottom-right .moder__bottom-left .custom-small-select{
+        margin-bottom: 15px;
+    }
+
+    .moder__bottom-mobile-right{
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+
+    .moder__bottom-mobile-right span{
+        margin: 0 8px;
+        width: 12px;
+        text-align: center;
+    }
+
+    .moder__bottom-mobile-right .moder-req-prev{
+        padding: 3px 11px 4px;
+        display: inline-block;
+    }
+
+    .moder__bottom-mobile-right .moder-req-next{
+        position: relative;
+        transform: rotate(180deg);
+        padding: 3px 11px 4px;
+        display: inline-block;
+    }
+
+    .back-show .show,
+    .back-show .moder-req-next {
+        display: none !important;
+    }
+
+    .back-show .moder-req-last{
+        display: inline !important;
+    }
+
     .moder.brands .moder__content-i > .moder__content-tap{
         display: none;
     }
@@ -10801,6 +10872,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding: 8px 13px;
     }
 
+    .moder.brands__bottom-right .moder-req-prev{
+        padding: 6px 13px;
+    }
+
     .complaint .moder__bottom-right .bootstrap-select > .dropdown-menu.show{
         left: auto !important;
         right: -50%;
@@ -11097,6 +11172,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         max-width: max-content;
         margin-right: 10px;
         height: 36px;
+        line-height: 21px;
     }
 
     .card__form-advertising-new-form-btn + .card__form-advertising-bottom-btn > button{
@@ -11497,6 +11573,12 @@ textarea {
     font-size: 14px;
     line-height: 17px;
 }
+
+.moder__inner .moder__name .dark-grey{
+    font-size: 12px;
+    line-height: 14px;
+}
+
 .settings-advertising-add-mobile {
     display: none;
 }
