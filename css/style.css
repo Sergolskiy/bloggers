@@ -84,12 +84,13 @@ textarea {
 
 .back-arrow{
     position: relative;
-    top: 2px;
-    width: 8px;
-    height: 14px;
+    top: -1px;
+    width: 6px;
+    height: 10px;
     display: inline-flex;
-    margin-right: 5px;
-    background: url('../images/svg/back-arrow.svg') center center no-repeat;
+    margin-right: 2px;
+    background: url('../images/svg/back-arr-g.svg') center center no-repeat;
+    background-size: cover;
 }
 
 .info-icon{
@@ -324,6 +325,7 @@ body{
     background: #f2f7fa;
     color: #192229;
     font-family: Rubik-Regular;
+    width: 100%;
 }
 
 .hidden{
@@ -703,7 +705,7 @@ input.form-control{
     -webkit-transition: all .2s ease;
     background: #FFFFFF;
     border-radius: 4px;
-    box-shadow: 0 8px 8px 0 rgba(0,0,0,.12);
+    box-shadow: none;
     color: #192229;
     font-size: 14px;
     line-height: 17px;
@@ -1752,6 +1754,14 @@ table tbody tr:nth-child(odd){
     display: table;
 }
 
+.cart-page-no-title{
+    padding-top: 1px;
+}
+
+.cart-page-no-title .page-block {
+    margin-top: -20px;
+}
+
 .no-register-blogger-table td a{
     margin-right: 5px;
 }
@@ -2742,6 +2752,12 @@ table tbody tr:nth-child(odd){
     line-height: 22px;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.payments-success__offers-price span{
+    font-size: 16px;
+    line-height: 19px;
+    color: #6A7B83;
 }
 
 .payments-success__offers-old-price{
@@ -5525,7 +5541,7 @@ table tbody tr:nth-child(odd){
     opacity: 1;
     -webkit-overflow-scrolling: touch;
     overflow: scroll;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .wrap-popup__inner{
@@ -5582,6 +5598,8 @@ table tbody tr:nth-child(odd){
 .video-popup__body{
     height: 100%;
 }
+
+
 
 .video-popup__body{
     flex: 1 1 auto;
@@ -7149,6 +7167,8 @@ table tbody tr:nth-child(odd){
 
 .header-mobile-btn-close {
     transition: 0.3s;
+    font-size: 16px;
+    padding: 5px 13px;
     visibility: hidden;
     opacity: 0;
     display: none;
@@ -8503,7 +8523,39 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .cart-block__top-mobile .blogger-cart__statistics {
         display: flex;
         align-content: center;
+        margin-top: 5px;
     }
+
+    .blogger-cart__mob-short{
+        display: none;
+    }
+
+    .blogger-cart__mob-short.open{
+        display: block;
+    }
+
+    .blogger-cart__mob-long{
+        display: block;
+    }
+
+    .blogger-cart__mob-long.close{
+        display: none;
+    }
+
+    .cart-block__top-mobile .blogger-cart__mob-short .blogger-cart__item {
+        max-width: 50% !important;
+    }
+
+    .blogger-cart__short-theme{
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 5px;
+    }
+
+    .blogger-cart__short-theme span{
+        color: #6A7B83;
+    }
+
     .cart-block__top-mobile .blogger-cart__about {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -8512,6 +8564,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .cart-block__top-mobile .blogger-cart__screen{
         margin-bottom: 10px;
+        font-size: 16px;
     }
     .cart-block__top-mobile .blogger-cart__item {
         margin-top: 0;
@@ -9006,6 +9059,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-top: 30px;
     }
 
+    .ios .cart-block .cart-block__more-btn + .more-btn__txt{
+        margin-top: 0px;
+        transition: 0s;
+    }
+
     .cart-block__rev-table-top {
         padding-top: 30px;
         border-top: 2px dashed #D5DFE4;
@@ -9224,6 +9282,79 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .moderation-filter-btn .btn:first-child{
         margin-right: 15px;
+    }
+
+    .blogger-mob-rev-popup .base-popup__content{
+        overflow: scroll;
+    }
+
+    .blogger-mob-rev-popup .cart-block__rev-table-top{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .blogger-mob-rev-popup .cart-block__rev-table-mobile-item{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .blogger-mob-rev-popup .wrap-popup__inner{
+        width: 100%;
+    }
+
+    .blogger-mob-rev-popup.mobile-popup .base-popup__content{
+        padding: 0;
+    }
+
+    .blogger-mob-rev-popup .cart-block__rev-table{
+        /*margin-bottom: 50px;*/
+        margin-top: 66px;
+    }
+
+    .blogger-mob-rev-popup .medium-popup__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px 20px;
+        margin: 0;
+        border-bottom: 1px solid #D5DFE4;
+        box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+        border-top: 1px solid #D5DFE4;
+
+        position: fixed;
+        width: 100%;
+        background: white;
+        z-index: 10;
+    }
+
+    .blogger-mob-rev-popup .cart-block__rev-table-top {
+        border-top: 0;
+        padding-top: 15px;
+    }
+
+    .blogger-mob-rev-popup {
+        z-index: 1000 !important;
+    }
+
+    .blogger-mob-rev-popup .footer{
+        margin-top: 60px;
+    }
+
+    .cart-block__rev-table-mobile-txt{
+        overflow-wrap: break-word;
+    }
+
+    .cart-block__rev-table-mobile-txt,
+    .blogger-mob-rev-popup .cart-block__rev-table-mobile-col {
+        font-size: 14px;
+    }
+
+    .blogger-mob-rev-popup .cart-block__rev-table-mobile-item > p {
+        margin-bottom: 10px;
+    }
+
+    .blogger-mob-rev-popup .cart-block__rev-table-mobile-col {
+        line-height: 19px;
     }
 }
 
@@ -10155,6 +10286,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .big-popup__inner, .video-popup__inner{
         width: 100%;
         box-shadow: none;
+        min-height: auto;
     }
 
     .add-brand__bottom{
@@ -10367,6 +10499,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+    .video-popup__inner{
+        min-height: 300px;
+    }
     /*.brands .moder__content-form-title{*/
         /*margin-top: 15px;*/
     /*}*/
@@ -11834,6 +11969,11 @@ textarea {
     .email-to-blogger-popup .email-send-wrap {
         margin-bottom: 15px;
     }
+
+    .email-to-blogger-popup .email-send__bottom{
+        margin-top: 20px;
+    }
+
     .card__verify-right-block .form-group input[type="text"],
     .card__verify-right-block .form-group input[type="email"]{
         max-width: 255px;
