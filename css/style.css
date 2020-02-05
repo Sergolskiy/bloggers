@@ -7539,6 +7539,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     justify-content: space-between;
     padding: 0 30px;
     box-shadow: 0px 3px 10px rgba(0, 73, 129, 0.1);
+    z-index: -1;
 }
 .mobile-main-popup__select-head.open {
     visibility: visible;
@@ -10287,6 +10288,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         width: 100%;
         box-shadow: none;
         min-height: auto;
+        overflow: scroll;
     }
 
     .add-brand__bottom{
@@ -10476,9 +10478,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         bottom: 0px;
     }
 
-    .ios .wrap-popup__inner {
-        padding-bottom: 110px;
-    }
+    /*.ios .wrap-popup__inner {*/
+        /*padding-bottom: 110px;*/
+    /*}*/
 
     .ios .footer.active-popup {
         margin-bottom: 110px;
@@ -10498,6 +10500,134 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 500px) {
+
+    .payments-success__offers{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 20px 15px;
+    }
+
+    .payments-success__offers-title{
+        text-align: left;
+        order: 1;
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .payments-success__offers-price{
+        order: 3;
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .payments-success__offers-old-price{
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    .payments-block-success-btn{
+        order: 4;
+        width: 88px;
+        margin-left: auto;
+    }
+
+    .payments-block-success-btn .big-btn{
+        min-width: 88px;
+        padding: 6px 15px;
+    }
+
+    .payments-success__offers:nth-child(n+2) .payments-success__offers-price{
+        margin-left: 0;
+    }
+    .payments-success__offers:nth-child(n+2) .payments-block-success-btn{
+        margin-top: -20px;
+    }
+    .payments-success__offers:nth-child(n+2) .payments-success__offers-old-price{
+        order: 3;
+    }
+
+    .payments-success__inner {
+        padding: 25px 20px;
+    }
+
+    .payments-success__title span{
+        margin-top: 10px;
+    }
+
+    .payments-success__subtitle{
+        font-size: 14px;
+    }
+
+    .payments-success .paid-service__yellow-of-btn .btn {
+        width: 89px;
+        height: 36px;
+        min-width: auto;
+        font-size: 16px;
+        line-height: 21px !important;
+    }
+
+    .payments-success .paid-service__yellow-of {
+        border-radius: 10px;
+    }
+
+    .payments-success .paid-service__yellow-of-p .paid-service__yellow-of-o {
+        display: block;
+        margin-right: 13px;
+    }
+
+    .payments-success .paid-service__yellow-of-p{
+        margin-bottom: 5px;
+    }
+
+    .payments-success__bottom{
+        display: none;
+    }
+
+    .banner-pay-success .top-banner__subtitle,
+    .banner-pay-success .top-banner__right{
+        display: none;
+    }
+
+    .banner-pay-success + .main{
+        padding-top: 0;
+    }
+
+    .payments__title{
+        display: none;
+    }
+
+    .payments-page{
+        margin-bottom: 0;
+    }
+
+    .payments-page .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .payments-block{
+        border-radius: 0;
+        margin-top: -25px;
+        padding: 28px 30px;
+    }
+
+    .payments__back{
+        display: none;
+    }
+
+    .ios .big-popup__top,
+    .ios .video-popup__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px 30px;
+        margin: 0 -30px;
+        border-bottom: 1px solid #D5DFE4;
+        margin-bottom: 20px;
+    }
+
 
     .video-popup__inner{
         min-height: 300px;
@@ -10738,7 +10868,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         flex-direction: column;
         height: calc(100vh - 75px);
         justify-content: flex-start;
-        /*padding-bottom: 60px;*/
+
+        overflow: hidden;
     }
     .big-popup, .wrap-popup {
         background: white;
@@ -10853,6 +10984,17 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    .card .card__tabs-content-i:nth-child(n+2){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card .card__tabs-content-i:nth-child(n+2) .card__form-advertising-bottom-btn .btn{
+        max-width: 100px;
+        width: 100px;
+    }
+
     .card__tabs-content .card__title {
         font-size: 20px;
         padding: 0;
@@ -10931,11 +11073,37 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card__tabs-i.active{
         padding-left: 30px;
         color: #6A7B83;
+        font-size: 13px;
     }
     .card-next-step{
         padding: 5px 21px;
     }
 
+    .card__verify-left-txt ~ .card__verify-left-txt {
+        margin-top: 40px;
+    }
+
+    .card .card__verify-right-block .radio-group {
+        margin-bottom: -20px;
+    }
+
+    .card__verify-right-block:last-child {
+        margin-bottom: 20px;
+    }
+
+    .card-page{
+        margin-bottom: -30px;
+    }
+
+    .card{
+        border: 0;
+        padding-bottom: 70px;
+    }
+
+    .card .card__statistic-block:nth-last-child(3){
+        padding-bottom: 20px;
+        border-bottom: 1px solid #D5DFE4;
+    }
 
     .report__textarea.report__block label{
         font-size: 16px;
@@ -11737,6 +11905,11 @@ textarea {
     .page-block-wrap-settings .mobile {
         margin-top: 20px;
     }
+
+    .cart-block__close{
+        position: relative;
+        z-index: 10;
+    }
 }
 @media (max-width: 768px) {
     .page-block-wrap-settings .settings__title {
@@ -11939,9 +12112,9 @@ textarea {
         height: calc(100vh - 75px);
     }
     .wrap-popup__inner {
-        /*height: calc(100vh);*/
         position: relative;
-        padding-bottom: 90px;
+        padding-bottom: 0;
+        border-radius: 0;
         flex: 1;
     }
     .wrap-popup .footer.active-popup {
@@ -11949,7 +12122,26 @@ textarea {
         position: absolute;
         bottom: 0;
         left: 0;
+
+        width: auto;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 10px 0;
+        margin: 0 -30px;
+
+        display: block;
+        text-align: center;
     }
+    .medium-popup__body, .big-popup__body, .video-popup__body {
+        height: auto;
+    }
+
+    .video-popup__body{
+        margin-bottom: 40px;
+    }
+
+
     .wrap-popup .login__top-popup.active + .wrap-popup__inner {
         height: calc(100vh + 75px);
     }
