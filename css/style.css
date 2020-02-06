@@ -5712,9 +5712,13 @@ table tbody tr:nth-child(odd){
     color: #3897F0;
 }
 
-.login__content-i .custom-control-label::after,
-.login__content-i .custom-control-label::before {
+.login__content-i .custom-control-label::after{
     top: 0;
+}
+
+.login__content-i .custom-control-input:checked~.custom-control-label::before,
+.login__content-i .custom-control-label::before{
+    top: 1px;
 }
 
 .login__close{
@@ -5724,11 +5728,62 @@ table tbody tr:nth-child(odd){
     z-index: 1;
 }
 
+.check-register .login__close{
+    top: 15px;
+    right: 20px;
+}
+
+.check-register .login__close img{
+    width: 14px;
+}
+
+.check-register .login__tabs{
+    margin-bottom: 50px;
+}
+
+.check-register .reg-type-register__title{
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.check-register.open-txt{
+    align-items: flex-start;
+}
+
+.reg-type-register__btn > div{
+    margin-top: 30px;
+}
+
+
+.check-register .auth__right{
+    width: 100%;
+    padding: 0;
+    background: white;
+}
+
+.check-register .auth__right-i{
+    justify-content: flex-start;
+}
+
+.check-register .reg-type-register__btn-more a{
+    font-size: 14px;
+    color: #3897F0;
+}
+
+.check-register .reg-type-register__btn {
+    padding-bottom: 50px;
+}
+
+
+
+
+
 .pass-label a{
     font-size: 14px;
     line-height: 17px;
     color: #3897F0;
 }
+
 .pass-label {
     display: flex;
     justify-content: space-between;
@@ -5765,6 +5820,36 @@ table tbody tr:nth-child(odd){
 .popup-tap.active,
 .reg-tap.active{
     display: block;
+}
+
+
+
+.reg-type-register__title{
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.reg-type-register__btn{
+    padding-bottom: 120px;
+}
+
+.reg-type-register__btn > div{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.reg-type-register__btn > div .auth__right{
+    text-align: left;
+    padding-top: 30px;
+}
+
+.reg-type-register__btn a{
+    min-width: 218px;
+}
+
+.check-register .reg-type-register{
+    margin: 0 -30px;
 }
 
 
@@ -7155,6 +7240,15 @@ table tbody tr:nth-child(odd){
 /*.title__right {*/
     /*display: none;*/
 /*}*/
+
+.link-reg-prototype{
+    margin-left: 250px;
+}
+
+.link-reg-prototype a{
+    color: #3897F0;
+}
+
 .home-page-container .title__right {
     display: none;
 }
@@ -8119,6 +8213,19 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 992px) {
+
+    .link-reg-prototype{
+        position: absolute;
+        left: 0;
+        top: 89px;
+        margin: 0;
+        background: rgba(255, 255, 255, 0.94);
+        width: 100%;
+        height: 66px;
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
     .header__logo {
         left: 0;
         height: 50px;
@@ -10291,6 +10398,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         overflow: scroll;
     }
 
+    .wrap-popup__inner,
+    .medium-popup__inner{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
     .add-brand__bottom{
         display: flex;
         flex-direction: column;
@@ -10500,6 +10613,32 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 500px) {
+
+    .check-register .login__tabs{
+        margin-bottom: 30px;
+    }
+
+    .check-register .login__tabs-wrap{
+        overflow: initial;
+        flex: 1;
+        min-height: auto;
+    }
+
+    .check-register .reg-type-register {
+        margin: 0 -15px;
+    }
+
+    .check-register .reg-type-register__btn > div {
+        margin-top: 30px;
+    }
+
+    .check-register .reg-type-register__title {
+        padding: 0 15px;
+    }
+
+    .check-register .login__tabs > div{
+        display: flex !important;
+    }
 
     .payments-success__offers{
         flex-direction: row;
@@ -10888,6 +11027,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-top: 0;
     }
 
+    .wrap-popup__inner .footer.active-popup{
+        margin-top: auto;
+    }
+
     .big-popup__body > *:last-child{
         padding-bottom: 40px;
     }
@@ -11064,14 +11207,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card__title{
         padding: 0 15px;
     }
-    .card__tabs-i.active{
-        padding-left: 30px;
-    }
     .card__tabs-btn{
         right: 30px;
     }
     .card__tabs-i.active{
-        padding-left: 30px;
+        padding-left: 15px;
         color: #6A7B83;
         font-size: 13px;
     }
@@ -11340,6 +11480,54 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .medium-popup__inner{
         width: 100%;
+    }
+
+    .if-clear-cart-popup {
+        background: rgba(0, 0, 0, 0.5);
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .if-clear-cart-popup .medium-popup__inner{
+        width: 350px;
+        height: 200px;
+        min-height: 180px;
+        max-height: 180px;
+        padding-bottom: 0;
+        border-radius: 10px;
+    }
+
+    .if-clear-cart-popup .if-clear-cart-btn{
+        padding-bottom: 0 !important;
+    }
+
+    .screenshots-popup .wrap-popup__inner{
+        padding: 0;
+    }
+
+    .screenshots-popup .big-popup__top{
+        display: none;
+    }
+
+    .screenshots-popup .screenshots__inner{
+        max-width: 100%;
+        margin-bottom: 0;
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .screenshots-popup .mCSB_scrollTools {
+        position: absolute;
+        width: 5px;
+    }
+
+    .screenshots-popup .mCSB_inside>.mCSB_container{
+        margin-right: 0px;
+        padding: 20px 30px 0;
+    }
+
+    .screenshots-popup .big-popup__body > *:last-child{
+        padding-bottom: 0;
     }
 
     .close-btn{
@@ -12133,8 +12321,21 @@ textarea {
         display: block;
         text-align: center;
     }
+
+    .wrap-popup .scroll .footer.active-popup{
+        margin-top: 30px;
+    }
+
     .medium-popup__body, .big-popup__body, .video-popup__body {
         height: auto;
+    }
+
+    .medium-popup__body{
+        margin-bottom: 70px;
+    }
+
+    .send-review-popup__body{
+        margin-bottom: 40px;
     }
 
     .video-popup__body{
@@ -12147,8 +12348,15 @@ textarea {
     }
 
     .login__tabs-wrap{
-        min-height: 75vh;
+        /*min-height: 75vh;*/
+        /*min-height: calc(100% - 70px);*/
+        min-height: auto;
+        overflow: initial;
+        flex: 1;
+        margin-bottom: 20px;
     }
+
+
 
     .page-block .login__tabs-wrap{
         min-height: auto;

@@ -92,35 +92,12 @@
 
                         <div class="header__right">
                             <div class="header__cart-btn">
-                                <a href="./cart.html" class="btn btn-outline-secondary has-product " data-count="2">
-                                    <i class="cart-icon"></i> Корзина
+                                <a href="./cart.html" class="btn btn-outline-secondary"><i class="cart-icon"></i>Корзина
                                 </a>
                             </div>
 
-                            <div class="header__login-btn has-submenu">
-                                <a href="#"><img src="images/svg/avatar.svg" alt="img"></a>
-                                <ul class="header__submenu right">
-                                    <li class="header__submenu-item ">
-                                        <a href="./settings.html" class="header__submenu-link">
-                                            Настройки
-                                        </a>
-                                    </li>
-                                    <li class="header__submenu-item">
-                                        <a href="./paid-services.html" class="header__submenu-link">
-                                            Платные услуги
-                                        </a>
-                                    </li>
-                                    <li class="header__submenu-item">
-                                        <a href="#" class="header__submenu-link">
-                                            Справка
-                                        </a>
-                                    </li>
-                                    <li class="header__submenu-item">
-                                        <a href="./index1.html" class="header__submenu-link">
-                                            Выйти
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="header__login-btn">
+                                <button type="button" class="btn btn-primary custom-btn">Войти</button>
                             </div>
                         </div>
 
@@ -200,8 +177,8 @@
                                             </a>
                                         </div>
                                         <div class="mobile-menu__content-item bottom-line">
-                                            <a href="#" class="mobile-menu__content-link">
-                                                Выйти
+                                            <a href="#" class="mobile-menu__content-link login-btn">
+                                                Войти
                                             </a>
                                         </div>
                                     </div>
@@ -217,392 +194,204 @@
 
     <!--MAIN-->
     <main class="main">
-        <div class="container">
+        <div class="container container-full-mobile">
 
-            <div class="mobile">
-                <div class="mobile-answer-title">
-                    Ответы по рекламе
-                </div>
-                <div class="mobile-answer-btn">
-                    <a href="javascript:void(0);" class="btn btn-primary custom-btn ">Одобрено на рекламу </a>
-                    <a href="./answer-2.html" class="btn btn-outline-secondary red-active">
-                        На рассмотрении
-                    </a>
-                    <a href="./answer-3.html" class="btn btn-outline-secondary red-active">
-                        Отказано в рекламе
-                    </a>
-                </div>
-            </div>
-            <div class="answer page-block">
-                <div class="answer__top">
-                    <div class="answer__title">
-                        Ответы по рекламе
-                    </div>
-                    <div class="answer__top-tabs">
-                        <a href="javascript:void(0);" class="answer__top-tabs-i active">
-                            Одобрено на рекламу
-                        </a>
-                        <a href="./answer-2.html" class="answer__top-tabs-i">
-                            На рассмотрении
-                            <span class="answer__top-tabs-count">7</span>
-                        </a>
-                    </div>
-                    <div class="answer__top-btn">
-                        <a href="./answer-3.html" class="btn btn-outline-secondary">Отказано в рекламе <span class="answer__top-btn-count">3</span></a>
-                    </div>
-                    <div class="answer__top-search">
-                        <input type="text" class="form-control" placeholder="Поиск по блогерам">
-                        <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
-                    </div>
-                </div>
+            <div class="page-block hidden">
 
-                <div class="answer__info">
-                    <div class="answer__info-title">
-                        Как пользоваться этой вкладкой
-                    </div>
-                    <div class="answer__info-content">
-                        <div class="answer__info-item">
-                            1. Отправьте заявки блогерам через вкладку Все блогеры.
-                        </div>
-                        <div class="answer__info-item">
-                            2. Дождитесь одобрения от блогера (это максимум 3 дня) и сгенерируйте промокод.
-                        </div>
-                        <div class="answer__info-item">
-                            3. Отправьте сообщение с промокодом блогеру в основной или pr-аккаунт аккаунт.
-                        </div>
-                        <div class="answer__info-item">
-                            4. Обсудите детали и оплатите рекламу лично блогеру в директе.
-                        </div>
-                        <a href="javascript:void(0);" class="hide-answer-info">
-                            Больше не показывать
-                        </a>
-                    </div>
+                <div class="auth">
+                    <div class="auth__inner d-flex">
+                        <div class="auth__left">
+                            <div class="login__top-popup active">
+                                <div>
+                                    Зарегистрируйтесь или войдите <br> в аккаунт, <b>чтобы заполнить свою карточку и стать блогером на сайте</b>
+                                </div>
+                            </div>
+                            <div class="wrap-popup__inner">
 
-                </div>
+                                <div class="login__tabs-wrap">
 
-                <div class="answer__table-wrap">
-                    <table class="answer__table answer__table-approved">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Блогер
-                                </th>
-                                <th>
-                                    Промокод
-                                </th>
-                                <th>
-                                    Формат, цена и условия рекламы
-                                </th>
-                                <th>
-                                    Оставить отзыв
-                                </th>
-                                <th class="with-info">
-                                    <span class="info right">
-                                        <a href="javascript:void(0)" class="info-icon"></a>
-                                        <div class="info__txt">
-                                            Вы можете напомнить блогеру проверить директ нажав кнопку напомнить.
+                                    <div class="login__tabs">
+                                        <a href="javascript:void(0)" class="login__tab ">
+                                            Вход
+                                        </a>
+                                        <a href="javascript:void(0)" class="login__tab active">
+                                            Регистрация
+                                        </a>
+                                    </div>
+                                    <div class="login__content">
+                                        <div class="login__content-i ">
+                                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+                                                <div class="form-group">
+                                                    <label for="num">Введите номер телефона</label>
+                                                    <input  class="form-control phone" id="num" placeholder="В формате, +7 (999) 999-99-99" required>
+                                                    <div class="invalid-feedback">Введите номер телефона </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="pass-label">
+                                                        <label for="pass">Пароль</label>
+                                                        <a class="forgot-pass" href="javascript:void(0)">Забыли пароль?</a>
+                                                    </div>
+                                                    <input type="password"  class="form-control" id="pass" placeholder="" minlength="6" required>
+                                                    <div class="invalid-feedback">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
+                                                </div>
+                                                <button class="hide">ok</button>
+                                            </form>
+                                            <div class="login__bottom">
+                                                <a href="javascript:void(0);" class="btn btn-primary custom-btn log-in">Войти</a>
+                                            </div>
                                         </div>
-                                    </span>
-                                    Блогер, <br> проверь директ
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="#">alexandramitroshina</a>
-                                    <span class="dark-grey">Для kreida</span>
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold promocode-btn">
-                                        Получить промокод
+                                        <div class="login__content-i active">
+                                            <div class="reg-tap active">
+                                                <form class="needs-validation" novalidate action="javascript:void(0)">
+                                                    <div class="form-group">
+                                                        <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
+                                                        <input  class="form-control phone" id="num2" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
+                                                        <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="pass-label">
+                                                            <label for="pass2">Пароль</label>
+                                                        </div>
+                                                        <input type="password"  class="form-control" id="pass2" minlength="6" required>
+                                                        <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="pass-label">
+                                                            <label for="pass3">Подтвердите пароль</label>
+                                                        </div>
+                                                        <input type="password"  class="form-control" id="pass3" minlength="6" required>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="reg" checked="" required>
+                                                        <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                                                    </div>
+                                                    <div class="error-form">
+                                                        Заполните поля отмеченные красным
+                                                    </div>
+                                                    <div class="error-form pass">
+                                                        Пароли не совпадают
+                                                    </div>
+                                                    <div class="num-err">
+                                                        Этот номер уже используется. Введите другой.
+                                                    </div>
+                                                    <button class="hide">ok</button>
+                                                </form>
+
+                                                <div class="login__bottom register">
+                                                    <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="reg-tap">
+                                                <form action="javascript:void(0)" class="needs-validation" novalidate>
+                                                    <div class="sms-top">
+                                                        Код из SMS
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="pass-label">
+                                                            <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
+                                                        </div>
+                                                        <input type="text"  class="form-control" id="code" placeholder="Код">
+                                                        <a href="#" class="code-link">
+                                                            Отправить код повторно
+                                                        </a>
+                                                        <div class="code-link__caption">
+                                                            <div>Попытка №1 <br> Запросить код повторно можно через 59 секунд</div>
+                                                            <a href="#">
+                                        <span class="info left bottom">
+                                            Не приходит SMS
+                                                <div class="info__txt">
+                                                    Возможные причины: <br><br>
+1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.<br><br>
+2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.
+                                                </div>
+                                            </span>
                                     </a>
-                                </td>
-                                <td>
-                                    Сторис 90 сек., 300 ₽, 2-3 разговорных сторис о блоге.
-                                </td>
-                                <td>
+                                                        </div>
+                                                    </div>
+                                                    <button class="hide">ok</button>
+                                                </form>
 
-                                </td>
-                                <td>
-                                    <div class="grey-txt">Напомнить</div>
-                                    <div class="dark-grey">Осталось 23 часа</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">liz_fit</a>
-                                </td>
-                                <td>
-                                    <a href="#">Промокод</a>
-                                    <span class="dark-grey">До 27.06.19</span>
-                                </td>
-                                <td>
-                                    Видео-пост, 2 000 ₽, Видеорекомендация + ваши макеты
-                                </td>
-                                <td>
-                                    <a href="#" class="add-answer-icon"></a>
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="popup-mail">Напомнить</a>
-                                    <div class="dark-grey">Осталось 3 раза</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">kkkkkkkkkkkkkkkkkkkkk</a>
-                                </td>
-                                <td>
-                                    <a href="#">Промокод</a>
-                                    <span class="dark-grey">До 27.06.19</span>
-                                </td>
-                                <td>
-                                    Видео-пост, 2 000 ₽, Видеорекомендация + ваши макеты
-                                </td>
-                                <td>
-                                    <a href="#" class="add-answer-icon"></a>
-                                </td>
-                                <td>
-                                    <div class="dark-grey">Все попытки потрачены</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">hanna.rachina</a>
-                                </td>
-                                <td>
-                                    <a href="#">10.08.19</a>
-                                    <span class="red">Вы не взяли промокод</span>
-                                </td>
-                                <td>
-                                    Сторис 45 сек., 4 500 ₽, 2-3 разговорных сторис о блоге.
-                                </td>
-                                <td>
-                                    <a href="#" class="icon-check-basket icon-check-basket--active"></a>
-                                </td>
-                                <td>
-                                    <div class="dark-grey">Все попытки потрачены</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#">kkkkkkkkkkkkkkkkkkkkk</a>
-                                </td>
-                                <td>
-                                    <a href="#">Промокод</a>
-                                    <span class="dark-grey">До 27.06.19</span>
-                                </td>
-                                <td>
-                                    Фото-пост, 4 000 ₽, Пост без удаления из аккаунта. Цена + товар + промокод на скидку для моих подписчиков.
-                                </td>
-                                <td>
-                                    <a href="#" class="add-answer-icon add-answer-icon-active"></a>
-                                </td>
-                                <td>
-                                    <div class="dark-grey">Все попытки потрачены</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                                <div class="login__bottom register">
+                                                    <a href="javascript:void(0);" class="btn btn-outline-secondary reg-prev">Назад</a>
+                                                    <a href="javascript:void(0);" class="btn btn-primary reg-next reg-last custom-btn">Далее</a>
+                                                </div>
+                                            </div>
 
-                    <div class="answer-mobile-table">
+                                        </div>
 
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                alexandramitroshina
-                            </div>
-                            <div class="answer-mobile__subtitle">
-                                <span class="dark-grey">Для kreida</span>
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис 90 сек.<br>
-                                    300 ₽<br>
-                                    Личные блоги
-                                </p>
-                                2-3 разговорных сторис о блоге.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <div class="answer-mobile__promo">
-                                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold promocode-btn">
-                                        Получить промокод
-                                    </a>
-                                </div>
-                                <div class="answer-mobile__mail ml-10">
-                                    <span class="dark-grey"> и написать блогеру</span>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                kreida
-
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Фото-пост <br>
-                                    1 200 ₽ <br>
-                                    Коммерция
-                                </p>
-                                Пост без удаления из аккаунта. Цена + товар + промокод на скидку для моих подписчиков.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <div class="answer-mobile__promo">
-                                    <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold promocode-btn">
-                                        Получить промокод
-                                    </a>
-                                </div>
-                                <div class="answer-mobile__mail ml-10">
-                                    <span class="dark-grey"> и написать блогеру</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                liz_fit
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Видео-пост <br>
-                                    2 000 ₽ <br>
-                                    Личные блоги
-                                </p>
-                                Видеорекомендация + ваши макеты
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <div class="answer-mobile__promo">
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary btn-bells popup-mail-mobile">
-                                        <i class="icon-bells"></i>
-                                        <span class="answer-mobile__bells-count">
-                                            3
-                                        </span>
-                                    </a>
-                                    <a href="#" class="answer-mobile__promo-link">
-                                        Промокод <br>
-                                        <span class="dark-grey">До 27.06.19</span>
-                                    </a>
-                                </div>
-                                <div class="answer-mobile__mail ml-10">
-                                    <a href="#" class="add-answer-icon-active">Оставить отзыв <br>
-                                        на блогера</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                kkkkkkkkkkkkkkkkkkkkkkk___kkkk
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис, 45-60 сек. <br>
-                                    4 000 ₽ <br>
-                                    Коммерция
-                                </p>
-                                Пост без удаления из аккаунта. Цена + товар + промокод на скидку для моих подписчиков.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <div class="answer-mobile__promo">
-
-                                    <a href="#" class="answer-mobile__promo-link">
-                                        Промокод <br>
-                                        <span class="dark-grey">До 27.06.19</span>
-                                    </a>
-                                </div>
-                                <div class="answer-mobile__mail ml-10">
-                                    <a href="#" class="add-answer-icon-active">Оставить отзыв <br>
-                                        на блогера</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                hanna.rachina
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис 60 сек. <br>
-                                    2 000 ₽ <br>
-                                    Личные блоги
-                                </p>
-                                2-3 разговорных сторис о блоге.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <div class="answer-mobile__promo">
-
-                                    <div class="answer-mobile__promo-link">
-                                        08.08.19
-                                         <br>
-                                        <span class="dark-grey">Промокод истёк</span>
                                     </div>
-                                </div>
-                                <div class="answer-mobile__mail ml-10">
-                                    <div class="answer-mobile__promo-link">
-                                        13.08.19
-                                        <br>
-                                        <span class="green-txt">Отзыв оставлен</span>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
-
-                        <div class="answer-mobile-table-i">
-                            <div class="answer-mobile__title">
-                                hanna.rachina
-                            </div>
-                            <div class="answer-mobile__txt">
-                                <p>
-                                    Сторис 60 сек. <br>
-                                    2 000 ₽ <br>
-                                    Личные блоги
-                                </p>
-                                2-3 разговорных сторис о блоге.
-                            </div>
-                            <div class="answer-mobile__bottom">
-                                <div class="answer-mobile__promo">
-
-                                    <div class="answer-mobile__promo-link">
-                                        08.08.19
-                                         <br>
-                                        <span class="red">Вы не взяли промокод</span>
-                                    </div>
+                        <div class="auth__right">
+                            <div class="auth__right-block">
+                                <div class="auth__right-title">
+                                    Карточка на сайте от 29 ₽/день
+                                </div>
+                                <ul class="auth__right-list">
+                                    <li class="auth__right-i">
+                                        Приоритетное размещение в выдаче
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Больше доверия от потенциальных клиентов
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Премиум анкеты проверяются модераторами
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Можно загрузить статистику и рекламные тезисы
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Больше доверия от потенциальных партнеров
+                                    </li>
+                                </ul>
+                                <div class="auth__right-caption">
+                                    Сайт попросит верифицировать аккаунт, заполнить форматы рекламы, статистику аккаунта и оплатить доступ.
                                 </div>
                             </div>
-                        </div>
 
+                            <div class="auth__right-block">
+                                <div class="auth__right-title">
+                                    Требования к аккаунтам
+                                </div>
+                                <ul class="auth__right-list">
+                                    <li class="auth__right-i">
+                                        Больше 5 000 подписчиков
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Это не паблик
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Более 30 постов
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Владельцу аккаунта больше 16 лет
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Последний пост написан не далее 1-го месяца назад
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Контент не нарушает правила Инстаграма и законодательство РФ
+                                    </li>
+                                    <li class="auth__right-i">
+                                        Рекомендованные на сайте цены за рекламу от 200 ₽
+                                    </li>
+                                    <li class="auth__right-i">
+                                        ER больше 1%
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="show-more">
-                        <a href="#" class="show-more__btn">
-                            Показать ещё
-                        </a>
-                    </div>
-                    <nav aria-label="...">
-                        <ul class="pagination custom-pagination">
-                            <li class="page-item disabled pagination__prev">
-                                <a class="page-link" href="#" tabindex="-1">Назад</a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item ">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">...</a></li>
-                            <li class="page-item"><a class="page-link" href="#">11</a></li>
-                            <li class="page-item pagination__next">
-                                <a class="page-link" href="#">Вперёд</a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
 
-
             </div>
+
+
         </div>
     </main>
     <!--END MAIN-->
@@ -664,6 +453,7 @@
                             <div class="form-group">
                                 <label for="num">Введите номер телефона</label>
                                 <input  class="form-control phone" id="num" placeholder="В формате, +7 (999) 999-99-99" required>
+                                <div class="invalid-feedback">Введите номер телефона </div>
                             </div>
                             <div class="form-group">
                                 <div class="pass-label">
@@ -671,6 +461,7 @@
                                     <a class="forgot-pass" href="javascript:void(0)">Забыли пароль?</a>
                                 </div>
                                 <input type="password"  class="form-control" id="pass" placeholder="" minlength="6" required>
+                                <div class="invalid-feedback">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
                             </div>
                             <button class="hide">ok</button>
                         </form>
@@ -708,6 +499,9 @@
                                 </div>
                                 <div class="error-form pass">
                                     Пароли не совпадают
+                                </div>
+                                <div class="num-err">
+                                    Этот номер уже используется. Введите другой.
                                 </div>
                                 <button class="hide">ok</button>
                             </form>
@@ -858,6 +652,9 @@
                             </div>
                             <div class="error-form pass">
                                 Пароли не совпадают
+                            </div>
+                            <div class="error-form num-err">
+                                Этот номер уже используется. Введите другой.
                             </div>
                             <button class="hide">ok</button>
                         </form>
@@ -1247,7 +1044,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="revlink3">Дата выхода рекламы</label>
-                                            <input type="text" id="revlink3" class="form-control datepicker" readonly required>
+                                            <input type="text" id="revlink3" class="form-control datepicker"  required>
                                         </div>
                                         <div class="form-group-flex form-group">
                                             <div class="form-group-left">
@@ -1294,7 +1091,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="revlink13">Дата выхода рекламы</label>
-                                            <input type="text" id="revlink13" class="form-control datepicker" readonly required>
+                                            <input type="text" id="revlink13" class="form-control datepicker"  required>
                                         </div>
                                         <div class="form-group-flex form-group custom-radio-3">
                                             <div class="form-group-flex-title">
@@ -1317,11 +1114,11 @@
                                             </div>
                                             <div class="form-group-right">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input " id="revprice12"  >
-                                                    <label class="custom-control-label" for="revprice12">Бартер</label>
+                                                    <input type="checkbox" class="custom-control-input to-enabled-next" id="revprice12"  >
+                                                    <label class="custom-control-label" for="revprice12">ВП</label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="revprice13"  >
+                                                    <input type="checkbox" class="custom-control-input" id="revprice13" disabled >
                                                     <label class="custom-control-label" for="revprice13">С доплатой</label>
                                                     <span class="info">
                                                         <a href="javascript:void(0)" class="info-icon"></a>
@@ -1344,7 +1141,7 @@
                                 </div>
                             </div>
                             <div class="send-review__bottom">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary send-review-exit">Отмена</a>
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary">Отмена</a>
                                 <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold check-send-review">
                                     Далее
                                 </a>
@@ -1386,7 +1183,7 @@
                                 </div>
                                 <div class="form-group w-100">
                                     <label for="theme-pp">Тема аккаунта заказчика</label>
-                                    <select id="theme-pp" class="selectpicker white-select w-100" required multiple
+                                    <select id="theme-pp" class="selectpicker white-select mobile-select-popup w-100" required multiple
                                             title="Выберите из списка">
                                         <option>Бизнес</option>
                                         <option>Бьюти</option>
@@ -1448,7 +1245,7 @@
                             </div>
                         </div>
                         <div class="send-review__bottom">
-                            <a href="javascript:void(0);" class="btn btn-outline-secondary send-review-back">Назад</a>
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Назад</a>
                             <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold send-send-review">
                                 Отправить отзыв
                             </a>
@@ -1507,62 +1304,6 @@
                     <a href="javascript:void(0);" class="btn btn-outline-secondary medium-popup-no">Нет, не отправлял(-а)</a>
                     <a href="javascript:void(0);" class="btn btn-primary custom-btn medium-popup-yes">
                         Да, отправлял(-а)
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="medium-popup email-send-popup-mobile wrap-popup">
-        <div class="wrap-popup__inner medium-popup__inner">
-            <div class="medium-popup__top">
-                <div class="medium-popup__title">
-                    Проверьте себя
-                </div>
-                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
-            </div>
-
-            <div class="medium-popup__body email-send-wrap">
-                <div class="email-send-txt first">
-                    Прежде, чем мы отправим напоминание блогеру <a href="#">svetlana.borisova</a>, убедитесь, что вы:
-                    <br><br>
-                    <p>
-                        <b>Ранее отправили этому блогеру в директ</b> сообщение с промокодом.
-
-                    </p>
-                </div>
-
-                <div class="email-send-txt second">
-                    <p>
-                        Вы отправили сообщение в директ блогеру с аккаунта <a href="#">gontsovaantonina?</a>
-                    </p>
-                </div>
-
-                <div class="email-send-txt third">
-                    <p>
-                        Если вы отправили сообщение с другого аккаунта, то укажите его в поле ниже:
-                    </p>
-                    <div class="form-group">
-                        <input type="text" class="form-control"  placeholder="Введите ник">
-                    </div>
-                </div>
-
-                <div class="email-send__bottom first">
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary medium-popup-no">Не отправлял(-а)</a>
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary email-send__second">
-                        Да, отправлял(-а)
-                    </a>
-                </div>
-                <div class="email-send__bottom second">
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary email-send__third">Нет, с другого</a>
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary medium-popup-yes">
-                        Да, с этого
-                    </a>
-                </div>
-                <div class="email-send__bottom third">
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary medium-popup-yes">
-                        Отправить
                     </a>
                 </div>
             </div>

@@ -175,6 +175,10 @@
                     </a>
                 </div>
 
+                <div class="title__center align-items-center link-reg-prototype">
+                    <a href="javascript:void(0);">Регистрация при переходе из других сервисов</a>
+                </div>
+
                 <div class="title__right">
                     <div class="title__right-btn">
                         <a href="javascript:void(0);" class="btn btn-outline-secondary filter-btn">Фильтры</a>
@@ -1541,6 +1545,214 @@
         </div>
     </div>
 
+
+    <div class="check-register base-popup wrap-popup ">
+
+        <div class="wrap-popup__inner">
+            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            <div class="login__tabs-wrap">
+
+                <div class="login__tabs">
+                    <div style="display: none">
+                        <a href="javascript:void(0)" class="login__tab ">
+                            Вход
+                        </a>
+                        <a href="javascript:void(0)" class="login__tab active">
+                            Регистрация
+                        </a>
+                    </div>
+
+                </div>
+                <div class="login__content">
+                    <div class="login__content-i ">
+                        <form action="javascript:void(0)" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="num">Введите номер телефона</label>
+                                <input  class="form-control phone" id="num" placeholder="В формате, +7 (999) 999-99-99" required>
+                                <div class="invalid-feedback">Введите номер телефона </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pass-label">
+                                    <label for="pass">Пароль</label>
+                                    <a class="forgot-pass" href="javascript:void(0)">Забыли пароль?</a>
+                                </div>
+                                <input type="password"  class="form-control" id="pass" placeholder="" minlength="6" required>
+                                <div class="invalid-feedback">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
+                            </div>
+                            <button class="hide">ok</button>
+                        </form>
+                        <div class="login__bottom">
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn log-in">Войти</a>
+                        </div>
+                    </div>
+                    <div class="login__content-i active">
+                        <div class="reg-tap active">
+                            <div class="reg-type-register">
+                                <div class="reg-type-register__title">
+                                    Вы регистрируетесь как блогер или рекламодатель?
+                                </div>
+                                <div class="reg-type-register__btn">
+                                    <div>
+                                        <a href="./card-tabs.html" class="btn btn-outline-secondary">Блогер и рекламодатель</a>
+                                        <div class="dark-grey mt-2 fs-14">Карточка на сайте от 29 ₽/день</div>
+                                        <div class="reg-type-register__btn-more">
+                                            <a href="javascript:void(0);">
+                                                <span>Открыть полное описание</span>
+                                                <span style="display: none">Скрыть полное описание</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="auth__right" style="display: none;">
+                                            <div class="auth__right-block">
+                                                <ul class="auth__right-list">
+                                                    <li class="auth__right-i">
+                                                        Приоритетное размещение в выдаче
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Больше доверия от потенциальных клиентов
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Премиум анкеты проверяются модераторами
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Можно загрузить статистику и рекламные тезисы
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Больше доверия от потенциальных партнеров
+                                                    </li>
+                                                </ul>
+                                                <div class="auth__right-caption">
+                                                    Сайт попросит верифицировать аккаунт, заполнить форматы рекламы, статистику аккаунта и оплатить доступ.
+                                                </div>
+                                            </div>
+
+                                            <div class="auth__right-block">
+                                                <div class="auth__right-title">
+                                                    Требования к аккаунтам
+                                                </div>
+                                                <ul class="auth__right-list">
+                                                    <li class="auth__right-i">
+                                                        Больше 5 000 подписчиков
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Это не паблик
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Более 30 постов
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Владельцу аккаунта больше 16 лет
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Последний пост написан не далее 1-го месяца назад
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Контент не нарушает правила Инстаграма и законодательство РФ
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        Рекомендованные на сайте цены за рекламу от 200 ₽
+                                                    </li>
+                                                    <li class="auth__right-i">
+                                                        ER больше 1%
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0);" class="btn btn-outline-secondary reg-next">Рекламодатель</a>
+                                        <div class="dark-grey mt-2 fs-14">Полностью бесплатно</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reg-tap ">
+                            <form class="needs-validation" novalidate action="javascript:void(0)">
+                                <div class="form-group">
+                                    <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
+                                    <input  class="form-control phone" id="num2" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
+                                    <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="pass2">Пароль</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="pass2" minlength="6" required>
+                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="pass3">Подтвердите пароль</label>
+                                    </div>
+                                    <input type="password"  class="form-control" id="pass3" minlength="6" required>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="reg" checked="" required>
+                                    <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
+                                </div>
+                                <div class="error-form">
+                                    Заполните поля отмеченные красным
+                                </div>
+                                <div class="error-form pass">
+                                    Пароли не совпадают
+                                </div>
+                                <div class="num-err">
+                                    Этот номер уже используется. Введите другой.
+                                </div>
+                                <button class="hide">ok</button>
+                            </form>
+
+                            <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
+                            </div>
+                        </div>
+
+                        <div class="reg-tap">
+                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+                                <div class="sms-top">
+                                    Код из SMS
+                                </div>
+                                <div class="form-group">
+                                    <div class="pass-label">
+                                        <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
+                                    </div>
+                                    <input type="text"  class="form-control" id="code" placeholder="Код">
+                                    <a href="#" class="code-link">
+                                        Отправить код повторно
+                                    </a>
+                                    <div class="code-link__caption">
+                                        <div>Попытка №1 <br> Запросить код повторно можно через 59 секунд</div>
+                                        <a href="#">
+                                        <span class="info left bottom">
+                                            Не приходит SMS
+                                                <div class="info__txt">
+                                                    Возможные причины: <br><br>
+1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.<br><br>
+2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.
+                                                </div>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <button class="hide">ok</button>
+                            </form>
+
+                            <div class="login__bottom register">
+                                <a href="javascript:void(0);" class="btn btn-outline-secondary reg-prev">Назад</a>
+                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-last custom-btn">Далее</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
 
     <div class="base-popup recovery-popup wrap-popup">
