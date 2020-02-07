@@ -563,6 +563,13 @@ $(document).ready(function () {
     });
 
 
+    $('.add-mail-btn').click(function () {
+        $(this).closest('.wrap-popup').find('.close-btn').click();
+        $('.add-mail-popup').addClass('open');
+        checkWidth();
+    });
+
+
 
 
     $('.reg-prev').click(function () {
@@ -582,7 +589,7 @@ $(document).ready(function () {
     $('.reg-last').click(function () {
          // if($('#code').val() == 1111){
              // $('.login__tab').first().click();
-             closePopup($(this));
+             $(this).closest('.wrap-popup').find('.close-btn').click();
         $('.accept-mail-popup').addClass('open');
 
         checkWidth();
@@ -827,6 +834,13 @@ $(document).ready(function () {
         if(window.innerWidth < 500){
             openHeaderCloseBtn();
         }
+        checkWidth();
+    });
+
+    $('.accept-mail-settings-link--popup').click(function (e) {
+        e.preventDefault();
+        $(this).closest('.wrap-popup').find('.close-btn').click();
+        $('.accept-mail-popup').addClass('open');
         checkWidth();
     });
 
@@ -1377,6 +1391,8 @@ $(document).ready(function () {
          if($('.accept-mail-wrap .red.hide').length == 0){
              $(this).closest('.wrap-popup').find('.close-btn').click();
              $('.request-to-blogger-success-popup').addClass('open');
+
+             closePopup($(this));
          }
         $('.accept-mail-wrap .red').removeClass('hide');
     });
@@ -1384,11 +1400,14 @@ $(document).ready(function () {
     $('.accept-mail-no-mail').click(function () {
         $(this).closest('.wrap-popup').find('.close-btn').click();
         $('.accept-mail-popup-2').addClass('open');
+        checkWidth();
     });
 
     $('.accept-mail-send').click(function () {
         $(this).closest('.wrap-popup').find('.close-btn').click();
         $('.request-to-blogger-success-popup').addClass('open');
+
+        closePopup($(this));
     });
 
     $('.no-ogp').click(function () {
