@@ -1865,6 +1865,10 @@ table tbody tr:nth-child(odd){
     line-height: 24px;
 }
 
+.auth__left .login__top-popup--yellow.active {
+    background: #FEF5D2;
+}
+
 .auth__left .login__top-popup.active{
     position: static;
     transform: translate(0, 0);
@@ -5556,6 +5560,7 @@ table tbody tr:nth-child(odd){
 .wrap-popup__inner.no-tabs .login__tabs-wrap{
     padding-top: 30px;
 }
+
 
 .big-popup__inner,
 .video-popup__inner{
@@ -12395,6 +12400,10 @@ textarea {
     .card__tabs-content-i--step-3 .form-group .white-select {
         max-width: 250px!important;
     }
+}
+
+.auth__left .login__tabs.login__tabs--empty {
+    border-bottom: 0;
 }
 
 
