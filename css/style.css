@@ -11038,7 +11038,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .wrap-popup__inner .footer.active-popup{
-        margin-top: auto;
+        margin-top: auto !important;
     }
 
     .big-popup__body > *:last-child{

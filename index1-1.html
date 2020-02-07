@@ -1660,87 +1660,10 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary reg-next">Рекламодатель</a>
+                                        <a href="javascript:void(0);" class="btn btn-outline-secondary add-mail-btn">Рекламодатель</a>
                                         <div class="dark-grey mt-2 fs-14">Полностью бесплатно</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="reg-tap ">
-                            <form class="needs-validation" novalidate action="javascript:void(0)">
-                                <div class="form-group">
-                                    <label for="num2">Введите ваш номер телефона. Мы отправим на него код</label>
-                                    <input  class="form-control phone" id="num2" type="tel" value="" minlength="24" invalid placeholder="В формате, +7 (999) 999-99-99" required>
-                                    <div class="login__content-capt"> Номер телефона не может содержать пробелов и букв</div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="pass-label">
-                                        <label for="pass2">Пароль</label>
-                                    </div>
-                                    <input type="password"  class="form-control" id="pass2" minlength="6" required>
-                                    <div class="login__content-capt">От 6 символов. Минимум по 1 букве верхнего и нижнего регистра</div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="pass-label">
-                                        <label for="pass3">Подтвердите пароль</label>
-                                    </div>
-                                    <input type="password"  class="form-control" id="pass3" minlength="6" required>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="reg" checked="" required>
-                                    <label class="custom-control-label" for="reg">Я соглашаюсь с <a href="#">Политикой конфиденциальности и Правилами пользования сайтом</a></label>
-                                </div>
-                                <div class="error-form">
-                                    Заполните поля отмеченные красным
-                                </div>
-                                <div class="error-form pass">
-                                    Пароли не совпадают
-                                </div>
-                                <div class="num-err">
-                                    Этот номер уже используется. Введите другой.
-                                </div>
-                                <button class="hide">ok</button>
-                            </form>
-
-                            <div class="login__bottom register">
-                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-check custom-btn">Далее</a>
-                            </div>
-                        </div>
-
-                        <div class="reg-tap">
-                            <form action="javascript:void(0)" class="needs-validation" novalidate>
-                                <div class="sms-top">
-                                    Код из SMS
-                                </div>
-                                <div class="form-group">
-                                    <div class="pass-label">
-                                        <label for="code">Мы отправили вам код подтверждения на номер +7 (999) xxx-xx-99</label>
-                                    </div>
-                                    <input type="text"  class="form-control" id="code" placeholder="Код">
-                                    <a href="#" class="code-link">
-                                        Отправить код повторно
-                                    </a>
-                                    <div class="code-link__caption">
-                                        <div>Попытка №1 <br> Запросить код повторно можно через 59 секунд</div>
-                                        <a href="#">
-                                        <span class="info left bottom">
-                                            Не приходит SMS
-                                                <div class="info__txt">
-                                                    Возможные причины: <br><br>
-1. Вы не изменили номер мобильного телефона на сайте на новый и SMS было отправлено на старый номер.<br><br>
-2. Проблемы могут быть со стороны сотового оператора. Обратитесь в их службу поддержки.
-                                                </div>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <button class="hide">ok</button>
-                            </form>
-
-                            <div class="login__bottom register">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary reg-prev">Назад</a>
-                                <a href="javascript:void(0);" class="btn btn-primary reg-next reg-last custom-btn">Далее</a>
                             </div>
                         </div>
 
@@ -3251,6 +3174,31 @@
 
                 <div class="accept-mail-btn">
                     <a href="javascript:void(0);" class="btn btn-outline-secondary accept-mail-send">Отправить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="medium-popup add-mail-popup wrap-popup">
+        <div class="wrap-popup__inner medium-popup__inner">
+            <div class="medium-popup__top">
+                <div class="big-popup__title">
+                    Введите почту
+                </div>
+                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
+            </div>
+
+            <div class="medium-popup__body email-send-wrap accept-mail-wrap">
+                <div class="accept-mail-txt">
+                    Введите реальный e-mail, на него будут приходить ответы по рекламе.
+                </div>
+                <div class="form-group">
+                    <label for="accept-mail" >Ваш e-mail</label>
+                    <input type="text" class="form-control" id="accept-mail" placeholder="">
+                </div>
+
+                <div class="accept-mail-btn">
+                    <a href="javascript:void(0);" class="btn btn-outline-secondary accept-mail-settings-link--popup">Далее</a>
                 </div>
             </div>
         </div>
