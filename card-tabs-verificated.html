@@ -216,694 +216,790 @@
     <!--END HEADER-->
 
     <!--MAIN-->
-    <main class="main">
-        <div class="container">
-            <div class="title mobile-title">
-                <div class="title__left d-flex align-items-center">
-                    <h1 class="title__txt">
-                        Заявки на рекламу
-                    </h1>
-                </div>
-                <div class="title__center">
-                    <div class="title__center-btns">
-                        <a href="./request.html" class="btn btn-outline-secondary">Свежие <span class="request__top-btn-count">3</span></a>
-                        <a href="javascript:void(0);" class="btn btn-primary custom-btn">Одобренные </a>
-                        <a href="./request3.html" class="btn btn-outline-secondary">Отказы <span class="request__top-btn-count">3</span></a>
+    <main class="main card-page">
+        <div class="container container-full-mobile">
+
+
+            <div class="page-block">
+
+                <div class="card">
+                    <div class="card__inner">
+                        <div class="card__tabs">
+                            <div class="card__tabs-top">
+                                <a href="javascript:void(0)" class="card__tabs-i active">
+                                    Шаг 1. Форматы рекламы
+                                </a>
+                                <a href="javascript:void(0)" class="card__tabs-i">
+                                    Шаг 2. Статистика аккаунта
+                                </a>
+                                <a href="javascript:void(0)" class="card__tabs-i">
+                                    Шаг 3. Верификация аккаунта
+                                </a>
+                                <a href="javascript:void(0)" class="card__tabs-i">
+                                    Шаг 4. Оплата доступа
+                                </a>
+
+                                <div class="card__tabs-btn">
+                                    <button type="button" class="btn btn-secondary card-next-step">Далее</button>
+                                </div>
+                            </div>
+
+                            <div class="card__tabs-content">
+                                <div class="card__tabs-content-i active">
+                                    <div class="card__title">
+                                        Заполните форматы рекламы
+                                        <a href="javascript:void(0);" class="btn btn-primary custom-btn custom-btn-gold form-advertising-check">
+                                            Далее
+                                        </a>
+                                    </div>
+                                    <div class="card__form-advertising-wrap">
+                                        <div class="card__form-advertising">
+                                            <form action="javascript:void(0)" class="form-advertising needs-validation" novalidate>
+
+
+                                                <div class="form-advertising__inner">
+                                                    <div class="card__form-advertising-block">
+                                                        <label>Формат</label>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising1" required="">
+                                                                <label class="custom-control-label" for="advertising1">Сторис</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising2" required="">
+                                                                <label class="custom-control-label" for="advertising2">Фото-пост</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising3" required="">
+                                                                <label class="custom-control-label" for="advertising3">Видео-пост</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising4" required="">
+                                                                <label class="custom-control-label" for="advertising4">Сторис + пост</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="card__form-advertising-block">
+                                                        <label>Кто может заказать</label>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising2"  class="custom-control-input" id="advertising5" required="">
+                                                                <label class="custom-control-label" for="advertising5">Личные блоги</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising2"  class="custom-control-input" id="advertising6" required="">
+                                                                <label class="custom-control-label" for="advertising6">Коммерция</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising2"  class="custom-control-input" id="advertising7" required="">
+                                                                <label class="custom-control-label" for="advertising7">Любой</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block">
+                                                        <div class="form-group story-time">
+                                                            <label for="story-time">Продолжительность сторис</label>
+                                                            <select id="story-time" class="selectpicker white-select" required
+                                                                    title="Секунд">
+                                                                <option>1</option>
+                                                                <option>10</option>
+                                                                <option>20</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="card__price">
+                                                            <div class="card__form-advertising-i">
+                                                                <div class="form-group">
+                                                                    <label for="advertising8">Цена от в ₽</label>
+                                                                    <input type="text" class="form-control" id="advertising8" placeholder="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card__form-advertising-i">
+                                                                <div class="form-group">
+                                                                    <label for="advertising9">Скидка на сайте</label>
+                                                                    <select id="advertising9" class="selectpicker white-select"  required
+                                                                            title="Процентов">
+                                                                        <option>10%</option>
+                                                                        <option>15%</option>
+                                                                        <option>20%</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block">
+                                                        <div class="card__form-advertising-textarea">
+                                                            <label for="advertising10">Условия</label>
+                                                            <div class="textarea-count" data-count="0">
+                                                                <textarea  class="form-control " name="report" id="advertising10" placeholder="Например: Подводка + рекламная сторис + макеты" required></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block card__form-advertising-block--month">
+
+                                                        <div class="itog-price">
+                                                            Итоговая цена:  <b>₽</b>
+                                                            <span class="itog-price-price">
+
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="country">Набор рекламы на
+                                                                <span class="info right">
+                                                                    <a href="javascript:void(0)" class="info-icon"></a>
+                                                                    <div class="info__txt">
+                                                                        Месяц будет автоматически менятся на следующий.
+                                                                        <br><br>
+                                                                        Напромер: в конце ноября месяц в наборе на рекламу автоматически изменится на декабрь.
+                                                                    </div>
+                                                                </span>
+                                                            </label>
+                                                            <div class="d-flex w-100 align-items-center">
+                                                                <select id="country" class="selectpicker white-select" required
+                                                                        title="Месяц">
+                                                                    <option>Mustard</option>
+                                                                    <option>Ketchup</option>
+                                                                    <option>Barbecue</option>
+                                                                </select>
+
+                                                                <a href="#" class="form-advertising-month">Сентябрь</a>
+                                                                <a href="#" class="form-advertising-month">Октябрь</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block">
+                                                        <a href="javascript:void(0);" class="clear-adv-format">Удалить этот формат</a>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <button class="hide">ok</button>
+
+                                                <div class="mobile-main-popup__select-head mobile-select-head-all">
+                                                    <div class="mobile-main-popup__select-title">
+
+                                                    </div>
+                                                    <div class="mobile-main-popup__select-btn">
+                                                        <!--<button type="button" class="select-btn-save btn btn-primary custom-btn custom-btn-gold">Сохранить</button>-->
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="card__form-advertising-wrap hide-adv" style="display: none;">
+                                        <div class="card__form-advertising">
+                                            <form action="javascript:void(0)" class="form-advertising needs-validation" novalidate>
+
+
+                                                <div class="form-advertising__inner">
+                                                    <div class="card__form-advertising-block">
+                                                        <label>Формат</label>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising1" required="">
+                                                                <label class="custom-control-label" for="advertising1">Сторис</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising2" required="">
+                                                                <label class="custom-control-label" for="advertising2">Фото-пост</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising3" required="">
+                                                                <label class="custom-control-label" for="advertising3">Видео-пост</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising1"  class="custom-control-input" id="advertising4" required="">
+                                                                <label class="custom-control-label" for="advertising4">Сторис + пост</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="card__form-advertising-block">
+                                                        <label>Кто может заказать</label>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising2"  class="custom-control-input" id="advertising5" required="">
+                                                                <label class="custom-control-label" for="advertising5">Личные блоги</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising2"  class="custom-control-input" id="advertising6" required="">
+                                                                <label class="custom-control-label" for="advertising6">Коммерция</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__form-advertising-i">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" name="advertising2"  class="custom-control-input" id="advertising7" required="">
+                                                                <label class="custom-control-label" for="advertising7">Любой</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block">
+                                                        <div class="form-group story-time">
+                                                            <label for="story-time">Продолжительность сторис</label>
+                                                            <select id="story-time" class="selectpicker white-select" required
+                                                                    title="Секунд">
+                                                                <option>1</option>
+                                                                <option>10</option>
+                                                                <option>20</option>
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="card__price">
+                                                            <div class="card__form-advertising-i">
+                                                                <div class="form-group">
+                                                                    <label for="advertising8">Цена от в ₽</label>
+                                                                    <input type="text" class="form-control" id="advertising8" placeholder="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card__form-advertising-i">
+                                                                <div class="form-group">
+                                                                    <label for="advertising9">Скидка на сайте</label>
+                                                                    <select id="advertising9" class="selectpicker white-select"  required
+                                                                            title="Процентов">
+                                                                        <option>10%</option>
+                                                                        <option>15%</option>
+                                                                        <option>20%</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block">
+                                                        <div class="card__form-advertising-textarea">
+                                                            <label for="advertising10">Условия</label>
+                                                            <div class="textarea-count" data-count="0">
+                                                                <textarea  class="form-control " name="report" id="advertising10" placeholder="Например: Подводка + рекламная сторис + макеты" required></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block card__form-advertising-block--month">
+
+                                                        <div class="itog-price">
+                                                            Итоговая цена:  <b>₽</b>
+                                                            <span class="itog-price-price">
+
+                                                            </span>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="country">Набор рекламы на
+                                                                <span class="info right">
+                                                                    <a href="javascript:void(0)" class="info-icon"></a>
+                                                                    <div class="info__txt">
+                                                                        Месяц будет автоматически менятся на следующий.
+                                                                        <br><br>
+                                                                        Напромер: в конце ноября месяц в наборе на рекламу автоматически изменится на декабрь.
+                                                                    </div>
+                                                                </span>
+                                                            </label>
+                                                            <div class="d-flex w-100 align-items-center">
+                                                                <select id="country" class="selectpicker white-select" required
+                                                                        title="Месяц">
+                                                                    <option>Mustard</option>
+                                                                    <option>Ketchup</option>
+                                                                    <option>Barbecue</option>
+                                                                </select>
+
+                                                                <a href="#" class="form-advertising-month">Сентябрь</a>
+                                                                <a href="#" class="form-advertising-month">Октябрь</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="card__form-advertising-block">
+                                                        <a href="javascript:void(0);" class="clear-adv-format">Удалить этот формат</a>
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                <button class="hide">ok</button>
+
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card__form-advertising-new-form-btn">
+                                        <button type="button" class="btn btn-outline-secondary add-form-advertising">Добавить новый формат рекламы</button>
+                                    </div>
+
+                                    <div class="card__form-advertising-bottom-btn">
+                                        <button type="button" class="btn btn-outline-secondary add-form-advertising" style="display: none;">Добавить формат рекламы</button>
+                                        <!--<button type="button" class="btn btn-outline-secondary">Назад к блогерам</button>-->
+                                        <a href="./index1.html" type="button" class="btn btn-outline-secondary back-to-bloggers">Назад к блогерам</a>
+                                        <div>
+                                            <span class="red fs-14 mr-2" style="display:none;">
+                                                Заполните поля отмеченные красным
+                                            </span>
+                                            <button type="button" class="btn btn-secondary form-advertising-check">Далее</button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="card__tabs-content-i ">
+                                    <div class="card__title">
+                                        Заполните форматы рекламы
+
+                                    </div>
+
+                                    <div class="card__statistic">
+                                        <div class="card__statistic-left">
+                                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+
+                                                <div class="card__statistic-block">
+                                                    <div class="card__statistic-title">
+                                                        <b>Охваты</b> сторис
+                                                    </div>
+                                                    <div class="card__statistic-sub-title">
+                                                        Заполните поля и загрузите подтверждающий скриншот с охватами сторис
+                                                    </div>
+
+                                                    <div class="card__statistic-field">
+                                                        <div class="form-group">
+                                                            <label for="statistic1" class="small-label">Минимум</label>
+                                                            <input type="text" class="form-control" id="statistic1" placeholder="" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="statistic2" class="small-label">Максимум</label>
+                                                            <input type="text" class="form-control" id="statistic2" placeholder="" required>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="form-control custom-file-input" style="display: none" >
+                                                             
+                                                            <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+                                                            <p class="file-invalid">
+                                                                Скриншот <br> не загружен
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <a href="javascript:void(0);" class="card__statistic-link ">
+                                                        Не продаю рекламу в сторис и не хочу заполнять охваты сторис
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="card__statistic-link  hide">
+                                                        Назад к охватам сторис
+                                                    </a>
+                                                </div>
+
+
+                                                <div class="card__statistic-block">
+                                                    <div class="card__statistic-title">
+                                                        <b>Охваты</b> постов <span class="grey-txt">(необязательно)</span>
+                                                    </div>
+                                                    <div class="card__statistic-sub-title">
+                                                        Заполните поля и загрузите подтверждающий скриншот с охватами постов
+                                                    </div>
+
+                                                    <div class="card__statistic-field">
+                                                        <div class="form-group">
+                                                            <label for="statistic3" class="small-label">Минимум</label>
+                                                            <input type="text" class="form-control" id="statistic3" placeholder="" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="statistic4" class="small-label">Максимум</label>
+                                                            <input type="text" class="form-control" id="statistic4" placeholder="" required>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="form-control custom-file-input" style="display: none" >
+                                                             
+                                                            <!--<a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>-->
+                                                            <button type="button" class="btn btn-outline-secondary"><i class="green-check-icon"></i>
+                                                               Загружено
+                                                            </button>
+                                                            <p class="file-invalid">
+                                                                Скриншот <br> не загружен
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card__statistic-block">
+                                                    <div class="card__statistic-title">
+                                                        <b>Процент</b> женщин
+                                                    </div>
+
+                                                    <div class="card__statistic-sub-title">
+                                                        Заполните поле и загрузите подтверждающий скриншот с процентом женщин
+                                                    </div>
+
+                                                    <div class="card__statistic-field">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="statistic5" placeholder="" required>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="form-control custom-file-input" style="display: none" >
+                                                             
+                                                            <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+                                                            <p class="file-invalid">
+                                                                Скриншот <br> не загружен
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card__statistic-block">
+                                                    <div class="card__statistic-title">
+                                                        Преобладающий возраст в <b>процентах</b>
+                                                    </div>
+
+                                                    <div class="card__statistic-sub-title">
+                                                        Заполните поля и загрузите подтверждающий скриншот с возрастом в процентах
+                                                    </div>
+
+                                                    <div class="card__statistic-field">
+                                                        <div class="form-group">
+                                                            <select id="statistic6" class="selectpicker white-select" required
+                                                                    title="Возраст">
+                                                                <option>10%</option>
+                                                                <option>20%</option>
+                                                                <option>30%</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group percent">
+                                                            <input type="text" class="form-control" id="statistic7" placeholder="" required>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="form-control custom-file-input" style="display: none" >
+                                                             
+                                                            <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+                                                            <p class="file-invalid">
+                                                                Скриншот <br> не загружен
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="card__statistic-block">
+                                                    <div class="card__statistic-title">
+                                                        Преобладающая страна в <b>процентах</b>
+                                                    </div>
+
+                                                    <div class="card__statistic-sub-title">
+                                                        Заполните поля и загрузите подтверждающий скриншот со страной в процентах
+                                                    </div>
+
+                                                    <div class="card__statistic-field">
+                                                        <div class="form-group country">
+                                                            <select id="statistic8" class="selectpicker white-select mobile-select-popup mobile-select-popup mobile-select-popup--all" data-live-search="true" required
+                                                                    title="Выберите страну">
+                                                                <option data-tokens="ua">UA</option>
+                                                                <option data-tokens="ru">RU</option>
+                                                                <option data-tokens="bl">BL</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group percent">
+                                                            <input type="text" class="form-control" id="statistic9" placeholder="" required>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="form-control custom-file-input" style="display: none" >
+                                                             
+                                                            <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+                                                            <p class="file-invalid">
+                                                                Скриншот <br> не загружен
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="card__statistic-block">
+                                                    <div class="card__statistic-title">
+                                                        Преобладающий город в <b>процентах</b>
+                                                    </div>
+
+                                                    <div class="card__statistic-sub-title">
+                                                        Заполните поля и загрузите подтверждающий скриншот с городом в процентах
+                                                    </div>
+
+                                                    <div class="card__statistic-field">
+                                                        <div class="form-group country">
+                                                            <select id="statistic11" class="selectpicker white-select mobile-select-popup mobile-select-popup--all" data-live-search="true" required
+                                                                    title="Выберите город">
+                                                                <option>UA</option>
+                                                                <option>RU</option>
+                                                                <option>BL</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group percent">
+                                                            <input type="text" class="form-control" id="statistic10" placeholder="" required>
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="form-control custom-file-input" style="display: none" >
+                                                             
+                                                            <a href="javascript:void(0);" class="btn btn-primary custom-btn" onclick="$(this).parent().find('.custom-file-input').click()">Загрузить</a>
+                                                            <p class="file-invalid">
+                                                                Скриншот <br> не загружен
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <button class="hide">ok</button>
+
+
+                                                    <div class="mobile-main-popup__select-head mobile-select-head-all">
+                                                        <div class="mobile-main-popup__select-title">
+
+                                                        </div>
+                                                        <div class="mobile-main-popup__select-btn">
+                                                            <!--<button type="button" class="select-btn-save btn btn-primary custom-btn custom-btn-gold">Сохранить</button>-->
+                                                        </div>
+                                                    </div>
+
+                                            </form>
+
+
+                                        </div>
+                                        <div class="card__statistic-right scroll">
+                                            <div class="card__statistic-title">
+                                                Пример заполнения <b>охватов сторис</b>
+                                            </div>
+                                            <div class="card__statistic-screen">
+                                                <img src="images/card/card-screen.png" alt="img">
+                                            </div>
+                                            <div class="card__statistic-right-txt">
+                                                Модератор не примет просмотры <span class="red">вместо <b>охватов</b>.</span>
+                                                <br><br>
+                                                В статистике находите минимальное и максимальное число охватов сторис за последние 14 дней. Заполняете в соответствующие поля и загружаете скриншот.
+                                                <br><br>
+                                                Пример скриншота с охватами сторис:
+                                            </div>
+
+                                            <div class="card__statistic-screen no-border">
+                                                <img src="images/card/card-screen-2.jpg" alt="img">
+                                            </div>
+                                            <div class="card__statistic-right-txt">
+                                                Модератор не примет просмотры <span class="red">вместо <b>охватов</b>.</span>
+                                                <br><br>
+                                                В статистике находите минимальное и максимальное число охватов сторис за последние 14 дней. Заполняете в соответствующие поля и загружаете скриншот.
+                                                <br><br>
+                                                Пример скриншота с охватами сторис:
+                                            </div>
+
+                                            <div class="card__statistic-screen no-border">
+                                                <img src="images/card/card-screen-2.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card__form-advertising-bottom-btn">
+<!--                                        <button type="button" class="btn btn-outline-secondary">Назад к блогерам</button>-->
+                                        <button type="button" class="btn btn-outline-secondary form-statistic-back">Назад</button>
+                                        <button type="button" class="btn btn-secondary form-statistic-check">Далее</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="card__tabs-content-i card__tabs-content-i--step-3">
+                                    <div class="card__title">
+                                        Верифицируйте аккаунт
+                                    </div>
+                                    <div class="card__verify">
+                                        <div class="card__verify-left">
+                                            <div class="card__verify-left-txt">
+                                                Так мы удостоверимся, что именно вы владеете аккаунтом.
+                                                <br><br>
+                                                Все действия происходят на официальном сайте Инстаграма. <b>Мы НЕ будем знать ваш пароль</b>, Инстаграм сообщает нам только название аккаунта и базовую статистику.
+                                            </div>
+
+                                            <div class="card__verify-left-txt-info">
+                                                Вы должны быть залогинены с аккаунта alexandramitroshina
+                                            </div>
+
+                                            <button type="button" class="btn btn-primary custom-btn custom-btn-gold access-btn">
+                                                Разрешить доступ
+                                            </button>
+
+                                            <button type="button" class="btn btn-outline-secondary account-access-btn" style="display: none;"><i class="green-check-icon"></i>
+                                                Аккаунт верифицирован
+                                            </button>
+
+
+
+                                            <div class="card__verify-left-txt">
+                                                <div class="form-group">
+                                                    <label for="verify01">PR-аккаунт <span class="grey-txt">(необязательно)</span></label>
+                                                    <input class="form-control" id="verify01" type="text" placeholder="Ссылка на аккаунт" required="">
+                                                </div>
+                                                <p>Чтобы заказчики рекламы присылали свои заявки в директ pr-аккаунта</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card__verify-right">
+
+                                            <form action="javascript:void(0)" class="needs-validation" novalidate>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <label for="verify">Ваш e-mail</label>
+                                                    <input  class="form-control" id="verify" type="email" placeholder="" required>
+                                                    <p>После подтверждения на него будут приходить заявки на рекламу.</p>
+                                                </div>
+
+
+
+                                                <div class="card__verify-right-block">
+                                                    <label for="verify2">Укажите 1-3 темы вашего аккаунта</label>
+                                                    <div class="form-group country">
+                                                        <select id="verify2" class="selectpicker white-select mobile-select-popup" required multiple
+                                                                title="Бизнес, Мотивация, Феминизм">
+                                                            <option >Бизнес</option>
+                                                            <option>Бьюти</option>
+                                                            <option>Дом, интерьер и ремонт</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify3">Город проживания <span class="grey-txt">(необязательно)</span></label>
+                                                        <input  class="form-control" id="verify3" type="text" placeholder="" required>
+                                                    </div>
+                                                    <p>Коммерческие аккаунты почти всегда интересуются городом блогеров</p>
+                                                </div>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify4">Амбассадорство <span class="grey-txt">(необязательно)</span></label>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="verify4" checked="" required>
+                                                            <label class="custom-control-label" for="verify4">Хочу стать амбассадором</label>
+                                                        </div>
+                                                    </div>
+                                                    <p>Вы можете изменить свой ответ позднее</p>
+                                                </div>
+
+
+                                                <div class="card__verify-right-block">
+                                                    <div class="form-group">
+                                                        <label for="verify5">Какие темы не рекламируете</label>
+                                                        <textarea class="form-control" id="verify5" placeholder="Например: Cетевой бизнес, астрология, гадания, казино."  required></textarea>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card__verify-right-block">
+                                                    <label>Юридический статус <span class="grey-txt">(необязательно)</span></label>
+                                                    <div class="form-group radio-group custom-radio-2">
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input no-ogp" id="verify6" required="">
+                                                            <label class="custom-control-label" for="verify6">Не указывать</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input ogp" id="verify7" required="">
+                                                            <label class="custom-control-label" for="verify7">Самозанятый</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input ogp" id="verify8" required="">
+                                                            <label class="custom-control-label" for="verify8">ИП</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio-2">
+                                                            <input type="radio" name="verify6"  class="custom-control-input ogp" id="verify9" required="">
+                                                            <label class="custom-control-label" for="verify9">ООО</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="card__verify-right-block card__verify-right-block--ogp">
+                                                    <div class="form-group">
+                                                        <label for="verify10" class="f-14"><span class="grey-txt">ОГРНИП</span></label>
+                                                        <input class="form-control" id="verify10" type="text" placeholder="" required="">
+                                                    </div>
+                                                    <p>
+                                                        ОГРНИП необходим для подтверждения вашего юридического статуса и не будет указан на сайте.
+                                                        В случае незаполнения этого поля, юр. статус не будет указываться в вашей карточке.
+                                                    </p>
+                                                </div>
+
+                                                <button class="hide">ok</button>
+
+                                                <div class="mobile-main-popup__select-head mobile-select-head-all">
+                                                    <div class="mobile-main-popup__select-title">
+
+                                                    </div>
+                                                    <div class="mobile-main-popup__select-btn">
+                                                        <button type="button" class="select-btn-save btn btn-primary custom-btn custom-btn-gold">Сохранить</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+                                    <div class="card__form-advertising-bottom-btn">
+                                        <button type="button" class="btn btn-outline-secondary" style="display: none;">Назад к блогерам</button>
+<!--                                        <button type="button" class="btn btn-outline-secondary">Назад к блогерам</button>-->
+                                        <button type="button" class="btn btn-outline-secondary form-statistic-back">Назад</button>
+                                        <button type="button" class="btn btn-secondary form-verify-check">Далее</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="title__right-btns">
-                        <a href="./request4.html" class="btn btn-outline-secondary">Просрочено <span class="request__top-btn-count">3</span></a>
-                    </div>
                 </div>
-                <div class="title__right hide-992">
-                    <div class="request__top-search">
-                        <input type="text" class="form-control" placeholder="Поиск по блогерам">
-                        <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
-                    </div>
-                </div>
+
             </div>
-            <div class="request">
-                <div class="page-block">
-                    <div class="request__table-wrap">
-                        <div class="request__table-top">
-                            Одобренные
-                        </div>
-                        <table class="request__table request__table-access">
-                            <thead>
-                            <tr>
-                                <th>
-                                    Дата <br>
-                                    одобрения
-                                </th>
-                                <th>
-                                    Аккаунт заказчика
-                                </th>
-                                <th>
-                                    Формат, цена и тип рекламы
-                                </th>
-                                <th>
-                                    Тезисы <br>
-                                    заказчика
-                                </th>
-                                <th>
-                                    Действия
-                                </th>
-                                <th>
-                                    Перенести
-                                </th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">alexandramitroshina</a>
-                                    <span class="dark-grey">Для kreida</span>
-                                </td>
-                                <td>
-                                    Видео-пост, 2 000 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Реклама вышла
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">kreida</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Клиент отказался от оплаты
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">liz_fit</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Реклама ещё не вышла
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-small-popup">В отказы</a>
-                                    <div class="otkaz-small-popup small-popup right">
-                                        <div class="otkaz-small-popup-items small-popup-items">
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Аккаунт закрыт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Бомбануло
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Не зайдёт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Неправильный аккаунт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Напишите в следующем месяце
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Нет концепции
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Просто отказ
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Плохой визуальный ряд
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                <span class="red">В бан навсегда</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    08.08.19 пн
-                                </td>
-                                <td>
-                                    <a href="#">natural_shop</a>
-                                </td>
-                                <td>
-                                    Сторис 90 сек., 2 500 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Реклама вышла
-                                    <span class="request__table-btn request__table-btn-yes-no">
-                                        <a href="#" class="btn btn-outline-secondary">Да</a>
-                                        <a href="#" class="btn btn-outline-secondary no-recklam-btn-p">Нет</a>
-                                    </span>
-
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    07.08.19 <span class="red">вс</span>
-                                </td>
-                                <td>
-                                    <a href="#">kkkkkkkkkkkkkkkkkkkkk</a>
-                                </td>
-                                <td>
-                                    Фото-пост, 1 200 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Реклама вышла
-                                    <span class="request__table-btn request__table-btn-yes-no">
-                                        <a href="#" class="btn btn-outline-secondary">Да</a>
-                                        <a href="#" class="btn btn-outline-secondary no-recklam-btn-p">Нет</a>
-                                    </span>
-
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    07.08.19 <span class="red">вс</span>
-                                </td>
-                                <td>
-                                    <a href="#">hanna.rachina</a>
-                                </td>
-                                <td>
-                                    Сторис 60 сек., 3 000 ₽, Коммерция
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Сгенерирован промокод
-                                    <span class="request__table-btn">
-                                        <a href="#" class="btn btn-outline-secondary request__table-btn-i no-customer-no-speck-btn"><img
-                                                src="images/svg/no-comment.svg" alt="img"></a>
-                                    </span>
-
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-small-popup">В отказы</a>
-                                    <div class="otkaz-small-popup small-popup right">
-                                        <div class="otkaz-small-popup-items small-popup-items">
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Аккаунт закрыт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Бомбануло
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Не зайдёт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Неправильный аккаунт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Напишите в следующем месяце
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Нет концепции
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Просто отказ
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Плохой визуальный ряд
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                <span class="red">В бан навсегда</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    18.07.19 вт
-                                </td>
-                                <td>
-                                    <a href="#">neotpuskaiteplo</a>
-                                </td>
-                                <td>
-                                    Сторис 15-30 сек., 4 490 ₽, Личные блоги
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-thesis">Открыть</a>
-                                </td>
-                                <td>
-                                    Ожидает подтверждения
-                                    <span class="request__table-btn">
-                                        <a href="#" class="btn btn-outline-secondary request__table-btn-i send-reminder-btn"><img
-                                                src="images/svg/belss.svg" alt="img"></a>
-                                    </span>
-
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="open-small-popup">В отказы</a>
-                                    <div class="otkaz-small-popup small-popup right">
-                                        <div class="otkaz-small-popup-items small-popup-items">
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Аккаунт закрыт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Бомбануло
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Не зайдёт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Неправильный аккаунт
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Напишите в следующем месяце
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Нет концепции
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Просто отказ
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                Плохой визуальный ряд
-                                            </div>
-                                            <div class="otkaz-small-popup-i small-popup-i">
-                                                <span class="red">В бан навсегда</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="mobile">
-                            <div class="request__top-search">
-                                <input type="text" class="form-control" placeholder="Поиск по блогерам">
-                                <a href="javascript:void(0);" class="btn btn-outline-secondary"></a>
-                            </div>
-                        </div>
-
-                        <div class="answer-mobile-table request-mobile-table">
-
-                            <div class="answer-mobile-table-i">
-                                <div class="answer-mobile__title request-mobile__title">
-                                    alexandramitroshina
-                                    <div class="answer-mobile__date">
-                                        Одобрена: 08.07.19
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__subtitle">
-                                    <span class="dark-grey">Для kreida</span>
-                                </div>
-                                <div class="answer-mobile__txt">
-                                    <p>
-                                        Сторис 90 сек.<br>
-                                        300 ₽<br>
-                                        Личные блоги
-                                    </p>
-                                    2-3 разговорных сторис о блоге.
-                                </div>
-                                <div class="answer-mobile__bottom">
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary open-thesis">
-                                        Тезисы
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="answer-mobile-table-i">
-                                <div class="answer-mobile__title request-mobile__title">
-                                    kreida
-                                    <div class="answer-mobile__date">
-                                        Одобрена: 08.07.19
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__txt">
-                                    <p>
-                                        Фото-пост <br>
-                                        1 200 ₽<br>
-                                        Личные блоги<br>
-                                    </p>
-                                    Статус: Клиент отказался от оплаты
-                                </div>
-                                <div class="answer-mobile__bottom">
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary open-thesis">
-                                        Тезисы
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="answer-mobile-table-i">
-                                <div class="answer-mobile__title request-mobile__title">
-                                    liz_fit
-                                    <div class="answer-mobile__date">
-                                        Одобрена: 08.07.19
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__txt">
-                                    <p>
-                                        Видео-пост<br>
-                                        2 000 ₽<br>
-                                        Личные блоги
-                                    </p>
-                                    Статус: Реклама ещё не вышла
-                                </div>
-                                <div class="answer-mobile__bottom request-mobile__bottom">
-                                    <div class="request-mobile__bottom-left">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary open-thesis">
-                                            Тезисы
-                                        </a>
-                                    </div>
-                                    <div class="request-mobile__bottom-right">
-                                        <span>Реклама <br>вышла?</span>
-                                        <div class="request-mobile__merge-btn">
-                                            <a href="javascript:void(0);" class="btn btn-outline-secondary ">
-                                                Да
-                                            </a>
-                                            <a href="javascript:void(0);" class="btn btn-outline-secondary no-recklam-btn-p">
-                                                Нет
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="answer-mobile-table-i">
-                                <div class="answer-mobile__title request-mobile__title">
-                                    hanna.rachina
-                                    <div class="answer-mobile__date">
-                                        Одобрена: 08.07.19
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__txt">
-                                    <p>
-                                        Сторис 60 сек.<br>
-                                        3 000 ₽<br>
-                                        Коммерция
-                                    </p>
-                                    Статус: Сгенерирован промокод
-                                    <a href="javascript:void(0);" class="no-customer-no-speck-btn">Заказчик не вышел на связь</a>
-                                </div>
-                                <div class="answer-mobile__bottom request-mobile__bottom">
-                                    <div class="request-mobile__bottom-left">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary open-thesis">
-                                            Тезисы
-                                        </a>
-                                    </div>
-                                    <div class="request-mobile__bottom-right">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary request-mobile__otkaz-btn open-small-popup">
-                                            Отказать
-                                        </a>
-
-                                        <div class="otkaz-small-popup small-popup" style="display: none;">
-                                            <div class="otkaz-small-popup-items small-popup-items">
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Аккаунт закрыт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Бомбануло
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Не зайдёт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Неправильный аккаунт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Напишите в следующем месяце
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Нет концепции
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Просто отказ
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Плохой визуальный ряд
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    <span class="red">В бан навсегда</span>
-                                                </div>
-                                                <footer class="footer active-popup">
-                                                    <div class="footer__link">
-                                                        <a href="#">
-                                                            Написать в техподдержку
-                                                        </a>
-                                                    </div>
-                                                    <div class="footer__link">
-                                                        <a href="#">
-                                                            Пользовательское соглашение
-                                                        </a>
-                                                    </div>
-                                                </footer></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__otkaz">
-                                    <div class="request__changed otkaz" style="display: flex;">
-                                        <img src="images/svg/big-x.svg" alt="img">
-                                        <div>Заявка отклонена</div>
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary request-mobile__otkaz-btn-cnsl">Отменить</a>
-                                        <span>
-                                    Заявка перемещена во вкладку Отказы
-                                </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="answer-mobile-table-i">
-                                <div class="answer-mobile__title request-mobile__title">
-                                    neotpuskaiteplo
-                                    <div class="answer-mobile__date">
-                                        Одобрена: 08.07.19
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__txt">
-                                    <p>
-                                        Сторис 15-30 сек.<br>
-                                        4 490 ₽<br>
-                                        Личные блоги
-                                    </p>
-                                    Статус: Ожидает подтверждения заказчика
-                                </div>
-                                <div class="answer-mobile__bottom request-mobile__bottom">
-                                    <div class="request-mobile__bottom-left">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary open-thesis">
-                                            Тезисы
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary btn-bells ml-3">
-                                            <i class="icon-bells"></i>
-                                        </a>
-                                    </div>
-                                    <div class="request-mobile__bottom-right">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary request-mobile__otkaz-btn open-small-popup">
-                                            Отказать
-                                        </a>
-
-                                        <div class="otkaz-small-popup small-popup" style="display: none;">
-                                            <div class="otkaz-small-popup-items small-popup-items">
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Аккаунт закрыт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Бомбануло
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Не зайдёт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Неправильный аккаунт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Напишите в следующем месяце
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Нет концепции
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Просто отказ
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Плохой визуальный ряд
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    <span class="red">В бан навсегда</span>
-                                                </div>
-                                                <footer class="footer active-popup">
-                                                    <div class="footer__link">
-                                                        <a href="#">
-                                                            Написать в техподдержку
-                                                        </a>
-                                                    </div>
-                                                    <div class="footer__link">
-                                                        <a href="#">
-                                                            Пользовательское соглашение
-                                                        </a>
-                                                    </div>
-                                                </footer></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__otkaz">
-                                    <div class="request__changed otkaz" style="display: flex;">
-                                        <img src="images/svg/big-x.svg" alt="img">
-                                        <div>Заявка отклонена</div>
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary request-mobile__otkaz-btn-cnsl">Отменить</a>
-                                        <span>
-                                    Заявка перемещена во вкладку Отказы
-                                </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="answer-mobile-table-i">
-                                <div class="answer-mobile__title request-mobile__title">
-                                    neotpuskaiteplo
-                                    <div class="answer-mobile__date">
-                                        Одобрена: 08.07.19
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__txt">
-                                    <p>
-                                        Сторис 15-30 сек.<br>
-                                        4 490 ₽<br>
-                                        Личные блоги
-                                    </p>
-                                    Статус: Ожидает подтверждения заказчика
-                                </div>
-                                <div class="answer-mobile__bottom request-mobile__bottom">
-                                    <div class="request-mobile__bottom-left">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary open-thesis">
-                                            Тезисы
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary btn-bells ml-3">
-                                            <i class="icon-bells"></i>
-                                        </a>
-                                    </div>
-                                    <div class="request-mobile__bottom-right">
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary request-mobile__otkaz-btn open-small-popup">
-                                            Отказать
-                                        </a>
-
-                                        <div class="otkaz-small-popup small-popup" style="display: none;">
-                                            <div class="otkaz-small-popup-items small-popup-items">
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Аккаунт закрыт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Бомбануло
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Не зайдёт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Неправильный аккаунт
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Напишите в следующем месяце
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Нет концепции
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Просто отказ
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    Плохой визуальный ряд
-                                                </div>
-                                                <div class="otkaz-small-popup-i small-popup-i">
-                                                    <span class="red">В бан навсегда</span>
-                                                </div>
-                                                <footer class="footer active-popup">
-                                                    <div class="footer__link">
-                                                        <a href="#">
-                                                            Написать в техподдержку
-                                                        </a>
-                                                    </div>
-                                                    <div class="footer__link">
-                                                        <a href="#">
-                                                            Пользовательское соглашение
-                                                        </a>
-                                                    </div>
-                                                </footer></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="answer-mobile__otkaz">
-                                    <div class="request__changed otkaz" style="display: flex;">
-                                        <img src="images/svg/big-x.svg" alt="img">
-                                        <div>Заявка отклонена</div>
-                                        <a href="javascript:void(0);" class="btn btn-outline-secondary request-mobile__otkaz-btn-cnsl">Отменить</a>
-                                        <span>
-                                    Заявка перемещена во вкладку Отказы
-                                </span>
-                                    </div>
-                                </div>
-                            </div>
 
 
-                        </div>
-
-
-                        <div class="show-more">
-                            <a href="#" class="show-more__btn">
-                                Показать ещё
-                            </a>
-                        </div>
-                        <nav aria-label="...">
-                            <ul class="pagination custom-pagination">
-                                <li class="page-item disabled pagination__prev">
-                                    <a class="page-link" href="#" tabindex="-1">Назад</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item ">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">11</a></li>
-                                <li class="page-item pagination__next">
-                                    <a class="page-link" href="#">Вперёд</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
         </div>
     </main>
     <!--END MAIN-->
@@ -1849,7 +1945,7 @@
     </div>
 
 
-    <div class="base-popup email-send-success-popup wrap-popup ">
+    <div class="base-popup email-send-success-popup wrap-popup">
 
         <div class="wrap-popup__inner">
             <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
@@ -1989,88 +2085,6 @@
         </div>
     </div>
 
-    <div class="medium-popup no-customer-no-speck wrap-popup">
-        <div class="wrap-popup__inner medium-popup__inner">
-            <div class="medium-popup__top">
-                <div class="medium-popup__title">
-                    Заказчик не связался со мной
-                </div>
-                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
-            </div>
-
-            <div class="medium-popup__body no-recklam-wrap">
-                <label>Если заказчик не связался с вами в интервале c <b>16.08 по 19.08</b>. Или игнорирует ваши сообщения, нажмите на кнопку ниже. К заказчику будут применены штрафные санкции.</label>
-            </div>
-            <div class="no-recklam-btn">
-                <a href="javascript:void(0);" class="btn btn-primary custom-btn open-send-penalty-popup">Заказчик не вышел на связь</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="medium-popup send-reminder wrap-popup">
-        <div class="wrap-popup__inner medium-popup__inner">
-            <div class="medium-popup__top">
-                <div class="medium-popup__title">
-                    Реклама не вышла
-                </div>
-                <a href="javascript:void(0)" class="big-popup__close close-btn"><img src="images/svg/x-btn.svg" alt="img"></a>
-            </div>
-
-            <div class="medium-popup__body no-recklam-wrap">
-                <label>Вы точно хотите отправить напоминание заказчику, чтобы он написал вам в директ?</label>
-                <label>Пусть заказчик напишет в директ моего:</label>
-                <div class="form-group radio-group custom-radio-2">
-                    <div class="custom-control custom-radio-2">
-                        <input type="radio" name="send-reminder-btn7"  class="custom-control-input " id="send-reminder-btn6" checked required="">
-                        <label class="custom-control-label" for="send-reminder-btn6">PR-аккаунта</label>
-                    </div>
-                    <div class="custom-control custom-radio-2">
-                        <input type="radio" name="send-reminder-btn7"  class="custom-control-input " id="send-reminder-btn7" required="">
-                        <label class="custom-control-label" for="send-reminder-btn7">Основного аккаунта</label>
-                    </div>
-                </div>
-
-                <div class="no-recklam-btn d-flex justify-content-between">
-                    <a href="javascript:void(0);" class="btn btn-outline-secondary">Отмена</a>
-                    <a href="javascript:void(0);" class="btn btn-primary custom-btn send-remind-btn">Отправить напоминание</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="base-popup send-penalty-popup wrap-popup">
-
-        <div class="wrap-popup__inner">
-            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
-            <div class="base-popup__content">
-                <div class="base-popup_success-wrap">
-                    <img src="images/svg/done_icon.svg" alt="img">
-                    <div class="base-popup_success">Спасибо за отзыв.
-                        К заказчику будут применены штрафные санкции.</div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="base-popup send-remind-popup wrap-popup">
-
-        <div class="wrap-popup__inner">
-            <a href="javascript:void(0)" class="login__close close-btn"><img src="images/svg/close-btn.svg" alt="img"></a>
-            <div class="base-popup__content">
-                <div class="base-popup_success-wrap">
-                    <img src="images/svg/done_icon.svg" alt="img">
-                    <div class="base-popup_success">Спасибо за отзыв.
-                        Мы отправили заказчику напоминание</div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-
     <!--END POPUPS-->
 </div>
 
@@ -2085,7 +2099,6 @@
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <script src="js/main.js"></script>
-
 
 </body>
 </html>

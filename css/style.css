@@ -2459,6 +2459,10 @@ table tbody tr:nth-child(odd){
     margin-bottom: 10px;
 }
 
+.form-statistic-back{
+    width: 140px;
+}
+
 
 .card__verify{
     padding: 30px 80px 40px;
@@ -2491,6 +2495,15 @@ table tbody tr:nth-child(odd){
 .card__verify-left-txt{
     font-size: 14px;
     margin-bottom: 20px;
+}
+
+.card__verify-left-txt-info{
+    background: #FEF5D2;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 150%;
 }
 
 .card__verify-left-txt label{
@@ -5461,6 +5474,9 @@ table tbody tr:nth-child(odd){
     font-size: 14px;
 }
 
+.mobile-auth__right-link a{
+    display: none;
+}
 
 
 
@@ -10619,6 +10635,15 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+    .if-clear-cart-popup .if-clear-cart-btn {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .if-clear-cart-btn .btn:first-child{
+        margin-right: 15px;
+    }
+
     .check-register .login__tabs{
         margin-bottom: 30px;
     }
@@ -10772,6 +10797,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-bottom: 20px;
     }
 
+    .ios .big-popup__top{
+        padding: 20px 30px 40px;
+    }
 
     .video-popup__inner{
         min-height: 300px;
@@ -11215,8 +11243,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card__tabs-btn{
         right: 30px;
     }
-    .card__tabs-i.active{
+    .card__tabs-i.active:first-child{
         padding-left: 15px;
+    }
+
+    .card__tabs-i.active{
         color: #6A7B83;
         font-size: 13px;
     }
@@ -11500,6 +11531,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         max-height: 180px;
         padding-bottom: 0;
         border-radius: 10px;
+    }
+
+    .ios .if-clear-cart-popup .medium-popup__inner{
+        max-height: 200px;
     }
 
     .if-clear-cart-popup .if-clear-cart-btn{
@@ -12233,6 +12268,50 @@ textarea {
 }
 @media (max-width: 500px) {
 
+    .mobile-auth__right-link a{
+        display: block;
+        font-size: 14px;
+        color: #3897F0;
+        margin-top: 10px;
+    }
+
+    .auth-page{
+        margin-bottom: -30px;
+    }
+
+    .auth-page .auth__right-block{
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .auth-page .auth__right .auth__right-block:last-child{
+        display: none;
+    }
+
+    .auth__right-title {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .auth__right-list{
+        padding-left: 29px;
+    }
+
+    .auth__right-i:before {
+        content: "";
+        display: block;
+        min-width: 8px;
+        min-height: 8px;
+        max-width: 8px;
+        max-height: 8px;
+        background: #3897F0;
+        position: relative;
+        margin-left: -8px;
+        top: 7px;
+        left: -20px;
+        transform: rotate(45deg);
+    }
+
 
     .no-customer-no-speck .no-recklam-wrap {
         width: 100%;
@@ -12328,7 +12407,7 @@ textarea {
     }
 
     .wrap-popup .scroll .footer.active-popup{
-        margin-top: 30px;
+        margin-top: 30px !important;
     }
 
     .medium-popup__body, .big-popup__body, .video-popup__body {
