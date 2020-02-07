@@ -1071,6 +1071,7 @@ $(document).ready(function () {
             openHeaderCloseBtn();
         }
         checkWidth();
+        $('.thesis-btn-to-blogger').removeClass('show');
     });
 
     $('.open-textarea').click(function () {
@@ -1508,6 +1509,8 @@ $(document).ready(function () {
         $(this).closest('.moder__inner').find('.moder__content-end.approve').addClass('open');
         $(this).closest('.moder__inner').find('.moder__content').addClass('hide');
         $(this).closest('.moder__inner').find('.moder__bottom').addClass('hide');
+        $(this).closest('.moder__inner').find('.moder__name--withBtn .moder-complaint-approve').addClass('hide');
+        $(this).closest('.moder__inner').find('.moder__bottom-mobile').addClass('hide');
     });
 
 
@@ -1516,6 +1519,8 @@ $(document).ready(function () {
         $(this).closest('.moder__inner').find('.moder__content-end.approve').removeClass('open');
         $(this).closest('.moder__inner').find('.moder__content').removeClass('hide');
         $(this).closest('.moder__inner').find('.moder__bottom').removeClass('hide');
+        $(this).closest('.moder__inner').find('.moder__name--withBtn .moder-complaint-approve').removeClass('hide');
+        $(this).closest('.moder__inner').find('.moder__bottom-mobile').removeClass('hide');
     });
 
     $('.moder-filter').click(function () {
@@ -1566,6 +1571,10 @@ $(document).ready(function () {
         $(this).closest('.reg-type-register__btn-more').next().toggle();
         $(this).closest('.check-register').toggleClass('open-txt');
 
+    });
+
+    $(document).on('click', '.thesis-popup-btn .copy-btn', function(e){
+        $(this).siblings('.thesis-btn-to-blogger').addClass('show');
     });
 
 });

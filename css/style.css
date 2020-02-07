@@ -6469,6 +6469,8 @@ table tbody tr:nth-child(odd){
 
 .thesis-popup-btn{
     margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .no-recklam-wrap{
@@ -7643,6 +7645,9 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 .mobile-main-popup__select-head.open {
     visibility: visible;
     opacity: 1;
+}
+.home-page-container .mobile-main-popup__select-head {
+    z-index: 0;
 }
 
 /*********  cart page  ************/
@@ -12400,10 +12405,74 @@ textarea {
     .card__tabs-content-i--step-3 .form-group .white-select {
         max-width: 250px!important;
     }
+    .email-send-popup-mobile .footer,
+    .thesis-popup .footer,
+    .no-recklam .footer,
+    .example-evidence-popup .footer,
+    .no-customer-no-speck .footer {
+        margin-top: auto !important;
+    }
 }
 
 .auth__left .login__tabs.login__tabs--empty {
     border-bottom: 0;
+}
+
+.thesis-btn-to-blogger {
+    display: none;
+}
+.thesis-btn-to-blogger.show {
+    display: block;
+}
+
+.moder__bottom-mobile {
+    display: none;
+    justify-content: space-between;
+    background: #F8F8F8;
+    margin: 0 -15px;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.moder__bottom-mobile .btn-outline-secondary{
+    padding: 4px 15px;
+    height: 31px;
+}
+.moder__bottom-mobile.hide {
+    display: none;
+}
+.moder__bottom-mobile .custom-small-select .white-select .btn{
+    padding: 6px 8px; margin-bottom: 10px;
+}
+.moder__name--withBtn > .moder-complaint-approve {
+    display: none;
+}
+.moder__name--withBtn .moder-complaint-approve.hide{
+    display: none;
+}
+@media (max-width: 500px) {
+    .moder__bottom.moder__bottom--withBtn {
+        display: none;
+    }
+    .moder__bottom-mobile {
+        display: flex;
+    }
+    .moder__name--withBtn {
+        position: relative;
+        padding-right: 100px;
+    }
+    .moder__name--withBtn > .moder-complaint-approve {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .moder__name--withBtn + .moder__content .moder__content-tap {
+        position: relative;
+        padding-right: 100px;
+    }
 }
 
 
