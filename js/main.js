@@ -4,6 +4,22 @@ $(document).ready(function () {
     if(iOS){
         $('.page-wrap').addClass('ios');
     }
+
+    // checkVersion = function () {
+    //     var agent = window.navigator.userAgent,
+    //         start = agent.indexOf( 'OS ' );
+    //     if( ( agent.indexOf( 'iPhone' ) > -1 || agent.indexOf( 'iPad' ) > -1 ) && start > -1 ){
+    //         return window.Number( agent.substr( start + 3, 3 ).replace( '_', '.' ) );
+    //     }
+    //     return 0;
+    // }
+    //
+    // // if(checkVersion() > 10)
+    //
+    // if (iOS && screen.width == 1125 && screen.height === 2436) {
+    //     alert('iPhoneX Detected!');
+    // }
+
     /***********   HEADER   *************/
 
     $('.close-banner').click(function () {
@@ -141,6 +157,8 @@ $(document).ready(function () {
             $('body').css('position', 'fixed');
         }
     });
+
+
 
     $('.header-mobile-btn-close').click(function () {
 

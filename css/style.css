@@ -10621,9 +10621,6 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         /*padding-bottom: 110px;*/
     /*}*/
 
-    .ios .footer.active-popup {
-        margin-bottom: 110px;
-    }
 }
 
 @media (max-width: 580px) {
@@ -11067,6 +11064,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .wrap-popup__inner .footer.active-popup{
         margin-top: auto !important;
+    }
+
+    .ios .wrap-popup__inner .footer.active-popup{
+        margin-bottom: 110px !important;
     }
 
     .big-popup__body > *:last-child{
@@ -11726,6 +11727,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .request-to-blogger-popup .big-popup__title {
         font-size: 18px;
         line-height: 21px;
+    }
+
+
+    .ios .footer.active-popup {
+        margin-bottom: 110px;
     }
 }
 
@@ -12413,6 +12419,7 @@ textarea {
 
     .wrap-popup .scroll .footer.active-popup{
         margin-top: 30px !important;
+        margin-bottom: 110px;
     }
 
     .medium-popup__body, .big-popup__body, .video-popup__body {
