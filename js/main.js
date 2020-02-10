@@ -482,6 +482,8 @@ $(document).ready(function () {
         }
 
         checkFooterPopupClick();
+
+        checkWidth();
         // bodyHidden();
     });
 
@@ -659,6 +661,7 @@ $(document).ready(function () {
         if(window.innerWidth < 500){
             openHeaderCloseBtn ();
         }
+        checkWidth();
     });
 
     $('.log-in').click(function () {
@@ -1167,12 +1170,20 @@ $(document).ready(function () {
         if ($(window).width() < 500) {
             var el = $('.otkaz-small-popup-items');
             addFooterPopup(el);
+            if(iOS){
+                $('body').css('position', 'fixed');
+            }
         }
+
     });
 
 
     $('.small-popup-i').click(function () {
         $(this).closest('.small-popup').hide();
+
+        if(iOS){
+            $('body').css('position', 'static');
+        }
     });
 
     $('.otkaz-small-popup-i').click(function () {

@@ -11540,7 +11540,17 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .ios .if-clear-cart-popup .medium-popup__inner{
+        min-height: 200px;
         max-height: 200px;
+        width: 340px;
+        max-width: 340px;
+        min-width: 340px;
+    }
+
+
+    .ios .if-clear-cart-popup .big-popup__top{
+        margin-top: 0px;
+        padding: 0px 30px 20px;
     }
 
     .if-clear-cart-popup .if-clear-cart-btn{
@@ -12278,6 +12288,21 @@ textarea {
     }
 }
 @media (max-width: 500px) {
+
+    .bunners-page .top-banner{
+        z-index: 10000;
+    }
+
+    .bunners-page .top-banner + .main{
+        margin-top: 0;
+    }
+    .bunners-page .header {
+        display: none;
+    }
+
+    .settings-page .top-banner + .main{
+        margin-top: 120px;
+    }
 
     .mobile-auth__right-link a{
         display: block;
