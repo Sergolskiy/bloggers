@@ -7222,6 +7222,8 @@ table tbody tr:nth-child(odd){
     height: 44px;
     width: 100%;
     margin-bottom: 1px;
+    display: flex;
+    align-items: center;
 }
 
 .mobile-menu__content-item.bottom-line{
@@ -8323,8 +8325,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         /*overflow-y: scroll;*/
         /*background: white;*/
         width: 100%;
-        /*z-index: 101;*/
-        z-index: 90;
+        z-index: 101;
+        /*z-index: 90;*/
     }
     .home-top.open {
         visibility: visible;
@@ -8533,6 +8535,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .mobile-select-popup > .dropdown-menu.show > .inner {
         max-height: 100% !important;
+        min-height: 450px !important;
     }
     .mobile-select-popup > .dropdown-menu.show .dropdown-menu.inner.show{
         /*padding: 0 30px;*/
@@ -10639,6 +10642,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         /*padding-bottom: 110px;*/
     /*}*/
 
+    .pay-succ-mob{
+        display: block;
+        margin: 20px auto 15px;
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 580px) {
@@ -10654,6 +10663,53 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 500px) {
+
+    .rework .card__tabs-top{
+        display: block;
+    }
+
+    .rework .card__tabs-content{
+        padding-top: 0;
+    }
+
+    .example-stories .big-popup__top{
+        display: none;
+    }
+
+    .card__statistic-popup-how{
+        font-size: 15px;
+        line-height: 19px;
+        color: #3897F0;
+        margin-top: -14px;
+        margin-bottom: 20px;
+    }
+
+    .home-form-col:nth-child(12){
+        position: relative;
+        padding-bottom: 15px;
+    }
+    .home-form-col:nth-child(12):after{
+        content: "";
+        position: absolute;
+        left: 30px;
+        bottom: 20px;
+        border-bottom: 1px solid #D5DFE4;
+        width: 100%;
+    }
+
+    .mobile-main-popup-head{
+        box-shadow: 0px 5px 10px -2px rgba(0, 73, 129, 0.1);
+    }
+
+    .mobile-select-popup .dropdown-toggle::after {
+        border-left: 5px solid #B4BDC1 !important;
+        border-top: 5px solid transparent !important;
+        border-right: 0 !important;
+        border-bottom: 5px solid transparent !important;
+        position: relative;
+        right: -2px;
+    }
+
 
     .if-clear-cart-popup .if-clear-cart-btn {
         justify-content: space-between;
@@ -10819,6 +10875,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .ios .big-popup__top{
         padding: 20px 30px 40px;
+    }
+
+    .ios .report-popup .big-popup__top{
+        padding: 15px 30px 32px;
     }
 
     .video-popup__inner{
@@ -11271,6 +11331,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         padding-left: 15px;
     }
 
+    .card__tabs-i:nth-child(2) {
+        padding-left: 30px;
+    }
+
     .card__tabs-i.active{
         color: #6A7B83;
         font-size: 13px;
@@ -11298,6 +11362,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card{
         border: 0;
         padding-bottom: 70px;
+        padding-top: 7px;
     }
 
     .card .card__statistic-block:nth-last-child(3){
@@ -12158,6 +12223,11 @@ textarea {
 .card__form-advertising-bottom-btn-mobile {
     display: none;
 }
+
+.example-stories-btn--mobile{
+    display: none;
+}
+
 /*fix popups footer*/
 @media (max-width: 992px) {
     body.padding .header{
@@ -12306,6 +12376,29 @@ textarea {
     }
 }
 @media (max-width: 500px) {
+
+
+    .email-to-blogger-popup .email-send-textarea{
+        max-width: 250px;
+    }
+
+    .report-popup #report-mail{
+        width: 100%;
+    }
+
+    .same-bloggers__carousel{
+        margin: 0 -15px;
+        width: auto;
+    }
+
+    .same-bloggers__bottom{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .request-to-blogger-success .base-popup_success-wrap {
+        padding: 30px 0px 30px;
+    }
 
     .bunners-page .top-banner{
         z-index: 10000;
@@ -12460,9 +12553,13 @@ textarea {
         text-align: center;
     }
 
-    .wrap-popup .scroll .footer.active-popup{
+    .ios .wrap-popup .scroll .footer.active-popup{
         margin-top: 30px !important;
         margin-bottom: 110px;
+    }
+
+    .wrap-popup .scroll .footer.active-popup{
+        margin-top: 30px !important;
     }
 
     .medium-popup__body, .big-popup__body, .video-popup__body {

@@ -217,7 +217,7 @@
 
     <!--MAIN-->
     <main class="main">
-        <div class="container-lg">
+        <div class="container-lg home-page-container">
             <div class="title">
                 <div class="title__left">
                     <h1 class="title__txt">
@@ -227,12 +227,28 @@
                         Видео-инструкция
                     </a>
                 </div>
+
+                <div class="title__right">
+                    <div class="title__right-btn">
+                        <a href="javascript:void(0);" class="btn btn-outline-secondary filter-btn">Фильтры</a>
+                    </div>
+                </div>
             </div>
 
             <div class="home-top">
                 <div class="site-form home-form page-block">
                     <form action="#" class="d-flex">
                         <div class="home-form__left">
+                            <div class="home-form__mobile-head-count">
+                                <div>
+                                    <span>Показывать по</span>
+                                    <select class="selectpicker white-select  home-form__mobile-head-count-select" required title="10">
+                                        <option>10</option>
+                                        <option>30</option>
+                                        <option>50</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="home-form-col">
                                 <div class="form-group">
                                     <label for="nickname">Блогер</label>
@@ -397,6 +413,21 @@
                             <button type="button" class="btn btn-outline-secondary">Сбросить</button>
                         </div>
 
+                        <div class="mobile-main-popup-head">
+                            <div class="home-form__mobile-head-title">
+                                Фильтры
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary">Сбросить</button>
+                            <button type="button" class="btn btn-primary custom-btn custom-btn-gold">Найти</button>
+                            <div class="mobile-main-popup__select-head">
+                                <div class="mobile-main-popup__select-title">
+
+                                </div>
+                                <div class="mobile-main-popup__select-btn">
+                                    <button type="button" class="select-btn-save btn btn-primary custom-btn custom-btn-gold">Сохранить</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="main-quest page-block flex-column align-items-center">
@@ -420,13 +451,13 @@
                     </div>
                     <div class="content-table__head-tabs">
                         <div class="content-table__head-item">
-                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты сторис</a>
+                            <a href="javascript:void(0);" class="btn btn-primary custom-btn">Охваты сторис</a>
                         </div>
                         <div class="content-table__head-item">
-                            <a href="javascript:void(0);" class="btn  btn-primary custom-btn">Охваты постов</a>
+                            <a href="./index2.html" class="btn btn-outline-secondary">Охваты постов</a>
                         </div>
                         <div class="content-table__head-item">
-                            <a href="javascript:void(0);" class="btn btn-outline-secondary">Охваты сторис и постов</a>
+                            <a href="./index3.html" class="btn btn-outline-secondary">Охваты сторис и постов</a>
                         </div>
 
                         <div class="content-table__head-item content-table__head-item--right">
@@ -437,6 +468,26 @@
                                 <option>50</option>
                             </select>
                         </div>
+                    </div>
+                    <div class="content-table__head-tabs-mobile">
+                        <div class="custom-dropout custom-dropout__more-btn">
+                            <a class="custom-dropout__link" href="javascript:void(0)">
+                                Охваты сторис
+                            </a>
+                            <div class="custom-dropout__txt">
+                                <a href="javascript:void(0)">Охваты сторис</a>
+                                <a href="./index2.html">Охваты постов</a>
+                                <a href="./index3.html">Охваты сторис и постов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-quest__mobile">
+                    <div class="main-quest__mobile-title">
+                        Хотите стать блогером на сайте?
+                    </div>
+                    <div class="main-quest__mobile-btn">
+                        <a href="./login.html" class="btn btn-primary custom-btn">Заполните карточку</a>
                     </div>
                 </div>
                 <div class="table-main">

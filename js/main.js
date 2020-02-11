@@ -264,7 +264,7 @@ $(document).ready(function () {
         checkFooterPopupClick();
     });
 
-    $('.cart-block__top-mobile .blogger-cart__statistics-btn a').click(function (e) {
+    $('.cart-block__top-mobile .blogger-cart__statistics-btn a, .card__statistic-popup-how').click(function (e) {
         e.preventDefault();
         // $('.cart-screenshots-popup').addClass('open');
         // openHeaderCloseBtn();
@@ -891,6 +891,7 @@ $(document).ready(function () {
             $(this).next().hide();
             $(this).closest('.wrap-popup').removeClass('open');
             $('.accept-mail-popup').addClass('open');
+            checkWidth();
         }
     });
 
@@ -1472,9 +1473,10 @@ $(document).ready(function () {
 
          if($('.accept-mail-wrap .red.hide').length == 0){
              $(this).closest('.wrap-popup').find('.close-btn').click();
+             // $(this).closest();
              $('.request-to-blogger-success-popup').addClass('open');
+             checkWidth();
 
-             closePopup($(this));
          }
         $('.accept-mail-wrap .red').removeClass('hide');
     });
