@@ -8489,6 +8489,14 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         display: block;
     }
 
+    /*.mobile-select-popup div.dropdown-menu{*/
+        /*visibility: hidden;*/
+        /*z-index: -10;*/
+        /*transition: 0.3s;*/
+        /*opacity: 0;*/
+        /*display: block;*/
+    /*}*/
+
     /*select dropdown-menu show*/
     .mobile-select-popup > .dropdown-menu.show {
         position: fixed!important;
@@ -8504,7 +8512,17 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         z-index: 100!important;
         padding: 0 30px;
         padding-top: 24px;
+
+
+        visibility: visible;
+        opacity: 1;
+        /*z-index: 1;*/
     }
+
+
+
+
+
     .mobile-select-popup > .dropdown-menu.show .bs-searchbox {
         width: 100%;
         padding-left: 0;
@@ -12587,5 +12605,7 @@ textarea {
 }
 
 
-
+/*.show2{*/
+    /*display: block !important;*/
+/*}*/
 
