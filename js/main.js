@@ -531,6 +531,9 @@ $(document).ready(function () {
                 $(e.target).find('.close-btn').click();
             }
         }
+        if(e.target.closest('.if-clear-cart-popup') !== undefined && e.target == e.target.closest('.if-clear-cart-popup')){
+            $(e.target).find('.close-btn').click();
+        }
     });
 
     $(document).click(function (e) {
