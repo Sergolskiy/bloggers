@@ -248,7 +248,10 @@ $(document).ready(function () {
 
     $(window).on("load",function(){
         if($(".scroll").length > 0){
-            $(".scroll").mCustomScrollbar();
+            if($(window).width() > 500){
+                $(".scroll").mCustomScrollbar({
+                })
+            }
         }
     });
 
@@ -365,7 +368,7 @@ $(document).ready(function () {
         if( active.prev().length > 0){
             active.prev().addClass('active');
             active.removeClass('active');
-            
+
             if ($(this).parent().hasClass('moder__bottom-mobile-right')) {
                 $(this).parent().find('span').html(active.index());
                 return;
@@ -1518,8 +1521,8 @@ $(document).ready(function () {
         }
 
     });
-    
-    
+
+
     $('.deactivate-banner-btn').click(function (e) {
         e.preventDefault();
 
@@ -1535,7 +1538,7 @@ $(document).ready(function () {
             $('.deactivate-banner').slideDown();
         }, 30);
     });
-    
+
     $('.access-btn').click(function () {
         $(this).hide().next().show();
     });
@@ -1548,7 +1551,11 @@ $(document).ready(function () {
         var footer = $('.main + .footer').clone();
         if(el.find('.footer').length == 0 ){
             if(el.find('.scroll').length > 0){
-                el.find('.mCSB_container').append(footer);
+                if(el.find('.mCSB_container').length > 0){
+                    el.find('.mCSB_container').append(footer);
+                } else {
+                    el.find('.scroll').append(footer);
+                }
             } else {
                 el.append(footer);
             }
@@ -1637,7 +1644,7 @@ $(document).ready(function () {
             $('.moderation-filter').removeClass('open');
         }
     });
-    
+
     $('.request-mobile__otkaz-btn').click(function () {
         $(this).closest('.answer-mobile-table-i').find('.answer-mobile__otkaz').show();
     });
@@ -1645,7 +1652,7 @@ $(document).ready(function () {
     $('.request-mobile__otkaz-btn-cnsl').click(function () {
         $(this).closest('.answer-mobile-table-i').find('.answer-mobile__otkaz').hide();
     });
-    
+
     $('.blogger-cart__reviews a, .reviews-popup-btn, .mobile-home-table__bottom a:first-child').click(function () {
         $('.blogger-mob-rev-popup').addClass('open');
         openHeaderCloseBtn();
@@ -1662,7 +1669,7 @@ $(document).ready(function () {
         e.css('display', 'flex');
     }
 
-    
+
     $('.link-reg-prototype').click(function () {
         $('.check-register').addClass('open');
         if(window.innerWidth < 500){
@@ -1683,6 +1690,10 @@ $(document).ready(function () {
 
 
 
+    $('.open-banner-answer').click(function () {
+        closePopup($(this));
+        $('.banner-info-medium').show().removeClass('hide-banner');
+    });
 
 });
 

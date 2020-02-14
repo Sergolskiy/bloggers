@@ -5637,6 +5637,10 @@ table tbody tr:nth-child(odd){
     display: none;
 }
 
+.login.base-popup .wrap-popup__inner .login__top-popup.active{
+    display: none;
+}
+
 .login__top-popup.active{
     position: absolute;
     top: 50%;
@@ -8057,6 +8061,11 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 }
 @media (max-width: 1200px) {
+
+    .manager-page .page-nav{
+        margin: -145px -15px 30px;
+    }
+
     .home-form-col {
         max-width: 250px;
     }
@@ -8242,6 +8251,19 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 992px) {
 
+    .scroll{
+        overflow: auto;
+    }
+
+    .top-banner:not(.hide-banner) + .top-banner{
+        margin-top: 25px;
+    }
+
+    .bunners-page .banner-pay-success {
+        position: static;
+        margin-top: 0 !important;
+    }
+
     .link-reg-prototype{
         position: absolute;
         left: 0;
@@ -8408,6 +8430,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         align-items: center;
         position: relative;
         height: 61px;
+        min-height: 61px;
         margin-top: 61px;
     }
     .home-form__mobile-head-count span{
@@ -8433,12 +8456,14 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
     .home-form__left {
         /*padding: 0 30px;*/
-        flex-direction: column;
+        /*flex-direction: column;*/
         /*padding-bottom: 150px;*/
         overflow: scroll;
         overflow-x: hidden;
         height: calc(100vh - 75px);
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         -webkit-overflow-scrolling: touch;
     }
     .home-form__left > .home-form-col {
@@ -8568,6 +8593,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         height: 60px;
         position: fixed;
         top: 75px;
+        border-top: 1px solid #D5DFE4;
     }
 
     .main > div:not(.home-page-container) .mobile-select-popup > .dropdown-menu.show{
@@ -9126,6 +9152,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-top: -60px;
     }
 
+    .top-banner.small-title + .main{
+        margin-top: 110px;
+    }
+
     .top-banner.hide-banner + .main {
         padding-top: 0;
     }
@@ -9315,6 +9345,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .home-form form .footer.active-popup {
         order: 0;
+        min-height: 70px;
     }
     .home-form form > div {
         order: 1;
@@ -9363,13 +9394,15 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         justify-content: flex-start;
         align-items: flex-start;
         transform: translateX(-110%);
-        transition: 0.5s;
+        /*transition: 0.5s;*/
         cursor: pointer;
     }
 
     .moderation-filter.open{
         transform: translateX(0);
     }
+
+
 
     .moderation-filter:after{
         content: "";
@@ -9381,6 +9414,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         height: 100%;
         background: white;
         z-index: 0;
+        transform: translateX(-110%);
+        transition: 0.5s;
     }
 
     .moderation-filter:before{
@@ -9397,6 +9432,26 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .moderation-filter > div{
         position: relative;
         z-index: 2;
+        transform: translateX(-110%);
+        transition: 0.5s;
+    }
+
+    .moderation-filter.open:after,
+    .moderation-filter.open > div{
+        transform: translateX(0);
+    }
+
+    .request__top-search .btn-outline-secondary{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        position: relative;
+        z-index: 10;
+        margin-left: -2px;
+    }
+    .request__top-search .request__top-search{
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
     }
 
     .moderation-filter > div .request__top-search{
@@ -9511,9 +9566,37 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .blogger-mob-rev-popup .cart-block__rev-table-mobile-col {
         line-height: 19px;
     }
+
+
+    .home-form__mobile-head-count,
+    .home-form-col:nth-child(2),
+    .home-form-col:nth-child(3),
+    .home-form-col:nth-child(7){
+        order: -1;
+    }
+
+
+    .home-form-col:nth-child(3){
+        order: -1;
+        padding: 0;
+        width: 110px;
+        margin-left: 30px;
+    }
+
+    .home-form-col:nth-child(7){
+        order: -1;
+        width: 110px;
+        padding: 0;
+        margin-top: -83px;
+        margin-left: calc(60px + 110px);
+    }
 }
 
 @media (max-width: 768px) {
+
+    .manager-page .page-nav{
+        margin: -131px -15px 30px;
+    }
 
     .if-clear-cart-btn .close-btn{
         opacity: 1;
@@ -10631,7 +10714,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .settings__title a{
-        display: none;
+        /*display: none;*/
     }
 
     .ios .wrap-popup .footer.active-popup{
@@ -10663,6 +10746,33 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 }
 
 @media (max-width: 500px) {
+
+    .manager-page .title__left{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start !important;
+        margin-top: 30px;
+    }
+
+    .manager-page .bootstrap-select{
+        margin-left: 0;
+        width: 100% !important;
+        max-width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .example-stories .medium-popup__inner{
+        padding: 0;
+    }
+
+    .example-stories .screenshots__inner{
+        max-height: 100%;
+    }
+
+    .auth__right-i{
+        align-items: flex-start;
+    }
 
     .rework .card__tabs-top{
         display: block;
@@ -10712,7 +10822,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .request-to-blogger-success-popup .big-popup__top{
-        display: none;
+        display: none !important;
     }
 
 
@@ -11151,6 +11261,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .ios .wrap-popup__inner .footer.active-popup{
         margin-bottom: 110px !important;
+        margin-bottom: 77px !important;
     }
 
     .big-popup__body > *:last-child{
@@ -11441,8 +11552,12 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         max-width: 150px;
     }
 
-    .moder__bottom-right .moder-req-prev{
-        padding: 8px 13px;
+    /*.moder__bottom-right .moder-req-prev{*/
+        /*padding: 8px 13px;*/
+    /*}*/
+
+    .moder__bottom-right .moder-req-prev {
+        padding: 6px 13px;
     }
 
     .moder.brands__bottom-right .moder-req-prev{
@@ -11684,7 +11799,15 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         top: 75px;
         width: 100%;
         border: 0;
-        height: 100vh;
+        height: calc(100vh - 75px);
+        padding: 0;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .otkaz-small-popup-i:nth-last-child(2) {
+        margin-bottom: 20px;
     }
 
     .otkaz-small-popup-i {
@@ -11694,6 +11817,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         font-size: 16px;
         line-height: 19px;
         height: 44px;
+        min-height: 44px;
         padding-left: 30px;
     }
 
@@ -11830,6 +11954,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .ios .footer.active-popup {
         margin-bottom: 110px;
+        margin-bottom: 77px !important;
     }
 }
 
@@ -12252,6 +12377,12 @@ textarea {
         position: relative;
         z-index: 10;
     }
+
+    .if-clear-cart-popup{
+        z-index: 10000 !important;
+        height: calc(100vh) !important;
+        margin-top: 0;
+    }
 }
 @media (max-width: 768px) {
     .page-block-wrap-settings .settings__title {
@@ -12382,6 +12513,23 @@ textarea {
 }
 @media (max-width: 500px) {
 
+    .moder__content-actions-r .inner.show {
+        overflow-x: hidden !important;
+    }
+    .moder__content-actions-r .dropdown-menu.show {
+        right: auto !important;
+        left: -5px !important;
+        border-radius: 5px;
+        width: 284px;
+    }
+
+    .login.base-popup > .login__top-popup.active{
+        display: none !important;
+    }
+
+    .login.base-popup .wrap-popup__inner .login__top-popup.active{
+        display: flex;
+    }
 
     .email-to-blogger-popup .email-send-textarea{
         max-width: 250px;
@@ -12480,9 +12628,10 @@ textarea {
     }
 
     .otkaz-small-popup-items .footer{
-        position: absolute;
+        position: static;
         width: 100%;
-        bottom: 75px;
+        bottom: 0;
+        margin-top: auto;
     }
 
     .send-re-request .big-popup__title{
@@ -12561,6 +12710,7 @@ textarea {
     .ios .wrap-popup .scroll .footer.active-popup{
         margin-top: 30px !important;
         margin-bottom: 110px;
+        margin-bottom: 77px !important;
     }
 
     .wrap-popup .scroll .footer.active-popup{
@@ -12704,6 +12854,12 @@ textarea {
         position: relative;
         padding-right: 100px;
     }
+
+    .screenshots__inner.scroll{
+        overflow: scroll;
+        padding: 30px 30px 0;
+        -webkit-overflow-scrolling: touch;
+    }
 }
 
 
@@ -12711,3 +12867,21 @@ textarea {
     /*display: block !important;*/
 /*}*/
 
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_touch_action,
+.mCustomScrollbar.mCS_touch_action .mCS-aviva.mCSB_scrollTools {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+.mCustomScrollBox {
+    -ms-touch-action: pan-x pinch-zoom;
+    touch-action: pan-x pinch-zoom;
+}
+.mCustomScrollBox.mCSB_vertical_horizontal {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+}
+.mCustomScrollBox.mCSB_horizontal {
+    -ms-touch-action: pan-y pinch-zoom;
+    touch-action: pan-y pinch-zoom;
+}
