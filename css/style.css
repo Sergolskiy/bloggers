@@ -10978,23 +10978,27 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     }
 
     .ios .big-popup__top,
+    .ios .medium-popup__top,
     .ios .video-popup__top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 30px 30px;
-        margin: 0 -30px;
-        border-bottom: 1px solid #D5DFE4;
-        margin-bottom: 20px;
+        /*display: flex;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+        /*padding: 10px 30px 30px;*/
+        /*margin: 0 -30px;*/
+        /*border-bottom: 1px solid #D5DFE4;*/
+        /*margin-bottom: 20px;*/
+
+
+        flex: none;
     }
 
-    .ios .big-popup__top{
-        padding: 20px 30px 40px;
-    }
+    /*.ios .big-popup__top{*/
+        /*padding: 20px 30px 40px;*/
+    /*}*/
 
-    .ios .report-popup .big-popup__top{
-        padding: 15px 30px 32px;
-    }
+    /*.ios .report-popup .big-popup__top{*/
+        /*padding: 15px 30px 32px;*/
+    /*}*/
 
     .video-popup__inner{
         min-height: 300px;
@@ -11829,6 +11833,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         font-size: 18px;
         line-height: 21px;
         border-bottom: 1px solid #D5DFE4;
+        flex: none;
     }
     .custom-btn {
         font-size: 14px;
@@ -11955,6 +11960,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .ios .footer.active-popup {
         margin-bottom: 110px;
         margin-bottom: 77px !important;
+        flex: none;
     }
 }
 
@@ -12529,6 +12535,7 @@ textarea {
 
     .login.base-popup .wrap-popup__inner .login__top-popup.active{
         display: flex;
+        flex: none;
     }
 
     .email-to-blogger-popup .email-send-textarea{
