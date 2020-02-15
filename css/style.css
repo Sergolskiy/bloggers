@@ -12885,3 +12885,16 @@ textarea {
     -ms-touch-action: pan-y pinch-zoom;
     touch-action: pan-y pinch-zoom;
 }
+
+.mobile-select-head {
+    transform: translateX(-100%);
+}
+.mobile-select-head .mobile-main-popup__select-head{
+    display: none;
+    top: 74px;
+    transform: translateX(100%);
+}
+.mobile-select-head .mobile-main-popup__select-head.open {
+    display: flex;
+    border-top: 1px solid #D5DFE4;
+}
