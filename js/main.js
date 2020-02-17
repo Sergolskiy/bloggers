@@ -186,6 +186,9 @@ $(document).ready(function () {
     });
 
     $(document).on('mouseup', '.mobile-select-popup', function (e) {
+        if($(window).width() > 992){
+            return;
+        }
 
         if ($(this).closest('.home-top').length > 0) {
 
