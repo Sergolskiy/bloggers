@@ -373,11 +373,14 @@
 
 
                                             <div class="form-group w-100">
-                                                <select id="story-time" class="selectpicker white-select w-100" multiple required
-                                                        title="Секунд">
-                                                    <option selected>Бизнес</option>
-                                                    <option selected>Мотивация</option>
-                                                    <option selected>Феминизм</option>
+                                                <label style="display: none;" for="story-time">Укажите 1-3 темы вашего аккаунта</label>
+                                                <select id="story-time" class="selectpicker white-select default-select mobile-select-popup" multiple required
+                                                        title="Выберите тему">
+                                                    <option data-tokens="mustard">Бизнес</option>
+                                                    <option data-tokens="Бьюти">Бьюти</option>
+                                                    <option data-tokens="Дом, интерьер и ремонт">Дом, интерьер и ремонт</option>
+                                                    <option data-tokens="Жизнь заграницей">Жизнь заграницей</option>
+                                                    <option data-tokens="ЗОЖ">ЗОЖ</option>
                                                 </select>
                                             </div>
 
@@ -2382,6 +2385,17 @@
                 <div class="accept-mail-btn">
                     <a href="javascript:void(0);" class="btn btn-outline-secondary accept-mail-send">Отправить</a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-main-popup-head mobile-select-head">
+        <div class="mobile-main-popup__select-head">
+            <div class="mobile-main-popup__select-title">
+
+            </div>
+            <div class="mobile-main-popup__select-btn">
+                <button type="button" class="select-btn-save btn btn-primary custom-btn custom-btn-gold">Сохранить</button>
             </div>
         </div>
     </div>
