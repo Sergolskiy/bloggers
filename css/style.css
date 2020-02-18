@@ -6478,6 +6478,10 @@ table tbody tr:nth-child(odd){
     margin-right: 15px;
 }
 
+.check-direct-btn button{
+    display: none;
+}
+
 .thesis-popup-wrap{
     max-width: 310px;
 }
@@ -9590,6 +9594,10 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-top: -83px;
         margin-left: calc(60px + 110px);
     }
+
+    .rework .card__verify{
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -10747,6 +10755,68 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+    .page-block-left:nth-child(2) .settings__row .settings__col:first-child{
+        border-bottom: 1px solid #D5DFE4;
+        padding-bottom: 20px;
+    }
+
+    .request-mobile__title{
+        position: relative;
+        z-index: 10;
+    }
+
+
+    .send-reminder .no-recklam-wrap {
+        width: 100%;
+    }
+
+    .send-reminder .no-recklam-wrap .radio-group{
+        margin-top: 15px;
+    }
+
+    .no-recklam-wrap .custom-control {
+        margin-bottom: 10px;
+    }
+
+    .check-direct-block:last-child{
+        border: 0;
+        margin-bottom: 0;
+    }
+
+    .bunners-page .wrap-popup{
+        z-index: 10000 !important;
+    }
+
+    .bunners-page .header{
+        z-index: 100000 !important;
+        border-bottom: 1px solid #D5DFE4;
+    }
+
+    .check-direct-popup .medium-popup__inner,
+    .blogger-direct-popup .medium-popup__inner{
+        overflow: hidden;
+    }
+
+    .blogger-direct-popup .answer-mobile-table-i:nth-child(odd) {
+        background: white;
+    }
+
+    .blogger-direct-popup .answer-mobile-table-i:nth-child(even) {
+        background: #F8F8F8;
+    }
+
+    .blogger-direct-popup .answer-mobile-table-i {
+        padding: 20px 30px;
+    }
+
+    .blogger-direct-popup .answer-mobile-table-i:first-child {
+        font-size: 15px;
+    }
+
+    .blogger-direct-popup .medium-popup__top{
+        margin-bottom: 0;
+    }
+
     .manager-page .title__left{
         flex-direction: column;
         width: 100%;
@@ -11375,6 +11445,14 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         width: 100px;
     }
 
+    .card.rework .card__tabs-content-i:nth-child(n+3) .card__form-advertising-bottom-btn .btn{
+        max-width: initial;
+        width: auto;
+        height: 37px;
+        margin-right: 0;
+        min-width: 75px;
+    }
+
     .card__tabs-content .card__title {
         font-size: 20px;
         padding: 0;
@@ -11959,7 +12037,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .ios .footer.active-popup {
         margin-bottom: 110px;
-        margin-bottom: 77px !important;
+        margin-bottom: 75px !important;
         flex: none;
     }
 }
