@@ -1530,13 +1530,17 @@ $(document).ready(function () {
 
     $(document).on('click', '.moder__content-actions-r .dropdown-menu li a', function () {
         if($(this).find('span').html()== 'Заблокировать'){
-            $('.blocked-popup').addClass('open');
             if(window.innerWidth < 500){
-                openHeaderCloseBtn();
+                setTimeout(function () {
+                    openHeaderCloseBtn();
+                    $('.blocked-popup').addClass('open');
+                    checkWidth();
+                }, 300);
+            } else {
+                $('.blocked-popup').addClass('open');
+                checkWidth();
             }
-            checkWidth();
         }
-
     });
 
 
