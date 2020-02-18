@@ -1541,7 +1541,6 @@ $(document).ready(function () {
                 checkWidth();
             }
         }
-
     });
 
 

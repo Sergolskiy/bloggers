@@ -6794,6 +6794,11 @@ table tbody tr:nth-child(odd){
     line-height: 150%;
 }
 
+.example-stories img {
+    width: auto;
+    max-width: 100%;
+}
+
 .no-customer-no-speck .no-recklam-wrap {
     width: 440px;
     font-size: 18px;
@@ -9127,7 +9132,8 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .page-nav__items {
         flex-direction: row;
         /*min-width: 830px;*/
-        min-width: 1020px;
+        /*min-width: 1020px;*/
+        width: max-content;
     }
 
     .page-nav__items-vp{
@@ -11514,6 +11520,13 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
     .card__statistic-block .white-select {
         max-width: 140px !important;
     }
+    .page-block-wrap-settings .settings-thesis .card__statistic-block .white-select {
+        max-width: 250px !important;
+    }
+
+    .page-block-wrap-settings .card__statistic-field .white-select {
+        max-width: 130px !important;
+    }
 
     .card__verify{
         border: none;
@@ -12449,6 +12462,8 @@ textarea {
     }
     .page-block-wrap-settings .page-nav__item {
         height: 31px;
+        width: fit-content;
+        padding: 0 15px;
     }
     .page-block-wrap-settings .page-nav {
         margin-bottom: 28px;
@@ -12945,6 +12960,30 @@ textarea {
         padding: 30px 30px 0;
         -webkit-overflow-scrolling: touch;
     }
+
+    .moder__content-actions-r .dropdown-menu.show li a.dropdown-item {
+        padding: 5px 15px;
+    }
+    .blocked-popup.open {
+        flex-direction: inherit;
+        background:
+                rgba(0, 0, 0, 0.5);
+        padding: 15px;
+    }
+    .blocked-popup.open .medium-popup__body {
+        margin-bottom: 0;
+    }
+    .blocked-popup.open  .footer {
+        display: none;
+    }
+    .blocked-popup.open  .wrap-popup__inner {
+        padding: 20px 30px 30px 30px;
+        border-radius: 10px;
+        width: auto;
+    }
+    .top-banner .top-banner__left > span {
+        padding-right: 5px;
+    }
 }
 
 
@@ -12983,3 +13022,14 @@ textarea {
     display: flex;
     border-top: 1px solid #D5DFE4;
 }
+
+.screenshots__inner-mobile-title {
+    display: none;
+}
+@media (max-width: 500px) {
+    .screenshots__inner-mobile-title {
+        display: block;
+    }
+}
+
+
