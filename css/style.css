@@ -6474,7 +6474,7 @@ table tbody tr:nth-child(odd){
     margin-top: 20px;
 }
 
-.check-direct-btn .btn{
+.check-direct-btn .btn:first-child{
     margin-right: 15px;
 }
 
@@ -8262,6 +8262,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
     .scroll{
         overflow: auto;
+        overflow-x: hidden;
     }
 
     .top-banner:not(.hide-banner) + .top-banner{
@@ -10761,6 +10762,28 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+    .blocked-popup.open{
+        z-index: 10000 !important;
+        height: calc(100vh) !important;
+        margin-top: 0;
+    }
+
+    .check-direct-wrap .scroll {
+        max-height: 510px;
+    }
+
+    .blogger-direct-popup .check-direct-wrap .scroll {
+        max-height: 527px;
+    }
+
+    .card__statistic-block .white-select.theme-mob{
+        max-width: 255px !important;
+    }
+
+    .deactivate-banner .top-banner__block{
+        display: none;
+    }
+
     .page-block-left:nth-child(2) .settings__row .settings__col:first-child{
         border-bottom: 1px solid #D5DFE4;
         padding-bottom: 20px;
@@ -11813,6 +11836,7 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
         margin-top: 30px;
     }
 
+    .email-send-popup-direct2 .email-send-textarea textarea,
     .email-send-popup-direct .email-send-textarea textarea{
         width: 250px;
         height: 420px;
@@ -12612,6 +12636,8 @@ textarea {
 }
 @media (max-width: 500px) {
 
+
+
     .moder__content-actions-r .inner.show {
         overflow-x: hidden !important;
     }
@@ -12982,7 +13008,7 @@ textarea {
         width: auto;
     }
     .top-banner .top-banner__left > span {
-        padding-right: 5px;
+        padding-right: 10px;
     }
 }
 

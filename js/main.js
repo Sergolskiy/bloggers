@@ -1149,6 +1149,17 @@ $(document).ready(function () {
         // bodyHidden();
     });
 
+    $('.promocode-btn2').click(function (e) {
+        e.preventDefault();
+        $('.email-send-popup-direct2').addClass('open');
+        if(window.innerWidth < 500){
+            openHeaderCloseBtn();
+        }
+
+        checkWidth();
+        // bodyHidden();
+    });
+
     $('.email-to-blogger-btn').click(function () {
         $('.email-to-blogger-popup').addClass('open');
         if(window.innerWidth < 500){
@@ -1532,9 +1543,7 @@ $(document).ready(function () {
         if($(this).find('span').html()== 'Заблокировать'){
             if(window.innerWidth < 500){
                 setTimeout(function () {
-                    openHeaderCloseBtn();
                     $('.blocked-popup').addClass('open');
-                    checkWidth();
                 }, 300);
             } else {
                 $('.blocked-popup').addClass('open');
