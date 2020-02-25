@@ -5369,7 +5369,7 @@ table tbody tr:nth-child(odd){
 }
 
 .close-banner img{
-    max-width: 15px;
+    max-width: 19px;
 }
 
 .top-banner__right .btn{
@@ -10762,6 +10762,14 @@ table.ui-datepicker-calendar tbody tr:nth-child(odd) {
 
 @media (max-width: 500px) {
 
+    .top-banner__right {
+        margin-right: 3px;
+    }
+
+    .blocked-popup .close-btn {
+        opacity: 1;
+    }
+
     .blocked-popup.open{
         z-index: 10000 !important;
         height: calc(100vh) !important;
@@ -13007,8 +13015,12 @@ textarea {
         border-radius: 10px;
         width: auto;
     }
-    .top-banner .top-banner__left > span {
-        padding-right: 10px;
+    .top-banner .top-banner__left {
+        padding-right: 15px;
+    }
+
+    .screenshots__inner-mobile-title {
+        display: block;
     }
 }
 
@@ -13052,10 +13064,6 @@ textarea {
 .screenshots__inner-mobile-title {
     display: none;
 }
-@media (max-width: 500px) {
-    .screenshots__inner-mobile-title {
-        display: block;
-    }
-}
+
 
 

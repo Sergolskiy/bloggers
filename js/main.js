@@ -554,6 +554,9 @@ $(document).ready(function () {
         if(e.target.closest('.if-clear-cart-popup') !== undefined && e.target == e.target.closest('.if-clear-cart-popup')){
             $(e.target).find('.close-btn').click();
         }
+        if(e.target.closest('.blocked-popup') !== undefined && e.target == e.target.closest('.blocked-popup')){
+            $(e.target).find('.close-btn').click();
+        }
     });
 
     $(document).click(function (e) {
